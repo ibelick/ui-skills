@@ -1,1 +1,26 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.prose
+  :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  background-color: #f4f4f5;
+  font-weight: 500;
+  padding: 0.1em 0.35em;
+  border-radius: 0.25rem;
+}
+
+.prose
+  :where(code):not(
+    :where([class~="not-prose"], [class~="not-prose"] *)
+  )::before,
+.prose
+  :where(code):not(
+    :where([class~="not-prose"], [class~="not-prose"] *)
+  )::after {
+  content: "";
+}

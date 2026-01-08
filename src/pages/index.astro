@@ -1,7 +1,90 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Skills from "../skills.md";
+import skillsRaw from "../skills.md?raw";
+import { CopyButton } from "../ui/copy-button";
 ---
 
 <Layout>
-	<h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <div
+    class="relative flex min-h-dvh flex-col items-center justify-end bg-[#fafaf5] px-4"
+  >
+    <div
+      class="pointer-events-none absolute inset-0 mask-b-from-80% mask-b-to-100%"
+      aria-hidden="true"
+    >
+      <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="small-grid"
+            width="10"
+            height="10"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 10 0 L 0 0 0 10"
+              fill="none"
+              stroke="#78716c"
+              stroke-opacity="0.1"
+              stroke-width="0.5"></path>
+          </pattern>
+          <pattern
+            id="grid"
+            width="50"
+            height="50"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="50" height="50" fill="url(#small-grid)"></rect>
+            <path
+              d="M 50 0 L 0 0 0 50"
+              fill="none"
+              stroke="#78716c"
+              stroke-opacity="0.2"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)"></rect>
+      </svg>
+    </div>
+
+    <CopyButton content={skillsRaw} client:load />
+
+    <div
+      class="relative mt-32 w-full max-w-3xl rounded-lg bg-white px-6 py-12 shadow-2xs ring-1 ring-black/10"
+    >
+      <div class="mx-auto max-w-2xl">
+        <div
+          class="prose prose-neutral prose-sm prose-headings:text-balance prose-headings:font-medium prose-headings:text-[14px] prose-h1:mb-6 prose-h2:mt-8 prose-h2:mb-3 prose-p:my-4 prose-p:font-normal prose-p:text-[14px] prose-p:text-neutral-500 prose-p:text-pretty prose-ul:my-4 prose-li:my-2 prose-li:font-normal prose-li:text-[14px] prose-li:text-neutral-500 prose-li:marker:text-neutral-300 max-w-none font-mono"
+        >
+          <Skills />
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="flex items-center gap-2 py-14 text-sm font-medium text-neutral-400"
+    >
+      <a
+        href="https://github.com/ibelick/ui-skills"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-neutral-900"
+      >
+        GitHub
+      </a>
+      <span class="text-neutral-300">·</span>
+      <a
+        href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-neutral-900"
+      >
+        Claude Skills
+      </a>
+      <span class="text-neutral-300">·</span>
+      <a href="/ui-skills/llms.txt" class="hover:text-neutral-900">
+        llms.txt
+      </a>
+    </footer>
+  </div>
 </Layout>
