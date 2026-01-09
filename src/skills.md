@@ -1,6 +1,6 @@
 # UI Skills
 
-Opinionated constraints for building better interfaces.
+Opinionated constraints for building better interfaces with agents.
 
 ## Stack
 
@@ -11,10 +11,10 @@ Opinionated constraints for building better interfaces.
 
 ## Components
 
-- MUST use accessible component primitives for anything with keyboard or focus behavior (Base UI, React Aria, Radix)
+- MUST use accessible component primitives for anything with keyboard or focus behavior (`Base UI`, `React Aria`, `Radix`)
 - MUST use the project’s existing component primitives first
 - NEVER mix primitive systems within the same interaction surface
-- SHOULD prefer [Base UI](https://base-ui.com/react/components) for new primitives if compatible with the stack
+- SHOULD prefer [`Base UI`](https://base-ui.com/react/components) for new primitives if compatible with the stack
 - MUST add an `aria-label` to icon-only buttons
 - NEVER rebuild keyboard or focus behavior by hand unless explicitly requested
 
@@ -24,16 +24,16 @@ Opinionated constraints for building better interfaces.
 - MUST eliminate dead click areas by increasing padding
 - SHOULD use structural skeletons for loading states
 - NEVER use `h-screen`, use `h-dvh`
-- MUST respect safe-area-inset for fixed elements
+- MUST respect `safe-area-inset` for fixed elements
 - MUST show errors next to where the action happens
-- NEVER block paste in inputs or textareas
+- NEVER block paste in `input` or `textarea` elements
 
 ## Animation
 
 - NEVER add animation unless it is explicitly requested
 - MUST animate only compositor props (`transform`, `opacity`)
-- NEVER animate layout properties (width, height, top, left, margin, padding)
-- SHOULD avoid animating paint properties (background, color) except for small, local UI (text, icons)
+- NEVER animate layout properties (`width`, `height`, `top`, `left`, `margin`, `padding`)
+- SHOULD avoid animating paint properties (`background`, `color`) except for small, local UI (text, icons)
 - SHOULD use `ease-out` on entrance
 - NEVER exceed `200ms` for interaction feedback
 - MUST pause looping animations when off-screen
@@ -47,7 +47,7 @@ Opinionated constraints for building better interfaces.
 - MUST use `text-balance` for headings and `text-pretty` for body/paragraphs
 - MUST use `tabular-nums` for data
 - SHOULD use `truncate` or `line-clamp` for dense UI
-- NEVER modify letter-spacing (`tracking-`) unless explicitly requested
+- NEVER modify `letter-spacing` (`tracking-`) unless explicitly requested
 
 ## Layout
 
