@@ -20,7 +20,7 @@ export function CopyButton({ content }: CopyButtonProps) {
   };
 
   return (
-    <div className="sticky top-4 right-4 z-10 flex w-full items-center justify-end">
+    <div className="sticky top-4 z-10 flex w-full items-center justify-end px-4 sm:px-0">
       <button
         onClick={handleCopy}
         type="button"

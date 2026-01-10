@@ -21,7 +21,7 @@ Opinionated constraints for building better interfaces with agents.
 ## Interaction
 
 - MUST use an `AlertDialog` for destructive or irreversible actions
-- MUST eliminate dead click areas by increasing padding
+
 - SHOULD use structural skeletons for loading states
 - NEVER use `h-screen`, use `h-dvh`
 - MUST respect `safe-area-inset` for fixed elements
@@ -43,7 +43,6 @@ Opinionated constraints for building better interfaces with agents.
 
 ## Typography
 
-- NEVER animate text properties
 - MUST use `text-balance` for headings and `text-pretty` for body/paragraphs
 - MUST use `tabular-nums` for data
 - SHOULD use `truncate` or `line-clamp` for dense UI

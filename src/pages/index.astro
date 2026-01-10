@@ -7,7 +7,7 @@ import { CopyButton } from "../ui/copy-button";
 
 <Layout>
   <div
-    class="relative flex min-h-dvh flex-col items-center justify-end bg-[#fafaf5] px-4"
+    class="relative flex min-h-dvh flex-col items-center justify-end bg-[#fafaf5] px-0 sm:px-4"
   >
     <div
       class="pointer-events-none absolute inset-0 mask-b-from-80% mask-b-to-100%"
@@ -50,7 +50,7 @@ import { CopyButton } from "../ui/copy-button";
     <CopyButton content={skillsRaw} client:load />
 
     <div
-      class="relative mt-32 w-full max-w-3xl rounded-lg bg-white px-6 py-12 shadow-2xs ring-1 ring-black/10"
+      class="relative mt-32 w-full max-w-3xl rounded-none border-t border-b border-neutral-200 bg-white px-6 py-12 shadow-2xs sm:rounded-[8px] sm:border-none sm:shadow-2xs sm:ring-1 sm:ring-black/10"
     >
       <div class="mx-auto max-w-2xl">
         <div
@@ -62,7 +62,7 @@ import { CopyButton } from "../ui/copy-button";
     </div>
 
     <footer
-      class="flex items-center gap-2 py-14 text-sm font-medium text-neutral-400"
+      class="flex items-center gap-2 px-4 py-14 text-sm font-medium text-neutral-400 sm:px-0"
     >
       <a
         href="https://github.com/ibelick/ui-skills"
