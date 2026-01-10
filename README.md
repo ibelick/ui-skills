@@ -10,4 +10,4 @@ Learn more about [Agent Skills](https://platform.claude.com/docs/en/agents-and-t
 
 ## License
 
-MIT [Julien Thibeaut](https://github.com/ibelick)
+Licensed under the [MIT license](https://github.com/ibelick/ui-skills/blob/main/LICENSE).

@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import skillsRaw from "../skills.md?raw";
+import skillsRaw from "../SKILL.md?raw";
 
 export const GET: APIRoute = () => {
   const body = skillsRaw.trim() + "\n";
