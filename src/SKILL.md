@@ -1,3 +1,8 @@
+---
+name: ui-skills
+description: Opinionated constraints for building better interfaces with agents.
+---
+
 # UI Skills
 
 Opinionated constraints for building better interfaces with agents.
@@ -21,7 +26,6 @@ Opinionated constraints for building better interfaces with agents.
 ## Interaction
 
 - MUST use an `AlertDialog` for destructive or irreversible actions
-
 - SHOULD use structural skeletons for loading states
 - NEVER use `h-screen`, use `h-dvh`
 - MUST respect `safe-area-inset` for fixed elements

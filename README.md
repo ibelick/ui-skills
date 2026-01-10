@@ -8,8 +8,6 @@ Every rule comes from things that bored me when using agents to build UI.
 
 Learn more about [Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com)
 
----
-
 ## License
 
 MIT [Julien Thibeaut](https://github.com/ibelick)
