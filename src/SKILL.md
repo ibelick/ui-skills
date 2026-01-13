@@ -5,7 +5,19 @@ description: Opinionated constraints for building better interfaces with agents.
 
 # UI Skills
 
-Opinionated constraints for building better interfaces with agents.
+When invoked, apply these opinionated constraints for building better interfaces.
+
+If invoked with a file path argument (e.g., `/ui-skills src/components/Button.tsx`):
+
+1. Read the specified file
+2. Review it against ALL the constraints below
+3. Provide specific, actionable feedback on violations
+4. Suggest concrete improvements
+
+If invoked without arguments:
+
+- Apply these constraints to any UI work in this conversation
+- Keep them in mind when writing or reviewing interface code
 
 ## Stack
 
@@ -54,8 +66,8 @@ Opinionated constraints for building better interfaces with agents.
 
 ## Layout
 
-- MUST use a fixed `z-index` scale (no arbitrary `z-x`)
-- SHOULD use `size-x` for square elements instead of `w-x` + `h-x`
+- MUST use a fixed `z-index` scale (no arbitrary `z-*`)
+- SHOULD use `size-*` for square elements instead of `w-*` + `h-*`
 
 ## Performance
 
