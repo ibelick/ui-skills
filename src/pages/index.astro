@@ -47,42 +47,76 @@ import { CopyButton } from "../ui/copy-button";
       </svg>
     </div>
 
-    <CopyButton content={skillsRaw} client:load />
+    <div class="mt-20 w-full max-w-3xl">
+      <div class="mx-auto w-full">
+        <div class="mb-12">
+          <h1 class="text-2xl font-medium text-pretty text-neutral-900">
+            UI Skills
+          </h1>
+          <p class="mt-2 text-base text-neutral-900">
+            Opinionated constraints for building better interfaces with agents.
+          </p>
+        </div>
 
-    <div
-      class="relative mt-32 w-full max-w-3xl rounded-none border-t border-b border-neutral-200 bg-white px-6 py-12 shadow-2xs sm:rounded-[8px] sm:border-none sm:shadow-2xs sm:ring-1 sm:ring-black/10"
-    >
-      <div class="mx-auto max-w-2xl">
         <div
-          class="prose prose-neutral prose-sm prose-headings:text-balance prose-headings:font-medium prose-headings:text-[15px] prose-h1:mb-6 prose-h2:mt-10 prose-h2:mb-3 prose-p:my-4 prose-p:font-normal prose-p:text-[15px] prose-p:text-neutral-500 prose-p:text-pretty prose-ul:my-4 prose-li:my-2 prose-li:pl-0 prose-li:font-normal prose-li:text-[15px] prose-li:text-neutral-500 prose-li:marker:text-neutral-300 max-w-none font-mono"
+          class="relative mb-16 flex items-center justify-between rounded-none border-t border-b border-neutral-200 bg-white py-2.5 pr-4 pl-6 shadow-2xs sm:rounded-[8px] sm:border-none sm:ring-1 sm:ring-black/5"
         >
-          <Skills />
+          <code class="font-mono text-[14px] font-medium tracking-tight">
+            <span class="text-[#953800]">curl</span>
+            <span class="text-[#0550ae]"> -fsSL</span>
+            <span class="text-[#0a3069]"> https://ui-skills.com/install</span>
+            <span class="text-[#cf222e]"> |</span>
+            <span class="text-[#953800]"> bash</span>
+          </code>
+          <div class="flex items-center gap-1">
+            <CopyButton
+              content="curl -fsSL https://ui-skills.com/install | bash"
+              showText={false}
+              className="size-8"
+              client:load
+            />
+          </div>
         </div>
       </div>
-    </div>
 
-    <footer
-      class="flex items-center gap-2 px-4 py-14 text-sm font-medium text-neutral-400 sm:px-0"
-    >
-      <a
-        href="https://github.com/ibelick/ui-skills"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-neutral-900"
+      <div
+        class="relative mt-32 w-full max-w-3xl rounded-none border-t border-b border-neutral-200 bg-white px-6 py-12 shadow-2xs sm:rounded-[8px] sm:border-none sm:shadow-2xs sm:ring-1 sm:ring-black/10"
       >
-        GitHub
-      </a>
-      <span class="text-neutral-300">·</span>
-      <a
-        href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-neutral-900"
+        <div class="absolute top-6 right-6">
+          <CopyButton content={skillsRaw} client:load />
+        </div>
+        <div class="mx-auto max-w-2xl">
+          <div
+            class="prose prose-neutral prose-sm prose-headings:text-balance prose-headings:font-medium prose-headings:text-[15px] prose-h1:mb-6 prose-h2:mt-10 prose-h2:mb-3 prose-p:my-4 prose-p:font-normal prose-p:text-[15px] prose-p:text-neutral-500 prose-p:text-pretty prose-ul:my-4 prose-li:my-2 prose-li:pl-0 prose-li:font-normal prose-li:text-[15px] prose-li:text-neutral-500 prose-li:marker:text-neutral-300 max-w-none font-mono"
+          >
+            <Skills />
+          </div>
+        </div>
+      </div>
+
+      <footer
+        class="flex items-center gap-2 px-4 py-14 text-sm font-medium text-neutral-400 sm:px-0"
       >
-        Claude Skills
-      </a>
-      <span class="text-neutral-300">·</span>
-      <a href="/llms.txt" class="hover:text-neutral-900"> llms.txt </a>
-    </footer>
+        <a
+          href="https://github.com/ibelick/ui-skills"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-neutral-900"
+        >
+          GitHub
+        </a>
+        <span class="text-neutral-300">·</span>
+        <a
+          href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-neutral-900"
+        >
+          Claude Skills
+        </a>
+        <span class="text-neutral-300">·</span>
+        <a href="/llms.txt" class="hover:text-neutral-900"> llms.txt </a>
+      </footer>
+    </div>
   </div>
 </Layout>
