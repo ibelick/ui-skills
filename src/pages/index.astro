@@ -7,7 +7,7 @@ import { CopyButton } from "../ui/copy-button";
 
 <Layout>
   <div
-    class="relative flex min-h-dvh flex-col items-center justify-end bg-[#fafaf5] px-0 sm:px-4"
+    class="bg-parchment-50 relative flex min-h-dvh flex-col items-center justify-end px-0 sm:px-4"
   >
     <div
       class="pointer-events-none absolute inset-0 mask-t-from-60% mask-t-to-100% mask-b-from-80% mask-b-to-100%"
@@ -80,6 +80,7 @@ import { CopyButton } from "../ui/copy-button";
                 showText={false}
                 className="size-8"
                 client:load
+                data-s-event="install"
               />
             </div>
           </div>
@@ -117,7 +118,11 @@ import { CopyButton } from "../ui/copy-button";
         >
           <div class="sticky top-0 right-0">
             <div class="absolute top-0 right-0">
-              <CopyButton content={skillsRaw} client:load />
+              <CopyButton
+                content={skillsRaw}
+                client:load
+                data-s-event="install"
+              />
             </div>
           </div>
           <div

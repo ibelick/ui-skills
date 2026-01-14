@@ -5,12 +5,13 @@ type CopyButtonProps = {
   content: string;
   className?: string;
   showText?: boolean;
-};
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export function CopyButton({
   content,
   className,
   showText = true,
+  ...props
 }: CopyButtonProps) {
   const [isCopied, setIsCopied] = useState(false);
 
@@ -30,6 +31,7 @@ export function CopyButton({
       type="button"
       className={`flex h-8 items-center justify-center rounded-full text-neutral-400 transition-colors hover:text-neutral-900 ${className}`}
       aria-label="Copy to clipboard"
+      {...props}
     >
       {showText ? (
         <div className="flex w-[70px] items-center justify-center text-sm font-medium">
