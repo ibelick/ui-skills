@@ -58,7 +58,7 @@ When invoked, apply these opinionated constraints for building better interfaces
 
 ## Typography
 
-- MUST use `text-balance` for headings and `text-pretty` for body/paragraphs
+- MUST use `text-balance` for headings, centered text, and right-aligned text; use `text-pretty` for body/paragraphs
 - MUST use `tabular-nums` for data
 - SHOULD use `truncate` or `line-clamp` for dense UI
 - NEVER modify `letter-spacing` (`tracking-*`) unless explicitly requested
