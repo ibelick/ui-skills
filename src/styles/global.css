@@ -22,21 +22,20 @@
   --color-tertiary: var(--color-parchment-400);
 }
 
-.prose
-  :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+
+::selection {
+  background-color: #e1dccf7c;
+  color: inherit;
+}
+
+.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   background-color: var(--color-parchment-100);
   font-weight: 500;
   padding: 0.1em 0.35em;
   border-radius: 0.25rem;
 }
 
-.prose
-  :where(code):not(
-    :where([class~="not-prose"], [class~="not-prose"] *)
-  )::before,
-.prose
-  :where(code):not(
-    :where([class~="not-prose"], [class~="not-prose"] *)
-  )::after {
+.prose :where(code):not( :where([class~="not-prose"], [class~="not-prose"] *))::before,
+.prose :where(code):not( :where([class~="not-prose"], [class~="not-prose"] *))::after {
   content: "";
 }

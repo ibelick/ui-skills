@@ -1,8 +1,11 @@
 {
   "name": "ui-skills",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "license": "MIT",
+  "bin": {
+    "ui-skills": "./bin/ui-skills.cjs"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

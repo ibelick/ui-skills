@@ -3,6 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import Skills from "../SKILL.md";
 import skillsRaw from "../SKILL.md?raw";
 import { CopyButton } from "../ui/copy-button";
+import { InstallTabs } from "../ui/install-tabs";
+
+const currentYear = new Date().getFullYear();
 ---
 
 <Layout>
@@ -64,26 +67,7 @@ import { CopyButton } from "../ui/copy-button";
           >
             Installation
           </h2>
-          <div
-            class="relative flex items-center justify-between rounded-none border-t border-b border-neutral-200 bg-white py-3.5 pr-4 pl-6 shadow-2xs sm:rounded-[8px] sm:border-none sm:ring-1 sm:ring-black/10"
-          >
-            <code class="font-mono text-[15px]">
-              <span class="text-[#953800]">curl</span>
-              <span class="text-[#0550ae]"> -fsSL</span>
-              <span class="text-[#0a3069]"> https://ui-skills.com/install</span>
-              <span class="text-[#cf222e]"> |</span>
-              <span class="text-[#953800]"> bash</span>
-            </code>
-            <div class="flex items-center gap-1">
-              <CopyButton
-                content="curl -fsSL https://ui-skills.com/install | bash"
-                showText={false}
-                className="size-8"
-                client:load
-                data-s-event="install"
-              />
-            </div>
-          </div>
+          <InstallTabs client:load />
           <p class="text-parchment-500 mt-3 px-4 text-[15px] sm:px-0">
             Support Claude Code, Cursor, OpenCode and more.
           </p>
@@ -142,27 +126,40 @@ import { CopyButton } from "../ui/copy-button";
         </div>
 
         <footer
-          class="text-parchment-400 flex w-full items-center justify-center gap-3 px-4 pb-32 text-center text-base font-medium sm:px-0"
+          class="text-parchment-400 flex w-full flex-col items-center justify-center gap-3 px-4 pb-32 text-center text-base font-medium sm:px-0"
         >
-          <a
-            href="https://github.com/ibelick/ui-skills"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hover:text-parchment-900"
-          >
-            GitHub
-          </a>
-          <span class="text-parchment-200">·</span>
-          <a
-            href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hover:text-parchment-900"
-          >
-            Claude Skills
-          </a>
-          <span class="text-parchment-200">·</span>
-          <a href="/llms.txt" class="hover:text-parchment-900"> llms.txt </a>
+          <div class="flex items-center justify-center gap-3">
+            <a
+              href="https://github.com/ibelick/ui-skills"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-parchment-900"
+            >
+              GitHub
+            </a>
+            <span class="text-parchment-200">·</span>
+            <a
+              href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-parchment-900"
+            >
+              Claude Skills
+            </a>
+            <span class="text-parchment-200">·</span>
+            <a href="/llms.txt" class="hover:text-parchment-900"> llms.txt </a>
+          </div>
+          <span>
+            <span>©{currentYear}</span>
+            <a
+              href="https://interfaceoffice.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-parchment-400 hover:text-parchment-900"
+            >
+              Interface Office
+            </a>
+          </span>
         </footer>
       </div>
     </div>

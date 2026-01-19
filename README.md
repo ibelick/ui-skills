@@ -8,6 +8,14 @@ Every rule comes from things that bored me when using agents to build UI.
 
 Learn more about [Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com)
 
+## CLI
+
+```bash
+npx ui-skills init
+```
+
+This installs the skill and registers the command in supported tools.
+
 ## License
 
 Licensed under the [MIT license](https://github.com/ibelick/ui-skills/blob/main/LICENSE).
