@@ -10,18 +10,35 @@ if [ -t 1 ]; then
   BOLD="\033[1m"
   GREEN="\033[32m"
   YELLOW="\033[33m"
-  DIM="\033[2m"
+  GRAY="\033[37m"
+  DARK="\033[90m"
   RESET="\033[0m"
 else
   BOLD=""
   GREEN=""
   YELLOW=""
-  DIM=""
+  GRAY=""
+  DARK=""
   RESET=""
 fi
 
 print_header() {
   printf "${BOLD}%s${RESET}\n" "$1"
+}
+
+print_ascii() {
+  B="${GRAY}"   # Blocks (Light Gray)
+  D="${DARK}"   # Connectors (Dark Gray)
+  R="${RESET}"
+
+  printf " ${B}██${D}╗   ${B}██${D}╗${B}██${D}╗      ${B}███████${D}╗${B}██${D}╗  ${B}██${D}╗${B}██${D}╗${B}██${D}╗     ${B}██${D}╗     ${B}███████${D}╗\n"
+  printf " ${B}██${D}║   ${B}██${D}║${B}██${D}║      ${B}██${D}╔════╝${B}██${D}║ ${B}██${D}╔╝${B}██${D}║${B}██${D}║     ${B}██${D}║     ${B}██${D}╔════╝\n"
+  printf " ${B}██${D}║   ${B}██${D}║${B}██${D}║${B}█████${D}╗${B}███████${D}╗${B}█████${D}╔╝ ${B}██${D}║${B}██${D}║     ${B}██${D}║     ${B}███████${D}╗\n"
+  printf " ${B}██${D}║   ${B}██${D}║${B}██${D}║${D}╚════╝╚════${B}██${D}║${B}██${D}╔═${B}██${D}╗ ${B}██${D}║${B}██${D}║     ${B}██${D}║     ${D}╚════${B}██${D}║\n"
+  printf " ${D}╚${B}██████${D}╔╝${B}██${D}║      ${B}███████${D}║${B}██${D}║  ${B}██${D}╗${B}██${D}║${B}███████${D}╗${B}███████${D}╗${B}███████${D}║\n"
+  printf "  ${D}╚═════╝ ╚═╝      ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝${R}\n"
+  printf "\n"
+  printf "  ${DARK}The open taste layer for agent-generated UI.${R}\n"
 }
 
 print_success() {
@@ -45,7 +62,7 @@ SKILL_URL="https://ui-skills.com/llms.txt"
 INSTALL_NAME="ui-skills.md"
 INSTALL_DIRNAME="ui-skills"
 
-print_header "UI Skills Installer"
+print_ascii
 printf "\n"
 
 # Prepare temp files for raw skill and command content
@@ -58,7 +75,7 @@ cleanup() {
 trap cleanup EXIT
 
 # Download the skill once
-print_info "Downloading UI Skills..."
+print_info "Downloading..."
 if command -v curl >/dev/null 2>&1; then
   curl -fsSL "$SKILL_URL" -o "$TMP_SKILL"
 elif command -v wget >/dev/null 2>&1; then
@@ -80,31 +97,63 @@ printf "\n"
 
 OPTIONAL_INSTALLED=0
 
-# Project skill (current working directory)
-CLAUDE_PROJECT_DIR="${PWD}/.claude/skills/${INSTALL_DIRNAME}"
-CLAUDE_PROJECT_FILE="${CLAUDE_PROJECT_DIR}/SKILL.md"
-print_info "Claude project install: $CLAUDE_PROJECT_DIR"
-mkdir -p "$CLAUDE_PROJECT_DIR"
-cp "$TMP_SKILL" "$CLAUDE_PROJECT_FILE"
-print_success "Claude project skill installed: $CLAUDE_PROJECT_FILE"
+install_skill() {
+  base_dir="$1"
+  label="$2"
+  skill_dir="$base_dir/$INSTALL_DIRNAME"
+  skill_file="$skill_dir/SKILL.md"
+  mkdir -p "$skill_dir"
+  cp "$TMP_SKILL" "$skill_file"
+  print_success "$label skill installed"
+  OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+}
 
-CURSOR_PROJECT_DIR="${PWD}/.cursor/skills/${INSTALL_DIRNAME}"
-CURSOR_PROJECT_FILE="${CURSOR_PROJECT_DIR}/SKILL.md"
-print_info "Cursor project install: $CURSOR_PROJECT_DIR"
-mkdir -p "$CURSOR_PROJECT_DIR"
-cp "$TMP_SKILL" "$CURSOR_PROJECT_FILE"
-print_success "Cursor project skill installed: $CURSOR_PROJECT_FILE"
+maybe_install_project_skill() {
+  base_dir="$1"
+  label="$2"
+  skill_dir="$base_dir/$INSTALL_DIRNAME"
+  skill_file="$skill_dir/SKILL.md"
+  if [ -d "$base_dir" ]; then
+    mkdir -p "$skill_dir"
+    cp "$TMP_SKILL" "$skill_file"
+    print_success "$label project skill installed"
+    OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+  fi
+}
 
-# Project commands
-CURSOR_PROJECT_COMMAND_DIR="${PWD}/.cursor/commands"
-mkdir -p "$CURSOR_PROJECT_COMMAND_DIR"
-cp "$TMP_COMMAND" "$CURSOR_PROJECT_COMMAND_DIR/$INSTALL_NAME"
-print_success "Cursor project command installed: $CURSOR_PROJECT_COMMAND_DIR/$INSTALL_NAME"
+# Project skills (auto-detect)
+maybe_install_project_skill "${PWD}/.opencode/skill" "OpenCode"
+maybe_install_project_skill "${PWD}/.claude/skills" "Claude Code"
+maybe_install_project_skill "${PWD}/.codex/skills" "Codex"
+maybe_install_project_skill "${PWD}/.cursor/skills" "Cursor"
+maybe_install_project_skill "${PWD}/.agents/skills" "Amp"
+maybe_install_project_skill "${PWD}/.kilocode/skills" "Kilo Code"
+maybe_install_project_skill "${PWD}/.roo/skills" "Roo Code"
+maybe_install_project_skill "${PWD}/.goose/skills" "Goose"
+maybe_install_project_skill "${PWD}/.gemini/skills" "Gemini CLI"
+maybe_install_project_skill "${PWD}/.agent/skills" "Antigravity"
+maybe_install_project_skill "${PWD}/.github/skills" "GitHub Copilot"
+maybe_install_project_skill "${PWD}/skills" "Clawdbot"
+maybe_install_project_skill "${PWD}/.factory/skills" "Droid"
+maybe_install_project_skill "${PWD}/.windsurf/skills" "Windsurf"
 
-CLAUDE_PROJECT_COMMAND_DIR="${PWD}/.claude/commands"
-mkdir -p "$CLAUDE_PROJECT_COMMAND_DIR"
-cp "$TMP_COMMAND" "$CLAUDE_PROJECT_COMMAND_DIR/$INSTALL_NAME"
-print_success "Claude project command installed: $CLAUDE_PROJECT_COMMAND_DIR/$INSTALL_NAME"
+# Claude Code (project commands)
+if [ -d "${PWD}/.claude" ]; then
+  CLAUDE_PROJECT_COMMAND_DIR="${PWD}/.claude/commands"
+  mkdir -p "$CLAUDE_PROJECT_COMMAND_DIR"
+  cp "$TMP_COMMAND" "$CLAUDE_PROJECT_COMMAND_DIR/$INSTALL_NAME"
+  print_success "Claude project command installed"
+  OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+fi
+
+# Cursor (project commands)
+if [ -d "${PWD}/.cursor" ]; then
+  CURSOR_PROJECT_COMMAND_DIR="${PWD}/.cursor/commands"
+  mkdir -p "$CURSOR_PROJECT_COMMAND_DIR"
+  cp "$TMP_COMMAND" "$CURSOR_PROJECT_COMMAND_DIR/$INSTALL_NAME"
+  print_success "Cursor project command installed"
+  OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+fi
 
 # Claude Code (personal skills directory, if detected)
 CLAUDE_SKILLS_DIR=""
@@ -117,30 +166,80 @@ elif [ -d "$HOME/.config/claude/skills" ]; then
 fi
 
 if [ -n "$CLAUDE_SKILLS_DIR" ]; then
-  CLAUDE_SKILL_DIR="${CLAUDE_SKILLS_DIR}/${INSTALL_DIRNAME}"
-  CLAUDE_SKILL_FILE="${CLAUDE_SKILL_DIR}/SKILL.md"
-  mkdir -p "$CLAUDE_SKILL_DIR"
-  cp "$TMP_SKILL" "$CLAUDE_SKILL_FILE"
-  print_success "Claude Code skill installed: $CLAUDE_SKILL_FILE"
-  OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+  install_skill "$CLAUDE_SKILLS_DIR" "Claude Code"
+fi
+
+# OpenCode (skills folder)
+if [ -d "$HOME/.config/opencode/skill" ]; then
+  install_skill "$HOME/.config/opencode/skill" "OpenCode"
+fi
+
+# Codex (skills folder)
+if [ -d "$HOME/.codex/skills" ]; then
+  install_skill "$HOME/.codex/skills" "Codex"
 fi
 
 # Cursor (skills folder)
-if [ -d "$HOME/.cursor" ]; then
-  CURSOR_SKILL_DIR="$HOME/.cursor/skills/$INSTALL_DIRNAME"
-  CURSOR_SKILL_FILE="$CURSOR_SKILL_DIR/SKILL.md"
-  mkdir -p "$CURSOR_SKILL_DIR"
-  cp "$TMP_SKILL" "$CURSOR_SKILL_FILE"
-  print_success "Cursor skill installed: $CURSOR_SKILL_FILE"
-  OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+if [ -d "$HOME/.cursor/skills" ]; then
+  install_skill "$HOME/.cursor/skills" "Cursor"
+fi
+
+# Amp (skills folder)
+if [ -d "$HOME/.config/agents/skills" ]; then
+  install_skill "$HOME/.config/agents/skills" "Amp"
+fi
+
+# Kilo Code (skills folder)
+if [ -d "$HOME/.kilocode/skills" ]; then
+  install_skill "$HOME/.kilocode/skills" "Kilo Code"
+fi
+
+# Roo Code (skills folder)
+if [ -d "$HOME/.roo/skills" ]; then
+  install_skill "$HOME/.roo/skills" "Roo Code"
+fi
+
+# Goose (skills folder)
+if [ -d "$HOME/.config/goose/skills" ]; then
+  install_skill "$HOME/.config/goose/skills" "Goose"
+fi
+
+# Gemini CLI (skills folder)
+if [ -d "$HOME/.gemini/skills" ]; then
+  install_skill "$HOME/.gemini/skills" "Gemini CLI"
+fi
+
+# Antigravity (skills folder)
+if [ -d "$HOME/.gemini/antigravity/skills" ]; then
+  install_skill "$HOME/.gemini/antigravity/skills" "Antigravity"
+fi
+
+# GitHub Copilot (skills folder)
+if [ -d "$HOME/.copilot/skills" ]; then
+  install_skill "$HOME/.copilot/skills" "GitHub Copilot"
+fi
+
+# Clawdbot (skills folder)
+if [ -d "$HOME/.clawdbot/skills" ]; then
+  install_skill "$HOME/.clawdbot/skills" "Clawdbot"
+fi
+
+# Droid (skills folder)
+if [ -d "$HOME/.factory/skills" ]; then
+  install_skill "$HOME/.factory/skills" "Droid"
+fi
+
+# Windsurf (skills folder)
+if [ -d "$HOME/.codeium/windsurf/skills" ]; then
+  install_skill "$HOME/.codeium/windsurf/skills" "Windsurf"
 fi
 
 # OpenCode (command folder)
 if command -v opencode >/dev/null 2>&1 || [ -d "$HOME/.config/opencode" ]; then
-  OPENCODE_DIR="$HOME/.config/opencode/command"
-  mkdir -p "$OPENCODE_DIR"
-  cp "$TMP_COMMAND" "$OPENCODE_DIR/$INSTALL_NAME"
-  print_success "OpenCode command installed: $OPENCODE_DIR/$INSTALL_NAME"
+  OPENCODE_COMMAND_DIR="$HOME/.config/opencode/command"
+  mkdir -p "$OPENCODE_COMMAND_DIR"
+  cp "$TMP_COMMAND" "$OPENCODE_COMMAND_DIR/$INSTALL_NAME"
+  print_success "OpenCode command installed"
   OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
 fi
 
@@ -149,7 +248,7 @@ if [ -d "$HOME/.cursor" ]; then
   CURSOR_COMMAND_DIR="$HOME/.cursor/commands"
   mkdir -p "$CURSOR_COMMAND_DIR"
   cp "$TMP_COMMAND" "$CURSOR_COMMAND_DIR/$INSTALL_NAME"
-  print_success "Cursor command installed: $CURSOR_COMMAND_DIR/$INSTALL_NAME"
+  print_success "Cursor command installed"
   OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
 fi
 
@@ -162,7 +261,7 @@ if [ -d "$HOME/.claude" ] || [ -d "$HOME/.config/claude" ]; then
   fi
   mkdir -p "$CLAUDE_COMMAND_DIR"
   cp "$TMP_COMMAND" "$CLAUDE_COMMAND_DIR/$INSTALL_NAME"
-  print_success "Claude Code command installed: $CLAUDE_COMMAND_DIR/$INSTALL_NAME"
+  print_success "Claude Code command installed"
   OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
 fi
 
@@ -173,7 +272,7 @@ if [ -d "$HOME/.codeium" ] || [ -d "$HOME/Library/Application Support/Windsurf" 
   RULES_FILE="$WINDSURF_DIR/global_rules.md"
   mkdir -p "$WINDSURF_DIR"
   if [ -f "$RULES_FILE" ] && grep -q "$MARKER" "$RULES_FILE"; then
-    print_success "Windsurf rules already include UI Skills"
+    print_success "Windsurf already updated"
   else
     if [ -f "$RULES_FILE" ]; then
       printf "\n" >> "$RULES_FILE"
@@ -181,7 +280,7 @@ if [ -d "$HOME/.codeium" ] || [ -d "$HOME/Library/Application Support/Windsurf" 
     printf "%s\n\n" "$MARKER" >> "$RULES_FILE"
     cat "$TMP_COMMAND" >> "$RULES_FILE"
     printf "\n" >> "$RULES_FILE"
-    print_success "Windsurf rules updated: $RULES_FILE"
+    print_success "Windsurf updated"
   fi
   OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
 fi
@@ -197,7 +296,7 @@ prompt = """
 TOMLEOF
   cat "$TMP_COMMAND" >> "$TOML_FILE"
   printf "\n\"\"\"\n" >> "$TOML_FILE"
-  print_success "Gemini CLI command installed: $TOML_FILE"
+  print_success "Gemini CLI command installed"
   OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
 fi
 
@@ -205,9 +304,9 @@ printf "\n"
 
 if [ "$OPTIONAL_INSTALLED" -eq 0 ]; then
   print_dim "No additional tool locations detected."
-  print_dim "If you use Cursor or Claude Code globally, copy the project skill into ~/.cursor/skills/ui-skills/SKILL.md or ~/.claude/skills/ui-skills/SKILL.md."
+  print_dim "Create a tool's skills directory and rerun to install automatically."
 fi
 
 print_header "Done"
-print_info "Try: /ui-skills path/to/file.tsx"
+print_info "Usage: /ui-skills path/to/file.tsx"
 printf "\n"
