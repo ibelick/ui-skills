@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Skills from "../SKILL.md";
 import skillsRaw from "../SKILL.md?raw";
 import { CopyButton } from "../ui/copy-button";
+import CodeBlock from "../ui/code-block.astro";
 import { InstallTabs } from "../ui/install-tabs";
 
 const currentYear = new Date().getFullYear();
@@ -50,7 +51,7 @@ const currentYear = new Date().getFullYear();
       </svg>
     </div>
 
-    <div class="mt-20 w-full max-w-3xl sm:px-0">
+    <div class="relative mt-20 w-full max-w-3xl sm:px-0">
       <div class="mx-auto flex w-full flex-col gap-16">
         <div class="px-4 sm:px-0">
           <h1 class="text-parchment-900 text-3xl font-medium tracking-tight">
@@ -71,6 +72,36 @@ const currentYear = new Date().getFullYear();
           <p class="text-parchment-500 mt-3 px-4 text-[15px] sm:px-0">
             Support Claude Code, Cursor, OpenCode and more.
           </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-parchment-900 mb-3 px-4 text-lg font-medium tracking-tight sm:px-0"
+          >
+            Add a skill
+          </h2>
+          <CodeBlock
+            lines={[
+              [
+                { text: "npx", className: "text-[#953800]" },
+                { text: " ui-skills", className: "text-[#0a3069]" },
+                { text: " add", className: "text-[#0550ae]" },
+                { text: " animating-ui", className: "text-parchment-400" },
+              ],
+              [
+                { text: "npx", className: "text-[#953800]" },
+                { text: " ui-skills", className: "text-[#0a3069]" },
+                { text: " add", className: "text-[#0550ae]" },
+                { text: " fixing-ui-metadata", className: "text-parchment-400" },
+              ],
+              [
+                { text: "npx", className: "text-[#953800]" },
+                { text: " ui-skills", className: "text-[#0a3069]" },
+                { text: " add", className: "text-[#0550ae]" },
+                { text: " fixing-accessibility", className: "text-parchment-400" },
+              ],
+            ]}
+          />
         </div>
 
         <div>
