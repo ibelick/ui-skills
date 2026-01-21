@@ -1,6 +1,6 @@
 ---
 name: fixing-metadata
-description: Fix metadata and SEO tags.
+description: Ship correct, complete metadata.
 ---
 
 Loremp ipsum

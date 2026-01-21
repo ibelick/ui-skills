@@ -1,6 +1,6 @@
 ---
 name: fixing-motion-performance
-description: Improve motion performance and reduce jank.
+description: Fix animation performance issues. Prefer safe, predictable motion.
 ---
 
 Loremp ipsum

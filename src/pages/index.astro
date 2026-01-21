@@ -4,8 +4,6 @@ import { skills } from "../data/skills";
 import { CopyButton } from "../ui/copy-button";
 import CodeBlock from "../ui/code-block.astro";
 import { InstallTabs } from "../ui/install-tabs";
-
-const currentYear = new Date().getFullYear();
 ---
 
 <Layout>
@@ -154,42 +152,6 @@ const currentYear = new Date().getFullYear();
         </div>
 
 
-        <footer
-          class="text-parchment-400 flex w-full flex-col items-center justify-center gap-3 px-4 pb-32 text-center text-base font-medium sm:px-0"
-        >
-          <div class="flex items-center justify-center gap-3">
-            <a
-              href="https://github.com/ibelick/ui-skills"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-parchment-900"
-            >
-              GitHub
-            </a>
-            <span class="text-parchment-200">·</span>
-            <a
-              href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-parchment-900"
-            >
-              Claude Skills
-            </a>
-            <span class="text-parchment-200">·</span>
-            <a href="/llms.txt" class="hover:text-parchment-900"> llms.txt </a>
-          </div>
-          <span>
-            <span>©{currentYear}</span>
-            <a
-              href="https://interfaceoffice.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-parchment-400 hover:text-parchment-900"
-            >
-              Interface Office
-            </a>
-          </span>
-        </footer>
       </div>
     </div>
   </div>

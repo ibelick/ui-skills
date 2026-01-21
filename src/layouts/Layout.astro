@@ -1,5 +1,12 @@
 ---
 import "../styles/global.css";
+
+type Props = {
+  llmsPath?: string;
+};
+
+const { llmsPath } = Astro.props as Props;
+const currentYear = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -34,7 +41,51 @@ import "../styles/global.css";
     <script defer src="https://assets.onedollarstats.com/stonks.js"></script>
   </head>
   <body>
+    <header
+      class="absolute inset-x-0 top-0 z-10 flex justify-end px-4 pt-6 sm:px-8"
+    >
+      <a
+        href="https://github.com/ibelick/ui-skills"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-parchment-500 hover:text-parchment-900 text-sm font-medium"
+      >
+        GitHub
+      </a>
+    </header>
     <slot />
+    <footer
+      class="text-parchment-400 mt-24 flex w-full items-center justify-center gap-3 px-4 pb-6 text-center text-sm font-medium sm:px-0"
+    >
+      <span>
+        <span>©{currentYear}</span>
+        <a
+          href="https://interfaceoffice.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-parchment-400 hover:text-parchment-900"
+        >
+          Interface Office
+        </a>
+      </span>
+      <span class="text-parchment-200">·</span>
+      <a
+        href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-parchment-900"
+      >
+        Claude Skills
+      </a>
+      {llmsPath ? <span class="text-parchment-200">·</span> : null}
+      {
+        llmsPath ? (
+          <a href={llmsPath} class="hover:text-parchment-900">
+            llms.txt
+          </a>
+        ) : null
+      }
+    </footer>
   </body>
 </html>
 
