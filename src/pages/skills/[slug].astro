@@ -1,0 +1,144 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CodeBlock from "../../ui/code-block.astro";
+import type { MarkdownInstance } from "astro";
+import { skills } from "../../data/skills";
+import SkillCard from "../../ui/skill-card.astro";
+
+type SkillFrontmatter = {
+  name?: string;
+  description?: string;
+  label?: string;
+};
+
+type SkillEntry = {
+  slug: string;
+  name: string;
+  label: string;
+  description?: string;
+};
+
+const skillModules = import.meta.glob<MarkdownInstance<SkillFrontmatter>>(
+  "/skills/*/SKILL.md",
+  { eager: true },
+);
+const skillRawModules = import.meta.glob<string>("/skills/*/SKILL.md", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+});
+const skillEntries = Object.entries(skillModules).map(([path, module]) => {
+  const entrySlug = path.split("/").at(-2) ?? "";
+
+  return { slug: entrySlug, module };
+});
+const skillRawEntries = Object.entries(skillRawModules).map(([path, raw]) => {
+  const entrySlug = path.split("/").at(-2) ?? "";
+
+  return { slug: entrySlug, raw };
+});
+
+export function getStaticPaths() {
+  return skills.map((skill) => ({
+    params: { slug: skill.slug },
+    props: skill,
+  }));
+}
+
+const { slug } = Astro.props as SkillEntry;
+const skillList = skills as SkillEntry[];
+const skill = skillList.find((entry) => entry.slug === slug);
+const skillModule = skillEntries.find((entry) => entry.slug === slug)?.module;
+const skillRaw =
+  skillRawEntries.find((entry) => entry.slug === slug)?.raw ?? "";
+const SkillContent = skillModule?.Content;
+const commandSegments = [
+  { text: "npx", className: "text-[#953800]" },
+  { text: " ui-skills", className: "text-[#0a3069]" },
+  { text: " add", className: "text-[#0550ae]" },
+  { text: ` ${slug}`, className: "text-parchment-400" },
+];
+---
+
+<Layout>
+  <div
+    class="bg-parchment-50 relative flex min-h-dvh flex-col items-center justify-start px-0 sm:px-4"
+  >
+    <div
+      class="pointer-events-none absolute inset-0 mask-t-from-60% mask-t-to-100% mask-b-from-80% mask-b-to-100%"
+      aria-hidden="true"
+    >
+      <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern
+            id="small-grid"
+            width="10"
+            height="10"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 10 0 L 0 0 0 10"
+              fill="none"
+              stroke="#78716c"
+              stroke-opacity="0.1"
+              stroke-width="0.5"></path>
+          </pattern>
+          <pattern
+            id="grid"
+            width="50"
+            height="50"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="50" height="50" fill="url(#small-grid)"></rect>
+            <path
+              d="M 50 0 L 0 0 0 50"
+              fill="none"
+              stroke="#78716c"
+              stroke-opacity="0.2"
+              stroke-width="1"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)"></rect>
+      </svg>
+    </div>
+
+    <div class="relative mt-20 w-full max-w-3xl sm:px-0">
+      <div class="mx-auto flex w-full flex-col gap-14">
+        <div class="px-4 sm:px-0">
+          <a
+            href="/"
+            class="text-parchment-500 hover:text-parchment-900 text-sm font-medium"
+          >
+            Back to home
+          </a>
+          <h1
+            class="text-parchment-900 mt-3 text-3xl font-medium tracking-tight"
+          >
+            {skill?.label ?? slug}
+          </h1>
+          <p class="text-parchment-600 mt-3 text-lg">
+            {skill?.description ?? "Install this skill with a single command."}
+          </p>
+        </div>
+
+        <div>
+          <h2
+            class="text-parchment-900 mb-3 px-4 text-lg font-medium tracking-tight sm:px-0"
+          >
+            Install
+          </h2>
+          <CodeBlock lines={[commandSegments]} align="center" />
+        </div>
+
+        <SkillCard
+          copyContent={skillRaw}
+          name={skill?.name ?? slug}
+          description={skill?.description}
+          dataEvent="install"
+        >
+          {SkillContent ? <SkillContent /> : null}
+        </SkillCard>
+      </div>
+    </div>
+  </div>
+</Layout>

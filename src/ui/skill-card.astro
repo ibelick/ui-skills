@@ -1,0 +1,36 @@
+---
+import { CopyButton } from "./copy-button";
+
+type Props = {
+  copyContent: string;
+  name?: string;
+  description?: string;
+  dataEvent?: string;
+};
+
+const { copyContent, name, description, dataEvent } = Astro.props as Props;
+const hasFrontmatter = Boolean(name ?? description);
+---
+
+<div
+  class="relative w-full max-w-3xl rounded-none border-t border-b border-neutral-200 bg-white py-3.5 pt-6 pr-4 pl-6 shadow-2xs sm:rounded-[8px] sm:border-none sm:shadow-2xs sm:ring-1 sm:ring-black/10"
+>
+  <div class="sticky top-0 right-0">
+    <div class="absolute top-0 right-0">
+      <CopyButton content={copyContent} client:load data-s-event={dataEvent} />
+    </div>
+  </div>
+  <div
+    class="prose prose-neutral prose-headings:text-balance prose-headings:font-medium prose-headings:text-[15px] prose-h1:mt-0 prose-h1:mb-6 prose-h1:text-[18px] prose-h2:mt-8 prose-h2:mb-3 prose-p:my-3 prose-p:font-normal prose-p:text-[14px] prose-p:text-parchment-600 prose-p:text-pretty prose-ul:my-3 prose-li:my-1.5 prose-li:pl-0 prose-li:font-normal prose-li:text-[14px] prose-li:text-parchment-600 prose-li:marker:text-parchment-300 max-w-none font-mono"
+  >
+    {hasFrontmatter ? (
+      <div class="text-parchment-400 mb-8 text-[14px]">
+        <div>---</div>
+        {name ? <div>name: {name}</div> : null}
+        {description ? <div>description: {description}</div> : null}
+        <div>---</div>
+      </div>
+    ) : null}
+    <slot />
+  </div>
+</div>
