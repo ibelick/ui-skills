@@ -14,7 +14,7 @@ export type Skill = {
 };
 
 const skillOrder = [
-  "starting-ui",
+  "baseline-ui",
   "fixing-motion-performance",
   "fixing-accessibility",
   "fixing-metadata",

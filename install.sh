@@ -58,6 +58,7 @@ print_error() {
 }
 
 # Configuration
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 DEFAULT_SKILL="baseline-ui"
 ALL_SKILLS="baseline-ui fixing-accessibility fixing-metadata fixing-motion-performance"
 SKILL_URL_BASE="https://ui-skills.com/skills"
@@ -68,6 +69,12 @@ elif [ -n "$1" ]; then
   SKILLS="$1"
 else
   SKILLS="$DEFAULT_SKILL"
+fi
+
+if [ "$SKILLS" != "${SKILLS#* }" ]; then
+  COMPACT_OUTPUT=1
+else
+  COMPACT_OUTPUT=0
 fi
 
 print_ascii
@@ -85,6 +92,14 @@ trap cleanup EXIT
 download_skill() {
   skill_slug="$1"
   skill_url="$SKILL_URL_BASE/$skill_slug/llms.txt"
+  local_skill="${SCRIPT_DIR}/skills/${skill_slug}/SKILL.md"
+
+  if [ -f "$local_skill" ]; then
+    cp "$local_skill" "$TMP_SKILL"
+    cp "$TMP_SKILL" "$TMP_COMMAND"
+    return
+  fi
+
   print_info "Downloading..."
   if command -v curl >/dev/null 2>&1; then
     curl -fsSL "$skill_url" -o "$TMP_SKILL"
@@ -104,6 +119,7 @@ download_skill() {
 }
 
 OPTIONAL_INSTALLED=0
+SKILL_INSTALLED=0
 
 install_skill() {
   base_dir="$1"
@@ -112,8 +128,11 @@ install_skill() {
   skill_file="$skill_dir/SKILL.md"
   mkdir -p "$skill_dir"
   cp "$TMP_SKILL" "$skill_file"
-  print_success "$label skill installed"
+  if [ "$COMPACT_OUTPUT" -eq 0 ]; then
+    print_success "$label skill installed"
+  fi
   OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+  SKILL_INSTALLED=$((SKILL_INSTALLED + 1))
 }
 
 maybe_install_project_skill() {
@@ -124,22 +143,21 @@ maybe_install_project_skill() {
   if [ -d "$base_dir" ]; then
     mkdir -p "$skill_dir"
     cp "$TMP_SKILL" "$skill_file"
-    print_success "$label project skill installed"
+    if [ "$COMPACT_OUTPUT" -eq 0 ]; then
+      print_success "$label project skill installed"
+    fi
     OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+    SKILL_INSTALLED=$((SKILL_INSTALLED + 1))
   fi
 }
 
 for SKILL_SLUG in $SKILLS; do
   INSTALL_DIRNAME="$SKILL_SLUG"
   INSTALL_NAME="${SKILL_SLUG}.md"
-  SKILL_SOURCE_SLUG="$SKILL_SLUG"
-
-  if [ "$SKILL_SLUG" = "baseline-ui" ]; then
-    SKILL_SOURCE_SLUG="starting-ui"
-  fi
+  SKILL_INSTALLED=0
 
   print_info "Installing ${SKILL_SLUG}..."
-  download_skill "$SKILL_SOURCE_SLUG"
+  download_skill "$SKILL_SLUG"
   printf "\n"
 
   # Project skills (auto-detect)
@@ -154,7 +172,6 @@ for SKILL_SLUG in $SKILLS; do
   maybe_install_project_skill "${PWD}/.gemini/skills" "Gemini CLI"
   maybe_install_project_skill "${PWD}/.agent/skills" "Antigravity"
   maybe_install_project_skill "${PWD}/.github/skills" "GitHub Copilot"
-  maybe_install_project_skill "${PWD}/skills" "Clawdbot"
   maybe_install_project_skill "${PWD}/.factory/skills" "Droid"
   maybe_install_project_skill "${PWD}/.windsurf/skills" "Windsurf"
 
@@ -163,8 +180,11 @@ for SKILL_SLUG in $SKILLS; do
     CLAUDE_PROJECT_COMMAND_DIR="${PWD}/.claude/commands"
     mkdir -p "$CLAUDE_PROJECT_COMMAND_DIR"
     cp "$TMP_COMMAND" "$CLAUDE_PROJECT_COMMAND_DIR/$INSTALL_NAME"
-    print_success "Claude project command installed"
+    if [ "$COMPACT_OUTPUT" -eq 0 ]; then
+      print_success "Claude project command installed"
+    fi
     OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+    SKILL_INSTALLED=$((SKILL_INSTALLED + 1))
   fi
 
   # Cursor (project commands)
@@ -172,8 +192,11 @@ for SKILL_SLUG in $SKILLS; do
     CURSOR_PROJECT_COMMAND_DIR="${PWD}/.cursor/commands"
     mkdir -p "$CURSOR_PROJECT_COMMAND_DIR"
     cp "$TMP_COMMAND" "$CURSOR_PROJECT_COMMAND_DIR/$INSTALL_NAME"
-    print_success "Cursor project command installed"
+    if [ "$COMPACT_OUTPUT" -eq 0 ]; then
+      print_success "Cursor project command installed"
+    fi
     OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+    SKILL_INSTALLED=$((SKILL_INSTALLED + 1))
   fi
 
   # Claude Code (personal skills directory, if detected)
@@ -260,8 +283,11 @@ for SKILL_SLUG in $SKILLS; do
     OPENCODE_COMMAND_DIR="$HOME/.config/opencode/command"
     mkdir -p "$OPENCODE_COMMAND_DIR"
     cp "$TMP_COMMAND" "$OPENCODE_COMMAND_DIR/$INSTALL_NAME"
-    print_success "OpenCode command installed"
+    if [ "$COMPACT_OUTPUT" -eq 0 ]; then
+      print_success "OpenCode command installed"
+    fi
     OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+    SKILL_INSTALLED=$((SKILL_INSTALLED + 1))
   fi
 
   # Cursor (commands folder)
@@ -269,8 +295,11 @@ for SKILL_SLUG in $SKILLS; do
     CURSOR_COMMAND_DIR="$HOME/.cursor/commands"
     mkdir -p "$CURSOR_COMMAND_DIR"
     cp "$TMP_COMMAND" "$CURSOR_COMMAND_DIR/$INSTALL_NAME"
-    print_success "Cursor command installed"
+    if [ "$COMPACT_OUTPUT" -eq 0 ]; then
+      print_success "Cursor command installed"
+    fi
     OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+    SKILL_INSTALLED=$((SKILL_INSTALLED + 1))
   fi
 
   # Claude Code (commands folder)
@@ -282,8 +311,11 @@ for SKILL_SLUG in $SKILLS; do
     fi
     mkdir -p "$CLAUDE_COMMAND_DIR"
     cp "$TMP_COMMAND" "$CLAUDE_COMMAND_DIR/$INSTALL_NAME"
-    print_success "Claude Code command installed"
+    if [ "$COMPACT_OUTPUT" -eq 0 ]; then
+      print_success "Claude Code command installed"
+    fi
     OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+    SKILL_INSTALLED=$((SKILL_INSTALLED + 1))
   fi
 
   # Windsurf (append to global_rules.md)
@@ -293,7 +325,9 @@ for SKILL_SLUG in $SKILLS; do
     RULES_FILE="$WINDSURF_DIR/global_rules.md"
     mkdir -p "$WINDSURF_DIR"
     if [ -f "$RULES_FILE" ] && grep -q "$MARKER" "$RULES_FILE"; then
-      print_success "Windsurf already updated"
+      if [ "$COMPACT_OUTPUT" -eq 0 ]; then
+        print_success "Windsurf already updated"
+      fi
     else
       if [ -f "$RULES_FILE" ]; then
         printf "\n" >> "$RULES_FILE"
@@ -301,9 +335,12 @@ for SKILL_SLUG in $SKILLS; do
       printf "%s\n\n" "$MARKER" >> "$RULES_FILE"
       cat "$TMP_COMMAND" >> "$RULES_FILE"
       printf "\n" >> "$RULES_FILE"
-      print_success "Windsurf updated"
+      if [ "$COMPACT_OUTPUT" -eq 0 ]; then
+        print_success "Windsurf updated"
+      fi
     fi
     OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+    SKILL_INSTALLED=$((SKILL_INSTALLED + 1))
   fi
 
   # Gemini CLI (TOML command format)
@@ -317,8 +354,19 @@ prompt = """
 TOMLEOF
     cat "$TMP_COMMAND" >> "$TOML_FILE"
     printf "\n\"\"\"\n" >> "$TOML_FILE"
-    print_success "Gemini CLI command installed"
+    if [ "$COMPACT_OUTPUT" -eq 0 ]; then
+      print_success "Gemini CLI command installed"
+    fi
     OPTIONAL_INSTALLED=$((OPTIONAL_INSTALLED + 1))
+    SKILL_INSTALLED=$((SKILL_INSTALLED + 1))
+  fi
+
+  if [ "$COMPACT_OUTPUT" -eq 1 ]; then
+    if [ "$SKILL_INSTALLED" -eq 0 ]; then
+      print_info "${SKILL_SLUG} installed (no tool locations detected)"
+    else
+      print_success "${SKILL_SLUG} installed in ${SKILL_INSTALLED} locations"
+    fi
   fi
 done
 
