@@ -1,18 +1,18 @@
 ---
-name: ui-skills
-description: Opinionated constraints for building better interfaces with agents.
+name: baseline-ui
+description: Enforces an opinionated UI baseline to prevent AI-generated interface slop.
 ---
 
-# UI Skills
+# Baseline UI
 
-When invoked, apply these opinionated constraints for building better interfaces.
+Enforces an opinionated UI baseline to prevent AI-generated interface slop.
 
 ## How to use
 
-- `/ui-skills`  
+- `/baseline-ui`
   Apply these constraints to any UI work in this conversation.
 
-- `/ui-skills <file>`  
+- `/baseline-ui <file>`
   Review the file against all constraints below and output:
   - violations (quote the exact line/snippet)
   - why it matters (1 short sentence)
