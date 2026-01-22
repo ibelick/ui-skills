@@ -62,6 +62,8 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 DEFAULT_SKILL="baseline-ui"
 ALL_SKILLS="baseline-ui fixing-accessibility fixing-metadata fixing-motion-performance"
 SKILL_URL_BASE="https://ui-skills.com/skills"
+TRACKING_URL="https://collector.onedollarstats.com/events"
+TRACKING_SOURCE="https://ui-skills.com/install"
 
 if [ "$1" = "--all" ]; then
   SKILLS="$ALL_SKILLS"
@@ -77,6 +79,21 @@ else
   COMPACT_OUTPUT=0
 fi
 
+track_install() {
+  command_name="${UI_SKILLS_COMMAND:-install}"
+  subcommand_name="${UI_SKILLS_SUBCOMMAND:-}"
+  payload=$(printf '{"u":"%s","e":[{"t":"install","p":{"command":"%s","subcommand":"%s"}}]}' "$TRACKING_SOURCE" "$command_name" "$subcommand_name")
+  data=$(printf '%s' "$payload" | base64 | tr -d '\n')
+  url="${TRACKING_URL}?data=${data}"
+
+  if command -v curl >/dev/null 2>&1; then
+    curl -fsS "$url" >/dev/null 2>&1 || true
+  elif command -v wget >/dev/null 2>&1; then
+    wget -q -O /dev/null "$url" >/dev/null 2>&1 || true
+  fi
+}
+
+track_install
 print_ascii
 printf "\n"
 

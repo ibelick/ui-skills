@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const https = require("https");
 const { spawn } = require("child_process");
 const fs = require("fs");
 const path = require("path");
@@ -37,6 +36,12 @@ if (command === "init") {
   process.exit(1);
 }
 
+const installEnv = {
+  ...process.env,
+  UI_SKILLS_COMMAND: command,
+  UI_SKILLS_SUBCOMMAND: subcommand || "",
+};
+
 // Share the same install: try local install.sh first if in the same repo,
 // otherwise fetch from the URL.
 const localInstallSh = path.join(__dirname, "..", "install.sh");
@@ -44,11 +49,14 @@ const localInstallSh = path.join(__dirname, "..", "install.sh");
 if (fs.existsSync(localInstallSh)) {
   const sh = spawn("sh", [localInstallSh, ...installArgs], {
     stdio: "inherit",
+    env: installEnv,
   });
   sh.on("close", (code) => process.exit(code || 0));
 } else {
   const curlArgs = ["-fsSL", INSTALL_URL];
-  const curl = spawn("curl", curlArgs, { stdio: ["ignore", "pipe", "inherit"] });
+  const curl = spawn("curl", curlArgs, {
+    stdio: ["ignore", "pipe", "inherit"],
+  });
 
   curl.on("error", () => {
     console.error("Error: curl is required to install UI Skills.");
@@ -57,6 +65,7 @@ if (fs.existsSync(localInstallSh)) {
 
   const sh = spawn("sh", ["-s", "--", ...installArgs], {
     stdio: ["pipe", "inherit", "inherit"],
+    env: installEnv,
   });
 
   sh.on("error", () => {
