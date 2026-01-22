@@ -62,46 +62,8 @@ const commandSegments = [
 
 <Layout llmsPath={`/skills/${slug}/llms.txt`}>
   <div
-    class="bg-parchment-50 relative flex min-h-dvh flex-col items-center justify-start px-0 sm:px-4"
+    class="relative flex min-h-dvh flex-col items-center justify-start px-0 sm:px-4"
   >
-    <div
-      class="pointer-events-none absolute inset-0 mask-t-from-60% mask-t-to-100% mask-b-from-80% mask-b-to-100%"
-      aria-hidden="true"
-    >
-      <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern
-            id="small-grid"
-            width="10"
-            height="10"
-            patternUnits="userSpaceOnUse"
-          >
-            <path
-              d="M 10 0 L 0 0 0 10"
-              fill="none"
-              stroke="#78716c"
-              stroke-opacity="0.1"
-              stroke-width="0.5"></path>
-          </pattern>
-          <pattern
-            id="grid"
-            width="50"
-            height="50"
-            patternUnits="userSpaceOnUse"
-          >
-            <rect width="50" height="50" fill="url(#small-grid)"></rect>
-            <path
-              d="M 50 0 L 0 0 0 50"
-              fill="none"
-              stroke="#78716c"
-              stroke-opacity="0.2"
-              stroke-width="1"></path>
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)"></rect>
-      </svg>
-    </div>
-
     <div class="relative mt-20 w-full max-w-3xl sm:px-0">
       <div class="mx-auto flex w-full flex-col gap-14">
         <div class="px-4 sm:px-0">

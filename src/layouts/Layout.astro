@@ -43,51 +43,90 @@ const currentYear = new Date().getFullYear();
     <script defer src="https://assets.onedollarstats.com/stonks.js"></script>
   </head>
   <body>
-    <header
-      class="absolute inset-x-0 top-0 z-10 flex justify-end px-4 pt-6 sm:px-8"
-    >
-      <a
-        href="https://github.com/ibelick/ui-skills"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-parchment-500 hover:text-parchment-900 text-sm font-medium"
+    <div class="relative min-h-dvh">
+      <header
+        class="absolute inset-x-0 top-0 z-10 flex justify-end px-4 pt-6 sm:px-8"
       >
-        GitHub
-      </a>
-    </header>
-    <slot />
-    <footer
-      class="text-parchment-400 mt-24 flex w-full items-center justify-center gap-3 px-4 pb-6 text-center text-sm font-medium sm:px-0"
-    >
-      <span>
-        <span>©{currentYear}</span>
         <a
-          href="https://interfaceoffice.com"
+          href="https://github.com/ibelick/ui-skills"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-parchment-400 hover:text-parchment-900"
+          class="text-parchment-500 hover:text-parchment-900 text-sm font-medium"
         >
-          Interface Office
+          GitHub
         </a>
-      </span>
-      <span class="text-parchment-200">·</span>
-      <a
-        href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-parchment-900"
+      </header>
+      <div
+        class="pointer-events-none absolute inset-0 mask-t-from-60% mask-t-to-100% mask-b-from-90% mask-b-to-100%"
+        aria-hidden="true"
       >
-        Claude Skills
-      </a>
-      {llmsPath ? <span class="text-parchment-200">·</span> : null}
-      {
-        llmsPath ? (
-          <a href={llmsPath} class="hover:text-parchment-900">
-            llms.txt
+        <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern
+              id="small-grid"
+              width="10"
+              height="10"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 10 0 L 0 0 0 10"
+                fill="none"
+                stroke="#78716c"
+                stroke-opacity="0.1"
+                stroke-width="0.5"></path>
+            </pattern>
+            <pattern
+              id="grid"
+              width="50"
+              height="50"
+              patternUnits="userSpaceOnUse"
+            >
+              <rect width="50" height="50" fill="url(#small-grid)"></rect>
+              <path
+                d="M 50 0 L 0 0 0 50"
+                fill="none"
+                stroke="#78716c"
+                stroke-opacity="0.2"
+                stroke-width="1"></path>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)"></rect>
+        </svg>
+      </div>
+      <slot />
+      <footer
+        class="text-parchment-400 flex w-full items-center justify-center gap-3 px-4 pt-24 pb-6 text-center text-sm font-medium sm:px-0"
+      >
+        <span>
+          <span>©{currentYear}</span>
+          <a
+            href="https://interfaceoffice.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-parchment-400 hover:text-parchment-900"
+          >
+            Interface Office
           </a>
-        ) : null
-      }
-    </footer>
+        </span>
+        <span class="text-parchment-200">·</span>
+        <a
+          href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview?utm_source=ui-skills.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-parchment-900"
+        >
+          Claude Skills
+        </a>
+        {llmsPath ? <span class="text-parchment-200">·</span> : null}
+        {
+          llmsPath ? (
+            <a href={llmsPath} class="hover:text-parchment-900">
+              llms.txt
+            </a>
+          ) : null
+        }
+      </footer>
+    </div>
   </body>
 </html>
 
