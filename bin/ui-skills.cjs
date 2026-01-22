@@ -8,9 +8,32 @@ const INSTALL_URL = "https://ui-skills.com/install";
 
 const args = process.argv.slice(2);
 const command = args[0];
+const subcommand = args[1];
 
-if (command !== "init") {
-  console.error("Usage: npx ui-skills init");
+const BASELINE_SKILL = "baseline-ui";
+
+const printUsage = () => {
+  console.error("Usage:");
+  console.error("  npx ui-skills init");
+  console.error("  npx ui-skills add <skill>");
+  console.error("  npx ui-skills add --all");
+};
+
+let installArgs = [];
+
+if (command === "init") {
+  installArgs = [BASELINE_SKILL];
+} else if (command === "add") {
+  if (subcommand === "--all") {
+    installArgs = ["--all"];
+  } else if (subcommand) {
+    installArgs = [subcommand];
+  } else {
+    printUsage();
+    process.exit(1);
+  }
+} else {
+  printUsage();
   process.exit(1);
 }
 
@@ -19,7 +42,9 @@ if (command !== "init") {
 const localInstallSh = path.join(__dirname, "..", "install.sh");
 
 if (fs.existsSync(localInstallSh)) {
-  const sh = spawn("sh", [localInstallSh], { stdio: "inherit" });
+  const sh = spawn("sh", [localInstallSh, ...installArgs], {
+    stdio: "inherit",
+  });
   sh.on("close", (code) => process.exit(code || 0));
 } else {
   const curlArgs = ["-fsSL", INSTALL_URL];
@@ -30,7 +55,9 @@ if (fs.existsSync(localInstallSh)) {
     process.exit(1);
   });
 
-  const sh = spawn("sh", [], { stdio: ["pipe", "inherit", "inherit"] });
+  const sh = spawn("sh", ["-s", "--", ...installArgs], {
+    stdio: ["pipe", "inherit", "inherit"],
+  });
 
   sh.on("error", () => {
     console.error("Error: sh is required to run the installer.");

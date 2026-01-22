@@ -1,0 +1,34 @@
+---
+import { CopyButton } from "./copy-button";
+
+type Props = {
+  lines?: Array<Array<{ text: string; className?: string }>>;
+  copyContent?: string;
+  align?: "start" | "center";
+};
+
+const { lines = [], copyContent, align = "start" } = Astro.props as Props;
+const content =
+  copyContent ??
+  lines
+    .map((line) => line.map((segment) => segment.text).join(""))
+    .join("\n");
+const alignClass = align === "center" ? "items-center" : "items-start";
+---
+
+<div
+  class={`relative flex justify-between rounded-none border-t border-b border-neutral-200 bg-white py-3.5 pr-4 pl-6 shadow-2xs sm:rounded-[8px] sm:border-none sm:ring-1 sm:ring-black/10 ${alignClass}`}
+>
+  <code class="font-mono text-[15px] leading-6">
+    {lines.map((line) => (
+      <div>
+        {line.map((segment) => (
+          <span class={segment.className}>{segment.text}</span>
+        ))}
+      </div>
+    ))}
+  </code>
+  <div class="flex items-center gap-1">
+    <CopyButton content={content} showText={false} className="size-8" client:load />
+  </div>
+</div>
