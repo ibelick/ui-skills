@@ -4,7 +4,7 @@
 
 The open taste layer for agent-generated UI.
 
-A growing set of skills to refine agent-generated interfaces.
+A set of skills to polish interfaces built by agents.
 
 ## Installation
 
