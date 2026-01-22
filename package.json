@@ -1,7 +1,7 @@
 {
   "name": "ui-skills",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "license": "MIT",
   "bin": {
     "ui-skills": "./bin/ui-skills.cjs"
