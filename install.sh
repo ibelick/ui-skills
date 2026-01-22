@@ -165,7 +165,6 @@ for SKILL_SLUG in $SKILLS; do
   maybe_install_project_skill "${PWD}/.claude/skills" "Claude Code"
   maybe_install_project_skill "${PWD}/.codex/skills" "Codex"
   maybe_install_project_skill "${PWD}/.cursor/skills" "Cursor"
-  maybe_install_project_skill "${PWD}/.agents/skills" "Amp"
   maybe_install_project_skill "${PWD}/.kilocode/skills" "Kilo Code"
   maybe_install_project_skill "${PWD}/.roo/skills" "Roo Code"
   maybe_install_project_skill "${PWD}/.goose/skills" "Goose"
