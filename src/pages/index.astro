@@ -23,9 +23,6 @@ const skillList = skills as Array<{
             UI Skills
           </h1>
           <p class="text-parchment-600 mt-3 text-lg">
-            The open taste layer for agent-generated UI.
-          </p>
-          <p class="text-parchment-500 mt-3 text-lg">
             A set of skills to polish interfaces built by agents.
           </p>
         </div>
@@ -46,10 +43,19 @@ const skillList = skills as Array<{
           <h2
             class="text-parchment-900 mb-3 px-4 text-lg font-medium tracking-tight sm:px-0"
           >
-            Add a skill
+            Add a specific skill
           </h2>
           <CodeBlock
             lines={[
+              [
+                { text: "npx", className: "text-[#953800]" },
+                { text: " ui-skills", className: "text-[#0a3069]" },
+                { text: " add", className: "text-[#0550ae]" },
+                {
+                  text: " baseline-ui",
+                  className: "text-parchment-400",
+                },
+              ],
               [
                 { text: "npx", className: "text-[#953800]" },
                 { text: " ui-skills", className: "text-[#0a3069]" },
@@ -131,16 +137,6 @@ const skillList = skills as Array<{
                 </a>
               ))
             }
-            <a
-              href="https://github.com/ibelick/ui-skills/issues/new"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:border-parchment-300 relative flex items-center justify-between rounded-none border-t border-b border-neutral-200 bg-white py-3.5 pr-4 pl-6 shadow-2xs transition-colors sm:rounded-[8px] sm:border-none sm:ring-1 sm:ring-black/10"
-            >
-              <div class="text-parchment-600 text-[13px]">
-                Have an idea or improvement? Open an issue on GitHub.
-              </div>
-            </a>
           </div>
         </div>
       </div>

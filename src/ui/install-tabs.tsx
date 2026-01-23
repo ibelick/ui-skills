@@ -12,12 +12,13 @@ const tabs: InstallTab[] = [
   {
     id: "npx",
     label: "npx",
-    command: "npx ui-skills init",
+    command: "npx skills add ibelick/ui-skills",
     content: (
       <>
         <span className="text-[#953800]">npx</span>
-        <span className="text-[#0a3069]"> ui-skills</span>
-        <span className="text-[#0550ae]"> init</span>
+        <span className="text-[#0a3069]"> skills</span>
+        <span className="text-[#0550ae]"> add</span>
+        <span className="text-parchment-400"> ibelick/ui-skills</span>
       </>
     ),
   },

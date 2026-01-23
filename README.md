@@ -2,17 +2,15 @@
 
 ![UI Skills](./public/cover.webp)
 
-The open taste layer for agent-generated UI.
-
 A set of skills to polish interfaces built by agents.
 
 ## Installation
 
 ```bash
-npx ui-skills init
+npx skills add ibelick/ui-skills
 ```
 
-## Add skills
+## Add a specific skill
 
 ```bash
 npx ui-skills add baseline-ui
