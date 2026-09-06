@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-06T06:01:47.881Z",
-  "skillCount": 289,
+  "generatedAt": "2026-09-06T14:01:55.298Z",
+  "skillCount": 290,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
     "ibelick/baseline-ui": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
@@ -177,7 +177,7 @@
     "jakubkrehel/better-accessibility": "sha256:59a0d8ad310be843566a18bfd839a38f46335110aa31673c4468c9e0172c5350",
     "github/gh-stack": "sha256:5d966fc1ff92014db49d6689f41f70ddf1af40879f9dc8a12bb75b82d7850c25",
     "elayadesign/landing-page-design": "sha256:3aae79f3d33ea293491fe6251f9fee56ee0cbb7aa66d41b3f29cfc662e4bbdd6",
-    "aminblg/simple-english": "sha256:7908df2efe6ec87e9d6e0f934605f186cf1a36043797994db6f4b2cc28432989",
+    "aminblg/simple-english": "sha256:49e0b038b63fa34a7239338d1e423b775e23b85cb077f4073940edd09e082911",
     "flornkm/smooth-shadow-ring": "sha256:acc6717961c4cc0719b005e86f6d916be486b415efcf769de4ae5a76993e518a",
     "emilkowalski/prototype": "sha256:2ad8401c4deaddb54947fb65247f790e7b3d8784e35312bcbedbfb1d59cd89ce",
     "greensock/gsap-core": "sha256:3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
@@ -288,8 +288,9 @@
     "humanlayer/show-me": "sha256:bea6da70a58096730b9aeb0bae293ddf4726103a98efc9ce13c481619942a810",
     "joe-bell/apple-web-app": "sha256:c53d23919b819556f7783818b3d021c26201c68326a628ee2e7f1ea243647b73",
     "larashero3-dotcom/lieflat-charts": "sha256:1d58a31343b0f38fed16a44a65fd2fac0588ca98ffc9e43b20263d886f3ee9ce",
-    "coldteadotai/pr-lens": "sha256:78299b80adbe45eed026722e4000ac32772845234a2cf914fcab3da15cae0028",
+    "coldteadotai/pr-lens": "sha256:cbc642187e603e46257a8c84d517c6aaa31ff75cabb0dabe709afedaf1830bd6",
     "s0xdk/refactoring-ui": "sha256:2e3a4aa0b5d5fc35d7c81ca1120564a229a0ad323d21e44b4b6a3d77614446c1",
-    "sidkh/term-radar": "sha256:d48d443259cabf15e1617c7640bf77be19c0443c0af6d38c1ac383a7429208ba"
+    "sidkh/term-radar": "sha256:d48d443259cabf15e1617c7640bf77be19c0443c0af6d38c1ac383a7429208ba",
+    "mblode/ui-design": "sha256:4a49e8abf4ac24a2f1c4a648316e637b15089938527e7c85fc7be1c6fba2ef26"
   }
 }

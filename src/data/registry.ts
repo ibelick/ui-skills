@@ -3795,6 +3795,19 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "When a user describes a concept that matches an established term of art, append a concise Term radar link with a Google Images reference for that term.",
   },
+  {
+    slug: "ui-design",
+    user: "mblode",
+    repo: "agent-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mblode/agent-skills/main/skills/ui-design/SKILL.md",
+    githubUrl:
+      "https://github.com/mblode/agent-skills/blob/main/skills/ui-design/SKILL.md",
+    name: "ui-design",
+    topics: ["visual", "systems", "craft", "frontend"],
+    description:
+      "Pick a visual direction, build it in React, Next, and Tailwind, then audit the shipped UI for visual and interaction defects with file:line evidence.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
