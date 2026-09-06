@@ -77,5 +77,11 @@ export const renderSkillMarkdown = async (
     return `<a href="${escapeHtml(safeUrl)}"${titleAttribute}>${text}</a>`;
   };
 
-  return marked.parser(tokens, { renderer });
+  return marked
+    .parser(tokens, { renderer })
+    .replaceAll(
+      "<table>",
+      '<div class="skill-table-scroll"><table>',
+    )
+    .replaceAll("</table>", "</table></div>");
 };

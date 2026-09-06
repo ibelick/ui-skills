@@ -42,4 +42,17 @@ const hasFrontmatter = Boolean(name ?? description);
     overflow-wrap: anywhere;
     word-break: break-word;
   }
+
+  :global(.skill-table-scroll) {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  :global(.skill-table-scroll table) {
+    min-width: max-content;
+  }
 </style>
