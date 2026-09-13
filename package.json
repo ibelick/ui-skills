@@ -38,7 +38,8 @@
     "react-dom": "^19.2.3",
     "shiki": "^3.23.0",
     "tailwindcss": "^4.3.3",
-    "tsx": "^4.20.5"
+    "tsx": "^4.20.5",
+    "yaml": "^2.9.1"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",

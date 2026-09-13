@@ -31,11 +31,12 @@ If the goal is clear, choose the right category, load the smallest useful skill 
 
 ## CLI
 
+Use the installed executable when available. Otherwise, prefix these commands with `npx --yes`. Keep using the same executable throughout the task so local fork features remain available.
+
 ```bash
-npx ui-skills start
-npx ui-skills categories
-npx ui-skills list --category <category>
-npx ui-skills get <slug>
+ui-skills categories
+ui-skills list --category <category>
+ui-skills get <slug>
 ```
 
 ## Selection Rules
@@ -57,3 +58,15 @@ Prefer framework-specific skills when the stack is obvious.
 For quick cleanup, prefer the most specific craft, visual, or layout skill available.
 
 If unsure, inspect categories and pick the safest narrow skill.
+
+## Installed local skills
+
+When local catalogs are configured, `list` includes installed skills alongside public ones. Prefer the installed CLI when using a local fork.
+
+```bash
+ui-skills sources
+ui-skills list --source <local-source> --json
+ui-skills get <local-source>:<skill> --json
+```
+
+Select local guidance by description. Local IDs use a colon, preserving public `owner/skill` paths. `get --json` includes the skill's `markdown` and absolute `file` path; resolve relative resources from that file's directory. Local lookups work offline and read installed updates directly. Configure `localSources` in `~/.config/ui-skills/config.json` (or set `UI_SKILLS_CONFIG`), with a source `name`, directory `path`, and optional `skills` folder allowlist. Use `sources` to discover configured catalogs rather than assuming a provider is installed.

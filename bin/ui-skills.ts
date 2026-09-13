@@ -1,6 +1,7 @@
 #!/usr/bin/env -S node --experimental-strip-types
 
-export {};
+import { readFile } from "node:fs/promises";
+import { localSources, localSkills } from "./local-catalog.ts";
 
 type RemoteSkill = {
   slug: string;
@@ -48,7 +49,13 @@ const HELP = [
   "  start                     Print the routing skill",
   "  categories                List categories",
   "  list [--category <topic>] List skills",
-  "  get <slug>                Print full skill markdown",
+  "  get <slug> [--json]       Print skill Markdown or metadata and content",
+  "  sources                   List the public and configured local sources",
+  "",
+  "Local catalog options:",
+  "  list --source <name>       List one source (public or a local name)",
+  "  list --json                Print catalog entries as JSON",
+  "  get <source>:<skill>       Read an installed local skill",
   "",
   "Examples:",
   "  ui-skills start",
@@ -102,7 +109,7 @@ const formatTopic = (topic: RemoteTopic) => topic.slug;
 const formatSkill = (skill: RemoteSkill) => {
   const categories = (skill.topics ?? []).join(", ");
   const description = skill.description.replace(/\s+/g, " ").trim();
-  return `${skill.pathSlug} — ${categories} — ${description}`;
+  return `${skill.pathSlug}${categories ? ` — ${categories}` : ""} — ${description}`;
 };
 
 const resolveSkillCandidates = (registry: RemoteSkill[], input: string) => {
@@ -120,8 +127,20 @@ const resolveSkillCandidates = (registry: RemoteSkill[], input: string) => {
   return bySlug;
 };
 
-const printList = async (category?: string) => {
-  const { registry, topics } = await fetchRegistryManifest();
+const printList = async (category?: string, source?: string, json = false) => {
+  const selected =
+    source && source !== "public"
+      ? (await localSources()).filter((item) => item.name === source)
+      : undefined;
+  if (selected && !selected.length) {
+    fail(`Unknown local source: ${source}`, 3);
+    return;
+  }
+  const { registry, topics } = selected
+    ? { registry: await localSkills(selected), topics: [] }
+    : await fetchRegistryManifest();
+  if (!source && !category)
+    registry.push(...(await localSkills(await localSources())));
   const normalizedCategory = category ? normalize(category) : undefined;
   const topicSlugs = new Set(topics.map((topic) => topic.slug));
   const filtered = category
@@ -140,10 +159,27 @@ const printList = async (category?: string) => {
     return;
   }
 
-  print(filtered.map(formatSkill).join("\n"));
+  print(json ? JSON.stringify(filtered) : filtered.map(formatSkill).join("\n"));
 };
 
-const printGet = async (input: string) => {
+const printGet = async (input: string, json = false) => {
+  if (input.includes(":")) {
+    const sourceName = input.split(":")[0];
+    const sources = (await localSources()).filter(
+      (source) => source.name === sourceName,
+    );
+    const skill = (await localSkills(sources)).find(
+      (skill) => skill.pathSlug === input,
+    );
+    if (!skill) {
+      fail(`Skill not found: ${input}`, 3);
+      return;
+    }
+    const markdown = await readFile(skill.file, "utf8");
+    if (json) print(JSON.stringify({ ...skill, markdown }));
+    else process.stdout.write(markdown);
+    return;
+  }
   const { registry } = await fetchRegistryManifest();
   const candidates = resolveSkillCandidates(registry, input);
 
@@ -163,7 +199,9 @@ const printGet = async (input: string) => {
   }
 
   const skill = candidates[0];
-  process.stdout.write(await fetchSkillContent(skill.pathSlug));
+  const markdown = await fetchSkillContent(skill.pathSlug);
+  if (json) print(JSON.stringify({ ...skill, markdown }));
+  else process.stdout.write(markdown);
 };
 
 const main = async () => {
@@ -207,48 +245,78 @@ const main = async () => {
     return;
   }
 
-  if (command === "list") {
-    const args = argv.slice(1);
-
-    if (args.length === 0) {
-      await printList();
+  if (command === "sources") {
+    if (argv.length !== 1) {
+      failExtraArgs("sources");
       return;
     }
-
-    if (args.length === 1 && args[0] === "--category") {
-      fail("Missing value for --category", 1);
-      return;
-    }
-
-    if (args.length === 2 && args[0] === "--category") {
-      await printList(args[1]);
-      return;
-    }
-
-    if (args.length > 0) {
-      failExtraArgs("list");
-      return;
-    }
-
-    await printList();
+    const sources = await localSources();
+    print(
+      [
+        `public — ${SITE_URL}`,
+        ...sources.map((source) => `${source.name} — ${source.path}`),
+      ].join("\n"),
+    );
     return;
   }
 
-  if (command === "get") {
-    const args = argv.slice(1);
-
-    if (args.length > 1) {
-      failExtraArgs("get");
-      return;
+  if (command === "list" || command === "get") {
+    const flags = new Map<string, string | boolean>();
+    const positionals: string[] = [];
+    for (let i = 1; i < argv.length; i++) {
+      const arg = argv[i];
+      if (
+        arg === "--json" ||
+        (command === "list" && ["--source", "--category"].includes(arg))
+      ) {
+        if (flags.has(arg)) {
+          fail(`Duplicate option: ${arg}`);
+          return;
+        }
+        if (arg === "--json") {
+          flags.set(arg, true);
+          continue;
+        }
+        const value = argv[++i];
+        if (!value || value.startsWith("--")) {
+          fail(`Missing value for ${arg}`);
+          return;
+        }
+        flags.set(arg, value);
+      } else if (arg.startsWith("--")) {
+        fail(`Unknown option: ${arg}`);
+        return;
+      } else positionals.push(arg);
     }
-
-    const target = args[0];
-    if (!target) {
-      fail("Missing skill slug", 1);
-      return;
+    if (command === "list") {
+      if (positionals.length) {
+        failExtraArgs("list");
+        return;
+      }
+      if (
+        flags.has("--category") &&
+        flags.has("--source") &&
+        flags.get("--source") !== "public"
+      ) {
+        fail("Local sources have no categories; use list --source <name>");
+        return;
+      }
+      await printList(
+        flags.get("--category") as string | undefined,
+        flags.get("--source") as string | undefined,
+        flags.has("--json"),
+      );
+    } else {
+      if (positionals.length > 1) {
+        failExtraArgs("get");
+        return;
+      }
+      if (!positionals.length) {
+        fail("Missing skill slug");
+        return;
+      }
+      await printGet(positionals[0], flags.has("--json"));
     }
-
-    await printGet(target);
     return;
   }
 
@@ -257,7 +325,7 @@ const main = async () => {
 
 await main().catch((error) => {
   fail(
-    `Error communicating with ui-skills.com: ${error instanceof Error ? error.message : String(error)}`,
+    `ui-skills: ${error instanceof Error ? error.message : String(error)}`,
     4,
   );
 });
