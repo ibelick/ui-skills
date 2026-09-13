@@ -13,8 +13,8 @@ import {
   symlink,
   readdir,
 } from "node:fs/promises";
-import { tmpdir } from "node:os";
-import { join, resolve, dirname } from "node:path";
+import { tmpdir, homedir } from "node:os";
+import { join, resolve, dirname, relative } from "node:path";
 
 const exec = promisify(execFile);
 const cli = resolve("bin/ui-skills.js");
@@ -38,6 +38,7 @@ test("local catalog through the real CLI", async (t) => {
     '---\nname: forms\ndescription: "Forms: accessible controls."\n---\n\nLocal forms\n',
   );
   await symlink(shared, join(installed, "forms"));
+  await symlink(join(shared, "SKILL.md"), join(installed, "readme"));
   await mkdir(join(installed, "unrelated"));
   await writeFile(
     join(installed, "unrelated", "SKILL.md"),
@@ -132,6 +133,10 @@ test("local catalog through the real CLI", async (t) => {
       const publicSkill = await run(["get", "team/forms"]);
       success(publicSkill);
       assert.match(publicSkill.stdout, /^# Public/);
+      const publicJson = await run(["get", "team/forms", "--json"]);
+      success(publicJson);
+      assert.equal(JSON.parse(publicJson.stdout).markdown, publicSkill.stdout);
+      assert.equal(JSON.parse(publicJson.stdout).pathSlug, "team/forms");
       const bare = await run(["get", "forms"]);
       success(bare);
       assert.equal(bare.stdout, publicSkill.stdout);
@@ -225,6 +230,7 @@ test("local catalog through the real CLI", async (t) => {
         [{ ...source, name: "public" }],
         [{ ...source, skills: ["../shared"] }],
         [{ ...source, skills: ["missing"] }],
+        [{ ...source, skills: ["readme"] }],
       ]) {
         await config(sources);
         const result = await run(["list"]);
@@ -258,6 +264,16 @@ test("local catalog through the real CLI", async (t) => {
     },
   );
 
+  await t.test("default XDG config and home-relative source paths", async () => {
+    await mkdir(join(root, "ui-skills"));
+    await writeFile(join(root, "ui-skills", "config.json"), JSON.stringify({
+      localSources: [{ ...source, path: `~/${relative(homedir(), installed)}`, skills: ["design"] }],
+    }));
+    const result = await run(["get", "team:design", "--json"], { UI_SKILLS_CONFIG: "" });
+    success(result);
+    assert.equal(JSON.parse(result.stdout).file, join(installed, "design", "SKILL.md"));
+  });
+
   await t.test(
     "original start behavior and argument validation remain intact",
     async () => {
@@ -267,6 +283,8 @@ test("local catalog through the real CLI", async (t) => {
       for (const args of [
         ["get"],
         ["list", "--source"],
+        ["list", "--source="],
+        ["list", "--category", ""],
         ["get", "team:design", "--source", "team"],
         ["list", "--json", "--json"],
         ["list", "--source", "team", "--category", "motion"],

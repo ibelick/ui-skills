@@ -23,15 +23,15 @@ If the goal is clear, choose the right category, load the smallest useful skill 
 
 1. decide if the task is UI-related
 2. if not, return `no skill needed`
-3. identify the likely category
-4. inspect that category with the CLI
+3. run `ui-skills sources` to discover configured local catalogs
+4. inspect relevant local sources with `list --source <name> --json` and public categories with `list --category <category>`
 5. select the smallest useful skill set
 6. load only selected skill(s)
 7. implement using that context
 
 ## CLI
 
-Use the installed executable when available. Otherwise, prefix these commands with `npx --yes`. Keep using the same executable throughout the task so local fork features remain available.
+Use the installed executable when available. Otherwise, prefix these commands with `npx --yes`. Keep using the same executable throughout the task.
 
 ```bash
 ui-skills categories
@@ -61,12 +61,11 @@ If unsure, inspect categories and pick the safest narrow skill.
 
 ## Installed local skills
 
-When local catalogs are configured, `list` includes installed skills alongside public ones. Prefer the installed CLI when using a local fork.
+`list` includes configured local skills alongside public ones. Local skills have no categories; select them by description.
 
 ```bash
-ui-skills sources
 ui-skills list --source <local-source> --json
 ui-skills get <local-source>:<skill> --json
 ```
 
-Select local guidance by description. Local IDs use a colon, preserving public `owner/skill` paths. `get --json` includes the skill's `markdown` and absolute `file` path; resolve relative resources from that file's directory. Local lookups work offline and read installed updates directly. Configure `localSources` in `~/.config/ui-skills/config.json` (or set `UI_SKILLS_CONFIG`), with a source `name`, directory `path`, and optional `skills` folder allowlist. Use `sources` to discover configured catalogs rather than assuming a provider is installed.
+Local IDs use `source:skill`; public `owner/skill` paths retain their meaning. Local lookups work offline. `get --json` includes `markdown` and the absolute `file` path; resolve relative resources from that file's directory.

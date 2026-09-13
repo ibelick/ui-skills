@@ -19,8 +19,8 @@ const object = (value: unknown): value is Record<string, unknown> =>
   typeof value === "object" && value !== null && !Array.isArray(value);
 const validName = (value: unknown): value is string =>
   typeof value === "string" && /^[a-z0-9][a-z0-9_-]*$/.test(value);
-const missing = (error: unknown) =>
-  (error as NodeJS.ErrnoException).code === "ENOENT";
+const errorCode = (error: unknown) =>
+  error instanceof Error && "code" in error ? error.code : undefined;
 const expandHome = (path: string) =>
   path.startsWith("~/") ? join(homedir(), path.slice(2)) : path;
 
@@ -39,7 +39,8 @@ export async function localSources(): Promise<LocalSource[]> {
   try {
     config = JSON.parse(await readFile(configPath, "utf8"));
   } catch (error) {
-    if (missing(error) && !process.env.UI_SKILLS_CONFIG) return [];
+    if (errorCode(error) === "ENOENT" && !process.env.UI_SKILLS_CONFIG)
+      return [];
     throw new Error(`Cannot read valid config at ${configPath}`);
   }
   if (
@@ -48,7 +49,7 @@ export async function localSources(): Promise<LocalSource[]> {
     (config.localSources !== undefined && !Array.isArray(config.localSources))
   )
     throw new Error("Config must contain only a localSources array");
-  const sources = (config.localSources ?? []) as unknown[];
+  const sources: unknown[] = config.localSources ?? [];
   const result = sources.map((source) => {
     if (
       !object(source) ||
@@ -63,11 +64,12 @@ export async function localSources(): Promise<LocalSource[]> {
       throw new Error(
         "Local sources need a unique name other than public and a directory path",
       );
+    const { skills } = source;
     if (
-      source.skills !== undefined &&
-      (!Array.isArray(source.skills) ||
-        !source.skills.every(validName) ||
-        new Set(source.skills).size !== source.skills.length)
+      skills !== undefined &&
+      (!Array.isArray(skills) ||
+        !skills.every(validName) ||
+        new Set(skills).size !== skills.length)
     )
       throw new Error(
         `Source ${source.name} skills must be unique skill folder names`,
@@ -75,9 +77,7 @@ export async function localSources(): Promise<LocalSource[]> {
     return {
       name: source.name,
       path: resolve(dirname(configPath), expandHome(source.path)),
-      ...(source.skills !== undefined
-        ? { skills: source.skills as string[] }
-        : {}),
+      skills,
     };
   });
   if (new Set(result.map((source) => source.name)).size !== result.length)
@@ -106,7 +106,11 @@ export async function localSkills(
       try {
         text = await readFile(candidate, "utf8");
       } catch (error) {
-        if (missing(error) && !source.skills) continue;
+        if (
+          !source.skills &&
+          ["ENOENT", "ENOTDIR"].includes(String(errorCode(error)))
+        )
+          continue;
         throw new Error(`Cannot read installed skill: ${candidate}`);
       }
       const match = text.match(/^\uFEFF?---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);

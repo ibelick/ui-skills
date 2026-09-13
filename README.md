@@ -67,4 +67,4 @@ Local IDs use `source:skill`; existing public `owner/skill` paths and bare slugs
 
 `list` combines public and local entries. `list --source public` limits it to the public registry. Categories apply to public entries; select local sources by name and their skill descriptions. `sources` lists configuration without querying the network. Invalid config and file errors exit with code 4 and diagnostics on stderr; missing local IDs or source names exit with code 3. JSON output is payload-only on stdout.
 
-There is no token configuration, copying, publishing, caching, or installation of local skills. Provider updates remain the provider installer's responsibility. `start` retains its existing public routing-guide behavior. Keep using your local executable while testing a fork; `npx ui-skills` invokes the published package.
+Install and update paid or internal skills through their provider; this configuration reads the installed files without credentials or redistribution.

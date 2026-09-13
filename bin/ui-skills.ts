@@ -1,6 +1,7 @@
 #!/usr/bin/env -S node --experimental-strip-types
 
 import { readFile } from "node:fs/promises";
+import { parseArgs } from "node:util";
 import { localSources, localSkills } from "./local-catalog.ts";
 
 type RemoteSkill = {
@@ -261,51 +262,55 @@ const main = async () => {
   }
 
   if (command === "list" || command === "get") {
-    const flags = new Map<string, string | boolean>();
-    const positionals: string[] = [];
-    for (let i = 1; i < argv.length; i++) {
-      const arg = argv[i];
-      if (
-        arg === "--json" ||
-        (command === "list" && ["--source", "--category"].includes(arg))
-      ) {
-        if (flags.has(arg)) {
-          fail(`Duplicate option: ${arg}`);
-          return;
-        }
-        if (arg === "--json") {
-          flags.set(arg, true);
-          continue;
-        }
-        const value = argv[++i];
-        if (!value || value.startsWith("--")) {
-          fail(`Missing value for ${arg}`);
-          return;
-        }
-        flags.set(arg, value);
-      } else if (arg.startsWith("--")) {
-        fail(`Unknown option: ${arg}`);
-        return;
-      } else positionals.push(arg);
+    let parsed;
+    try {
+      parsed = parseArgs({
+        args: argv.slice(1),
+        options: {
+          json: { type: "boolean" },
+          source: { type: "string" },
+          category: { type: "string" },
+        },
+        allowPositionals: true,
+        tokens: true,
+      });
+      const seen = new Set<string>();
+      for (const token of parsed.tokens) {
+        if (token.kind !== "option") continue;
+        if (command === "get" && token.name !== "json")
+          throw new Error(`Unknown option: --${token.name}`);
+        if (seen.has(token.name))
+          throw new Error(`Duplicate option: --${token.name}`);
+        if (token.value === "")
+          throw new Error(`Missing value for --${token.name}`);
+        seen.add(token.name);
+      }
+    } catch (error) {
+      fail(
+        error instanceof Error
+          ? error.message.replace(
+              /Option '(--[a-z]+) <value>' argument missing/,
+              "Missing value for $1",
+            )
+          : String(error),
+      );
+      return;
     }
+    const { values: flags, positionals } = parsed;
     if (command === "list") {
       if (positionals.length) {
         failExtraArgs("list");
         return;
       }
       if (
-        flags.has("--category") &&
-        flags.has("--source") &&
-        flags.get("--source") !== "public"
+        flags.category !== undefined &&
+        flags.source !== undefined &&
+        flags.source !== "public"
       ) {
         fail("Local sources have no categories; use list --source <name>");
         return;
       }
-      await printList(
-        flags.get("--category") as string | undefined,
-        flags.get("--source") as string | undefined,
-        flags.has("--json"),
-      );
+      await printList(flags.category, flags.source, flags.json);
     } else {
       if (positionals.length > 1) {
         failExtraArgs("get");
@@ -315,7 +320,7 @@ const main = async () => {
         fail("Missing skill slug");
         return;
       }
-      await printGet(positionals[0], flags.has("--json"));
+      await printGet(positionals[0], flags.json);
     }
     return;
   }
