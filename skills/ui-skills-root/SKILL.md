@@ -23,7 +23,7 @@ If the goal is clear, choose the right category, load the smallest useful skill 
 
 1. decide if the task is UI-related
 2. if not, return `no skill needed`
-3. run `ui-skills sources` to discover configured local catalogs
+3. run `npx ui-skills sources` to discover configured local catalogs
 4. inspect relevant local sources with `list --source <name> --json` and public categories with `list --category <category>`
 5. select the smallest useful skill set
 6. load only selected skill(s)
@@ -31,12 +31,13 @@ If the goal is clear, choose the right category, load the smallest useful skill 
 
 ## CLI
 
-Use the installed executable when available. Otherwise, prefix these commands with `npx --yes`. Keep using the same executable throughout the task.
+If using an installed CLI, replace `npx ui-skills` with `ui-skills`.
 
 ```bash
-ui-skills categories
-ui-skills list --category <category>
-ui-skills get <slug>
+npx ui-skills start
+npx ui-skills categories
+npx ui-skills list --category <category>
+npx ui-skills get <slug>
 ```
 
 ## Selection Rules
@@ -64,8 +65,8 @@ If unsure, inspect categories and pick the safest narrow skill.
 `list` includes configured local skills alongside public ones. Local skills have no categories; select them by description.
 
 ```bash
-ui-skills list --source <local-source> --json
-ui-skills get <local-source>:<skill> --json
+npx ui-skills list --source <local-source> --json
+npx ui-skills get <local-source>:<skill> --json
 ```
 
 Local IDs use `source:skill`; public `owner/skill` paths retain their meaning. Local lookups work offline. `get --json` includes `markdown` and the absolute `file` path; resolve relative resources from that file's directory.

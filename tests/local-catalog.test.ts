@@ -219,6 +219,7 @@ test("local catalog through the real CLI", async (t) => {
         "null",
         JSON.stringify({ sources: [] }),
         JSON.stringify({ localSources: {} }),
+        JSON.stringify({ localSources: null }),
       ]) {
         await writeFile(path, value);
         const result = await run(["sources"]);
@@ -228,6 +229,12 @@ test("local catalog through the real CLI", async (t) => {
       for (const sources of [
         [source, source],
         [{ ...source, name: "public" }],
+        [{ ...source, name: 1 }],
+        [{ ...source, path: " " }],
+        [{ ...source, path: null }],
+        [{ ...source, extra: true }],
+        [{ ...source, skills: ["design", "design"] }],
+        [{ ...source, skills: "design" }],
         [{ ...source, skills: ["../shared"] }],
         [{ ...source, skills: ["missing"] }],
         [{ ...source, skills: ["readme"] }],
@@ -243,10 +250,19 @@ test("local catalog through the real CLI", async (t) => {
         "---\nname: design\ndescription: Duplicate name\n---\n",
       );
       assert.equal((await run(["list", "--source", "team"])).code, 4);
-      await writeFile(join(shared, "SKILL.md"), "missing frontmatter");
-      const invalid = await run(["get", "team:forms"]);
-      assert.equal(invalid.code, 4);
-      assert.match(invalid.stderr, /frontmatter/);
+      for (const text of [
+        "missing frontmatter",
+        '---\nname: forms\ndescription: " "\n---\n',
+        "---\nname: forms\ndescription: 1\n---\n",
+        "---\nname: ../forms\ndescription: Invalid name\n---\n",
+      ]) {
+        await writeFile(join(shared, "SKILL.md"), text);
+        const invalid = await run(["get", "team:forms"]);
+        assert.equal(invalid.code, 4);
+        assert.match(invalid.stderr, /frontmatter/);
+      }
+      await writeFile(path, "{}");
+      success(await run(["sources"]));
       await config([]);
       assert.equal((await run(["list", "--source", "unknown"])).code, 3);
       assert.equal((await run(["get", "unknown:skill"])).code, 3);
@@ -264,15 +280,32 @@ test("local catalog through the real CLI", async (t) => {
     },
   );
 
-  await t.test("default XDG config and home-relative source paths", async () => {
-    await mkdir(join(root, "ui-skills"));
-    await writeFile(join(root, "ui-skills", "config.json"), JSON.stringify({
-      localSources: [{ ...source, path: `~/${relative(homedir(), installed)}`, skills: ["design"] }],
-    }));
-    const result = await run(["get", "team:design", "--json"], { UI_SKILLS_CONFIG: "" });
-    success(result);
-    assert.equal(JSON.parse(result.stdout).file, join(installed, "design", "SKILL.md"));
-  });
+  await t.test(
+    "default XDG config and home-relative source paths",
+    async () => {
+      await mkdir(join(root, "ui-skills"));
+      await writeFile(
+        join(root, "ui-skills", "config.json"),
+        JSON.stringify({
+          localSources: [
+            {
+              ...source,
+              path: `~/${relative(homedir(), installed)}`,
+              skills: ["design"],
+            },
+          ],
+        }),
+      );
+      const result = await run(["get", "team:design", "--json"], {
+        UI_SKILLS_CONFIG: "",
+      });
+      success(result);
+      assert.equal(
+        JSON.parse(result.stdout).file,
+        join(installed, "design", "SKILL.md"),
+      );
+    },
+  );
 
   await t.test(
     "original start behavior and argument validation remain intact",

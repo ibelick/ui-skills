@@ -39,7 +39,8 @@
     "shiki": "^3.23.0",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.20.5",
-    "yaml": "^2.9.1"
+    "yaml": "^2.9.1",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",

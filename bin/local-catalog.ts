@@ -2,8 +2,24 @@ import { readFile, readdir, realpath } from "node:fs/promises";
 import { homedir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
+import { z } from "zod";
 
-export type LocalSource = { name: string; path: string; skills?: string[] };
+const nameSchema = z.string().regex(/^[a-z0-9][a-z0-9_-]*$/);
+const textSchema = z.string().refine((value) => value.trim().length > 0);
+const sourceSchema = z.strictObject({
+  name: nameSchema.refine((name) => name !== "public"),
+  path: textSchema,
+  skills: z
+    .array(nameSchema)
+    .refine((skills) => new Set(skills).size === skills.length)
+    .optional(),
+});
+const configSchema = z.strictObject({
+  localSources: z.array(sourceSchema).default([]),
+});
+const metadataSchema = z.object({ name: nameSchema, description: textSchema });
+
+export type LocalSource = z.infer<typeof sourceSchema>;
 export type LocalSkill = {
   slug: string;
   pathSlug: string;
@@ -15,10 +31,6 @@ export type LocalSkill = {
   file: string;
 };
 
-const object = (value: unknown): value is Record<string, unknown> =>
-  typeof value === "object" && value !== null && !Array.isArray(value);
-const validName = (value: unknown): value is string =>
-  typeof value === "string" && /^[a-z0-9][a-z0-9_-]*$/.test(value);
 const errorCode = (error: unknown) =>
   error instanceof Error && "code" in error ? error.code : undefined;
 const expandHome = (path: string) =>
@@ -43,43 +55,15 @@ export async function localSources(): Promise<LocalSource[]> {
       return [];
     throw new Error(`Cannot read valid config at ${configPath}`);
   }
-  if (
-    !object(config) ||
-    Object.keys(config).some((key) => key !== "localSources") ||
-    (config.localSources !== undefined && !Array.isArray(config.localSources))
-  )
-    throw new Error("Config must contain only a localSources array");
-  const sources: unknown[] = config.localSources ?? [];
-  const result = sources.map((source) => {
-    if (
-      !object(source) ||
-      !validName(source.name) ||
-      source.name === "public" ||
-      typeof source.path !== "string" ||
-      !source.path.trim() ||
-      Object.keys(source).some(
-        (key) => !["name", "path", "skills"].includes(key),
-      )
-    )
-      throw new Error(
-        "Local sources need a unique name other than public and a directory path",
-      );
-    const { skills } = source;
-    if (
-      skills !== undefined &&
-      (!Array.isArray(skills) ||
-        !skills.every(validName) ||
-        new Set(skills).size !== skills.length)
-    )
-      throw new Error(
-        `Source ${source.name} skills must be unique skill folder names`,
-      );
-    return {
-      name: source.name,
-      path: resolve(dirname(configPath), expandHome(source.path)),
-      skills,
-    };
-  });
+  const parsed = configSchema.safeParse(config);
+  if (!parsed.success)
+    throw new Error(
+      `Invalid local sources config at ${configPath}: ${parsed.error.message}`,
+    );
+  const result = parsed.data.localSources.map((source) => ({
+    ...source,
+    path: resolve(dirname(configPath), expandHome(source.path)),
+  }));
   if (new Set(result.map((source) => source.name)).size !== result.length)
     throw new Error("Local source names must be unique");
   return result;
@@ -114,21 +98,14 @@ export async function localSkills(
         throw new Error(`Cannot read installed skill: ${candidate}`);
       }
       const match = text.match(/^\uFEFF?---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
-      let metadata: unknown;
+      let metadata;
       try {
-        metadata = match ? parseYaml(match[1]) : null;
+        metadata = metadataSchema.parse(match ? parseYaml(match[1]) : null);
       } catch {
-        throw new Error(`Invalid skill frontmatter: ${candidate}`);
-      }
-      if (
-        !object(metadata) ||
-        !validName(metadata.name) ||
-        typeof metadata.description !== "string" ||
-        !metadata.description.trim()
-      )
         throw new Error(
-          `Skill needs name and description frontmatter: ${candidate}`,
+          `Invalid skill frontmatter (requires name and description): ${candidate}`,
         );
+      }
       skills.push({
         slug: metadata.name,
         pathSlug: `${source.name}:${metadata.name}`,
