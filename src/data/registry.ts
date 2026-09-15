@@ -3976,7 +3976,7 @@ const registrySource: RegistrySourceSkill[] = [
     topics: ["video", "tooling"],
     description:
       "Generative video editing, text-to-video, image-referenced video, frame transitions, and extensions using Gemini Omni 1.1 Flash via the official google-genai SDK.",
-  },,
+  },
   {
     slug: "ui-design",
     user: "mblode",
