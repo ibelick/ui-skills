@@ -17,7 +17,6 @@ import {
   getSkillByPath,
   getSkillBySourceAndSlug,
   getSkillByTopicAndSlug,
-  getSkillsBySlug,
   getSkillsBySource,
   getSkillsByTopic,
   getSkillRoutePaths,
@@ -46,19 +45,12 @@ const leaf = segments[segments.length - 1] ?? "";
 const topic = topicBySlug.get(bucket as TopicSlug);
 const topicSlug = bucket as TopicSlug;
 const isTopicGroup = Boolean(topic) && segments.length === 1;
-const isOwnerGroup =
-  !topic && segments.length === 1 && getSkillsBySource(bucket).length > 0;
-const singleSlugMatches =
-  segments.length === 1 ? getSkillsBySlug(pathSlug) : [];
-const uniqueSingleSlugMatch =
-  singleSlugMatches.length === 1 ? singleSlugMatches[0] : undefined;
 const skill =
   getSkillByPath(pathSlug) ??
   (segments.length === 2 ? getSkillBySourceAndSlug(bucket, leaf) : undefined) ??
   (Boolean(topic) && segments.length === 2
     ? getSkillByTopicAndSlug(topicSlug, leaf)
-    : undefined) ??
-  (!isOwnerGroup ? uniqueSingleSlugMatch : undefined);
+    : undefined);
 
 const userChildren =
   !topic && segments.length === 1 ? getSkillsBySource(bucket) : [];

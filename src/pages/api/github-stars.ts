@@ -1,11 +1,10 @@
 import type { APIRoute } from "astro";
-import { getGithubStars } from "../../lib/github-stars.ts";
+import { githubStars } from "../../data/github-stars.ts";
 
 export const prerender = true;
 
 export const GET: APIRoute = async () => {
-  const stars = await getGithubStars();
-  return Response.json(stars, {
+  return Response.json(githubStars, {
     headers: {
       "Cache-Control": "public, max-age=0, s-maxage=86400, must-revalidate",
     },

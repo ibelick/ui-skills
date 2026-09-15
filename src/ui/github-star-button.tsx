@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 type Props = {
   href: string;
+  initialLabel: string;
 };
 
 type GithubStars = {
@@ -9,8 +10,8 @@ type GithubStars = {
   label: string;
 };
 
-export function GitHubStarButton({ href }: Props) {
-  const [label, setLabel] = useState<string | null>(null);
+export function GitHubStarButton({ href, initialLabel }: Props) {
+  const [label, setLabel] = useState<string | null>(initialLabel);
 
   useEffect(() => {
     let cancelled = false;

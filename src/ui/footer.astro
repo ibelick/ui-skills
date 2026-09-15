@@ -2,6 +2,7 @@
 import { topics } from "../data/topics";
 import { agents } from "../data/agents";
 import { playbook } from "../data/playbook";
+import { collections } from "../data/collections";
 
 const currentYear = new Date().getFullYear();
 const coreTopics = topics.filter((topic) => topic.isDesignCore);
@@ -34,6 +35,7 @@ const footerSections: FooterSection[] = [
     links: [
       { label: "Home", href: "/" },
       { label: "Skills", href: "/skills" },
+      { label: "Collections", href: "/collections" },
       { label: "Agents", href: "/agents" },
       { label: "MCP", href: "/mcp/docs" },
       { label: "CLI", href: "/cli" },
@@ -50,6 +52,13 @@ const footerSections: FooterSection[] = [
       })),
       { label: "More topics", href: "/skills/topics" },
     ],
+  },
+  {
+    title: "Collections",
+    links: collections.slice(0, 7).map((collection) => ({
+      label: collection.title,
+      href: `/collections/${collection.slug}`,
+    })),
   },
   {
     title: "Agents",
@@ -127,8 +136,8 @@ const footerSections: FooterSection[] = [
 
 <footer class="border-parchment-200 mt-32 border-t">
   <div class="px-4 py-16 sm:px-8 sm:py-24">
-    <div class="mx-auto w-full max-w-6xl">
-      <div class="grid gap-10 text-base md:grid-cols-2 lg:grid-cols-6">
+    <div class="mx-auto w-full max-w-7xl">
+      <div class="grid gap-10 text-base md:grid-cols-2 lg:grid-cols-6 xl:grid-cols-7">
         {
           footerSections.map((section) => (
             <div>

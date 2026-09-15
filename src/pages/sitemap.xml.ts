@@ -3,6 +3,7 @@ import type { APIRoute } from "astro";
 import { SEMI_STATIC_CACHE } from "../lib/cache-headers";
 import { skills, type Skill } from "../data/skills";
 import { agents } from "../data/agents";
+import { collections } from "../data/collections";
 import { playbook } from "../data/playbook";
 
 export const prerender = true;
@@ -45,6 +46,7 @@ export const GET: APIRoute = ({ site }) => {
     "/",
     "/skills",
     "/skills/topics",
+    "/collections",
     "/playbook",
     "/agents",
     "/mcp/docs",
@@ -53,6 +55,9 @@ export const GET: APIRoute = ({ site }) => {
   const topicRoutes = buildTopicRoutes(skills);
   const groupRoutes = buildGroupPaths(skills).map((path) => `/skills/${path}`);
   const skillRoutes = skills.map((skill) => `/skills/${skill.pathSlug}`);
+  const collectionRoutes = collections.map(
+    (collection) => `/collections/${collection.slug}`,
+  );
   const playbookRoutes = playbook.map((entry) => `/playbook/${entry.slug}`);
   const agentRoutes = agents.map((agent) => `/agents/${agent.id}`);
   const allRoutes = Array.from(
@@ -61,6 +66,7 @@ export const GET: APIRoute = ({ site }) => {
       ...topicRoutes,
       ...groupRoutes,
       ...skillRoutes,
+      ...collectionRoutes,
       ...playbookRoutes,
       ...agentRoutes,
     ]),

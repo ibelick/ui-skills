@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node ./scripts/sync-stonks.mjs",
+    "prebuild": "node --import tsx ./scripts/update-github-stars.mjs && node ./scripts/sync-stonks.mjs",
     "build": "astro build",
     "postbuild": "node ./scripts/write-assetsignore.mjs",
     "check:skills": "node --import tsx ./scripts/check-registry-skills.mjs",
@@ -24,18 +24,18 @@
     "check": "npm run typecheck && npm run check:skills && npm test && npm run build && npm run smoke"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "14.2.1",
-    "@astrojs/react": "6.0.2",
+    "@astrojs/cloudflare": "14.3.1",
+    "@astrojs/react": "6.0.5",
     "@base-ui/react": "^1.4.1",
     "@fontsource/fira-mono": "^5.2.7",
     "@fontsource/jetbrains-mono": "^5.2.8",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "7.2.1",
+    "astro": "7.3.2",
     "markdown-for-agents": "^1.3.4",
     "marked": "^17.0.1",
     "motion": "^12.24.12",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "shiki": "^3.23.0",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.20.5"

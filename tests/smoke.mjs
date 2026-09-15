@@ -76,6 +76,18 @@ try {
   if (homepage.headers.get("content-security-policy") === null) {
     throw new Error("Homepage is missing Content-Security-Policy");
   }
+  const githubStars = await fetchLocal("/api/github-stars");
+  if (githubStars.status !== 200) {
+    throw new Error(`GitHub stars returned ${githubStars.status}`);
+  }
+  const githubStarsBody = await githubStars.json();
+  if (
+    !githubStarsBody ||
+    typeof githubStarsBody.stars !== "number" ||
+    typeof githubStarsBody.label !== "string"
+  ) {
+    throw new Error("GitHub stars returned an invalid payload");
+  }
   const homepageLink = homepage.headers.get("link");
   if (homepageLink === null || !/rel="api-catalog"/.test(homepageLink)) {
     throw new Error("Homepage is missing discovery Link headers");

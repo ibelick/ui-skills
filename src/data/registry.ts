@@ -3796,6 +3796,188 @@ const registrySource: RegistrySourceSkill[] = [
       "When a user describes a concept that matches an established term of art, append a concise Term radar link with a Google Images reference for that term.",
   },
   {
+    slug: "build-iterated-agentic-loop",
+    user: "humanlayer",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/humanlayer/skills/main/plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/SKILL.md",
+    githubUrl:
+      "https://github.com/humanlayer/skills/blob/main/plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/SKILL.md",
+    name: "build-iterated-agentic-loop",
+    topics: ["systems", "tooling", "architecture"],
+    description:
+      "Build a repo-local skill and install a matching iterated coding-agent GitHub Actions workflow, prompt, memory file, and reference templates.",
+  },
+  {
+    slug: "design-control-loop",
+    user: "humanlayer",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/humanlayer/skills/main/plugins/design-control-loop/skills/design-control-loop/SKILL.md",
+    githubUrl:
+      "https://github.com/humanlayer/skills/blob/main/plugins/design-control-loop/skills/design-control-loop/SKILL.md",
+    name: "design-control-loop",
+    topics: ["systems", "architecture", "tooling"],
+    description:
+      "Interview the user to design an agentic control loop tailored to their codebase, then build locally runnable components plus a scheduled coding-agent workflow.",
+  },
+  {
+    slug: "improve-claude-md",
+    user: "humanlayer",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/humanlayer/skills/main/plugins/improve-claude-md/skills/improve-claude-md/SKILL.md",
+    githubUrl:
+      "https://github.com/humanlayer/skills/blob/main/plugins/improve-claude-md/skills/improve-claude-md/SKILL.md",
+    name: "improve-claude-md",
+    topics: ["craft", "tooling", "systems"],
+    description:
+      "Improve a CLAUDE.md file using `<important if>` blocks to improve instruction adherence and reduce ignored context.",
+  },
+  {
+    slug: "narrow-react-prop-types",
+    user: "humanlayer",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/humanlayer/skills/main/plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md",
+    githubUrl:
+      "https://github.com/humanlayer/skills/blob/main/plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md",
+    name: "narrow-react-prop-types",
+    topics: ["code-quality", "frontend", "testing"],
+    description:
+      "Narrow React component prop types to match live code paths instead of widened story, mock, or test contracts.",
+  },
+  {
+    slug: "agent-skill",
+    user: "coldteadotai",
+    repo: "pr-lens",
+    rawUrl:
+      "https://raw.githubusercontent.com/coldteadotai/pr-lens/main/packages/agent-skill/SKILL.md",
+    githubUrl:
+      "https://github.com/coldteadotai/pr-lens/blob/main/packages/agent-skill/SKILL.md",
+    name: "agent-skill",
+    topics: ["visual", "systems", "tooling"],
+    description:
+      "Package-distributed PR Lens skill for drawing code changes or systems as animated architecture and data-flow diagrams.",
+  },
+  {
+    slug: "eli5",
+    user: "coldteadotai",
+    repo: "pr-lens",
+    rawUrl:
+      "https://raw.githubusercontent.com/coldteadotai/pr-lens/main/skills/eli5/SKILL.md",
+    githubUrl:
+      "https://github.com/coldteadotai/pr-lens/blob/main/skills/eli5/SKILL.md",
+    name: "eli5",
+    topics: ["visual", "craft", "systems"],
+    description:
+      "Explain a codebase, feature, or pull request simply as a PR Lens canvas whose walkthrough builds the picture one part at a time.",
+  },
+  {
+    slug: "slopgent",
+    user: "ehmo",
+    repo: "slopkit",
+    rawUrl:
+      "https://raw.githubusercontent.com/ehmo/slopkit/main/plugins/slopgent/skills/slopgent/SKILL.md",
+    githubUrl:
+      "https://github.com/ehmo/slopkit/blob/main/plugins/slopgent/skills/slopgent/SKILL.md",
+    name: "slopgent",
+    topics: ["craft", "taste", "tooling"],
+    description:
+      "Shape the agent's own replies to be honest, action-first, and plain-language without dropping load-bearing precision or real uncertainty.",
+  },
+  {
+    slug: "code-walkthrough",
+    user: "kitlangton",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kitlangton/skills/main/skills/code-walkthrough/SKILL.md",
+    githubUrl:
+      "https://github.com/kitlangton/skills/blob/main/skills/code-walkthrough/SKILL.md",
+    name: "code-walkthrough",
+    topics: ["tooling", "systems", "craft"],
+    description:
+      "Guide a visible, verified code walkthrough in Neovim with Terminal Control and Navi, optionally recording the presentation with OBS.",
+  },
+  {
+    slug: "dev",
+    user: "microsoft",
+    repo: "playwright-cli",
+    rawUrl:
+      "https://raw.githubusercontent.com/microsoft/playwright-cli/main/.claude/skills/dev/SKILL.md",
+    githubUrl:
+      "https://github.com/microsoft/playwright-cli/blob/main/.claude/skills/dev/SKILL.md",
+    name: "dev",
+    topics: ["tooling", "testing"],
+    description:
+      "Development workflows for the playwright-cli repository, including rolling Playwright dependencies and preparing releases.",
+  },
+  {
+    slug: "apple-design",
+    user: "dickwu",
+    repo: "apple-design-skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/dickwu/apple-design-skill/main/SKILL.md",
+    githubUrl:
+      "https://github.com/dickwu/apple-design-skill/blob/main/SKILL.md",
+    name: "apple-design",
+    topics: ["visual", "craft", "accessibility"],
+    description:
+      "Cross-platform UI/UX design reviewer grounded in Apple's Human Interface Guidelines plus a design-craft lens for distinctive, non-templated mobile and desktop app work.",
+  },
+  {
+    slug: "apple-hig",
+    user: "justinwetch",
+    repo: "HIGAgentSkills",
+    rawUrl:
+      "https://raw.githubusercontent.com/justinwetch/HIGAgentSkills/main/SKILL.md",
+    githubUrl:
+      "https://github.com/justinwetch/HIGAgentSkills/blob/main/SKILL.md",
+    name: "apple-hig",
+    topics: ["visual", "systems", "accessibility"],
+    description:
+      "Apple Human Interface Guidelines reference with platform-specific design rules, component specs, measurements, and interaction patterns for iOS, iPadOS, macOS, tvOS, visionOS, and watchOS.",
+  },
+  {
+    slug: "gemini-api-dev",
+    user: "google-gemini",
+    repo: "gemini-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/google-gemini/gemini-skills/main/skills/gemini-api-dev/SKILL.md",
+    githubUrl:
+      "https://github.com/google-gemini/gemini-skills/blob/main/skills/gemini-api-dev/SKILL.md",
+    name: "gemini-api-dev",
+    topics: ["tooling", "systems"],
+    description:
+      "Write code that calls the Gemini API for text generation, chat, multimodal understanding, image and video generation, streaming, function calling, structured output, and agent workflows in Python and TypeScript.",
+  },
+  {
+    slug: "gemini-live-api-dev",
+    user: "google-gemini",
+    repo: "gemini-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/google-gemini/gemini-skills/main/skills/gemini-live-api-dev/SKILL.md",
+    githubUrl:
+      "https://github.com/google-gemini/gemini-skills/blob/main/skills/gemini-live-api-dev/SKILL.md",
+    name: "gemini-live-api-dev",
+    topics: ["tooling", "systems"],
+    description:
+      "Build real-time, bidirectional streaming applications with the Gemini Live API, including WebSocket audio, video, and text, VAD, session management, and ephemeral client auth tokens.",
+  },
+  {
+    slug: "gemini-omni-flash-api",
+    user: "google-gemini",
+    repo: "gemini-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/google-gemini/gemini-skills/main/skills/gemini-omni-flash-api/SKILL.md",
+    githubUrl:
+      "https://github.com/google-gemini/gemini-skills/blob/main/skills/gemini-omni-flash-api/SKILL.md",
+    name: "gemini-omni-flash-api",
+    topics: ["video", "tooling"],
+    description:
+      "Generative video editing, text-to-video, image-referenced video, frame transitions, and extensions using Gemini Omni 1.1 Flash via the official google-genai SDK.",
+  },,
+  {
     slug: "ui-design",
     user: "mblode",
     repo: "agent-skills",
