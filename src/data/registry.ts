@@ -3977,6 +3977,19 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Generative video editing, text-to-video, image-referenced video, frame transitions, and extensions using Gemini Omni 1.1 Flash via the official google-genai SDK.",
   },
+  {
+    slug: "ui-design",
+    user: "mblode",
+    repo: "agent-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mblode/agent-skills/main/skills/ui-design/SKILL.md",
+    githubUrl:
+      "https://github.com/mblode/agent-skills/blob/main/skills/ui-design/SKILL.md",
+    name: "ui-design",
+    topics: ["visual", "systems", "craft", "frontend"],
+    description:
+      "Pick a visual direction, build it in React, Next, and Tailwind, then audit the shipped UI for visual and interaction defects with file:line evidence.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
