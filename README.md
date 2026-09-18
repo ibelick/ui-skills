@@ -1,5 +1,7 @@
 # UI Skills
 
+[简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
+
 ![UI Skills](./public/UI-OG.webp)
 
 Skills for Design Engineers.
