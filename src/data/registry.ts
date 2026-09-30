@@ -388,6 +388,18 @@ const registrySource: RegistrySourceSkill[] = [
       "Create distinctive, production-grade frontend interfaces with high design quality. Generates creative, polished code and UI design that avoids generic AI aesthetics.",
   },
   {
+    slug: "anti-ui-slop",
+    user: "samuelbushi",
+    repo: "uizze",
+    rawUrl:
+      "https://uizze.com/.well-known/agent-skills/anti-ui-slop/SKILL.md",
+    githubUrl: "https://uizze.com",
+    name: "UIZZE — STOP UI SLOP",
+    topics: ["taste", "visual", "systems"],
+    description:
+      "If your UI looks AI-generated, you've already lost the first impression. Ground Codex, Claude Code, Cursor, and Copilot in 800,000+ real web and iOS screens, then force a hard finish gate before generic UI ships.",
+  },
+  {
     slug: "remotion-best-practices",
     user: "remotion-dev",
     repo: "skills",
