@@ -4329,6 +4329,19 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Blueprint animation that explains UX decisions step by step for case studies and posts, with Explain or Redesign modes on a single continuous screen.",
   },
+  {
+    slug: "gpuslider",
+    user: "niklasp",
+    repo: "gpuslider",
+    rawUrl:
+      "https://raw.githubusercontent.com/niklasp/gpuslider/main/skills/gpuslider/SKILL.md",
+    githubUrl:
+      "https://github.com/niklasp/gpuslider/blob/main/skills/gpuslider/SKILL.md",
+    name: "gpuslider",
+    topics: ["motion", "interaction", "visual"],
+    description:
+      "Image sliders, carousels and galleries with GPU shader transitions, pointer effects and a lightbox, for plain JS, React and Next.js.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
