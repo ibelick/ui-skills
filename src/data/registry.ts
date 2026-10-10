@@ -4534,6 +4534,19 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Create, repair, and review custom characters for 2D animation, animated sprite sheets, and custom Codex or ChatGPT pets, with consistent identity, readable motion, and timing-faithful previews.",
   },
+  {
+    slug: "anatomy",
+    user: "wheresryan22",
+    repo: "anatomy",
+    rawUrl:
+      "https://raw.githubusercontent.com/wheresryan22/anatomy/main/SKILL.md",
+    githubUrl:
+      "https://github.com/wheresryan22/anatomy/blob/main/SKILL.md",
+    name: "anatomy",
+    topics: ["visual", "interaction", "motion", "frontend"],
+    description:
+      "Build crafted, highly detailed, interactive isometric SVG figures that explain a technical idea as a real physical object (a test rig, a dial gauge, a cabinet of drawers, a plotter, a lock), with many small precise solid parts, four-tone shading, correct painter's order, a framed card with title, hint and live readout, and calm eased motion. Use this whenever someone wants an isometric illustration, an explanatory diagram or figure for docs, a blog post, a landing page or an article, a \"Linear-style\" or \"premium\" technical drawing, an interactive explainer, or an SVG that shows how a system, algorithm or component works, even if they never say \"isometric\". Works framework-free (TypeScript/JS that writes SVG and HTML) and in React/Next.js, and can add realistic WebGL shaders (fire, exhaust, water, caustics, lamp light) that live inside the drawing in the same isometric perspective.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
