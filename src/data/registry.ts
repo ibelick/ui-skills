@@ -3394,6 +3394,32 @@ const registrySource: RegistrySourceSkill[] = [
       "Answers \"does this survive?\" for one component. Renders it on a page in every state real use can put it in, and hands that page over as a visual report of what broke.",
   },
   {
+    slug: "build-design",
+    user: "jakubkrehel",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/jakubkrehel/skills/main/skills/build-design/SKILL.md",
+    githubUrl:
+      "https://github.com/jakubkrehel/skills/blob/main/skills/build-design/SKILL.md",
+    name: "build-design",
+    topics: ["craft", "frontend", "visual", "systems"],
+    description:
+      "Builds UI from a Figma file or a design image so it matches the design, using your project's existing tokens and components.",
+  },
+  {
+    slug: "state-machine",
+    user: "jakubkrehel",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/jakubkrehel/skills/main/skills/state-machine/SKILL.md",
+    githubUrl:
+      "https://github.com/jakubkrehel/skills/blob/main/skills/state-machine/SKILL.md",
+    name: "state-machine",
+    topics: ["frontend", "craft", "interaction", "testing"],
+    description:
+      "Renders every state of a component you choose on a throwaway page, with mock data and a switcher, so you can work on each state.",
+  },
+  {
     slug: "brandkit",
     user: "Leonxlnx",
     repo: "taste-skill",
@@ -4481,6 +4507,32 @@ const registrySource: RegistrySourceSkill[] = [
     topics: ["motion", "interaction", "frontend", "visual"],
     description:
       "Build React UIs with the Fluid Functionalism @fluid registry: animated components, shared spring motion, and hover highlights that glide between items without layout shift.",
+  },
+  {
+    slug: "rpi",
+    user: "humanlayer",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/humanlayer/skills/main/plugins/rpi/skills/rpi/SKILL.md",
+    githubUrl:
+      "https://github.com/humanlayer/skills/blob/main/plugins/rpi/skills/rpi/SKILL.md",
+    name: "rpi",
+    topics: ["craft", "architecture", "tooling"],
+    description:
+      "Research, design, and implement workflow: phased documents for exploring a change, choosing PRD or TDD paths, then implementing.",
+  },
+  {
+    slug: "animated-sprites",
+    user: "elithrar",
+    repo: "dotfiles",
+    rawUrl:
+      "https://raw.githubusercontent.com/elithrar/dotfiles/main/.agents/skills/animated-sprites/SKILL.md",
+    githubUrl:
+      "https://github.com/elithrar/dotfiles/blob/main/.agents/skills/animated-sprites/SKILL.md",
+    name: "animated-sprites",
+    topics: ["motion", "visual", "craft"],
+    description:
+      "Create, repair, and review custom characters for 2D animation, animated sprite sheets, and custom Codex or ChatGPT pets, with consistent identity, readable motion, and timing-faithful previews.",
   },
   {
     slug: "good-css",
