@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-07T09:25:06.535Z",
-  "skillCount": 343,
+  "generatedAt": "2026-10-10T11:11:20.521Z",
+  "skillCount": 344,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
     "ibelick/baseline-ui": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
@@ -344,6 +344,7 @@
     "memex-lab/gemini-tts": "sha256:619c3c999c9e0e7715f204322e296a451793db084a2edfb9fc4c88dfb4a863d7",
     "remotion-dev/remotion-studio": "sha256:880c1bbb683d280dac6a85bf6335446599ee27e165cd68372b7a1b1f16f0a188",
     "lucasmarkes/hairline-create": "sha256:6ac0f05de48bea61650e60f6ec9b11b9352d9ee4592b3ad02823fa4be7f67b62",
-    "mickadesign/fluid-functionalism": "sha256:148465e2b67125d70c961fed08a96bf292d6d406ce6ebe1f52e4e7d035cd13b8"
+    "mickadesign/fluid-functionalism": "sha256:148465e2b67125d70c961fed08a96bf292d6d406ce6ebe1f52e4e7d035cd13b8",
+    "vojtaholik/good-css": "sha256:58e072d48d06a88d95ec22b8c17faf96af31e8f0436f446fbd1a8395cf2c6483"
   }
 }
