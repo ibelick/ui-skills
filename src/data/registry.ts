@@ -4534,6 +4534,19 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Create, repair, and review custom characters for 2D animation, animated sprite sheets, and custom Codex or ChatGPT pets, with consistent identity, readable motion, and timing-faithful previews.",
   },
+  {
+    slug: "good-css",
+    user: "vojtaholik",
+    repo: "good-css",
+    rawUrl:
+      "https://raw.githubusercontent.com/vojtaholik/good-css/main/skills/good-css/SKILL.md",
+    githubUrl:
+      "https://github.com/vojtaholik/good-css/blob/main/skills/good-css/SKILL.md",
+    name: "good-css",
+    topics: ["frontend", "visual", "interaction"],
+    description:
+      "Modern CSS techniques that replace breakpoint ladders, wrapper elements and scripts. Use whenever you write, edit or review styles in any form, including plain CSS, Tailwind classes, StyleX, CSS-in-JS and inline styles, and whenever you build or restyle a page or component, even if the user never mentions CSS.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
