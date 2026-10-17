@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T07:28:43.832Z",
-  "skillCount": 429,
+  "generatedAt": "2026-10-17T11:43:37.779Z",
+  "skillCount": 431,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
     "ibelick/baseline-ui": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
@@ -430,6 +430,8 @@
     "heygen-com/product-launch-video": "sha256:ea435b4e44c1a2fd50371e6e7e1e3c89ae01fd31528afba5b46f037274bceed9",
     "heygen-com/slideshow": "sha256:a17b9d27ec3a3256bda717cf4796b8b8bd1d6770fbd4dbf5cd2f7f59662ac11e",
     "heygen-com/talking-head-recut": "sha256:84bb6ba0ac3cb0505f09dd1ded0a07e2298daed6c33c05d7bb9a56d0ade53d2c",
-    "diip3sh/playthru": "sha256:0eda3cc6c5b0b6a060e14391ff6e9f6443148c9c9a184ed97d5227f549bb2fb4"
+    "diip3sh/playthru": "sha256:0eda3cc6c5b0b6a060e14391ff6e9f6443148c9c9a184ed97d5227f549bb2fb4",
+    "0design/aindf-screen-author": "sha256:5aa0487fcadfa473e158f71e4ce7d2180319ad7eec512ec5147d2b38dfe3561d",
+    "0design/unslop-audit": "sha256:d09d393fcdf3269daf17bc73db53bf8bb3a10447ccf6fee99b199d752efee74d"
   }
 }

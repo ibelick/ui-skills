@@ -53,6 +53,33 @@ type RegistrySourceSkill = Omit<
 
 const registrySource: RegistrySourceSkill[] = [
   {
+    slug: "aindf-screen-author",
+    user: "0design",
+    repo: "ai-native-design-framework",
+    rawUrl:
+      "https://raw.githubusercontent.com/0design/ai-native-design-framework/main/plugin/skills/aindf-screen-author/SKILL.md",
+    githubUrl:
+      "https://github.com/0design/ai-native-design-framework/blob/main/plugin/skills/aindf-screen-author/SKILL.md",
+    name: "aindf-screen-author",
+    topics: ["systems", "architecture", "tooling"],
+    description:
+      "Compose and validate ScreenSpec JSON through an AINDF design-system MCP, using its pinned component, prop and slot contracts. Use when building or changing screens for an AINDF-enabled product.",
+  },
+  {
+    slug: "unslop-audit",
+    user: "0design",
+    repo: "unslop-skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/0design/unslop-skill/main/skills/audit/SKILL.md",
+    githubUrl:
+      "https://github.com/0design/unslop-skill/blob/main/skills/audit/SKILL.md",
+    files: ["references/design-system-integrity.md"],
+    name: "audit",
+    topics: ["systems", "craft", "code-quality"],
+    description:
+      "Audit generated UI with UNSLOP against design-system contracts and version-pinned quality rules, re-check findings, and write actionable fix plans. Full audits require the UNSLOP plugin's detector and canon client.",
+  },
+  {
     slug: "ui-skills-root",
     user: "ibelick",
     repo: "ui-skills",
