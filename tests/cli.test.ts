@@ -5,6 +5,8 @@ import { promisify } from "node:util";
 import { after, before, describe, test } from "node:test";
 import assert from "node:assert/strict";
 import { resolve } from "node:path";
+import { mkdtemp, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
 
 const execFileAsync = promisify(execFile);
 const cliPath = resolve("bin/ui-skills.js");
@@ -47,8 +49,10 @@ const manifest = {
 
 let server: Server;
 let siteUrl: string;
+let configHome: string;
 
 before(async () => {
+  configHome = await mkdtemp(resolve(tmpdir(), "ui-skills-legacy-"));
   server = createServer((request, response) => {
     if (request.url === "/skills/registry.json") {
       response.setHeader("Content-Type", "application/json");
@@ -73,14 +77,20 @@ before(async () => {
   siteUrl = `http://127.0.0.1:${address.port}`;
 });
 
-after(() => {
+after(async () => {
   server.close();
+  await rm(configHome, { recursive: true, force: true });
 });
 
 const runCli = async (...args: string[]) => {
   try {
     const result = await execFileAsync(process.execPath, [cliPath, ...args], {
-      env: { ...process.env, UI_SKILLS_SITE_URL: siteUrl },
+      env: {
+        ...process.env,
+        UI_SKILLS_SITE_URL: siteUrl,
+        UI_SKILLS_CONFIG: "",
+        XDG_CONFIG_HOME: configHome,
+      },
     });
     return { code: 0, stdout: result.stdout, stderr: result.stderr };
   } catch (error) {
