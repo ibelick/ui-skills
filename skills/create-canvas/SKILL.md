@@ -101,14 +101,18 @@ A registry is a typed list of canvas items. Each entry defines a stable ID, uniq
 - Preserve Space activation of buttons and labels. Preserve preview arrow keys, Escape, and undo.
 - Keep modal portals outside canvas gesture handling. Preserve their focus, backdrop behavior, and native controls.
 - Support two-finger trackpad pan over empty space and previews.
-- If a nested scroll area can scroll in the gesture direction, let it scroll. Otherwise, pan the canvas.
-- Give modified-wheel and pinch zoom priority over scroll routing. Keep other portal scrolling native.
+- Decide the wheel owner once per gesture, not per event. A gesture ends after about 150ms with no wheel events.
+- If a gesture starts over a nested scroll area that can scroll on the gesture's dominant axis, that area owns the whole gesture. Never pan the canvas during it, even at the scroll limit.
+- At the scroll limit of an owned gesture, cancel the wheel event so that scrolling does not chain to the canvas or page.
+- If a gesture starts anywhere else, the canvas owns it and pans for the whole gesture, even over a scroll area.
+- Apply `overscroll-behavior: contain` to scroll containers inside canvas items.
+- Give modified-wheel and pinch zoom priority over the wheel latch. Keep other portal scrolling native.
 - Restrict event cancellation and touch restrictions to owned gestures. Do not disable native input across preview content.
 - Use one finger to move items through their handles. Preserve ordinary one-finger preview interactions.
 - Support two-finger canvas pan and pinch without breaking native preview gestures. Report browser limits instead of disabling preview touch.
 - Track which gesture owns each interaction. Clear held keys on cancellation, window blur, and hidden tabs.
 - Handle changes in pointer count, pointer cancellation, and lost pointer capture.
-- On teardown, release captures and clean up listeners, observers, timers, and animation frames.
+- On teardown, release captures, clear the wheel latch, and clean up listeners, observers, timers, and animation frames.
 - While the route is active, apply `overscroll-behavior-x: none` to the document viewport and canvas scroll boundary.
 - Block Chrome horizontal history swipes. An inner wrapper alone does not guarantee prevention.
 - Restore prior document styles on teardown. Preserve nested horizontal scrolling, Back/Forward controls, and navigation shortcuts.
@@ -116,7 +120,7 @@ A registry is a typed list of canvas items. Each entry defines a stable ID, uniq
 - Prevent native page scrolling from moving the canvas. Reveal offscreen keyboard focus through camera movement instead.
 - Require finite, bounded camera coordinates, item positions, and zoom.
 - Combine pointer and wheel updates into at most one transform write per animation frame.
-- Keep active gesture values outside component-wide React state. Camera movement must not rerender previews.
+- Keep active gesture values and the wheel latch outside component-wide React state. Camera movement must not rerender previews.
 - Update only canvas-owned wrappers. Do not change preview DOM or layout-affecting positions during gestures.
 - Cache measured bounds. Refresh them together when content, dimensions, or layout changes.
 - Ignore temporary rendering placeholders when measuring content bounds.
@@ -148,7 +152,7 @@ For a new canvas or controller changes, test every behavior above. For content-o
 
 Use a supported device for touch tests. Use actual trackpad input and a real history entry for Chrome history-swipe tests.
 
-Test zoom in both directions over empty space and previews. Make sure that the zoom anchor stays fixed without jumps or drift. Test buttons and keyboard zoom around the viewport center. Test trackpad pan over preview content and nested scroll areas, including their scroll limits.
+Test zoom in both directions over empty space and previews. Make sure that the zoom anchor stays fixed without jumps or drift. Test buttons and keyboard zoom around the viewport center. Test trackpad pan over preview content and nested scroll areas. Scroll a nested area to its limit and keep scrolling in the same gesture, including trackpad momentum. The canvas must not move. Then start a new gesture on empty space and make sure that the canvas pans, even when the pointer moves over a scroll area.
 
 Only report a test as passed if you ran it. Compilation and source review do not prove browser behavior. Report unavailable device tests and browser limits.
 
