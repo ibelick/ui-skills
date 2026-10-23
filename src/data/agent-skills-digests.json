@@ -397,7 +397,7 @@
     "egonex-ai/understand-onboard": "sha256:e5be45248859ca8255546a18a340bc1556984162f5b1a3f77da1e66136a557b3",
     "tt-a1i/archify": "sha256:55c126d68c1fbef114ccdef8dd0e7f046419dc9203ac7f6dab1728f6bab3ca71",
     "tt-a1i/archify-review": "sha256:811eb78d69360b741475053a08a0060e60126af2405ffa24afdc0498f17b6cb8",
-    "ibelick/component-canvas": "sha256:ef2d4b55a2ab83b5e00f0e7f13d7e5efd84a2743dac701d1854fafd9d09418ea",
+    "ibelick/component-canvas": "sha256:092c6a41fbeee35db8192d472e20fc1f92074a3c984f3ceaee2267cd71ccb160",
     "lucasmarkes/hairline-adopt": "sha256:0b53d688ce047d5bcca29fe4d2ae3d834ed4b9ff5100c02de72e7e4913404f42",
     "1weiho/cinematic-shot": "sha256:cc1eac2babb54a733cfb95a31d9ae963545225ed937cb5e233fd78103802c35c",
     "diip3sh/feel": "sha256:ad01f2c66d22ec953cb49b3086fd8a5cebf64ca10fc979e46791b3c156d2d503",
@@ -431,6 +431,6 @@
     "heygen-com/slideshow": "sha256:a17b9d27ec3a3256bda717cf4796b8b8bd1d6770fbd4dbf5cd2f7f59662ac11e",
     "heygen-com/talking-head-recut": "sha256:84bb6ba0ac3cb0505f09dd1ded0a07e2298daed6c33c05d7bb9a56d0ade53d2c",
     "diip3sh/playthru": "sha256:0eda3cc6c5b0b6a060e14391ff6e9f6443148c9c9a184ed97d5227f549bb2fb4",
-    "ibelick/create-canvas": "sha256:a2043194d190b49f3aaebdd85de3466d689f87fb6c2b54207635088dba7de5d4"
+    "ibelick/create-canvas": "sha256:cba5751f366d8cafcaef4bd8f42a2442b9486679af6c97718a2a274db0ac650f"
   }
 }

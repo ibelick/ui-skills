@@ -78,8 +78,12 @@ Make each preview safe before it mounts:
 
 - Mouse and trackpad: pan, and zoom around the cursor. Touch: pan and pinch.
 - Start ordinary pan on empty canvas space. Keep native gestures inside previews and portals.
+- Decide the wheel owner once per gesture, not per event. A gesture ends after about 150ms with no wheel events.
+- If a gesture starts over a nested scroll area that can scroll on its dominant axis, that area owns the whole gesture. Never pan the canvas during it, even at the scroll limit. Cancel the wheel event at the limit so that nothing chains.
+- If a gesture starts anywhere else, the canvas pans for the whole gesture, even over a scroll area.
+- Apply `overscroll-behavior: contain` to scroll containers inside previews. Modified-wheel and pinch zoom take priority over the wheel latch.
 - Do not cancel events broadly, and do not put `touch-action: none` on interactive content.
-- Handle pointer count changes, cancellation, lost capture, window blur, and hidden tabs. Release captures and clean up listeners, observers, timers, and animation frames on teardown.
+- Handle pointer count changes, cancellation, lost capture, window blur, and hidden tabs. Keep the wheel latch outside component state. Release captures, clear the wheel latch, and clean up listeners, observers, timers, and animation frames on teardown.
 - Apply gesture transforms at most once per animation frame. Avoid alternating layout reads and writes.
 - Prevent group overlap when content expands or the viewport resizes. Avoid layout loops and unnecessary movement. Fit after layout settles. Fitting never rearranges groups.
 - Move the camera to reveal keyboard focus outside the visible area. Native page scrolling must not move the canvas.
@@ -104,6 +108,7 @@ Run the repository's checks when allowed. Then, in the browser, confirm:
 - Keyboard camera navigation and visible focus work. Preview controls keep their native shortcuts and gestures.
 - Nested scrolling, portal positioning, clickable areas, and modal focus work at several zoom levels and viewport sizes.
 - Pan and pinch survive pointer changes and cancellation. Teardown releases resources.
+- Scrolling a nested area to its limit and continuing in the same gesture, including trackpad momentum, does not move the canvas. A new gesture on empty space pans the canvas.
 - Groups do not overlap after expansion or resize. Fit works, and offscreen focus reveals correctly.
 - Camera persists across reload. A storage failure falls back safely. Reset keeps preview drafts. Drafts need not survive reload unless requested.
 - Groups cannot be dragged. The canvas has no undo/redo.
