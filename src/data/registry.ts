@@ -6034,6 +6034,2268 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       'Design skill for websites and new pages that look designed, not generated. Use when the user asks to build or design something new, or names Hallmark. Never use it on an existing design unless the user names Hallmark, as in `/hallmark redesign <path>`.',
   },
+  {
+    slug: "clean-ui-shot",
+    user: "1weiho",
+    repo: "cinematic-shot",
+    rawUrl:
+      "https://raw.githubusercontent.com/1weiho/cinematic-shot/main/skills/clean-ui-shot/SKILL.md",
+    githubUrl:
+      "https://github.com/1weiho/cinematic-shot/blob/main/skills/clean-ui-shot/SKILL.md",
+    name: "clean-ui-shot",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Shoot polished, framed screenshots of a web app\'s real UI as cropped images, the app as a rounded, shadowed window on a stage, with padding where the window edge shows and bleed where the crop cuts through. Two styles, asked up front, clean (a soft gray stage) or glass (a gradient coloured from the UI itself, with a frosted white bezel). A house style for docs pages, changelogs, landing pages, and READMEs. Use whenever the user asks for UI screenshots, docs or changelog images, "nice", "framed", "clean", or "cropped" screenshots of their app, or wants existing product screenshots refreshed because the UI changed, even if they don\'t name this skill or describe the style.',
+  },
+  {
+    slug: "sodium",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/systems/sodium/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/systems/sodium/SKILL.md",
+    name: "sodium",
+    topics: ["systems", "visual", "frontend"],
+    description:
+      'Sodium design system rules for this project\'s UI. Use when building or changing any screen, component, form or style, when porting an existing screen onto Sodium, or when checking UI against Sodium.',
+  },
+  {
+    slug: "bencium-controlled-ux-designer",
+    user: "bencium",
+    repo: "bencium-marketplace",
+    rawUrl:
+      "https://raw.githubusercontent.com/bencium/bencium-marketplace/main/bencium-controlled-ux-designer/skills/bencium-controlled-ux-designer/SKILL.md",
+    githubUrl:
+      "https://github.com/bencium/bencium-marketplace/blob/main/bencium-controlled-ux-designer/skills/bencium-controlled-ux-designer/SKILL.md",
+    name: "bencium-controlled-ux-designer",
+    topics: ["visual", "craft", "systems"],
+    description:
+      'Expert UI/UX design guidance for unique, accessible interfaces. Use for visual decisions, colors, typography, layouts. Always ask before making design decisions. Use this skill when the user asks to build web components, pages, or applications.',
+  },
+  {
+    slug: "bencium-impact-designer",
+    user: "bencium",
+    repo: "bencium-marketplace",
+    rawUrl:
+      "https://raw.githubusercontent.com/bencium/bencium-marketplace/main/bencium-impact-designer/skills/bencium-impact-designer/SKILL.md",
+    githubUrl:
+      "https://github.com/bencium/bencium-marketplace/blob/main/bencium-impact-designer/skills/bencium-impact-designer/SKILL.md",
+    name: "bencium-impact-designer",
+    topics: ["visual", "craft", "systems"],
+    description:
+      'Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, or applications. Generates creative, polished code that avoids generic AI aesthetics. Based on Anthropic\'s Frontend Designer Skill',
+  },
+  {
+    slug: "design-audit",
+    user: "bencium",
+    repo: "bencium-marketplace",
+    rawUrl:
+      "https://raw.githubusercontent.com/bencium/bencium-marketplace/main/design-audit/skills/design-audit/SKILL.md",
+    githubUrl:
+      "https://github.com/bencium/bencium-marketplace/blob/main/design-audit/skills/design-audit/SKILL.md",
+    name: "design-audit",
+    topics: ["visual", "craft", "systems"],
+    description:
+      '>',
+  },
+  {
+    slug: "relationship-design",
+    user: "bencium",
+    repo: "bencium-marketplace",
+    rawUrl:
+      "https://raw.githubusercontent.com/bencium/bencium-marketplace/main/relationship-design/skills/relationship-design/SKILL.md",
+    githubUrl:
+      "https://github.com/bencium/bencium-marketplace/blob/main/relationship-design/skills/relationship-design/SKILL.md",
+    name: "Agentic UX Design - Relationship-Centric Interfaces",
+    topics: ["visual", "craft", "systems"],
+    description:
+      'Design AI-first interfaces that build ongoing relationships through memory, trust evolution, and collaborative planning, not just isolated screen interactions',
+  },
+  {
+    slug: "typography",
+    user: "bencium",
+    repo: "bencium-marketplace",
+    rawUrl:
+      "https://raw.githubusercontent.com/bencium/bencium-marketplace/main/typography/skills/typography/SKILL.md",
+    githubUrl:
+      "https://github.com/bencium/bencium-marketplace/blob/main/typography/skills/typography/SKILL.md",
+    name: "ui-typography",
+    topics: ["visual", "craft", "systems"],
+    description:
+      '>',
+  },
+  {
+    slug: "react-component-performance",
+    user: "dimillian",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/dimillian/skills/main/react-component-performance/SKILL.md",
+    githubUrl:
+      "https://github.com/dimillian/skills/blob/main/react-component-performance/SKILL.md",
+    name: "react-component-performance",
+    topics: ["performance", "frontend", "craft"],
+    description:
+      'Analyze and optimize React component performance issues (slow renders, re-render thrash, laggy lists, expensive computations). Use when asked to profile or improve a React component, reduce re-renders, or speed up UI updates in React apps.',
+  },
+  {
+    slug: "swiftui-liquid-glass",
+    user: "dimillian",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/dimillian/skills/main/swiftui-liquid-glass/SKILL.md",
+    githubUrl:
+      "https://github.com/dimillian/skills/blob/main/swiftui-liquid-glass/SKILL.md",
+    name: "swiftui-liquid-glass",
+    topics: ["performance", "frontend", "craft"],
+    description:
+      'Implement, review, or improve SwiftUI features using the iOS 26+ Liquid Glass API. Use when asked to adopt Liquid Glass in new SwiftUI UI, refactor an existing feature to Liquid Glass, or review Liquid Glass usage for correctness, performance, and design alignment.',
+  },
+  {
+    slug: "swiftui-performance-audit",
+    user: "dimillian",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/dimillian/skills/main/swiftui-performance-audit/SKILL.md",
+    githubUrl:
+      "https://github.com/dimillian/skills/blob/main/swiftui-performance-audit/SKILL.md",
+    name: "swiftui-performance-audit",
+    topics: ["performance", "frontend", "craft"],
+    description:
+      'Audit and improve SwiftUI runtime performance from code review and architecture. Use for requests to diagnose slow rendering, janky scrolling, high CPU/memory usage, excessive view updates, or layout thrash in SwiftUI apps, and to provide guidance for user-run Instruments profiling when code review alone is insufficient.',
+  },
+  {
+    slug: "swiftui-view-refactor",
+    user: "dimillian",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/dimillian/skills/main/swiftui-view-refactor/SKILL.md",
+    githubUrl:
+      "https://github.com/dimillian/skills/blob/main/swiftui-view-refactor/SKILL.md",
+    name: "swiftui-view-refactor",
+    topics: ["performance", "frontend", "craft"],
+    description:
+      'Refactor and review SwiftUI view files with strong defaults for small dedicated subviews, MV-over-MVVM data flow, stable view trees, explicit dependency injection, and correct Observation usage. Use when cleaning up a SwiftUI view, splitting long bodies, removing inline actions or side effects, reducing computed `some View` helpers, or standardizing `@Observable` and view model initialization patterns.',
+  },
+  {
+    slug: "remove-animations",
+    user: "emilkowalski",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/emilkowalski/skills/main/skills/remove-animations/SKILL.md",
+    githubUrl:
+      "https://github.com/emilkowalski/skills/blob/main/skills/remove-animations/SKILL.md",
+    name: "remove-animations",
+    topics: ["motion", "performance", "frontend"],
+    description:
+      'Find the animations an interface doesn\'t need and remove them — motion on keyboard actions, high-frequency surfaces, functional data, and decoration with no purpose — then clean up what they leave behind. Edits code, but only to subtract; it never adds or retunes motion. Use when the user says the app "feels slow", "has too much animation", "feels over-animated", wants to "tone down the motion", or asks what animations to remove. For finding places that should animate, use find-animation-opportunities; for fixing animations that should stay, use improve-animations or review-animations.',
+  },
+  {
+    slug: "reverse-any-video",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/reverse-any-video/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/reverse-any-video/SKILL.md",
+    name: "reverse-any-video",
+    topics: ["video", "remotion", "motion"],
+    description:
+      'Rebuild any video file as an editable HyperFrames project - motion graphics, talking heads, live action or AI-generated footage. Measure and watch it, rebuild every layer, then check the render against the original frame by frame. Use to reverse, recreate, replicate or copy a video.',
+  },
+  {
+    slug: "transitions-agent",
+    user: "Jakubantalik",
+    repo: "transitions.dev",
+    rawUrl:
+      "https://raw.githubusercontent.com/Jakubantalik/transitions.dev/main/agent/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/Jakubantalik/transitions.dev/blob/main/agent/skill/SKILL.md",
+    name: "transitions-agent",
+    topics: ["motion", "interaction", "frontend"],
+    description:
+      'Scan a codebase for missing, janky, or inconsistent UI motion and fix it with transitions.dev recipes. ALWAYS use this skill when the user\'s message is or contains a transitions-agent command (npx transitions-agent, npx transitions-agent fix, any variant) - the command is a request for the full guided flow, not just command execution. Also use when the user asks about UI transitions, animations, motion quality, a motion score, janky or missing transitions, "polish the motion", "fix the animations", or whether the motion is good after UI changes.',
+  },
+  {
+    slug: "3d-cloth-material",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-cloth-material/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-cloth-material/SKILL.md",
+    name: "3d-cloth-material",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Build convincing woven cloth in Three.js, with a thread-level weave normal map, sheen and anisotropic highlights, folds that never stretch the texture, hems with thickness, stitches, seams, frayed edges, fold occlusion, dye and wear variation, and light passing through thin fabric. Use for linen, silk, wool, canvas, curtains, banners, cloaks, tablecloths, tapestries or any 3D drape that currently looks like a plastic sheet, a stretched texture, or a flat coloured plane.',
+  },
+  {
+    slug: "3d-falling-leaves",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-falling-leaves/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-falling-leaves/SKILL.md",
+    name: "3d-falling-leaves",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Build recognizable falling leaves in world space using instanced geometry, independent tumble, coupled sideways drift, shared wind, scene occlusion, and camera-aware recycling. Use for 3D autumn leaves or drifting foliage in Three.js and similar scenes; use falling-leaves for a 2D canvas overlay.',
+  },
+  {
+    slug: "3d-four-seasons",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-four-seasons/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-four-seasons/SKILL.md",
+    name: "3d-four-seasons",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Add coordinated spring, summer, fall, and winter states to a 3D scene, blending foliage, sunlight, sky, ground materials, snow, and particles without rebuilding the world. Use for seasonal controls, architectural walkthroughs, and outdoor scenes with four-season transitions.',
+  },
+  {
+    slug: "3d-high-poly-models",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-high-poly-models/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-high-poly-models/SKILL.md",
+    name: "3d-high-poly-models",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Create or integrate highly detailed 3D models with smooth silhouettes, shaped surfaces, believable bevels, and close-up geometry, then prepare suitable runtime LODs and loading. Use when a user requests high polygon counts, ultra-realistic models, detailed architectural assets, or removal of visibly faceted geometry.',
+  },
+  {
+    slug: "3d-high-resolution-textures",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-high-resolution-textures/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-high-resolution-textures/SKILL.md",
+    name: "3d-high-resolution-textures",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Build sharp, physically coherent high-resolution materials for 3D rendering with appropriate PBR maps, texel density, UV direction, mipmaps, anisotropic filtering, and progressive asset delivery. Use for detailed wood, stone, fabric, foliage, and architectural close-ups without excessive download or GPU memory costs.',
+  },
+  {
+    slug: "3d-metal-material",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-metal-material/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-metal-material/SKILL.md",
+    name: "3d-metal-material",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Build hyperrealistic PBR metal in Three.js: steel, brass, gold, copper and iron as true conductors (metalness 1, measured F0 tint, no albedo) with roughness-varied finishes (polished, brushed anisotropic, aged with patina and worn edges) lit by a dark HDR studio of real bright window cards prefiltered with PMREM. Use when metal looks like grey plastic, a dull blur, or a black hole; when blades, tools, rings, ingots, hardware or product metal need reflections with edges and structure; or when a finish needs scratches, streaks, fingerprints and bevels that catch light.',
+  },
+  {
+    slug: "3d-orbit-inspect-demo",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-orbit-inspect-demo/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-orbit-inspect-demo/SKILL.md",
+    name: "3d-orbit-inspect-demo",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Make a 3D object lean around on hover and open a full inspect view on click. Hover is a damped, bounded camera lean; click lifts the piece off its bench into the hand, where you drag to turn it, coast, dolly with wheel or pinch, and put it back with Esc, click-away or a Close button. Use for product, object, joinery and portfolio pieces in Three.js where a hover orbit and click-to-full-view must not fight each other; use webgl-3d-object for a floating hero mesh with no inspect mode, and 3d-virtual-tour for a camera path through a place.',
+  },
+  {
+    slug: "3d-paper-material",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-paper-material/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-paper-material/SKILL.md",
+    name: "3d-paper-material",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Build a paper sheet in Three.js that reads as paper up close — washi, cotton rag or kraft with baked fibre and tooth relief, laid and chain lines, a torn deckle edge with frayed fibres, four-layer thickness, a rolled corner and crease, ink that wicks along the fibres, toasted aged edges, contact shadows and back-lit translucency. Use for a hung sheet, scroll, page, label, shoji pane or card that must survive a macro close-up, or when paper looks like a flat white plane, has ruler-straight edges, no thickness, or does not glow when lit from behind. Use 3d-wood-material, 3d-cloth-material or 3d-metal-material for those materials, and paper-cinder-transition for burning paper.',
+  },
+  {
+    slug: "3d-retina-resolution",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-retina-resolution/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-retina-resolution/SKILL.md",
+    name: "3d-retina-resolution",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Render a 3D canvas sharply on Retina and HiDPI displays, including explicit 200 percent resolution, synchronized renderer and post-processing sizes, correct pointer coordinates, and measured quality fallbacks. Use for blurry WebGL output, 2x rendering, high-resolution previews, and display-density changes.',
+  },
+  {
+    slug: "3d-sky-background",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-sky-background/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-sky-background/SKILL.md",
+    name: "3d-sky-background",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Create a camera-correct sky background for a 3D scene with a procedural atmosphere or panorama, horizon haze, aligned sunlight, and coherent environment lighting. Use for architectural skies, outdoor 3D backgrounds, golden hour, and day-to-night sky transitions.',
+  },
+  {
+    slug: "3d-sky-rays",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-sky-rays/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-sky-rays/SKILL.md",
+    name: "3d-sky-rays",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Add sun shafts and crepuscular rays to a Three.js or equivalent 3D scene, using scene occlusion, a projected sun position, controlled foreground spill, and scalable post-processing. Use for rays of light from the sky, sunlight through trees or roofs, and golden-hour architectural scenes.',
+  },
+  {
+    slug: "3d-ultra-realistic-water",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-ultra-realistic-water/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-ultra-realistic-water/SKILL.md",
+    name: "3d-ultra-realistic-water",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Build an ultra-realistic open ocean in Three.js with a deep-water Gerstner spectrum shaded per pixel from analytic derivatives, each wave faded at its own pixel footprint, plus Fresnel sky-cube and planar reflections, subsurface light through the crests, HDR sun glitter, Jacobian lace foam, a Kelvin wake, hull foam, buoyancy queries and aerial perspective into the sky\'s horizon haze. Use for seas, oceans, sunset or daylight water, sun glitter paths, ship or boat scenes, wakes, coastal flyovers and any 3D scene with a moving camera and a water horizon. Includes the approved water from Pirate Ship Sunset as a reusable module and demo.',
+  },
+  {
+    slug: "3d-underwater-god-rays",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-underwater-god-rays/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-underwater-god-rays/SKILL.md",
+    name: "3d-underwater-god-rays",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Add volumetric underwater god rays to a Three.js scene, marching one drifting swell field along every view ray at half resolution so the light shafts converge on the sun, parallax with the camera and carry rippling caustic streaks, with a shimmering surface underside, a sun that wobbles through the ripples, and the same light dappling fish as they swim through the beams. Use for underwater scenes, oceans seen from below, aquariums, reefs, kelp forests, diving and shipwreck scenes, schools of fish, sunbeams or light shafts through water, caustics, "rays of light shining through the ocean", or watery ripples on a background. Includes a reusable module and the Blue Hour sardine-school demo.',
+  },
+  {
+    slug: "3d-virtual-tour",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-virtual-tour/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-virtual-tour/SKILL.md",
+    name: "3d-virtual-tour",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Build guided and interactive virtual tours through a 3D environment with authored camera paths, room and floor-plan navigation, orbit inspection, smooth mode handoffs, and progressive loading. Use for architectural walkthroughs, real-estate tours, museums, showrooms, and explorable spaces built with Three.js or a similar renderer.',
+  },
+  {
+    slug: "3d-wood-lighting-scorecard",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-wood-lighting-scorecard/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-wood-lighting-scorecard/SKILL.md",
+    name: "3d-wood-lighting-scorecard",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Light carved wood in a dark room in three.js, with procedural grain and pores, one warm key through a window, soft shadows that touch, light shafts, background rays and dust, then score the render out of 10 on an anchored rubric with a runnable headless scorecard and iterate until each item reaches the target. Use for oiled timber, kumiko, joinery and workshop scenes; wood that reads flat, plastic or washed out; volumetrics that lift the blacks; "score this out of 10"; or "get the lighting to 8".',
+  },
+  {
+    slug: "3d-wood-material",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-wood-material/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-wood-material/SKILL.md",
+    name: "3d-wood-material",
+    topics: ["3d", "visual", "craft"],
+    description:
+      'Build convincing timber for Three.js as one procedural MeshPhysicalMaterial with growth rings, cathedral figure, pores, medullary rays, checks, tool marks, end grain, and oil, wax, or lacquer finishes, so the grain follows the form and survives macro close-ups without image textures. Use for wood boards, benches, carved panels, tool handles, joinery, floors, and any request to make 3D wood look real, detailed, or less like a tiled photo or plastic.',
+  },
+  {
+    slug: "add-mouse-driven-orbit",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/add-mouse-driven-orbit/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/add-mouse-driven-orbit/SKILL.md",
+    name: "add-mouse-driven-orbit",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Add restrained mouse-driven orbit and parallax depth to a Three.js hero by damping one pointer target and splitting it across camera translation, look-at, and small object rotations. Use for passive cinematic 3D heroes, pointer-responsive scenes, organic model parallax, and interactive depth where OrbitControls would feel like a product viewer.',
+  },
+  {
+    slug: "add-shader-cursor-trail",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/add-shader-cursor-trail/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/add-shader-cursor-trail/SKILL.md",
+    name: "add-shader-cursor-trail",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Add the Shaders WebGPU mouse effect used for the Tidal Commons hero: a white twinkling halftone cursor trail driven by ChromaFlow, masked through a DotGrid, finished with chromatic ripples and film grain, and protected by static, touch, accessibility, SSR, and performance fallbacks. Use when a user asks for this shader mouse effect, a halftone cursor trail, an interactive WebGPU hero/contact background, or a reusable cursor-following shader layer in React, Next.js, Vue, Svelte, Solid, or plain web projects.',
+  },
+  {
+    slug: "agency-grid-layout-minimal",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/agency-grid-layout-minimal/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/agency-grid-layout-minimal/SKILL.md",
+    name: "agency-grid-layout-minimal",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a minimal agency design system with a disciplined editorial grid, oversized typography, quiet uppercase utility labels, restrained image blocks, and subtle structural detail.',
+  },
+  {
+    slug: "ambient-section-particles",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/ambient-section-particles/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/ambient-section-particles/SKILL.md",
+    name: "ambient-section-particles",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Add a restrained particle atmosphere inside one section with configurable shapes, density, gravity, wind, sway, rotation, recycling or settling, pointer disturbance, visibility pausing, responsive limits, and reduced-motion fallbacks. Use for petals, leaves, snow, sparks, confetti, dots, paper, icons, or brand fragments that support a section\'s mood without obscuring content.',
+  },
+  {
+    slug: "article-prompts-to-skills",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/article-prompts-to-skills/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/article-prompts-to-skills/SKILL.md",
+    name: "article-prompts-to-skills",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Convert an article, tutorial, or prompt pack into focused reusable AgentSkills, one independent capability per skill, with portable instructions, example prompts, working demos, preview screenshots, validation, gallery updates, and a narrow commit. Use when the user asks to turn an article\'s prompts, tutorial sections, design patterns, interactions, or workflow ideas into complete skills rather than leaving them as prose.',
+  },
+  {
+    slug: "atmosphere-background",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/atmosphere-background/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/atmosphere-background/SKILL.md",
+    name: "atmosphere-background",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a dark atmospheric background with drifting vertical light folds, screen-blended glow, and a concentrated luminous corner or lower-edge bloom.',
+  },
+  {
+    slug: "audit-ai-design-slop",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/ui/audit-ai-design-slop/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/ui/audit-ai-design-slop/SKILL.md",
+    name: "audit-ai-design-slop",
+    topics: ["visual", "frontend", "systems"],
+    description:
+      'Audit websites, apps, screenshots, mockups, and design code for harmful AI-design clichés, generic generated defaults, and established UI defects. Use when the user wants evidence-backed design feedback, an anti-slop review, or a removal-first cleanup plan without a speculative redesign.',
+  },
+  {
+    slug: "audit-reference-originality",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/audit-reference-originality/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/audit-reference-originality/SKILL.md",
+    name: "audit-reference-originality",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Audit a website or digital experience against its supplied source references for originality and plagiarism risk. Use when Codex must compare current or historical site output with reference pages, capture packs, screenshots, copy, brands, numbers, images, assets, videos, layouts, motion, or code; raise evidence-backed red flags; distinguish common visual grammar from distinctive copying; and propose concrete fixes without making unsupported legal claims.',
+  },
+  {
+    slug: "audit-verify-explain-grade-5",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/audit-verify-explain-grade-5/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/audit-verify-explain-grade-5/SKILL.md",
+    name: "audit-verify-explain-grade-5",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Audit work, verify claims with concrete evidence, and explain the result in simple grade-5 language. Use when the user asks to review, audit, check, verify, explain a change, explain a fix, summarize test results, validate whether something works, or translate technical findings into plain language for non-technical readers.',
+  },
+  {
+    slug: "aura-asset-images",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/aura-asset-images/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/aura-asset-images/SKILL.md",
+    name: "aura-asset-images",
+    topics: ["video", "visual", "craft"],
+    description:
+      'Use when you need high-quality stock-style images from Aura Assets (aura.build/assets) similar to Unsplash for design mockups and marketing: backgrounds, abstract wallpapers, architecture, portraits, and headshots. Includes a workflow for searching by tag on aura.build/assets and returns 5 real image URLs per category plus practical guidance for using different resolutions and aspect ratios.',
+  },
+  {
+    slug: "author-game-levels",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/author-game-levels/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/author-game-levels/SKILL.md",
+    name: "author-game-levels",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Author or revise readable, flat-world Three.js game levels. Use for movement and camera routes, collision and navigation, encounter zones, landmarks, objectives, pickups, motivated lighting, visibility, deterministic level data, or desktop and mobile playthrough verification.',
+  },
+  {
+    slug: "background-grid-webgl",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/background-grid-webgl/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/background-grid-webgl/SKILL.md",
+    name: "background-grid-webgl",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a perspective WebGL background grid with fading lines, subtle particle haze, slow forward drift, and gentle camera parallax.',
+  },
+  {
+    slug: "beam-glow-states",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/beam-glow-states/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/beam-glow-states/SKILL.md",
+    name: "beam-glow-states",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create React loading, processing, selected, current, focus, and pressed states with the border-beam package\'s animated edge glow. Use when a card, button, input, tab, option, task panel, or agent surface needs a restrained traveling or breathing beam; includes installation, imports, prop selection, state wiring, reduced motion, accessibility, and performance and layout guardrails.',
+  },
+  {
+    slug: "blue-cloudy-clean-modern",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/blue-cloudy-clean-modern/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/blue-cloudy-clean-modern/SKILL.md",
+    name: "blue-cloudy-clean-modern",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a clean modern design system with a luminous blue sky atmosphere, soft drifting cloud light, minimal white framing, and serene premium typography.',
+  },
+  {
+    slug: "blue-laser-clean-glass-layout",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/blue-laser-clean-glass-layout/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/blue-laser-clean-glass-layout/SKILL.md",
+    name: "blue-laser-clean-glass-layout",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a clean dark glass layout system with a thin blue laser atmosphere, frosted premium shells, and polished dashboard structure.',
+  },
+  {
+    slug: "book-serif-index",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/book-serif-index/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/book-serif-index/SKILL.md",
+    name: "book-serif-index",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create an archival book-reader design system with serif-led pages, mono index navigation, aged paper surfaces, margin notes, and a premium catalog frame.',
+  },
+  {
+    slug: "bright-green-tech-system-webgl",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/bright-green-tech-system-webgl/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/bright-green-tech-system-webgl/SKILL.md",
+    name: "bright-green-tech-system-webgl",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a bright-green technical design system with structured split layouts, hard-framed dark surfaces, mono utility labels, and a prominent WebGL visualization zone.',
+  },
+  {
+    slug: "browser-video-recording",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/browser-video-recording/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/browser-video-recording/SKILL.md",
+    name: "browser-video-recording",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Create polished 60 fps 4:3 4K browser screen-recording style videos from Codex in-app browser captures, with browser-only crop, natural macOS cursor styling, deliberate click choreography, zoom-follow framing, ffprobe/thumbnail verification, and optional native recording compatibility checks. Use when the user asks to record or re-record browser actions, show cursor clicks and zooms, make Dribbble/UI inspiration or product demo recordings, or asks whether Codex, Playwright, or an MCP can produce a natural browser demo video.',
+  },
+  {
+    slug: "build-awwwards-quality-sites",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/build-awwwards-quality-sites/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/build-awwwards-quality-sites/SKILL.md",
+    name: "build-awwwards-quality-sites",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Art-direct and implement distinctive, motion-rich marketing, editorial, portfolio, and landing websites with original reference-inspired imagery, standout heroes, GSAP choreography, one smooth-scroll engine, optional Three.js shaders, honest icon and logo sourcing, photo avatars, accessibility, and performance safeguards. Use when a user asks for an Awwwards-quality, premium, cinematic, interactive, high-concept, or motion-led website, or explicitly requests this visual and motion system.',
+  },
+  {
+    slug: "build-daily-inspiration-sites",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/build-daily-inspiration-sites/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/build-daily-inspiration-sites/SKILL.md",
+    name: "build-daily-inspiration-sites",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Turn a completed daily UI inspiration capture into exactly five original landing-page builds, one per separate Codex task, using Sites. Use when the user asks to turn the daily inspiration references, a five-item UI prompt pack, or a dated `*-ui-inspiration-capture` article into distinct HTML landing pages while changing the source brands, names, copy, people, numbers, pricing, claims, and imagery.',
+  },
+  {
+    slug: "build-game-audio-feedback",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-game-audio-feedback/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-game-audio-feedback/SKILL.md",
+    name: "build-game-audio-feedback",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Design or implement responsive audio feedback for a Three.js or web game. Use for action sounds, combat layers, music states, spatial audio, mix priorities, mute controls, accessibility, mobile audio unlock, and audio performance.',
+  },
+  {
+    slug: "build-game-camera-controls",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-game-camera-controls/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-game-camera-controls/SKILL.md",
+    name: "build-game-camera-controls",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Implement or tune Three.js game cameras. Use for isometric framing, follow behavior, orbit/zoom limits, occlusion, lock-on, camera shake, touch camera controls, and camera regression tests.',
+  },
+  {
+    slug: "build-game-changelog",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-game-changelog/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-game-changelog/SKILL.md",
+    name: "build-game-changelog",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Design, implement, backfill, audit, and release in-game changelogs with contiguous versioning, deployment provenance, menu-state navigation, accessible toggle, close, and Escape behavior, and responsive release-ledger UI. Use when Codex needs to add or revise a changelog or version screen in a game, reconstruct release history from deployments and Git, define version-bump rules, keep displayed versions synchronized with live builds, or test changelog mechanics across desktop and mobile.',
+  },
+  {
+    slug: "build-game-inventory",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-game-inventory/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-game-inventory/SKILL.md",
+    name: "build-game-inventory",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build or repair game inventory, loot, equipment, tooltips, drag-and-drop, persistence, and progression systems. Use for item schemas, pickup flows, stack rules, equipment slots, atomic swaps, save migration, and no-loss regression testing.',
+  },
+  {
+    slug: "build-game-map-editor",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-game-map-editor/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-game-map-editor/SKILL.md",
+    name: "build-game-map-editor",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build, extend, or audit production-linked browser map editors for Three.js and isometric games. Use when Codex needs to create a private director view, derive a versioned editor document from authored placements, add outliner, layer, selection, drag, snap, inspector, or camera controls, expose enemy aggro, leash, or patrol overlays, implement local draft import, export, undo, and reset, secure an editor route with IP and password sessions, or validate and release a map editor without mutating live gameplay data.',
+  },
+  {
+    slug: "build-game-monster-system",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-game-monster-system/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-game-monster-system/SKILL.md",
+    name: "build-game-monster-system",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build, integrate, audit, or refactor rigged monsters for Three.js and web action games. Use for monster asset contracts, procedural or imported creature rigs, semantic joints and sockets, hurtboxes and attack volumes, combat animation states, enemy-runtime adapters, LODs, deterministic review fixtures, and validating that every monster follows one shared system.',
+  },
+  {
+    slug: "build-hybrid-game-assets",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-hybrid-game-assets/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-hybrid-game-assets/SKILL.md",
+    name: "build-hybrid-game-assets",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Plan, create, integrate, or audit a hybrid asset pipeline for a Three.js or web game. Use when choosing among imported meshes, procedural 3D geometry, AI-generated reference art, 2D UI media, sprites, VFX, and performance-ready runtime asset delivery.',
+  },
+  {
+    slug: "build-interactive-particle-trail",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/build-interactive-particle-trail/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/build-interactive-particle-trail/SKILL.md",
+    name: "build-interactive-particle-trail",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Build a cursor or touch particle interaction that emits by distance along the traveled segment into a recycled GPU point pool, with optional keyboard-triggered bursts. Use for interactive particle trails, pollen lifted from a surface, dust disturbed by a pointer, hover particle bursts, and discrete motes whose spacing must stay consistent at different gesture speeds.',
+  },
+  {
+    slug: "build-isometric-arpg",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-isometric-arpg/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-isometric-arpg/SKILL.md",
+    name: "build-isometric-arpg",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build or extend a playable isometric action RPG in Three.js, React, or similar web technology. Use for game-loop architecture, camera and movement, zones, combat integration, content data, progression, saves, or production-ready vertical slices.',
+  },
+  {
+    slug: "build-mobile-threejs-games",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-mobile-threejs-games/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-mobile-threejs-games/SKILL.md",
+    name: "build-mobile-threejs-games",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build, tune, or test a Three.js game for mobile web. Use for touch movement, action controls, target selection, touch inventory, safe areas, portrait/landscape layouts, responsive HUD, battery/performance budgets, and real mobile browser QA.',
+  },
+  {
+    slug: "build-rigged-game-assets",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-rigged-game-assets/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-rigged-game-assets/SKILL.md",
+    name: "build-rigged-game-assets",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Create, integrate, or audit production-ready rigged 3D characters and monsters with a main model, skeleton, animation library, sockets, collision contracts, separate character equipment, optimized runtime files, catalog media, and an interactive moveset inspector. Use when generating or importing FBX/GLB game actors; defining character-versus-monster asset requirements; separating swords, shields, helmets, armor, or stowed gear; adding idle, walk, run, attack, hit, dodge, block, cast, or death clips; wiring an asset into gameplay; or adding action and equipment controls plus deterministic tests to a game asset catalog.',
+  },
+  {
+    slug: "build-threejs-enemy-systems",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-threejs-enemy-systems/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-threejs-enemy-systems/SKILL.md",
+    name: "build-threejs-enemy-systems",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build or refactor reusable, data-driven enemy archetype and moveset systems for Three.js action games. Use for enemy content schemas, model and rig conventions, combat move timing and contact contracts, runtime state boundaries, placeholder fallbacks, deterministic fixtures, or production playthrough validation.',
+  },
+  {
+    slug: "build-threejs-scroll-worlds",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/build-threejs-scroll-worlds/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/build-threejs-scroll-worlds/SKILL.md",
+    name: "build-threejs-scroll-worlds",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Build rich, scroll-controlled real-time Three.js experiences as one persistent 3D world whose camera, lighting, atmosphere, materials, objects, DOM story, and interactions evolve across authored chapters. Use for 3D scrollytelling, scroll-driven WebGL worlds, camera journeys, interactive portfolios, product stories, exhibitions, explainers, game or film microsites, spatial narratives, and multi-scene websites where native scroll should travel through one continuous place. Not limited to landing pages.',
+  },
+  {
+    slug: "build-vesperfall-review-assets",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-vesperfall-review-assets/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-vesperfall-review-assets/SKILL.md",
+    name: "build-vesperfall-review-assets",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build truthful Vesperfall asset-library review pairs from transparent PNG references and live Three.js, FBX, or img2threejs models. Use when adding a character, enemy, prop, or equipment asset to the Vesperfall catalog; creating a card-PNG plus inspector-model treatment; exposing an isolated model or moveset route; or standardizing provenance, grounding, tests, and Codex-browser validation for game art review.',
+  },
+  {
+    slug: "build-wireframe-scan-reveal",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/build-wireframe-scan-reveal/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/build-wireframe-scan-reveal/SKILL.md",
+    name: "build-wireframe-scan-reveal",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Reveal Three.js geometry with an expanding world-space scan whose wire cage leads the solid surface, then burns away. Use for wireframe scanning, radial mesh reveals, survey pulses, holographic assembly, topology intros, and 3D model entrances where a plain opacity wipe does not explain the form.',
+  },
+  {
+    slug: "cinematic-gsap-lenis-motion-system",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/cinematic-gsap-lenis-motion-system/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/cinematic-gsap-lenis-motion-system/SKILL.md",
+    name: "cinematic-gsap-lenis-motion-system",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create premium cinematic web motion systems with GSAP, ScrollTrigger, and Lenis. Use for luxury editorial websites, creative studio portfolios, Awwwards-style interactions, smooth scroll reveals, staggered text, parallax, pinned sections, magnetic hover states, custom cursors, and mouse-reactive layered movement.',
+  },
+  {
+    slug: "cinematic-scroll-storytelling",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/cinematic-scroll-storytelling/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/cinematic-scroll-storytelling/SKILL.md",
+    name: "cinematic-scroll-storytelling",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create cinematic scroll-driven landing pages with Lenis smooth scrolling, GSAP ScrollTrigger, scroll-linked progression, staggered text reveals, sticky card stacks, parallax backgrounds, scroll-scrubbed transitions, footer reveals, and immersive preloaders. Use when analyzing or building premium editorial scroll experiences, sticky project stacks, kinetic typography, or section-by-section storytelling.',
+  },
+  {
+    slug: "clean-minimal-beige-light-mode",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/clean-minimal-beige-light-mode/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/clean-minimal-beige-light-mode/SKILL.md",
+    name: "clean-minimal-beige-light-mode",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a clean minimal beige light-mode design system with warm neutral shells, quiet process grids, restrained accent color, and elegant low-contrast structure.',
+  },
+  {
+    slug: "codex-gpt-image-2-5-flare",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/codex-gpt-image-2-5-flare/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/codex-gpt-image-2-5-flare/SKILL.md",
+    name: "codex-gpt-image-2-5-flare",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Generate or edit artwork with built-in Codex image gen, especially transparent PNG ornaments, game sprites, emblems, and UI graphics. Use when the user requests GPT 2.5 Flare, /codex-gpt-image-2-5-flare, or this built-in transparent-asset workflow. Includes alpha verification, prompt preservation, and optional project integration.',
+  },
+  {
+    slug: "corner-diagonals",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/corner-diagonals/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/corner-diagonals/SKILL.md",
+    name: "corner-diagonals",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Apply diagonal-cut corners and chamfered edges to buttons, cards, panels, and container shells. Use when a design needs precise geometric framing, sci-fi UI surfaces, clipped-corner controls, or engineered sharp containers instead of rounded pills or plain rectangles.',
+  },
+  {
+    slug: "corner-lasers",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/corner-lasers/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/corner-lasers/SKILL.md",
+    name: "corner-lasers",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a corner-anchored laser composition with thin beams, a bright emitter node, bloom, and atmospheric glow or fog.',
+  },
+  {
+    slug: "create-game-vfx",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/create-game-vfx/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/create-game-vfx/SKILL.md",
+    name: "create-game-vfx",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Create readable, performance-safe Three.js game visual effects. Use for attacks, impacts, damage feedback, status effects, spell trails, particles, shaders, telegraphs, quality tiers, and reduced-motion alternatives.',
+  },
+  {
+    slug: "css-alpha-masking",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/css-alpha-masking/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/css-alpha-masking/SKILL.md",
+    name: "css-alpha-masking",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Apply CSS alpha masking with linear-gradient for horizontal or vertical edge fades (mask-image and -webkit-mask-image). Use when asked for alpha masks, fade edges, or CSS mask gradients.',
+  },
+  {
+    slug: "css-border-gradient",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/css-border-gradient/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/css-border-gradient/SKILL.md",
+    name: "css-border-gradient",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Apply subtle gradient-border treatments for premium web surfaces. Use when cards, pricing panels, nav bars, modals, buttons, or hero surfaces need a refined edge highlight without a loud glow.',
+  },
+  {
+    slug: "daily-ui-inspiration-capture",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/daily-ui-inspiration-capture/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/daily-ui-inspiration-capture/SKILL.md",
+    name: "daily-ui-inspiration-capture",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Create a recurring daily UI inspiration capture. Use when the user asks to run, refresh, package, or validate dated UI inspiration bundles, especially for `articles/YYYY-MM-DD-ui-inspiration-capture/` outputs, Framer/Dribbble landing-page inspiration, motion-study screenshots/videos, AI-builder prompts, duplicate checking, or converting a project runbook into repeatable workflow.',
+  },
+  {
+    slug: "dark-blue-contrasting-clean",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/dark-blue-contrasting-clean/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/dark-blue-contrasting-clean/SKILL.md",
+    name: "dark-blue-contrasting-clean",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a dark-blue clean design system with strong contrast, cobalt gradient feature blocks, crisp framed structure, and restrained premium glow.',
+  },
+  {
+    slug: "dark-glass-clean-layout",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/dark-glass-clean-layout/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/dark-glass-clean-layout/SKILL.md",
+    name: "dark-glass-clean-layout",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a dark glass layout system with frosted premium shells, clean multi-column workspace structure, floating data cards, and restrained atmospheric depth.',
+  },
+  {
+    slug: "design-action-combat",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/design-action-combat/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/design-action-combat/SKILL.md",
+    name: "design-action-combat",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Design, implement, tune, or test readable tactical action combat for web games. Use for attack timing, guard and dodge windows, hit contact, posture, lock-on, weapons, boss phases, combat feedback, and deterministic combat tests.',
+  },
+  {
+    slug: "design-game-encounters",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/design-game-encounters/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/design-game-encounters/SKILL.md",
+    name: "design-game-encounters",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Design, implement, tune, or test Three.js action-game encounters. Use for arena layout, enemy composition, spawn pacing, objectives, boss phases, reward cadence, encounter fixtures, and difficulty validation.',
+  },
+  {
+    slug: "dither-background",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/dither-background/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/dither-background/SKILL.md",
+    name: "dither-background",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a dark monochrome procedural background with enlarged square pixels and visible Bayer-style ordered dithering. Use when a page needs an atmospheric near-black dither field, broad organic waves or cloud masses, and restrained gray-white highlights behind framed UI, hero content, or data overlays.',
+  },
+  {
+    slug: "dither-laser-dark-mode",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/dither-laser-dark-mode/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/dither-laser-dark-mode/SKILL.md",
+    name: "dither-laser-dark-mode",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a dark premium design system that combines near-black surfaces, subtle ordered-dither texture, and a thin accent-colored laser atmosphere.',
+  },
+  {
+    slug: "documentary-brutalist-agency",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/documentary-brutalist-agency/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/documentary-brutalist-agency/SKILL.md",
+    name: "documentary-brutalist-agency",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create or redesign creative agency, production studio, architecture, culture, and portfolio websites with billboard typography, hard black-and-white chapters, exposed grids, documentary imagery, irregular collages, restrained parallax, brutalist navigation, and accessible FAQ controls.',
+  },
+  {
+    slug: "editorial-portfolio-chapters",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/editorial-portfolio-chapters/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/editorial-portfolio-chapters/SKILL.md",
+    name: "editorial-portfolio-chapters",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create or redesign creative-studio, agency, photographer, artist, and portfolio websites where project work leads the story. Use for dark editorial shells, full-bleed campaign media, color-coded case-study chapters, oversized service typography, restrained project reveals, and a decisive contact finale.',
+  },
+  {
+    slug: "editorial-service-booking",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/editorial-service-booking/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/editorial-service-booking/SKILL.md",
+    name: "editorial-service-booking",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create or redesign appointment-based service websites for salons, barbers, spas, wellness studios, clinics, and hospitality brands. Use for warm editorial layouts, serif-led identity, documentary portrait crops, calm treatment selectors, location-aware booking, and operational states that remain elegant and trustworthy.',
+  },
+  {
+    slug: "editorial-tech",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/editorial-tech/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/editorial-tech/SKILL.md",
+    name: "editorial-tech",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Blend editorial magazine composition with precision product-tech detailing using asymmetrical grids, cinematic media bands, mono utility labels, and restrained accent color.',
+  },
+  {
+    slug: "elevenlabs-tts",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/elevenlabs-tts/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/elevenlabs-tts/SKILL.md",
+    name: "elevenlabs-tts",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Generate ElevenLabs text-to-speech audio from scripts or inline text using local voice profiles. Use when the user asks for ElevenLabs, text-to-speech, TTS, narration, voiceover, speech audio, or voice generation; load voice names, voice ids, emails, owners, and account-specific defaults only from local config outside the skill.',
+  },
+  {
+    slug: "falling-leaves",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/falling-leaves/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/falling-leaves/SKILL.md",
+    name: "falling-leaves",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Build falling leaves that read as leaves, with each one tumbling on its own axis so it presents a face, thins to an edge, and opens out again, and with its sideways slip driven by that same tumble. Covers the 2-D canvas build and the instanced-3-D variant, where leaves are recycled from, density-versus-count maths, depth layering, colour under a tone-mapped composite, reduced motion, and visibility pausing. Use for autumn maple, sakura petals, blossom, ash, snowfall shapes, or any drifting foliage where a generic particle field reads as confetti.',
+  },
+  {
+    slug: "fire-paper-loader",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/fire-paper-loader/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/fire-paper-loader/SKILL.md",
+    name: "fire-paper-loader",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Build a burning-paper ring loader whose GLSL flame is drawn by a Worker on an OffscreenCanvas started from the head, so a main thread blocked by the page build cannot freeze it, with a progress count, an even-paced run into the hand-off, and a clean fade to the page. Covers the ember thread and ember gradient, porous char, worker start-up, parallel shader compile with a waited 1-px warm-up draw, hand-off without a stall, reduced motion and hidden-tab behaviour. Use for a loading screen, preloader, page loader, splash, "kindling", burn loader, ember ring, burning paper hole, fire loader, or a loader that must keep moving while heavy JavaScript, three.js or shader builds hold the main thread.',
+  },
+  {
+    slug: "fire-smoke-skill-vfx",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-combat/fire-smoke-skill-vfx/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-combat/fire-smoke-skill-vfx/SKILL.md",
+    name: "fire-smoke-skill-vfx",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build the effects of a fire skill as one visual language in Three.js. Flames that read as fire, not as orange fog or cones: ray-marched flame volumes whose turbulence rises with buoyancy (slow at the root, accelerating and stretching as it climbs) instead of scrolling, a temperature ramp from a white-hot core a little above the fuel through yellow and orange to deep red tips, broad brighter licks inside, walls of fire broken into clumps of separate tongues of very different heights with notches between them and licks that detach and go out, a fire whirl wound in helical sheets with a waist and a blue root; charcoal smoke drawn premultiplied over the frame and lit only by the fire (cauliflower billows for a burst, a thin streaked curtain off a grass-fire front, fibrous wisps off small fires, ragged hot cracks inside a burst\'s smoke); embers and sparks that drift on a curl field, cool from white through orange to red and fall as ash; heat haze as refraction; firelight shared with the world; a world-space heat map that makes the ground\'s needles smoulder as hairlines and its pockets breathe; and gentle ink impact frames limited to three flashes a second. Use for fire or flame skills, fireballs, fire waves or breath, rings of fire, fire tornadoes or whirls, burning ground, wildfire fronts, smoke columns, embers, smouldering aftermath, "fire and smoke", "realistic fire", "flame thrower", "inferno", "burning field" or "skill effects only". Includes a reusable module and a five-beat demo on a scanned CC0 burned-ground floor with failure-mode switches.',
+  },
+  {
+    slug: "framed-grid-layout",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/framed-grid-layout/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/framed-grid-layout/SKILL.md",
+    name: "framed-grid-layout",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create minimal framed grid layouts with thin visible boundary lines, L-shaped corner brackets, subtle diagonal line texture, and strict section alignment. Use when asked for clean, neutral, precise, structured, editorial, technical, or guide-border web layouts.',
+  },
+  {
+    slug: "framed-tech-dark-border-gradient",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/framed-tech-dark-border-gradient/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/framed-tech-dark-border-gradient/SKILL.md",
+    name: "framed-tech-dark-border-gradient",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a framed dark technical design system with border-gradient shells, asymmetrical grid panels, mono utility labeling, and restrained monochrome atmosphere.',
+  },
+  {
+    slug: "funky-purple-container-tech",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/funky-purple-container-tech/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/funky-purple-container-tech/SKILL.md",
+    name: "funky-purple-container-tech",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a dark container-led technical design system with fuchsia-purple accents, layered rounded shells, crisp frame lines, and playful futuristic focal objects.',
+  },
+  {
+    slug: "game-dev-combat-animation",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-combat/game-dev-combat-animation/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-combat/game-dev-combat-animation/SKILL.md",
+    name: "game-dev-combat-animation",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build, fix and review character combat animations (melee strikes, bow shots, spell casts, skills, monster attacks, whole move sets) so they read like Diablo IV, Baldur\'s Gate 3 or Elden Ring and never stretch, lock, wring or break an arm, wrist or hand. A written standard with numbered rules, per-frame tests on the real skinned mesh, keys designed from upper-arm, forearm and blade intents, checks from every camera the player sees, two blind critics plus a blind A/B against the last release, and every critic claim verified against full-resolution frames and live-rig numbers. Use when creating or reworking any attack, skill or move set; when the user says arms, hands, wrists, elbows or weapons look stretched, weird, broken or wrong; when they ask for a standard, rules or tests for animations; or when they ask to score animations or get them to N out of 10.',
+  },
+  {
+    slug: "game-dev-combat-skill-polish",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-combat/game-dev-combat-skill-polish/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-combat/game-dev-combat-skill-polish/SKILL.md",
+    name: "game-dev-combat-skill-polish",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Score a game\'s combat skills and spells out of 10 with blind judges, then raise the weakest to a bar, for timing and readability (does a skill read as itself, does the blow land when it lands) and for art (detail, light, trails, impact, art direction, judged against a reference such as Diablo IV). Covers filming casts on a stopped, stepped clock, contact strips and close-ups, anonymised two-judge rounds, the levers that moved scores (hero props made from a painted concept with image-to-3D, own schedules and keyed moves, painted additive textures, camera-facing ribbons, light outside the body), the traps that cost points, asset and load budgets, and shipping each skill as its own version. Use when the user asks to score, review, improve, polish or rebuild combat skills, spells or attacks; says a skill "doesn\'t make sense", "looks bad" or should look like another game; names a target score; or starts a "next skill" thread. Project specifics (review hooks, harness settings, where each skill\'s code lives, scores so far) go in an optional local references/<project>.md next to this skill.',
+  },
+  {
+    slug: "generate-reference-inspired-brand-worlds",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/generate-reference-inspired-brand-worlds/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/generate-reference-inspired-brand-worlds/SKILL.md",
+    name: "generate-reference-inspired-brand-worlds",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Generate multiple original brand campaign worlds from a supplied visual reference while controlling how close the new work feels without copying protected signature elements. Use when a user provides a brand identity image, poster, editorial campaign, moodboard, or generated concept and asks for inspired alternatives, several distinct brands in one visual family, a closer-to-reference V2, exact wordmarks inside images, or originality-safe image-generation prompts and outputs.',
+  },
+  {
+    slug: "glass-dark-mode-clock",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/glass-dark-mode-clock/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/glass-dark-mode-clock/SKILL.md",
+    name: "glass-dark-mode-clock",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a dark glass design system with frosted shells, soft beam grids, circular clock-like calibration dials, and precise sci-fi instrument framing.',
+  },
+  {
+    slug: "glass-dark-ui",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/glass-dark-ui/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/glass-dark-ui/SKILL.md",
+    name: "glass-dark-ui",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Build dark-mode glassmorphism interfaces with readable contrast, frosted surfaces, and gradient borders using a pseudo-element mask. Use when asked for glass cards, frosted dark hero sections, blur panels, or dark UI systems with gradient/glow borders.',
+  },
+  {
+    slug: "globe-gl",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/globe-gl/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/globe-gl/SKILL.md",
+    name: "globe-gl",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Use when implementing globe.gl (Globe.GL) for 3D globe data visualization with WebGL/ThreeJS, including setup, data layers (points, arcs, polygons, labels), and integration patterns in plain HTML or React.',
+  },
+  {
+    slug: "globe-particles",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/globe-particles/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/globe-particles/SKILL.md",
+    name: "globe-particles",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a globe-like 3D particle visualization with a dense luminous spherical core and thinner orbital ring or flattened disc. Use when a design needs a premium planetary, orbital, synthesized data-globe effect rendered with real WebGL/Three.js particles, not generic starfields or full page layout changes.',
+  },
+  {
+    slug: "gooey-blob-system",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/gooey-blob-system/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/gooey-blob-system/SKILL.md",
+    name: "gooey-blob-system",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a gooey blob system using SVG filters where multiple shapes merge into a single fluid form. Use overlapping circles combined with a Gaussian blur and color matrix filter to produce a continuous, organic mass. The forms should visually fuse and separate based on proximity. Focus on filter-driven merging (blur + threshold effect), soft organic boundaries with no hard edges, multiple independent shapes behaving as one system, and smooth continuous motion that feels fluid and cohesive.',
+  },
+  {
+    slug: "high-contrast-skeuomorphic-clean",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/high-contrast-skeuomorphic-clean/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/high-contrast-skeuomorphic-clean/SKILL.md",
+    name: "high-contrast-skeuomorphic-clean",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a high-contrast clean skeuomorphic design system with molded dark surfaces, crisp light separation, tactile inset depth, and restrained signal accents.',
+  },
+  {
+    slug: "horizontal-scroll-scenes",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/horizontal-scroll-scenes/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/horizontal-scroll-scenes/SKILL.md",
+    name: "horizontal-scroll-scenes",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Build scene-by-scene chapters that advance left to right on one fixed stage while the user scrolls vertically, with native scroll as the only input. One pure function turns scrollY into scene, dwell and move, so forward, reverse, scrollbar drags, fast skips and reload at depth all land on the right frame. Covers dwell versus transition budgets, a burn-wipe or pan between scenes, chapter index and progress UI, glide-to-scene links that skip intermediate scenes, keyboard and reduced-motion behaviour. Use for horizontal scrollytelling, multi-scene product tours, "scroll down to travel sideways", chapter carousels driven by the wheel, or any piece where a wheel-jacked slider keeps breaking on touch, keys, refresh or back.',
+  },
+  {
+    slug: "html-demo",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/html-demo/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/html-demo/SKILL.md",
+    name: "html-demo",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Show an app working on a web page by drawing it live in HTML instead of recording it. A Mac-style window plays the app step by step, and every frame is a pure function of one clock, View(t), drawn on a fixed 1200 × 750 stage that one CSS scale fits to any width. The pointer is scripted, labels and pictures come from the real app, a steps bar sits under the window, it plays only while on screen, and reduced motion gets designed end frames. Use when someone wants a product demo, an animated app window or hero, a feature walkthrough, "the UI animated and simulated in HTML", "like a screen recording but HTML", an interactive product tour on a landing or download page, or wants to replace screen recordings, GIFs or MP4s of their UI with crisp live HTML. Also use to build many such windows at once with helper agents, or to scrub, freeze and screenshot them.',
+  },
+  {
+    slug: "html-reel",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/html-reel/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/html-reel/SKILL.md",
+    name: "html-reel",
+    topics: ["video", "visual", "craft"],
+    description:
+      'Turn a tweet, a video, a YouTube video or a landing page into a 9:16 reel (Instagram Reels, TikTok, Shorts) that says what the source says and looks like it, with every cut on a word. Read the source (its words, its media, its measured fonts and colours), pick a structure (a promo, a showcase, "found this", an explainer, before and after), write the script in the creator\'s voice from the source\'s own facts, make the voice with timestamps (their cloned ElevenLabs voice), then build the picture from HTML scenes drawn from one clock (window.__frame(t)) in the source\'s look, opening on its cover (the hook\'s best moment as the first frame), its demo video framed and cut to words, and assemble it in Fil\'s video editor over MCP. The creator is in it from the first draft as a placeholder in the camera layouts (a backlit studio silhouette) (full frame, a bubble, half the frame), swapped for their phone takes when they record, and everything retimed to their own words by word anchors, t = W(τ); a reel can also be faceless. Use when someone wants a reel, a short or a vertical video from a post, a thread, a launch, a landing page, a demo video or a YouTube video, "a reel like this one", or a talking-head promo cut to their own delivery.',
+  },
+  {
+    slug: "html-to-interaction-prompts",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/html-to-interaction-prompts/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/html-to-interaction-prompts/SKILL.md",
+    name: "html-to-interaction-prompts",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Convert a supplied HTML page or generated HTML reference into a screenshot-backed article containing multiple reusable interaction prompts. Use when the user provides an HTML file, exported page, generated-page.html, or local/live reference and asks to extract animation/interactions, create prompts, capture screenshots for each prompt, add them to an article, or commit the resulting article/assets.',
+  },
+  {
+    slug: "ice-frost-skill-vfx",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-combat/ice-frost-skill-vfx/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-combat/ice-frost-skill-vfx/SKILL.md",
+    name: "ice-frost-skill-vfx",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build the effects of an ice and frost skill as one visual language in Three.js. Frost that grows like real frost, not a painted fern: a dendritic tree grown on the CPU from a seed point, stems racing outward with barbs and sub-barbs that compete for space in one time-ordered queue, side branches leaned toward their tips, baked into a distance field so the shader draws hairline feathers growing out from the seed with a bright tip, rime, crystal glints and a contact shadow. Faceted ice spikes built from half-spaces and ray-traced against their own planes (Snell, Fresnel, total internal reflection, Beer-Lambert blue, trapped bubbles, a fracture network, frosted edges) that erupt along the frost line, crack along visible planes and shatter into convex pieces that tumble, land on a face and rest, with snow lumps and ice chips settled into the crust. A low freezing mist marched as wind-stretched banks that churn in place and part around the ice, a blizzard column of powder on helical strands with a fibrous veil, glinting diamond dust, and a scanned snow floor with dunes, broken crust, a raking moon with self-shadow and two populations of glints. Use for ice or frost skills, frost novas, ice spikes or walls, glacial eruptions, shattering ice, blizzards, snow devils, freezing mist, frozen ground, "ice and frost", "frost creep", "ice shards", "realistic ice" or "skill effects only". Includes two reusable modules and a five-beat demo on a scanned CC0 snow floor with a failure-mode switch.',
+  },
+  {
+    slug: "illustration-bold-pop",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-bold-pop/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-bold-pop/SKILL.md",
+    name: "illustration-bold-pop",
+    topics: ["visual", "craft"],
+    description:
+      'Draws hand-authored SVG spot illustrations in a bold pop-geometric style for design and coding scenes. Identifying traits: a thick navy outline on every shape, solid navy extrusions that always step down-right, saturated flat fills (hot pink, lemon, aqua, violet, mint, lime) textured with navy hatching and dots, and a dense overlapping cluster of chunky props (browser windows, pinwheel tiles, iso cubes, lightning bolts) around one slim cartoon character. Covers palette, line weights, extrusion and union-outline techniques, a JS helper for the repeated marks, characters and hands, composition and a render-and-critique loop. Use when someone asks for bold pop, pop geometric, retro pop, memphis-style, navy-outline, chunky outlined or loud colourful illustrations, or for empty states, onboarding, 404 or error pages, blog headers, feature spots and marketing cards in that look.',
+  },
+  {
+    slug: "illustration-flat",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-flat/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-flat/SKILL.md",
+    name: "illustration-flat",
+    topics: ["visual", "craft"],
+    description:
+      'Draws flat vector illustrations as SVG cards (480x360): slim, long-limbed people acting out one design or coding moment with one hero prop. Identified by no outlines on big shapes, thin white fold strokes as the only shading, navy only for hair, sneakers and a few hairlines, small heads (about 1:7) with big hands and white sneakers, and sparse floating confetti with no ground line, in lavender, indigo, sunshine yellow, coral and mint. Covers the measured palette, stroke numbers, character construction (tapered limbs, separated fingers, thumb side), poses, props, composition and a tested parts kit. Use when asked for flat illustrations, flat vector people, outline-free or no-outline characters, modern or corporate flat art, empty states, onboarding screens, 404 or error pages, coming-soon pages, blog headers, feature spots or marketing cards.',
+  },
+  {
+    slug: "illustration-flat-with-black",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-flat-with-black/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-flat-with-black/SKILL.md",
+    name: "illustration-flat-with-black",
+    topics: ["visual", "craft"],
+    description:
+      'Draws flat vector spot illustrations of tall, long-legged people doing design and coding things, with solid black as a main colour. Traits: no outlines on coloured fills; black as big solid shapes (hair, trousers, shoes, devices) and as thin detail lines; denim blue, leaf green, sun yellow and tomato red on cream skin; dot eyes, round glasses and blush; big shoes on one thin black ground line; two stars and two plus-sparkles as the only decor. Covers palette, line weights, characters, heads, hands, props, composition and a parts helper for limbs, shoes, heads, hands and paper props. Use when someone asks for flat illustration with black, flat people or character illustration, friendly product or SaaS illustration, or art for empty states, onboarding, 404 and error pages, blog headers, feature spots, marketing cards or app screens in this style.',
+  },
+  {
+    slug: "illustration-framed-panel",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-framed-panel/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-framed-panel/SKILL.md",
+    name: "illustration-framed-panel",
+    topics: ["visual", "craft"],
+    description:
+      'Draws original design-and-coding scenes as SVG cards (480x360) in a framed-panel cartoon style. Identifying traits are a soft pastel card with a periwinkle-violet panel framed in thin navy, outline-only clouds and a pale lavender floor band with dashes inside it; L-shaped corner brackets outside two corners; white speech bubbles, UI cards and bushes that break out over the frame edge; and a semi-real character with a thin navy outline (1.25 px), muted flat fills, navy hair with violet highlights, blush and short paired hatch marks. Covers people working with laptops, screens, UI parts and devices. Use when someone asks for a framed panel, window-frame or picture-frame illustration, pastel violet cartoon, outlined flat character scene, empty-state, onboarding or 404 art, a blog header, a feature spot, a support, about or team page illustration, or a marketing card with a person.',
+  },
+  {
+    slug: "illustration-grainy-gouache",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-grainy-gouache/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-grainy-gouache/SKILL.md",
+    name: "illustration-grainy-gouache",
+    topics: ["visual", "craft"],
+    description:
+      'Draws original cosy animal scenes as hand-authored SVG cards (480x360) in a grainy gouache, risograph-like style. Identifying traits are flat shapes with no outlines on a hot-pink card; soft 3-4 stop gradient shading on every rounded form, darker toward edges and base; a fine dark multiply grain that gathers at each shape\'s edges; a chalky purple-pink shadow pooled under the group; and big glossy eyes with cream star highlights, framed by grained autumn leaves and sparse cream sparkles. It covers design and coding moments with one cute animal at a laptop, monitor, desk, window, mug or book stack. Use when someone asks for grainy, gouache, riso, risograph, textured, cosy, cozy, autumn, hygge, storybook or children\'s-book style animal art, or for an empty state, onboarding step, 404 page, blog header, feature spot or marketing card with a warm handmade feel.',
+  },
+  {
+    slug: "illustration-halftone-line",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-halftone-line/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-halftone-line/SKILL.md",
+    name: "illustration-halftone-line",
+    topics: ["visual", "craft"],
+    description:
+      'Draws hand-authored SVG spot illustrations in a halftone line style for design and coding scenes. Identifying traits are a confident black line with a slight hand wobble and contours left open, grey tones made only of fine halftone dots clipped to shapes, a few solid black masses (hair, leaves, a bag, a black tee), warm off-white paper and no colour at all. Covers the two-ink palette, line weights, the open-contour and stipple techniques, a seeded compiler that turns tone tags into dot fills, rubbery long-limbed characters and expressive hands, doodles, floor pools and a render-and-critique loop. Use when someone asks for halftone, stipple, dotted, risograph-like, newsprint, black-and-white, monochrome line, editorial line or zine-style illustrations, or for empty states, onboarding, 404 pages, blog headers, feature spots and marketing cards in that look.',
+  },
+  {
+    slug: "illustration-ink-sketch",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-ink-sketch/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/SKILL.md",
+    name: "illustration-ink-sketch",
+    topics: ["visual", "craft"],
+    description:
+      'Draws hand-inked cartoon critters and living objects as SVG cards (480x360), each acting out a coding or design idea. Identified by thick black brush-pen outlines that swell and taper and break into separate strokes, loose marker-and-watercolour fills that slip past the line, diagonal hatching instead of solid shadow, huge googly eyes with two specular dots, and stray ink hairs and flecks, in tomato red, leaf green, sunflower yellow, sky blue and teal on white. Covers palette, brush numbers, mascot construction (eyes, blush, mouths, 3-finger hands), props, ground patches and a tested, seeded brush kit. Use when asked for ink sketch, hand-drawn, brush pen, sketchy, doodle, marker or watercolour-cartoon illustrations, googly-eyed mascots or critters, playful empty states, onboarding, 404 or error pages, loading states, blog headers, feature spots or marketing cards.',
+  },
+  {
+    slug: "illustration-isometric-mono",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-isometric-mono/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-isometric-mono/SKILL.md",
+    name: "illustration-isometric-mono",
+    topics: ["visual", "craft"],
+    description:
+      'Draws true-isometric diorama illustrations of developer and design workspaces in one green ramp, generated as SVG with a bundled scene kit. Traits: one rounded off-white slab with a faceted bevelled edge; every face filled by the way it faces (top lightest, right darkest) from five greens; 0.9 deep-green outlines on every edge; dense fine repeated detail (rack units, ribs, vents, keys, code lines); soft green shadows and glows on the slab. Covers projection, shading, line weights, object vocabulary, layout and the iso.mjs kit (racks, databases, laptops, containers, cards, badges, books, plants, cables, status tower). Use when someone asks for isometric illustration, an iso scene, 2.5D tech art, monochrome or green isometric art, a server room, dev stack or cloud picture, or art for empty states, onboarding, 404 pages, blog headers, feature spots or marketing cards in this style.',
+  },
+  {
+    slug: "illustration-line-interior",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-line-interior/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-line-interior/SKILL.md",
+    name: "illustration-line-interior",
+    topics: ["visual", "craft"],
+    description:
+      'Draws original hand-written SVG spot scenes in the Line interior style, wide airy rooms or terraces where slim, realistic people do design and coding work. A thin uniform indigo outline (1.4 px at 480 wide) runs around mostly white fills. Sparse flat accents (teal, sage, coral, mustard, lavender, peach wood) cover under 7% of the card. Pale lavender 1 px background decor (brick clusters, pendant lamps, framed posters) sits behind, and a long floor line with end dashes runs under it all. Covers the palette, line weights, heads and hands from a parts toolkit, composition and a render-critique loop. Use when asked for line-art, thin-line or outline illustrations, indigo line art, office, desk, home-workspace, remote-work or team scenes, or interior spot illustrations for empty states, onboarding screens, 404 pages, blog headers, feature spots, landing sections or marketing cards.',
+  },
+  {
+    slug: "illustration-one-line",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-one-line/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-one-line/SKILL.md",
+    name: "illustration-one-line",
+    topics: ["visual", "craft"],
+    description:
+      'Draws original hand-written SVG spot illustrations in the One-line style, joyful action figures doing design and coding work. One continuous uniform black line (2.3 px at 480 wide) loops and doubles back to draw the whole figure. Flat coral, periwinkle and white patches sit behind the line, wobbly and deliberately knocked 2–6 px out of register like a misprinted riso. Tops carry coral stripe lines, and there is no ground plane, only a squiggle, a curl or a few speed strokes, all on warm beige paper. Covers the palette, a route-building toolkit (tube limbs, hand and shoe loops, wobble patches, masks), poses, composition and a render-critique loop. Use when asked for one-line, single-line, continuous-line, misregistered, riso-style or playful doodle illustrations, for empty states, onboarding, 404 pages, blog headers, feature spots, launch announcements or marketing cards.',
+  },
+  {
+    slug: "illustration-outlined-cartoon",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-outlined-cartoon/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-outlined-cartoon/SKILL.md",
+    name: "illustration-outlined-cartoon",
+    topics: ["visual", "craft"],
+    description:
+      'Draws original hand-authored SVG spot illustrations in an outlined cartoon style for design and coding subjects. Identifying traits: a warm near-black ink outline on every flat fill in three weights (2.5 / 2 / 1.5 px), tapered ink slivers for folds, brows and finger splits, big-headed characters with huge white eyes, thick brows, open smiles and pink blush, blob hair with white highlight dashes, and a small decor set of "+" sparkle crosses, outline rings, squares and coloured dots on a transparent card. Covers one character with one hero prop, gripping and holding hands, sneakers, clothing folds and UI props. Use when someone asks for an outlined, inked, comic, sticker or doodle-style cartoon, a friendly character or mascot, or a spot illustration for an empty state, onboarding, 404 or error page, success state, blog header, feature spot or marketing card.',
+  },
+  {
+    slug: "illustration-teal-spot",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-teal-spot/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-teal-spot/SKILL.md",
+    name: "illustration-teal-spot",
+    topics: ["visual", "craft"],
+    description:
+      'Draws original spot illustrations of one hero object as SVG cards (480x360) in a teal-on-white style. Identifying traits are a single object in a fixed oblique 3/4 view showing top, front and right faces; white main faces with teal only on side faces and accents; thin dark-teal outlines on every edge; a hard, unblurred deep-teal drop shadow pushed down-right; and two to four small floating extras (coins, tilted UI cards, badges) with their own hard shadows, plus 4-point sparkles. No people. Covers design and coding concepts as objects: keyboards, databases, git graphs, inboxes, devices. Use when someone asks for a teal spot, teal icon illustration, isometric spot object, 3D line spot, empty-state art, onboarding step art, a 404 or error spot, a feature spot, a blog header object, a marketing card or a product icon scene in teal, mint or green-teal.',
+  },
+  {
+    slug: "illustration-two-colour-brush",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-two-colour-brush/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-two-colour-brush/SKILL.md",
+    name: "illustration-two-colour-brush",
+    topics: ["visual", "craft"],
+    description:
+      'Draws original design and coding scenes as hand-authored SVG cards (480x360) in a two-colour brush-marker style. Identifying traits: thick wobbly black marker lines with blobby ends, built as filled ribbons; one second ink, mint green, in flat blocks that slip 2-10 px off the line like a misregistered print; solid black hair, trousers and shoes with mint highlight dashes; and a crinkly squiggle camo on cream areas, all on warm cream paper. Characters are chunky, with profile heads, big noses, dot eyes, big hands and feet. It covers people coding, thinking, carrying and resting with laptops, mugs, chairs and rubber ducks. Use when someone asks for brush, marker, felt-tip, two-colour, duotone, riso-print, zine, mint-and-black or doodle illustrations, or for empty states, onboarding, 404 pages, blog headers, feature spots or marketing cards with a bold hand-made look.',
+  },
+  {
+    slug: "illustration-vintage-emblem",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/illustration/illustration-vintage-emblem/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-vintage-emblem/SKILL.md",
+    name: "illustration-vintage-emblem",
+    topics: ["visual", "craft"],
+    description:
+      'Draws original hand-authored SVG badge illustrations in a vintage emblem style for design and coding subjects. Identifying traits: a seven-colour screen-print palette (green-black ink, cream, terracotta, sand, tan, pale, a touch of teal) with no gradients; one chunky hero object in thick 3.6 px ink outlines, shaded with woodcut gouges and lit with pale streaks; a terracotta sun disc behind it, cut free by a 7.5 px cream keyline; a hard horizontal edge slicing the scene into a dark splash band with cream droplets punched out; a heavy condensed wordmark over a letterspaced serif tagline. Covers lockups, hero objects, gulls, splash bands and lettering. Use when someone asks for a vintage emblem, retro badge, crest, logo-style, screen-print, poster, sticker, patch or merch-style illustration, or a badge card for a team, event, release, empty state, 404 page, blog header or marketing card.',
+  },
+  {
+    slug: "image-first-grid-layout",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/image-first-grid-layout/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/image-first-grid-layout/SKILL.md",
+    name: "image-first-grid-layout",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create an image-led grid design system with full-bleed photography, structural guide lines, anchored content blocks, and restrained technical overlays.',
+  },
+  {
+    slug: "implement-fog-of-war",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/implement-fog-of-war/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/implement-fog-of-war/SKILL.md",
+    name: "implement-fog-of-war",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Implement, tune, debug, or validate soft wall-aware fog of war and gameplay perception in Three.js action games. Use for orthographic or isometric visibility masks, obstacle-aware line of sight, player and enemy vision ranges, hidden-enemy targeting rules, fog shader artifacts such as spokes or seams, mobile ray budgets, lifecycle and menu-state integration, and deterministic fog-of-war tests.',
+  },
+  {
+    slug: "iterate-until-verified",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/iterate-until-verified/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/iterate-until-verified/SKILL.md",
+    name: "iterate-until-verified",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Apply a prompt-agnostic execution and verification loop to any substantial task while preserving the original request. Use when the user asks to fan out work, use subagents or independent reviewers, loop until done, benchmark against references, apply a harsh critic, compare candidates blind, improve an existing prompt with verification, or continue until explicit quality gates pass.',
+  },
+  {
+    slug: "light-mode-paper-technical",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/light-mode-paper-technical/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/light-mode-paper-technical/SKILL.md",
+    name: "light-mode-paper-technical",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a light-mode technical design system with warm paper surfaces, dark outer framing, subtle diagonal texture, precise bracketed geometry, and restrained accent signals.',
+  },
+  {
+    slug: "lightning-energy-skill-vfx",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-combat/lightning-energy-skill-vfx/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-combat/lightning-energy-skill-vfx/SKILL.md",
+    name: "lightning-energy-skill-vfx",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build the effects of a close-combat energy skill as one visual language in Three.js. Lightning that reads as lightning, dynamic but never in your face: trees of strips (trunk, forks of forks, hair-fine branchlets) with a fine white core in a violet-blue glow, each channel reaching out as a stepped leader, flaring as it connects, holding its shape and fading through an afterglow, one discharge at a time; a storm-cloud orb (a lit billow surface that churns in place, 10-15 plasma-globe arcs from a small white core to its inner wall, crawlers on the rim, a hairline fresnel); ground strikes that flash when the leader arrives, crawl along the stone\'s own cracks and reflect in wet stone (the demo\'s floor is a scanned CC0 texture); a torn black shadow with dry-brush edges that hangs off the orb and streams behind it, air bursts felt as refraction, orange sparks, fractured rocks that land or float in a storm domain, and impact frames that hold, invert in two-tone ink with tapered speed lines, shake and bend the lens, limited to three flashes a second. Use for anime or dark-fantasy skill effects, lightning or thunder fists, plasma or energy balls, charge-ups, dashes with shadow trails, ground strikes, storm or domain rings, ultimates, hit-stop, impact frames, negative flashes, screen shake, "black lightning", "thunderstorm fist", "realistic lightning", "afterimage" or "skill effects only". Includes a reusable module and a five-beat demo with failure-mode switches.',
+  },
+  {
+    slug: "liquid-metal-border",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/liquid-metal-border/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/liquid-metal-border/SKILL.md",
+    name: "liquid-metal-border",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Add and tune animated liquid-metal WebGL borders with the React `metal-fx` package. Use when buttons, icon controls, chips, tabs, cards, or selected surfaces need a metallic active, selected, hover, focus, or premium border; when implementing the MetalFx component from metal.jakubantalik.com; or when troubleshooting its presets, themes, strength, glow, reflections, sizing, radius, animation, accessibility, SSR, or performance.',
+  },
+  {
+    slug: "mesh-gradient-dark-blue-clean",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/mesh-gradient-dark-blue-clean/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/mesh-gradient-dark-blue-clean/SKILL.md",
+    name: "mesh-gradient-dark-blue-clean",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a futuristic, premium, clean dark-blue mesh-gradient design system across background rendering, hero shell, navigation, floating nodes, framed sections, CTAs, and motion. Use when the interface needs a near-black navy foundation, procedural blue mesh atmosphere, disciplined minimal structure, and infrastructural or planetary depth.',
+  },
+  {
+    slug: "nested-container-clean-agency",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/nested-container-clean-agency/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/nested-container-clean-agency/SKILL.md",
+    name: "nested-container-clean-agency",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a clean agency design system built from nested containers, with an outer editorial shell, inset dark feature blocks, rounded premium cards, and restrained accent color.',
+  },
+  {
+    slug: "nested-container-frames",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/nested-container-frames/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/nested-container-frames/SKILL.md",
+    name: "nested-container-frames",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a container-in-container layout system using nested frames. Use an outer centered container with visible vertical boundary lines and corner markers. Inside, place inner containers inset from the edges, each with its own background and rounded frame. Technique: outer container defines global bounds, inner containers use padding to create inset spacing, layered frames (border + background) to separate levels, and consistent spacing between outer frame and inner blocks.',
+  },
+  {
+    slug: "no-ai-design-slop",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/ui/no-ai-design-slop/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/ui/no-ai-design-slop/SKILL.md",
+    name: "no-ai-design-slop",
+    topics: ["visual", "frontend", "systems"],
+    description:
+      'Prevent and remove generic AI-generated design defaults, incoherent visual choices, and established UI defects while creating, revising, or reviewing websites, apps, screenshots, mockups, and design code. Use as a passive quality gate during UI work or for an explicit anti-slop cleanup; preserve the chosen art direction instead of forcing a neutral redesign.',
+  },
+  {
+    slug: "number-details",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/number-details/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/number-details/SKILL.md",
+    name: "number-details",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Add decorative 01, 02, 03 numeric detail markers.',
+  },
+  {
+    slug: "operational-enterprise-ai",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/operational-enterprise-ai/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/operational-enterprise-ai/SKILL.md",
+    name: "operational-enterprise-ai",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create or redesign enterprise AI, automation, security, and operations product pages that explain system boundaries, approvals, auditability, exceptions, and rollback. Use for dark cinematic heroes, hairline grids, metric pauses, expandable solution rows, case-study evidence, security proof, and qualified demo or waitlist handoffs.',
+  },
+  {
+    slug: "optimize-threejs-games",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/optimize-threejs-games/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/optimize-threejs-games/SKILL.md",
+    name: "optimize-threejs-games",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Profile, diagnose, and improve Three.js or WebGL game performance without regressing gameplay. Use for frame-time drops, CPU/GPU pressure, draw calls, texture and geometry budgets, animation loops, adaptive quality, mobile performance, and browser performance verification.',
+  },
+  {
+    slug: "optimize-web-animations",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/optimize-web-animations/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/optimize-web-animations/SKILL.md",
+    name: "optimize-web-animations",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Profile, audit, and optimize frontend page performance with emphasis on animation work, memory-leak risks, long-session slowdowns, CSS animations, canvas/WebGL requestAnimationFrame loops, marquees, skeletons, GSAP/Three/Matter effects, timers, listeners, and observers. Use when the user asks to make animations performant, pause offscreen animations, look for memory leaks, profile pages that slow the computer over time, fix janky scrolling, reduce CPU/GPU use, or repeat the "only play in view" optimization on React/Vite/Next/frontend pages using Codex Browser.',
+  },
+  {
+    slug: "orange-clean-paper-saas",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/orange-clean-paper-saas/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/orange-clean-paper-saas/SKILL.md",
+    name: "orange-clean-paper-saas",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a clean paper-toned SaaS design system with warm neutrals, orange accent signals, rounded premium forms, and polished product illustration surfaces.',
+  },
+  {
+    slug: "paper-cinder-transition",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/paper-cinder-transition/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/paper-cinder-transition/SKILL.md",
+    name: "paper-cinder-transition",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Change between pages, chapters or scenes with a paper-burn transition, a ragged ember line that sweeps across the frame, chars the old page ahead of it and reveals the next scene live behind it, written as one WebGL composite pass over a frozen frame and a scissored live scene. Covers the front\'s silhouette, the luminous ember gradient with a beading gold thread, torn porous charcoal that is alpha-masked, baked noise, finite-difference slopes, the 0.75-scale live scene, sweep direction, timing, reduced motion and visibility pausing. Use for a burn transition, paper burn, cinder wipe, chapter change by fire, charring page reveal, burn-away section change, ember dissolve, or when a fade, slide or generic dissolve between scenes reads as cheap.',
+  },
+  {
+    slug: "performance-profiling",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/performance-profiling/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/performance-profiling/SKILL.md",
+    name: "performance-profiling",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Guide performance profiling for Apple platform apps with Instruments, Xcode diagnostics, and MetricKit. Use when investigating app hangs, stutters, high CPU, memory leaks, memory growth, OOM crashes, slow launch, battery drain, thermal issues, App Store performance readiness, or when adding os_signpost and measurement hooks.',
+  },
+  {
+    slug: "pointer-trail-emitter",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/pointer-trail-emitter/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/pointer-trail-emitter/SKILL.md",
+    name: "pointer-trail-emitter",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Build a cursor trail whose spacing stays constant at any hand speed, by emitting motes per unit of distance travelled rather than on a timer, so a flick draws the same continuous ribbon as a crawl instead of breaking into scattered dots. Covers sub-segment placement, the ring-buffer ordering trap, the idle breath a distance emitter needs, anchoring the trail to the screen in a 3-D scene, scaling scatter against the plane it hangs on, coasting instead of stopping dead, touch and reduced-motion fallbacks, and why moving the emitter to a DOM overlay to raise its z-index costs more than it buys. Use for cursor wisps, pointer sparks, embers, magic trails, comet tails, plankton, dust, or any mote trail that must stay legible however fast the hand moves.',
+  },
+  {
+    slug: "product-proof-saas",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/product-proof-saas/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/product-proof-saas/SKILL.md",
+    name: "product-proof-saas",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create or redesign SaaS and AI product landing pages where a real workflow, interface, or deterministic demo is the central proof. Use for pale atmospheric shells, product UI in the hero, prompt-to-output stories, audience tabs, compact feature modules, honest pricing comparisons, and FAQ handoffs.',
+  },
+  {
+    slug: "publish-project-to-github",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/publish-project-to-github/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/publish-project-to-github/SKILL.md",
+    name: "publish-project-to-github",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Package a finished local project into an intentional GitHub repository, create a strong README and visual preview, push it safely, configure a public GitHub Pages URL when the project is compatible, and verify the deployed result. Use when a user asks to upload, publish, open-source, share, or turn a local HTML/CSS/JavaScript experiment or small web project into a documented GitHub repository with a live demo.',
+  },
+  {
+    slug: "reveal-hover-effect",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/reveal-hover-effect/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/reveal-hover-effect/SKILL.md",
+    name: "reveal-hover-effect",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Build cursor-following spotlight reveals that expose a second aligned image through a soft radial mask. Use for hover-to-color, before-and-after, x-ray, material, texture, product-detail, and illustrated hero effects where a desaturated or embossed base image should remain visible while another treatment follows an eased pointer.',
+  },
+  {
+    slug: "scroll-progress-timeline",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/scroll-progress-timeline/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/scroll-progress-timeline/SKILL.md",
+    name: "scroll-progress-timeline",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Turn any ordered process into a data-driven vertical or horizontal scroll story with a base line, progress fill, active step states, responsive collapse, semantic fallback, and reduced-motion behavior. Use for onboarding, checkout, roadmaps, recipes, case studies, service processes, histories, or narratives where progress through the sequence should become visible while scrolling.',
+  },
+  {
+    slug: "scroll-scrubbed-visual-sequence",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/scroll-scrubbed-visual-sequence/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/scroll-scrubbed-visual-sequence/SKILL.md",
+    name: "scroll-scrubbed-visual-sequence",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Build reversible scroll-controlled visual transformations with a pinned or sticky stage, normalized progress, and video, image-sequence, canvas, SVG, or DOM renderers. Use for hero transformations, product assembly, interface state walkthroughs, object rotation, diagrams, or photo sequences that must move forward and backward with native scrolling.',
+  },
+  {
+    slug: "scroll-scrubbed-word-reveal",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/scroll-scrubbed-word-reveal/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/scroll-scrubbed-word-reveal/SKILL.md",
+    name: "scroll-scrubbed-word-reveal",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Reveal marked-up text word by word as scroll progress advances, while preserving semantic inline links, emphasis, responsive line wrapping, and reduced-motion readability. Use for headlines, quotes, manifestos, product statements, onboarding messages, or editorial passages where scrolling should pace comprehension rather than simulate typing.',
+  },
+  {
+    slug: "scroll-world-storytelling",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/scroll-world-storytelling/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/scroll-world-storytelling/SKILL.md",
+    name: "scroll-world-storytelling",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Turn an article, case study, brand narrative, product journey, or long-form story into a cinematic scroll-driven landing page using one of three renderers: scrubbed video, a real-time Three.js world, or semantic HTML/SVG data and typography. Use when the user asks for a scroll world, fly-through landing page, article-to-website transformation, animated planet, data scrollytelling, video-scrubbed page, connected visual journey, or story-led alternative to ordinary stacked sections.',
+  },
+  {
+    slug: "shaders-cursor-ripples",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/shaders-cursor-ripples/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/shaders-cursor-ripples/SKILL.md",
+    name: "shaders-cursor-ripples",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Add cursor-following fluid WebGPU distortion over an existing image with the Shaders library\'s ImageTexture and CursorRipples components. Use when a hero, gallery, or media panel needs a water-ripple mouse effect; when replacing a drifting CSS spotlight or flashlight reveal; or when a prompt says to borrow only the shader interaction from a Shaders.com reference while preserving the current brand, image, copy, and layout.',
+  },
+  {
+    slug: "ship-web-games",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/ship-web-games/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/ship-web-games/SKILL.md",
+    name: "ship-web-games",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Package, deploy, and verify a playable Three.js or web game. Use for release builds, asset delivery, private/public deployment, production smoke tests, browser proof, release notes, rollback readiness, and cleanup of temporary QA resources.',
+  },
+  {
+    slug: "skeuomorphic-ui",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/skeuomorphic-ui/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/skeuomorphic-ui/SKILL.md",
+    name: "skeuomorphic-ui",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create skeuomorphic web UI surfaces with layered gradients, stacked inner and outer shadows, reflective gradient borders, micro texture, and embossed text or icon details. Use when asked for pressed, carved, tactile, realistic, soft-plastic, soft-metal, or premium physical interface styling.',
+  },
+  {
+    slug: "solar-duotone-bold",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/solar-duotone-bold/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/solar-duotone-bold/SKILL.md",
+    name: "solar-duotone-bold",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Use Iconify Solar Duotone Bold icon style.',
+  },
+  {
+    slug: "split-layout-technical",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/split-layout-technical/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/split-layout-technical/SKILL.md",
+    name: "split-layout-technical",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a technical split-screen design system with dual panels, fine frame lines, mono metadata, quiet editorial typography, and premium inset surfaces.',
+  },
+  {
+    slug: "staggered-word-reveal",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/staggered-word-reveal/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/staggered-word-reveal/SKILL.md",
+    name: "staggered-word-reveal",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create subtle editorial word-by-word text reveal animations where each word fades and rises into place once it enters the viewport. Use for premium portfolio headlines, hero copy, section intros, and short marketing text that needs a cinematic staggered reveal with IntersectionObserver or in-view detection.',
+  },
+  {
+    slug: "stitched-full-page-capture",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/stitched-full-page-capture/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/stitched-full-page-capture/SKILL.md",
+    name: "stitched-full-page-capture",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Capture or repair reliable full-page screenshots for lazy-loaded, scroll-animated, Framer, WebGL/canvas, or reveal-heavy web pages. Use when full-page screenshots are blank, gray, white, sparse, show a tiny content strip, disagree with a working scroll video, or when article evidence/section crops must be derived from a trustworthy full-page image.',
+  },
+  {
+    slug: "tech-green-dark-mode-modern",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/tech-green-dark-mode-modern/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/tech-green-dark-mode-modern/SKILL.md",
+    name: "tech-green-dark-mode-modern",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a modern dark-mode technical design system with matte-black surfaces, emerald signal accents, mono system labeling, framed dashboard cards, and restrained glow.',
+  },
+  {
+    slug: "technical-wireframe-info-layout",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/technical-wireframe-info-layout/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/technical-wireframe-info-layout/SKILL.md",
+    name: "technical-wireframe-info-layout",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a monochrome technical wireframe design system with exploded 3D structure, connector annotations, sparse information labels, and precise dark diagnostic framing.',
+  },
+  {
+    slug: "test-playable-web-games",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/test-playable-web-games/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/test-playable-web-games/SKILL.md",
+    name: "test-playable-web-games",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Test a playable browser game end to end with deterministic fixtures and real browser evidence. Use for gameplay QA, regression testing, controls, accessibility, responsive/mobile testing, save flows, console checks, performance smoke tests, and release verification.',
+  },
+  {
+    slug: "thinking-orbs",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/thinking-orbs/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/thinking-orbs/SKILL.md",
+    name: "thinking-orbs",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Add accessible animated AI loading and agent-status indicators with the React thinking-orbs library. Use when a chat, copilot, voice, search, generation, or tool-running interface needs a semantic working, searching, solving, listening, composing, or shaping state; when replacing a generic spinner with an AI activity orb; or when implementing the library\'s size, theme, speed, pause, reduced-motion, and canvas behavior.',
+  },
+  {
+    slug: "threejs-landscape",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/threejs-landscape/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/threejs-landscape/SKILL.md",
+    name: "threejs-landscape",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Build a live Three.js landscape that stays quiet behind a subject — a noise heightfield on a polar grid so resolution follows the lens, ground coloured by slope and moisture rather than by texture, instanced GPU grass whose wind costs nothing on the CPU, scattered stones, a gradient sky dome, a star field you can actually see, and a time-of-day system that cross-fades instead of cutting. Use for hero backdrops, product stages, scroll worlds, or any scene where a building, object, or figure has to sit in a place rather than float on a gradient.',
+  },
+  {
+    slug: "threejs-towers",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/threejs-towers/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/threejs-towers/SKILL.md",
+    name: "threejs-towers",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Generate architecture procedurally in Three.js and film it assembling — a small geometry vocabulary that builds pagodas, castles, domes and spires from parameters instead of mesh files, hip roofs with flying eaves driven by a single profile function, and a clipping-plane build animation where everything below a rising line is finished work and scaffolding stands above it. Use for construction studies, architectural title sequences, procedural landmarks, or any hero object that should build itself rather than fade in.',
+  },
+  {
+    slug: "threejs-weather",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/threejs-weather/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/threejs-weather/SKILL.md",
+    name: "threejs-weather",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Put weather into a Three.js scene that reads as weather — rain anchored inside the frustum, a storm that is the rain leaned on rather than a second system, lightning on its own light with thunder scheduled by distance, snow that blows up into blizzards and keeps settling until the ground goes white, wet ground with puddles and splashes, and looping ambience that has no seam. Use for scene atmosphere, seasonal states, hero backdrops, or any world where clear/rain/storm/snow needs to be a control the viewer can turn.',
+  },
+  {
+    slug: "tune-enemy-ai",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/tune-enemy-ai/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/tune-enemy-ai/SKILL.md",
+    name: "tune-enemy-ai",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build, debug, balance, or test combat enemy AI for playable action games. Use for aggro, target selection, navigation, spacing, attack choices, telegraphs, retreats, boss behavior, behavior-state machines, and deterministic AI regression tests.',
+  },
+  {
+    slug: "unicorn-studio",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/unicorn-studio/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/unicorn-studio/SKILL.md",
+    name: "unicorn-studio",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Use when embedding and customizing Unicorn Studio interactive animations on the web (embed, responsive sizing, performance, layering with UI, fallbacks).',
+  },
+  {
+    slug: "unsplash-asset-images",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/unsplash-asset-images/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/unsplash-asset-images/SKILL.md",
+    name: "unsplash-asset-images",
+    topics: ["video", "visual", "craft"],
+    description:
+      'Use when you need to pick high-quality Unsplash images for product/design assets (avatars, headshots, portraits, large website backgrounds, and abstract wallpapers) and output real Unsplash URLs plus practical instructions for producing the right resolutions and aspect ratios (1:1, 4:5, 3:4, 16:9, 9:16).',
+  },
+  {
+    slug: "vantajs",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/vantajs/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/vantajs/SKILL.md",
+    name: "vantajs",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Use when adding animated WebGL background effects with Vanta.js (setup, parameters, resizing, performance, integration in React/Next.js).',
+  },
+  {
+    slug: "video-to-superprompt",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/video-to-superprompt/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/video-to-superprompt/SKILL.md",
+    name: "video-to-superprompt",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Turn a reference video into a super detailed recreation or inspiration prompt. Use when the user provides, mentions, uploads, links, or points to a video and asks to analyze the design, UI, animations, transitions, scroll interactions, typography, colors, assets, WebGL/Three.js, storytelling, section-by-section behavior, or to create a prompt/article that recreates the page, app, interaction, or motion system.',
+  },
+  {
+    slug: "water-crystal-skill-vfx",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-combat/water-crystal-skill-vfx/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-combat/water-crystal-skill-vfx/SKILL.md",
+    name: "water-crystal-skill-vfx",
+    topics: ["visual", "craft", "interaction"],
+    description:
+      'Build the effects of a water and crystal skill as one visual language in Three.js. Water that reads as clear water, never a teal fill or a textured ball. A ray-marched water orb whose surface swells, rings and deforms in place: it refracts the frame behind it with an inverted horizon, has a silver rim and sharp highlights, and shows a faint caustic web on its far wall. Streams wound up from tide pools as uneven beaded ropes with silver edges, drips and shed drops. A lash that unspools from the orb, whips and pours into a pool under a torn, lopsided splash crown of aerated white water with spikes breaking into drops. Analytic ripple rings and rain on the pools. Crystals traced against their own half-space planes (Snell, Fresnel, total internal reflection, exit dispersion, Beer–Lambert, fracture discs, a white-hot root glow and a resonance band that climbs the stone), growing out of the water in a draining veil, then shattering into Voronoi shards that fall, tumble and rest with real contact on a heightfield. Caustics on the pool floor, and a moonlit tidal rock flat: rock banks traced from target images onto a world grid, flat mirror pools, a moon-glitter column of micro-facet glints, and a moon disc with maria. Use for water or ice-crystal skills, water orbs or bubbles, water whips, jets or tentacles, splash impacts, tide pools, rain, crystal growth or eruption, crystal resonance, shattering glass or quartz, caustics, wet-stone night scenes, moon reflections on water, "water and crystal", "hydro", "clear water VFX", "crystal shatter" or "skill effects only". Includes a reusable module and a five-beat demo on a scanned CC0 low-tide floor with failure-mode switches.',
+  },
+  {
+    slug: "web-technique-to-skill",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/web-technique-to-skill/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/web-technique-to-skill/SKILL.md",
+    name: "web-technique-to-skill",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Turn a visual or interaction technique you already built into a reusable web-design skill, by isolating the one mechanism that makes it work while reproducing its approved reference exactly around that focus, and packaging it with a demo that proves both the mechanism and the visual fidelity. Covers finding the mechanism, naming the technique plainly, disclosing the verified runtime and renderer, auditing reference layers, carrying real numbers instead of adjectives, preserving owned staging, keeping expensive gotchas, declaring the boundary against neighbouring skills, and browser-verifying before claiming it works. Use when a page, canvas scene, shader, scroll effect, layout system, or hover interaction turned out well and should become a skill rather than staying in one project.',
+  },
+  {
+    slug: "webgl-3d-object",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/webgl-3d-object/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/webgl-3d-object/SKILL.md",
+    name: "webgl-3d-object",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a real 3D WebGL object with geometric mesh depth, physically based material, directional and ambient lighting, perspective camera, subtle rotation, and floating motion. Use when a page needs a faceted 3D hero object or product-like visual with real lighting instead of CSS transform tricks.',
+  },
+  {
+    slug: "webgl-laser",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/webgl-laser/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/webgl-laser/SKILL.md",
+    name: "webgl-laser",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      'Create a fixed full-screen WebGL laser background effect with a thin white-hot vertical core, restrained brand-colored halo, and soft smoky fog around the beam. Use only for laser background effects, not full page layout, copy, generic hero scenes, particles, or unrelated motion systems.',
+  },
+  {
+    slug: "workflow-progress-screenshots",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/workflow/workflow-progress-screenshots/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/workflow/workflow-progress-screenshots/SKILL.md",
+    name: "workflow-progress-screenshots",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Show the user real screenshots of the work as it progresses, without being asked. Capture the start, the key moment and the result of every visual change, send them as files with captions as soon as each is ready, and look at every image before sending it. Use on any task with a visible result (UI, pages, games, 3D, charts, motion), when the user says "show me", "screenshots", "keep giving me screenshots" or "where are the screenshots?", and before any report that claims a visual change works.',
+  },
+  {
+    slug: "workflow-score-to-target",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/workflow/workflow-score-to-target/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/workflow/workflow-score-to-target/SKILL.md",
+    name: "workflow-score-to-target",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Score work out of 10 against a clear rubric, then improve it round by round until every item reaches the target score the user named (for example "get it to 8 out of 10", "bring everything under 6 up to 6+"). Covers anchored rubrics, measurable criteria, independent or blind judging, before/after scorecards, and honest reporting of anything still short. Use whenever the user asks to score, rate, grade or judge something out of 10, names a target score, or asks "what would make this a 9?".',
+  },
+  {
+    slug: "workflow-ship-change",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/workflow/workflow-ship-change/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/workflow/workflow-ship-change/SKILL.md",
+    name: "workflow-ship-change",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Ship every change the way the user requires, with the guardrails. Take screenshots of the start, the key moment and the result; give the change its own changelog version with pictures; verify with tests; commit only your own files; merge with the latest main and push as a fast-forward; publish that exact main live; confirm each step; and report measured sizes, asking before any upload over 50 MB. Use at the end of every change (feature, fix, tweak, art, balance, polish) and whenever the user says "ship it", "commit", "push", "merge", "publish", "deploy", "go live" or "update the changelog". Project specifics (hosting, the changelog pipeline, merge conflicts) go in an optional local references/<project>.md next to this skill.',
+  },
+  {
+    slug: "workflow-threads-manager",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/workflow/workflow-threads-manager/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/workflow/workflow-threads-manager/SKILL.md",
+    name: "workflow-threads-manager",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Oversee the other Claude threads (sessions) working on the same project. Check what each is doing, confirm finished work is merged to main, has its changelog entry with screenshots, and is live, archive threads that are truly done, and restart or flag threads that were cut off. Use when the user says "check threads", "check new changes", "are the threads merged and pushed", "archive the done threads", or asks what the other sessions are up to. Project specifics (changelog format, live site, capture folders) go in an optional local references/<project>.md next to this skill.',
+  },
+  {
+    slug: "write-like-meng-on-x",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/write-like-meng-on-x/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/write-like-meng-on-x/SKILL.md",
+    name: "write-like-meng-on-x",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Write, rewrite, review, or continuously refine X/Twitter posts in Meng To\'s current voice using his deduplicated authored-post corpus, personal and product context, shared resources, and Content repo evidence. Use when asked to improve a tweet in Meng\'s tone, draft an original post, reply, thread, resource share, or quote post as Meng, check whether an angle repeats an earlier post, study Meng\'s writing style, ingest another 20-50 authored posts, or hone the reusable Meng X voice profile.',
+  },
+  {
+    slug: "x-bookmark-quote-posts",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/codex/x-bookmark-quote-posts/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/codex/x-bookmark-quote-posts/SKILL.md",
+    name: "x-bookmark-quote-posts",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      'Check a user\'s latest X/Twitter bookmarks and turn recent saved posts into source-backed quote-post drafts calibrated against the user\'s latest 100 authored posts. Use when asked to review X bookmarks, create quote posts from bookmarks, refresh a bookmark quote queue, run a bookmark quote automation, study a user\'s X voice, or write first-person quote posts from X sources.',
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
