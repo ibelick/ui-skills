@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-31T10:25:31.181Z",
-  "skillCount": 626,
+  "generatedAt": "2026-11-01T10:12:02.787Z",
+  "skillCount": 629,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
     "ibelick/baseline-ui": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
@@ -348,7 +348,7 @@
     "jakubkrehel/state-machine": "sha256:a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
     "jakubkrehel/build-design": "sha256:d51cb44f594de7248340e9369c767f70a955483ba77f9976697cdbaf2f073a68",
     "elithrar/animated-sprites": "sha256:9ce05a7e3e20875423c4ef9e9852d797e863aaf98456037653c3dd0582feaaf4",
-    "humanlayer/rpi": "sha256:309bed87e4c4ac88d59cca3f27ca44cf152ebf4cd4342e0095f3d72b5cb1188f",
+    "humanlayer/rpi": "sha256:82c68bba346022d3ef32d8887fc6fb4f94a339f63b92186886c453e813d45333",
     "anthropics/pdf": "sha256:9f78b8359fbd4943ad260a7a1e436e5a96503406d6c34e99f69223d647d85b9c",
     "wheresryan22/anatomy": "sha256:3423ada45a05033bb6e320dfc3b3ac832569969a5afb059bbfc9096c5cf0c71b",
     "kemiljk/ai-output-judgement": "sha256:3fda54971b1c8a1d95bfecfde686eacb98b8b106943b9e0d64b8de13f96cd8ae",
@@ -419,7 +419,7 @@
     "heygen-com/figma": "sha256:d9537758a88bf3cbfc5699167742e437a6791c57c0180556c930ec6c3aae0ab6",
     "heygen-com/hyperframes-animation": "sha256:b35f1f8eff68e9ff480a5d5d343a1bf5a40ebb7d0d9be20b0b980cfdb36047f3",
     "heygen-com/hyperframes-audio": "sha256:daf3250390426ef096a7d2f71082919418099decbd1f31288640a43b43c7e293",
-    "heygen-com/hyperframes-cli": "sha256:44a48ccfa4cbd4f4234f8306c96268a4be56a0f2376abedbf31d2167b3c21286",
+    "heygen-com/hyperframes-cli": "sha256:cfaa2a4dfc696c48929b2a6115ac16e3c04134cef13bd99050758a2936f3d903",
     "heygen-com/hyperframes-creative": "sha256:9da7b7ac84c8d884b54125887ecca1a645a38337013082b96af2fdc0259c945a",
     "heygen-com/hyperframes-keyframes": "sha256:d6484e8367ed522f2a89af9ec30ae3cd86ae243b5a23c5ab00a7a682e3d1a791",
     "heygen-com/hyperframes-registry": "sha256:0ac5bb49dd7aed66e0d61248eca94e8c9f1a95b482c8004fb0113f724fffe6cd",
@@ -465,7 +465,7 @@
     "dimillian/swiftui-liquid-glass": "sha256:53dfbe810cf2044b9c9fff5b2b9d9888053ac24b7d72e63258df8859571bc599",
     "dimillian/swiftui-performance-audit": "sha256:6cfb3f9f3e1938aca3eb1cf3ac9f265cca15559b0c9b3dcd3ab2e580be3cea2f",
     "emilkowalski/remove-animations": "sha256:dea95b7a7ef81cba312c7f70a3c5c67d7e06a287cb16b16d2f90f2b1fb0afff9",
-    "heygen-com/reverse-any-video": "sha256:31bd1f7c471cacdf4b96dab943c29a4b0e92c8e969f343be4f35c98e9aefb623",
+    "heygen-com/reverse-any-video": "sha256:ae77e3436fc40bf80604d7b590c7c169da805b9eb660cdf338e63cdda35203d5",
     "jakubantalik/transitions-agent": "sha256:12d54f18a6586cc090feed7d0bb907ffae8ca4f0af78d8c92e9a5d1713761d87",
     "mengto/3d-cloth-material": "sha256:c5a4a06037b65ae9958438462ef696cd15a7434b3a170d36a5e90e482edbbf3c",
     "mengto/3d-four-seasons": "sha256:2696252a795b1c234d4b06a1091418e68ae305f4d773e9b69e941392fa7286c7",
@@ -627,6 +627,9 @@
     "mengto/workflow-threads-manager": "sha256:9e7b4afa5a8130d59a383f12726866f2d9d3d95b1e9bc472e73744c99d5d135a",
     "mengto/write-like-meng-on-x": "sha256:5675889197ebb5c819f3fa7f3f3172312b958c907e9020955db94bdb61258bcd",
     "mengto/x-bookmark-quote-posts": "sha256:d3f625cc3bb87dd8cfb41b70abb2d3e3f145f69642d260b681395abd2ed8a586",
-    "mengto/unsplash-asset-images": "sha256:cd057d9a7dcaf2de444aec22c1f3277392aab85b9a296beabc20ba3a7b48950c"
+    "mengto/unsplash-asset-images": "sha256:cd057d9a7dcaf2de444aec22c1f3277392aab85b9a296beabc20ba3a7b48950c",
+    "benjitaylor/stageshow": "sha256:a9b790ab20631961dcc71ae5955710d5bda10d62469f43767a6a38c650e5e9d7",
+    "kelvinkn17/fun-isometric": "sha256:ca78d59ccb3439fe40b4bb267a90d726327cb8cd9bf5271331aad774bcc4ac9d",
+    "superdesigndev/rea-growth": "sha256:9040c432c264dbb5f8b35376efae311cf5ef6f5cfe2a6787be928fc89ab681a6"
   }
 }

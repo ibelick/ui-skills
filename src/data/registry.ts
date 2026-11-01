@@ -8296,6 +8296,62 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       'Check a user\'s latest X/Twitter bookmarks and turn recent saved posts into source-backed quote-post drafts calibrated against the user\'s latest 100 authored posts. Use when asked to review X bookmarks, create quote posts from bookmarks, refresh a bookmark quote queue, run a bookmark quote automation, study a user\'s X voice, or write first-person quote posts from X sources.',
   },
+  {
+    slug: "stageshow",
+    user: "benjitaylor",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/benjitaylor/skills/main/stageshow/SKILL.md",
+    githubUrl:
+      "https://github.com/benjitaylor/skills/blob/main/stageshow/SKILL.md",
+    files: [
+      "references/annotations.md",
+      "references/backgrounds.md",
+      "references/bento.md",
+      "references/brands.md",
+      "references/choreography.md",
+      "references/craft.md",
+      "references/framing.md",
+      "references/kit.md",
+      "references/looks.md",
+      "references/motion.md",
+      "references/products.md",
+      "references/rehearse.md",
+      "references/review.md",
+      "references/teaching.md",
+      "references/verify.md",
+    ],
+    name: "stageshow",
+    topics: ["visual", "motion", "craft", "frontend"],
+    description:
+      'Build faux product UI that looks like a real product, as a still illustration or an animated demo with a cursor. Browser and app windows, dashboards, phones, notifications, terminals, bento grids and cursor walkthroughs, framed, masked and cropped the way a marketing page, feature card or docs hero needs them. Use whenever someone wants a fake or mocked UI, a product demo or walkthrough animation, a hero or feature-card illustration of an app, a product shot in the style of a polished marketing site, or an animated cursor doing things in an interface, even if they never say "faux UI". React and plain CSS.',
+  },
+  {
+    slug: "rea-growth",
+    user: "superdesigndev",
+    repo: "treg",
+    rawUrl:
+      "https://raw.githubusercontent.com/superdesigndev/treg/main/skills/rea-growth/SKILL.md",
+    githubUrl:
+      "https://github.com/superdesigndev/treg/blob/main/skills/rea-growth/SKILL.md",
+    name: "rea-growth",
+    topics: ["craft", "tooling", "frontend"],
+    description:
+      'Use when the user wants to know how a company gets its users, reverse engineer a competitor\'s growth or distribution, copy what a winning company does on each channel, or study a brand\'s content strategy (titles, thumbnails, covers, captions, graphics) on YouTube, TikTok, Instagram, X, LinkedIn or Reddit. Also for "how did X grow", "teardown of X\'s marketing", "what content works for X".',
+  },
+  {
+    slug: "fun-isometric",
+    user: "kelvinkn17",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kelvinkn17/skills/main/skills/fun-isometric/SKILL.md",
+    githubUrl:
+      "https://github.com/kelvinkn17/skills/blob/main/skills/fun-isometric/SKILL.md",
+    name: "fun-isometric",
+    topics: ["visual", "motion", "3d", "craft"],
+    description:
+      'Draws fun, sharp isometric stickers (flat fill, thick black outline, extruded slab side) and animates them on a library of After Effects grade keyframe presets, replayed exactly the way lottie-web plays them, so the motion is fluid character animation and never a made up wobble. Any palette (six named sets with Riso by default, two brand colours, one colour, hue shift, custom slots) and four facing directions. Produces icon modules that play live on canvas in any web app (a React component ships with the kit) and export to looping alpha video (webm, HEVC mp4) with a poster. Use for "/fun-isometric", "animated sticker icons", "fun isometric icons", "Lottie style icons", "onboarding illustrations that move", or any request for playful animated icons, empty state art or feature stickers.',
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
