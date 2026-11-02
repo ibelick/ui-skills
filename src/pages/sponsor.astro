@@ -89,36 +89,34 @@ const structuredData = {
   showNewsletter={false}
 >
   <div class="relative flex min-h-dvh flex-col items-center justify-start">
-    <article class="container-3xl relative mt-20 flex flex-col gap-16 pb-8 sm:gap-24">
-      <header class="flex w-full flex-col gap-10">
-        <div class="flex max-w-xl flex-col gap-3">
-          <h1 class="type-h1 text-content-primary text-balance">
-            Reach design engineers while they are building
-          </h1>
-          <p class="text-content-secondary text-base text-pretty">
-            Sponsor UI Skills. A card on the site and in the README.
-          </p>
-        </div>
-        <dl class="bg-line-default ring-line-default grid w-full grid-cols-2 gap-px overflow-hidden rounded-lg ring-1 sm:grid-cols-4">
-          {
-            stats.map((item) => {
-              const Icon = item.icon;
-              return (
-                <div class="bg-surface-default min-w-0 px-4 py-5">
-                  <Icon className="text-content-secondary size-6" aria-hidden="true" />
-                  <dt class="type-body-sm text-content-secondary mt-3">{item.context}</dt>
-                  <dd class="text-content-primary mt-2 text-2xl font-[450] tabular-nums">{item.value}</dd>
-                  <p class="type-body-sm text-content-secondary mt-1">{item.label}</p>
-                </div>
-              );
-            })
-          }
-        </dl>
+    <article class="container-3xl relative mt-20 flex flex-col gap-10 pb-8">
+      <header class="flex flex-col gap-3">
+        <h1 class="type-h1 text-content-primary">
+          Reach design engineers while they are building
+        </h1>
+        <p class="type-body-md text-content-secondary">
+          Sponsor UI Skills. A card on the site and in the README.
+        </p>
       </header>
+      <dl class="bg-line-default ring-line-default grid w-full grid-cols-2 gap-px overflow-hidden rounded-lg ring-1 sm:grid-cols-4">
+        {
+          stats.map((item) => {
+            const Icon = item.icon;
+            return (
+              <div class="bg-surface-default min-w-0 px-4 py-5">
+                <Icon className="text-content-secondary size-4" aria-hidden="true" />
+                <dt class="type-body-md text-content-secondary mt-3">{item.context}</dt>
+                <dd class="type-h2 text-content-primary mt-1 tabular-nums">{item.value}</dd>
+                <p class="type-body-md text-content-secondary">{item.label}</p>
+              </div>
+            );
+          })
+        }
+      </dl>
 
-      <section class="grid gap-16 sm:grid-cols-2 sm:gap-8">
+      <section class="grid gap-10 sm:grid-cols-2 sm:gap-8">
         <div class="flex min-w-0 flex-col gap-5">
-        <h2 id="placement-heading" class="type-h2 text-content-primary text-balance">
+        <h2 id="placement-heading" class="type-body-md text-content-secondary font-[450]">
           One card, on every page
         </h2>
         <figure>
@@ -177,14 +175,14 @@ const structuredData = {
                 </div>
                 </div>
                 <div class="bg-surface-default/60 absolute inset-0"></div>
-                <div class="gold-card absolute right-4 bottom-4 h-16 w-40 rounded-lg shadow-xs"></div>
+                <div class="sponsor-card absolute right-4 bottom-4 h-16 w-40 rounded-lg"></div>
               </div>
             </div>
           </div>
         </figure>
         </div>
         <div class="flex min-w-0 flex-col gap-5">
-          <h2 class="type-h2 text-content-primary text-balance">In the README</h2>
+          <h2 class="type-body-md text-content-secondary font-[450]">In the README</h2>
           <figure>
             <div class="@container ring-line-default relative aspect-video w-full select-none overflow-hidden rounded-lg ring-1">
               <div
@@ -205,7 +203,7 @@ const structuredData = {
                   </div>
                   <div class="flex flex-col items-center gap-1.5">
                     <p class="text-content-secondary text-xs font-[450]">Sponsors</p>
-                    <div class="gold-card relative h-8 w-56 rounded-md"></div>
+                    <div class="sponsor-card relative h-8 w-56 rounded-md"></div>
                   </div>
                   <div class="relative w-[22rem] text-center">
                     <p class="text-content-primary text-sm">Skills for Design Engineers.</p>
@@ -219,10 +217,10 @@ const structuredData = {
         </div>
       </section>
 
-      <section class="flex max-w-xl flex-col gap-8">
+      <section class="flex flex-col gap-7">
         {
           questions.map((item) => (
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-1">
               <h2 class="type-body-md text-content-primary font-[450]">{item.question}</h2>
               <p class="type-body-md text-content-secondary text-pretty">
                 {item.answer.includes(contactEmail) ? (
@@ -250,106 +248,75 @@ const structuredData = {
 </Layout>
 
 <style>
-  .gold-card {
+  .sponsor-card {
     overflow: hidden;
-    background-image: linear-gradient(100deg, #8f9296, #c9ccd0 45%, #e4e6e9 60%, #a6a9ad);
+    background: linear-gradient(180deg, #2a2b2f 0%, #111214 55%, #08080a 100%);
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.18),
+      0 4px 12px -4px rgba(0, 0, 0, 0.25);
   }
 
-  .gold-card::after {
+  .sponsor-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    width: 200%;
+    background: linear-gradient(
+      110deg,
+      transparent 38%,
+      rgba(255, 255, 255, 0.07) 47%,
+      rgba(255, 255, 255, 0.11) 50%,
+      rgba(255, 255, 255, 0.03) 54%,
+      transparent 62%
+    );
+    transform: translateX(calc((var(--scroll, 0.5) - 0.5) * 24%));
+    pointer-events: none;
+  }
+
+  .sponsor-card::after {
     content: "";
     position: absolute;
     inset: 0;
-    z-index: 1;
     border-radius: inherit;
+    background: radial-gradient(120% 80% at 50% 0%, rgba(255, 255, 255, 0.08), transparent 60%);
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.6),
-      inset 0 -1px 0 rgba(30, 32, 36, 0.3);
+      inset 0 1px 0 rgba(255, 255, 255, 0.16),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.05);
     pointer-events: none;
   }
 </style>
 
 <script>
-  const fragment = `precision mediump float;
-uniform vec2 r;uniform float s,d;
-float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
-float n(vec2 p){vec2 i=floor(p),f=fract(p);f*=f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+1.),f.x),f.y);}
-void main(){
-vec2 g=gl_FragCoord.xy/d,u=gl_FragCoord.xy/r;
-float l=h(vec2(floor(g.y*2.),7.));
-float b=n(vec2(g.x*.04,g.y*2.))*.4+n(vec2(g.x*.01,g.y*.7))*.35+l*.25;
-float q=u.x-.2*u.y+s*.25;
-float k=.32*exp(-pow((q-.55)*6.,2.))+.1*exp(-pow((q-.15)*3.,2.));
-float e=.6+(b-.5)*.08+k*(.4+b)+.05*(u.y-.5);
-e*=1.-.1*pow(abs(u.x*2.-1.),6.);
-vec3 c=e*vec3(.962,.972,.99)+(h(gl_FragCoord.xy)-.5)*.012;
-gl_FragColor=vec4(c,1);}`;
-
+  const cards = [...document.querySelectorAll<HTMLElement>(".sponsor-card")];
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  for (const card of document.querySelectorAll<HTMLElement>(".gold-card")) {
-    const canvas = document.createElement("canvas");
-    canvas.style.cssText = "position:absolute;inset:0;width:100%;height:100%";
-    const gl = canvas.getContext("webgl", { antialias: false });
-    if (!gl) continue;
-
-    const program = gl.createProgram()!;
-    for (const [type, source] of [
-      [gl.VERTEX_SHADER, "attribute vec2 a;void main(){gl_Position=vec4(a,0,1);}"],
-      [gl.FRAGMENT_SHADER, fragment],
-    ] as const) {
-      const shader = gl.createShader(type)!;
-      gl.shaderSource(shader, source);
-      gl.compileShader(shader);
-      gl.attachShader(program, shader);
-    }
-    gl.linkProgram(program);
-    if (!gl.getProgramParameter(program, gl.LINK_STATUS)) continue;
-    gl.useProgram(program);
-    gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
-    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
-    gl.enableVertexAttribArray(0);
-    gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
-    const resolution = gl.getUniformLocation(program, "r");
-    const scroll = gl.getUniformLocation(program, "s");
-    const density = gl.getUniformLocation(program, "d");
-    card.append(canvas);
-
-    let current = -1;
+  if (!reduce && cards.length) {
+    const values = cards.map(() => -1);
     let frame = 0;
-    let visible = false;
 
-    const draw = () => {
+    const update = () => {
       frame = 0;
-      const rect = canvas.getBoundingClientRect();
-      const dpr = Math.min(devicePixelRatio, 2);
-      const width = Math.round(rect.width * dpr);
-      const height = Math.round(rect.height * dpr);
-      if (canvas.width !== width || canvas.height !== height) {
-        canvas.width = width;
-        canvas.height = height;
-        gl.viewport(0, 0, width, height);
-        gl.uniform2f(resolution, width, height);
-        gl.uniform1f(density, dpr);
-      }
-      const target = reduce
-        ? 0.5
-        : Math.min(Math.max(1 - (rect.top + rect.height / 2) / innerHeight, 0), 1);
-      current = current < 0 ? target : current + (target - current) * 0.08;
-      gl.uniform1f(scroll, current);
-      gl.drawArrays(gl.TRIANGLES, 0, 3);
-      if (visible && Math.abs(target - current) > 0.0005) schedule();
+      let moving = false;
+      cards.forEach((card, index) => {
+        const rect = card.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > innerHeight) return;
+        const target = Math.min(Math.max(1 - (rect.top + rect.height / 2) / innerHeight, 0), 1);
+        const current = values[index] < 0 ? target : values[index] + (target - values[index]) * 0.1;
+        values[index] = current;
+        card.style.setProperty("--scroll", current.toFixed(4));
+        if (Math.abs(target - current) > 0.001) moving = true;
+      });
+      if (moving) schedule();
     };
 
     const schedule = () => {
-      if (!frame) frame = requestAnimationFrame(draw);
+      if (!frame) frame = requestAnimationFrame(update);
     };
 
-    new IntersectionObserver(([entry]) => {
-      visible = entry.isIntersecting;
-      if (visible) schedule();
-    }).observe(card);
-
+    addEventListener("scroll", schedule, { passive: true });
     addEventListener("resize", schedule, { passive: true });
-    if (!reduce) addEventListener("scroll", () => visible && schedule(), { passive: true });
+    update();
   }
 </script>
