@@ -1,0 +1,207 @@
+---
+export const prerender = true;
+
+import Layout from "../layouts/Layout.astro";
+
+const siteOrigin = Astro.site ?? new URL("https://www.ui-skills.com");
+const pageUrl = new URL("/sponsor", siteOrigin).toString();
+const pageTitle = "Sponsor | UI Skills";
+const pageDescription =
+  "Sponsor UI Skills. One card on every page, in front of 240k+ page views, 130k+ visits, and 88k+ visitors.";
+const mailto = "mailto:hello@interfaceoffice.com?subject=Sponsor%20UI%20Skills";
+const contactEmail = "hello@interfaceoffice.com";
+
+const audience = [
+  { label: "Page views", value: "240k+" },
+  { label: "Visits", value: "130k+" },
+  { label: "Visitors", value: "88k+" },
+];
+
+const previewSkills = [
+  {
+    slug: "ui-skills-root",
+    owner: "ibelick",
+    description: "Route an agent to the smallest useful UI skill.",
+  },
+  {
+    slug: "improve-ui",
+    owner: "ibelick",
+    description: "Audit a surface and write a plan for another agent.",
+  },
+  {
+    slug: "frontend-design",
+    owner: "anthropics",
+    description: "Build a distinctive, production-grade interface.",
+  },
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: pageTitle,
+  description: pageDescription,
+  url: pageUrl,
+};
+---
+
+<Layout
+  structuredData={structuredData}
+  title={pageTitle}
+  description={pageDescription}
+  showNewsletter={false}
+>
+  <div class="relative flex min-h-dvh flex-col items-center justify-start">
+    <article class="container-3xl relative mt-20 flex flex-col gap-16 pb-8 sm:gap-24">
+      <header class="flex max-w-xl flex-col gap-10">
+        <div class="flex flex-col gap-3">
+          <h1 class="type-h1 text-content-primary text-balance">
+            Reach design engineers while they are building
+          </h1>
+          <p class="text-content-secondary text-base text-pretty">
+            Sponsor UI Skills. One card, on every page.
+          </p>
+        </div>
+        <dl class="grid grid-cols-3 gap-6">
+          {
+            audience.map((item) => (
+              <div class="min-w-0">
+                <dt class="type-body-sm text-content-secondary">{item.label}</dt>
+                <dd class="text-content-primary mt-1 text-2xl font-[450] tabular-nums">
+                  {item.value}
+                </dd>
+              </div>
+            ))
+          }
+        </dl>
+      </header>
+
+      <section class="flex flex-col gap-5" aria-labelledby="placement-heading">
+        <h2 id="placement-heading" class="type-h2 text-content-primary text-balance">
+          One card, on every page
+        </h2>
+        <figure>
+          <div class="bg-page-default ring-line-default relative h-80 overflow-hidden rounded-lg ring-1 sm:h-96">
+            <div class="site-fade pointer-events-none absolute inset-0" aria-hidden="true">
+              <div class="flex w-full flex-col gap-6 px-5 pt-5">
+                <div class="text-content-primary flex items-center gap-2">
+                  <img
+                    src="/uiskills-logo-light.webp"
+                    alt=""
+                    width="16"
+                    height="16"
+                    class="size-4"
+                  />
+                  <span class="type-body-md font-[450]">UI Skills</span>
+                </div>
+                <p class="type-h2 text-content-primary max-w-md">
+                  Curated skills for design engineering
+                </p>
+                <div class="grid max-w-xl grid-cols-2 gap-3">
+                  <div class="ring-line-default rounded-lg p-3 ring-1">
+                    <div class="type-body-md text-content-primary font-[450]">CLI</div>
+                    <div class="type-body-sm text-content-secondary mt-1">
+                      Run the UI Skills CLI from your terminal.
+                    </div>
+                  </div>
+                  <div class="ring-line-default rounded-lg p-3 ring-1">
+                    <div class="type-body-md text-content-primary font-[450]">MCP</div>
+                    <div class="type-body-sm text-content-secondary mt-1">
+                      Connect your agent to the UI Skills catalog.
+                    </div>
+                  </div>
+                </div>
+                <div class="flex max-w-xl flex-col">
+                  <div class="type-body-md text-content-secondary font-[450]">Skills</div>
+                  {
+                    previewSkills.map((skill) => (
+                      <div class="border-line-default flex items-center gap-3 border-b py-3">
+                        <img
+                          src={`https://github.com/${skill.owner}.png?size=80`}
+                          alt=""
+                          width="40"
+                          height="40"
+                          class="border-line-default size-10 shrink-0 rounded-xl border"
+                        />
+                        <span class="min-w-0">
+                          <span class="flex items-center gap-2">
+                            <span class="type-body-md text-content-primary truncate font-[450]">
+                              {skill.slug}
+                            </span>
+                            <span class="type-body-sm text-content-muted shrink-0">
+                              {skill.owner}
+                            </span>
+                          </span>
+                          <span class="type-body-sm text-content-secondary block truncate">
+                            {skill.description}
+                          </span>
+                        </span>
+                      </div>
+                    ))
+                  }
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute right-3 bottom-3 w-[min(20rem,calc(100%-1.5rem))]"
+              aria-hidden="true"
+            >
+              <div class="bg-surface-default ring-line-default rounded-lg p-3 shadow-xs ring-1">
+                <div class="flex items-start gap-2.5">
+                  <svg viewBox="0 0 80 80" class="size-5 shrink-0" aria-hidden="true">
+                    <path
+                      fill="#FE0100"
+                      d="M15.9284 66.1694C16.1171 66.1694 16.2912 66.1071 16.4313 66.0019L52.9962 29.437C53.1014 29.2969 53.1637 29.1227 53.1637 28.9341V14.6605V13.3355C53.1637 12.8974 52.7823 12.9507 52.4936 13.167L52.3242 13.3364L0.3307 65.3299C0.0244677 65.5592 -0.226911 66.1694 0.329795 66.1694H15.9284Z"
+                    ></path>
+                    <path
+                      fill="#FE0100"
+                      d="M79.1627 66.1693C79.6258 66.1693 80.0013 65.7938 80.0013 65.3307V13.0168C79.9471 13.0058 79.8909 13 79.8334 13C79.5588 13 79.315 13.132 79.162 13.336L27.168 65.33C26.964 65.483 26.832 65.7268 26.832 66.0014C26.832 66.1676 27.0234 66.1693 27.1674 66.1693H42.766C42.9546 66.1693 43.1288 66.107 43.2689 66.0018L43.4371 65.8336L66.2475 43.0232C66.2475 43.0232 66.4495 42.8157 66.5832 42.7573V43.5262V44.295V65.3307C66.5832 65.7938 66.9586 66.1693 67.4218 66.1693H79.1627Z"
+                    ></path>
+                  </svg>
+                  <span class="flex min-w-0 flex-col gap-0.5">
+                    <span class="type-body-md text-content-primary font-[450]">Mesurer</span>
+                    <span class="type-body-md text-content-secondary">
+                      Build precise software with your coding agent.
+                    </span>
+                  </span>
+                </div>
+                <div class="border-line-default type-body-sm text-content-secondary -mx-3 mt-3 flex items-center gap-0.5 border-t px-3 pt-2">
+                  <span>Sponsor this placement</span>
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    aria-hidden="true"
+                    class="text-content-muted size-3.5"
+                  >
+                    <path
+                      d="M7.5 5.5 12 10l-4.5 4.5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
+        <p class="type-body-md text-content-secondary max-w-xl text-pretty">
+          Write to{" "}
+          <a
+            href={mailto}
+            class="text-content-primary focus-visible:outline-content-primary underline underline-offset-4 focus-visible:outline-1 focus-visible:outline-offset-2"
+            data-s-event="sponsor_inquiry"
+          >
+            {contactEmail}
+          </a>
+        </p>
+      </section>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .site-fade {
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 58%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 58%, transparent 100%);
+  }
+</style>

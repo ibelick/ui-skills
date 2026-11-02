@@ -7,7 +7,7 @@ import Footer from "../ui/footer.astro";
 import { AccountMenu } from "../ui/account-menu";
 import { CommandDialog } from "../ui/command-dialog";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { PromoBanner } from "../ui/promo-banner";
+import PromoBanner from "../ui/promo-banner.astro";
 import { WebMcpTools } from "../ui/webmcp-tools";
 import { serializeJsonLd } from "../lib/serialize-json-ld";
 import githubMetadata from "../data/github-metadata.json";
@@ -125,13 +125,6 @@ const commandItems = [
     <meta name="twitter:image:alt" content={twitterImageAltText} />
     <meta name="twitter:site" content={twitterSiteHandle} />
     <script is:inline>
-      try {
-        if (localStorage.getItem("ui-skills-promo-dismissed") === "1") {
-          document.documentElement.dataset.promoDismissed = "1";
-        }
-      } catch (e) {}
-    </script>
-    <script is:inline>
       (function () {
         function shouldSkipAnalytics() {
           if (navigator.webdriver) return true;
@@ -176,7 +169,7 @@ const commandItems = [
     >
       Skip to main content
     </a>
-    <div class="relative min-h-dvh">
+    <div class:list={["relative min-h-dvh", !fullScreen && "pb-36"]}>
       {
         !fullScreen && (
           <header class="absolute inset-x-0 top-0 z-10 pt-2">
@@ -266,7 +259,7 @@ const commandItems = [
       }
       {showFooter && !fullScreen && <Footer />}
     </div>
-    {!fullScreen && <PromoBanner client:load />}
+    {!fullScreen && <PromoBanner />}
     <script>
       import { getCachedSession } from "../lib/session-client";
 

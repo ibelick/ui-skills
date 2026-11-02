@@ -101,22 +101,6 @@
   padding-inline: 1.25rem;
 }
 
-html[data-promo-dismissed] [data-promo-banner] {
-  display: none;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .promo-banner__close {
-    opacity: 0;
-  }
-
-  .promo-banner:hover .promo-banner__close,
-  .promo-banner:focus-within .promo-banner__close,
-  .promo-banner__close:focus-visible {
-    opacity: 1;
-  }
-}
-
 ::selection {
   background-color: color-mix(in srgb, var(--color-content-extra-muted) 50%, transparent);
   color: inherit;
