@@ -44,6 +44,7 @@
     "drizzle-orm": "^0.45.4",
     "markdown-for-agents": "^1.3.4",
     "marked": "^17.0.1",
+    "mesurer": "^0.2.7",
     "motion": "^12.24.12",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
