@@ -28,7 +28,7 @@ const questions = [
   {
     question: "How many sponsors run at once?",
     answer:
-      "One. A short line at the bottom of the card links to this page, and the partner above it stays visible on every visit.",
+      "Three at most. The partner card stays in the corner on every visit.",
   },
   {
     question: "Are clicks guaranteed?",
@@ -117,7 +117,7 @@ const structuredData = {
           One card, on every page
         </h2>
         <figure>
-          <div class="ring-line-default relative h-80 overflow-hidden rounded-lg ring-1 sm:h-96">
+          <div class="ring-line-default relative h-80 select-none overflow-hidden rounded-lg ring-1 sm:h-96">
             <div class="pointer-events-none absolute inset-0" aria-hidden="true">
               <div class="flex w-full flex-col gap-6 px-5 pt-5">
                 <div class="text-content-primary flex items-center gap-2">
@@ -178,14 +178,14 @@ const structuredData = {
                 </div>
               </div>
             </div>
-            <div class="bg-surface-default/25 pointer-events-none absolute inset-0" aria-hidden="true"></div>
+            <div class="bg-surface-default/60 pointer-events-auto absolute inset-0 select-none" aria-hidden="true"></div>
             <div
-              class="absolute right-3 bottom-3 w-[min(20rem,calc(100%-1.5rem))]"
+              class="absolute right-3 bottom-3 w-max max-w-[calc(100%-1.5rem)]"
               aria-hidden="true"
             >
-              <div class="bg-surface-default ring-line-default rounded-lg p-3 shadow-xs ring-1">
-                <div class="flex items-start gap-2.5">
-                  <svg viewBox="0 0 80 80" class="size-5 shrink-0" aria-hidden="true">
+              <div class="bg-surface-default ring-line-default flex w-52 flex-col gap-2 rounded-lg p-3 shadow-xs ring-1">
+                <span class="flex items-center gap-2.5">
+                  <svg viewBox="0 0 80 80" class="size-10 shrink-0" aria-hidden="true">
                     <path
                       fill="#FE0100"
                       d="M15.9284 66.1694C16.1171 66.1694 16.2912 66.1071 16.4313 66.0019L52.9962 29.437C53.1014 29.2969 53.1637 29.1227 53.1637 28.9341V14.6605V13.3355C53.1637 12.8974 52.7823 12.9507 52.4936 13.167L52.3242 13.3364L0.3307 65.3299C0.0244677 65.5592 -0.226911 66.1694 0.329795 66.1694H15.9284Z"
@@ -195,29 +195,14 @@ const structuredData = {
                       d="M79.1627 66.1693C79.6258 66.1693 80.0013 65.7938 80.0013 65.3307V13.0168C79.9471 13.0058 79.8909 13 79.8334 13C79.5588 13 79.315 13.132 79.162 13.336L27.168 65.33C26.964 65.483 26.832 65.7268 26.832 66.0014C26.832 66.1676 27.0234 66.1693 27.1674 66.1693H42.766C42.9546 66.1693 43.1288 66.107 43.2689 66.0018L43.4371 65.8336L66.2475 43.0232C66.2475 43.0232 66.4495 42.8157 66.5832 42.7573V43.5262V44.295V65.3307C66.5832 65.7938 66.9586 66.1693 67.4218 66.1693H79.1627Z"
                     ></path>
                   </svg>
-                  <span class="flex min-w-0 flex-col gap-0.5">
+                  <span class="flex min-w-0 flex-col">
                     <span class="type-body-md text-content-primary font-[450]">Mesurer</span>
-                    <span class="type-body-md text-content-secondary">
-                      Build precise software with your coding agent.
-                    </span>
+                    <span class="type-body-md text-content-secondary">Sponsored</span>
                   </span>
-                </div>
-                <div class="border-line-default type-body-sm text-content-secondary -mx-3 mt-3 flex items-center gap-0.5 border-t px-3 pt-2">
-                  <span>Sponsor this placement</span>
-                  <svg
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    aria-hidden="true"
-                    class="text-content-muted size-3.5"
-                  >
-                    <path
-                      d="M7.5 5.5 12 10l-4.5 4.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </div>
+                </span>
+                <span class="type-body-md text-content-secondary">
+                  Build precise software with your coding agent.
+                </span>
               </div>
             </div>
           </div>
