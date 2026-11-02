@@ -13,14 +13,14 @@ const siteOrigin = Astro.site ?? new URL("https://www.ui-skills.com");
 const pageUrl = new URL("/sponsor", siteOrigin).toString();
 const pageTitle = "Sponsor | UI Skills";
 const pageDescription =
-  "Sponsor UI Skills. A corner card on the site and a place in the GitHub README. $3k for 30 days.";
+  "Sponsor UI Skills. A card on the site and in the README. $3k for 30 days.";
 const mailto = "mailto:hello@interfaceoffice.com?subject=Sponsor%20UI%20Skills";
 const contactEmail = "hello@interfaceoffice.com";
 
 const stats = [
   { label: "Page views", value: "240k+", context: "On the site", icon: EyeIcon },
   { label: "Unique visitors", value: "88k+", context: "On the site", icon: UsersIcon },
-  { label: "Clones", value: "60k+", context: "README · 14 days", icon: Square2StackIcon },
+  { label: "Clones", value: "60k+", context: "GitHub repo · 14 days", icon: Square2StackIcon },
   { label: "30 days", value: "$3k", context: "Site and README", icon: CurrencyDollarIcon },
 ];
 
@@ -96,7 +96,7 @@ const structuredData = {
             Reach design engineers while they are building
           </h1>
           <p class="text-content-secondary text-base text-pretty">
-            Sponsor UI Skills. A corner card on the site and a place in the GitHub README.
+            Sponsor UI Skills. A card on the site and in the README.
           </p>
         </div>
         <dl class="bg-line-default ring-line-default grid w-full grid-cols-2 gap-px overflow-hidden rounded-lg ring-1 sm:grid-cols-4">
