@@ -61,6 +61,7 @@ export const GET: APIRoute = ({ site }) => {
     "/agents",
     "/mcp/docs",
     "/cli",
+    "/sponsor",
   ];
   const topicRoutes = buildTopicRoutes(skills);
   const groupRoutes = buildGroupPaths(skills).map((path) => `/skills/${path}`);

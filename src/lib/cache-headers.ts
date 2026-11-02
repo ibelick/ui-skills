@@ -30,7 +30,7 @@ const LISTING_PATH_PREFIXES = [
   "/skills/topics",
 ] as const;
 
-const LISTING_EXACT_PATHS = new Set(["/skills"]);
+const LISTING_EXACT_PATHS = new Set(["/skills", "/sponsor"]);
 
 export function getHtmlCacheControl(pathname: string): string | null {
   const normalized =

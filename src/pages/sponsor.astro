@@ -1,0 +1,322 @@
+---
+export const prerender = true;
+
+import {
+  CurrencyDollarIcon,
+  EyeIcon,
+  Square2StackIcon,
+  UsersIcon,
+} from "@heroicons/react/24/outline";
+import Layout from "../layouts/Layout.astro";
+
+const siteOrigin = Astro.site ?? new URL("https://www.ui-skills.com");
+const pageUrl = new URL("/sponsor", siteOrigin).toString();
+const pageTitle = "Sponsor | UI Skills";
+const pageDescription =
+  "Sponsor UI Skills. A card on the site and in the README. $3k for 30 days.";
+const mailto = "mailto:hello@interfaceoffice.com?subject=Sponsor%20UI%20Skills";
+const contactEmail = "hello@interfaceoffice.com";
+
+const stats = [
+  { label: "Page views", value: "240k+", context: "On the site", icon: EyeIcon },
+  { label: "Unique visitors", value: "88k+", context: "On the site", icon: UsersIcon },
+  { label: "Clones", value: "60k+", context: "GitHub repo · 14 days", icon: Square2StackIcon },
+  { label: "30 days", value: "$3k", context: "Site and README", icon: CurrencyDollarIcon },
+];
+
+const questions = [
+  {
+    question: "What is included?",
+    answer:
+      "On the site, the card in the corner of every page: your logo, product name, one line, and a link. In the GitHub README, a row under the image: your logo, product name, and one line. There is no separate header or sidebar placement on the site.",
+  },
+  {
+    question: "How many sponsors run at once?",
+    answer:
+      "Three at most. The partner card stays in the corner on every visit.",
+  },
+  {
+    question: "Are clicks guaranteed?",
+    answer:
+      "No. Clicks depend on the product and the line of copy. We measure clicks on the card and share that count. We do not promise a number.",
+  },
+  {
+    question: "How long does a sponsorship run?",
+    answer:
+      "We agree the dates by email before the card changes. Tell us the month you want to start.",
+  },
+  {
+    question: "Can I change the card?",
+    answer: "Yes. Send a new line, logo, or link and we update the card.",
+  },
+  {
+    question: "How do I book?",
+    answer: `Email ${contactEmail} with your product name, a square logo, the URL, and one sentence about what it does.`,
+  },
+];
+
+const previewSkills = [
+  {
+    slug: "ui-skills-root",
+    owner: "ibelick",
+    description: "Route an agent to the smallest useful UI skill.",
+  },
+  {
+    slug: "improve-ui",
+    owner: "ibelick",
+    description: "Audit a surface and write a plan for another agent.",
+  },
+  {
+    slug: "frontend-design",
+    owner: "anthropics",
+    description: "Build a distinctive, production-grade interface.",
+  },
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: pageTitle,
+  description: pageDescription,
+  url: pageUrl,
+};
+---
+
+<Layout
+  structuredData={structuredData}
+  title={pageTitle}
+  description={pageDescription}
+  showNewsletter={false}
+>
+  <div class="relative flex min-h-dvh flex-col items-center justify-start">
+    <article class="container-3xl relative mt-20 flex flex-col gap-10 pb-8">
+      <header class="flex flex-col gap-3">
+        <h1 class="type-h1 text-content-primary">
+          Reach design engineers while they are building
+        </h1>
+        <p class="type-body-md text-content-secondary">
+          Sponsor UI Skills. A card on the site and in the README.
+        </p>
+      </header>
+      <dl class="bg-line-default ring-line-default grid w-full grid-cols-2 gap-px overflow-hidden rounded-lg ring-1 sm:grid-cols-4">
+        {
+          stats.map((item) => {
+            const Icon = item.icon;
+            return (
+              <div class="bg-surface-default min-w-0 px-4 py-5">
+                <Icon className="text-content-secondary size-4" aria-hidden="true" />
+                <dt class="type-body-md text-content-secondary mt-3">{item.context}</dt>
+                <dd class="type-h2 text-content-primary mt-1 tabular-nums">{item.value}</dd>
+                <p class="type-body-md text-content-secondary">{item.label}</p>
+              </div>
+            );
+          })
+        }
+      </dl>
+
+      <section class="grid gap-10 sm:grid-cols-2 sm:gap-8">
+        <div class="flex min-w-0 flex-col gap-5">
+        <h2 id="placement-heading" class="type-body-md text-content-secondary font-[450]">
+          One card, on every page
+        </h2>
+        <figure>
+          <div class="@container ring-line-default relative aspect-video w-full select-none overflow-hidden rounded-lg ring-1">
+            <div
+              class="pointer-events-none absolute top-0 left-0 h-[360px] w-[640px] origin-top-left [transform:scale(calc(100cqw/640px))]"
+              aria-hidden="true"
+            >
+              <div class="relative h-full w-full">
+                <div class="flex h-full items-center justify-center">
+                <div class="flex w-full max-w-lg flex-col gap-2 px-4">
+                  <div class="text-content-primary flex items-center gap-2">
+                    <img src="/uiskills-logo-light.webp" alt="" width="16" height="16" class="size-4" />
+                    <span class="text-sm font-[450]">UI Skills</span>
+                  </div>
+                  <p class="text-content-primary text-lg leading-tight">
+                    Curated skills for design engineering
+                  </p>
+                  <div class="grid grid-cols-2 gap-2">
+                    <div class="ring-line-default rounded-md p-2 ring-1">
+                      <div class="text-content-primary text-sm font-[450]">CLI</div>
+                      <div class="text-content-secondary mt-0.5 text-xs">
+                        Run the UI Skills CLI from your terminal.
+                      </div>
+                    </div>
+                    <div class="ring-line-default rounded-md p-2 ring-1">
+                      <div class="text-content-primary text-sm font-[450]">MCP</div>
+                      <div class="text-content-secondary mt-0.5 text-xs">
+                        Connect your agent to the UI Skills catalog.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="text-content-secondary text-sm font-[450]">Skills</div>
+                    {
+                      previewSkills.map((skill) => (
+                        <div class="border-line-default flex items-center gap-2 border-b py-1.5">
+                          <img
+                            src={`https://github.com/${skill.owner}.png?size=64`}
+                            alt=""
+                            width="28"
+                            height="28"
+                            class="border-line-default size-7 shrink-0 rounded-lg border"
+                          />
+                          <span class="min-w-0">
+                            <span class="flex items-center gap-1.5">
+                              <span class="text-content-primary truncate text-sm font-[450]">{skill.slug}</span>
+                              <span class="text-content-muted shrink-0 text-xs">{skill.owner}</span>
+                            </span>
+                            <span class="text-content-secondary block truncate text-xs">{skill.description}</span>
+                          </span>
+                        </div>
+                      ))
+                    }
+                  </div>
+                </div>
+                </div>
+                <div class="bg-surface-default/60 absolute inset-0"></div>
+                <div class="sponsor-card absolute right-4 bottom-4 h-16 w-40 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+        </figure>
+        </div>
+        <div class="flex min-w-0 flex-col gap-5">
+          <h2 class="type-body-md text-content-secondary font-[450]">In the README</h2>
+          <figure>
+            <div class="@container ring-line-default relative aspect-video w-full select-none overflow-hidden rounded-lg ring-1">
+              <div
+                class="pointer-events-none absolute top-0 left-0 h-[360px] w-[640px] origin-top-left [transform:scale(calc(100cqw/640px))]"
+                aria-hidden="true"
+              >
+                <div class="flex h-full flex-col items-center justify-center gap-2 px-6">
+                  <div class="relative w-[22rem]">
+                    <p class="text-content-primary border-line-default border-b pb-2 text-center text-lg font-[450]">UI Skills</p>
+                    <img
+                      src="/UI-OG.png"
+                      alt=""
+                      width="1200"
+                      height="630"
+                      class="mt-2 h-auto w-full rounded-md"
+                    />
+                    <div class="bg-surface-default/60 absolute inset-0"></div>
+                  </div>
+                  <div class="flex flex-col items-center gap-1.5">
+                    <p class="text-content-secondary text-xs font-[450]">Sponsors</p>
+                    <div class="sponsor-card relative h-8 w-56 rounded-md"></div>
+                  </div>
+                  <div class="relative w-[22rem] text-center">
+                    <p class="text-content-primary text-sm">Skills for Design Engineers.</p>
+                    <p class="text-content-secondary mt-1 text-sm">More on ui-skills.com</p>
+                    <div class="bg-surface-default/60 absolute inset-0"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="flex flex-col gap-7">
+        {
+          questions.map((item) => (
+            <div class="flex flex-col gap-1">
+              <h2 class="type-body-md text-content-primary font-[450]">{item.question}</h2>
+              <p class="type-body-md text-content-secondary text-pretty">
+                {item.answer.includes(contactEmail) ? (
+                  <>
+                    {item.answer.split(contactEmail)[0]}
+                    <a
+                      href={mailto}
+                      class="text-content-primary focus-visible:outline-content-primary underline underline-offset-4 focus-visible:outline-1 focus-visible:outline-offset-2"
+                      data-s-event="sponsor_inquiry"
+                    >
+                      {contactEmail}
+                    </a>
+                    {item.answer.split(contactEmail)[1]}
+                  </>
+                ) : (
+                  item.answer
+                )}
+              </p>
+            </div>
+          ))
+        }
+      </section>
+    </article>
+  </div>
+</Layout>
+
+<style>
+  .sponsor-card {
+    overflow: hidden;
+    background: linear-gradient(180deg, #2a2b2f 0%, #111214 55%, #08080a 100%);
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.18),
+      0 4px 12px -4px rgba(0, 0, 0, 0.25);
+  }
+
+  .sponsor-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    width: 200%;
+    background: linear-gradient(
+      110deg,
+      transparent 38%,
+      rgba(255, 255, 255, 0.07) 47%,
+      rgba(255, 255, 255, 0.11) 50%,
+      rgba(255, 255, 255, 0.03) 54%,
+      transparent 62%
+    );
+    transform: translateX(calc((var(--scroll, 0.5) - 0.5) * 24%));
+    pointer-events: none;
+  }
+
+  .sponsor-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(120% 80% at 50% 0%, rgba(255, 255, 255, 0.08), transparent 60%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.16),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const cards = [...document.querySelectorAll<HTMLElement>(".sponsor-card")];
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!reduce && cards.length) {
+    const values = cards.map(() => -1);
+    let frame = 0;
+
+    const update = () => {
+      frame = 0;
+      let moving = false;
+      cards.forEach((card, index) => {
+        const rect = card.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > innerHeight) return;
+        const target = Math.min(Math.max(1 - (rect.top + rect.height / 2) / innerHeight, 0), 1);
+        const current = values[index] < 0 ? target : values[index] + (target - values[index]) * 0.1;
+        values[index] = current;
+        card.style.setProperty("--scroll", current.toFixed(4));
+        if (Math.abs(target - current) > 0.001) moving = true;
+      });
+      if (moving) schedule();
+    };
+
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+
+    addEventListener("scroll", schedule, { passive: true });
+    addEventListener("resize", schedule, { passive: true });
+    update();
+  }
+</script>
