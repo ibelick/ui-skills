@@ -1,6 +1,7 @@
 ---
 export const prerender = true;
 
+import { CursorArrowRaysIcon, EyeIcon, UsersIcon } from "@heroicons/react/24/outline";
 import Layout from "../layouts/Layout.astro";
 
 const siteOrigin = Astro.site ?? new URL("https://www.ui-skills.com");
@@ -12,9 +13,40 @@ const mailto = "mailto:hello@interfaceoffice.com?subject=Sponsor%20UI%20Skills";
 const contactEmail = "hello@interfaceoffice.com";
 
 const audience = [
-  { label: "Page views", value: "240k+" },
-  { label: "Visits", value: "130k+" },
-  { label: "Visitors", value: "88k+" },
+  { label: "Page views", value: "240k+", icon: EyeIcon },
+  { label: "Visits", value: "130k+", icon: CursorArrowRaysIcon },
+  { label: "Visitors", value: "88k+", icon: UsersIcon },
+];
+
+const questions = [
+  {
+    question: "What is included?",
+    answer:
+      "The card in the corner of every page: your logo, product name, one line, and a link. There is no separate header or sidebar placement.",
+  },
+  {
+    question: "How many sponsors run at once?",
+    answer:
+      "One. A short line at the bottom of the card links to this page, and the partner above it stays visible on every visit.",
+  },
+  {
+    question: "Are clicks guaranteed?",
+    answer:
+      "No. Clicks depend on the product and the line of copy. We measure clicks on the card and share that count. We do not promise a number.",
+  },
+  {
+    question: "How long does a sponsorship run?",
+    answer:
+      "We agree the dates by email before the card changes. Tell us the month you want to start.",
+  },
+  {
+    question: "Can I change the card?",
+    answer: "Yes. Send a new line, logo, or link and we update the card.",
+  },
+  {
+    question: "How do I book?",
+    answer: `Email ${contactEmail} with your product name, a square logo, the URL, and one sentence about what it does.`,
+  },
 ];
 
 const previewSkills = [
@@ -61,16 +93,20 @@ const structuredData = {
             Sponsor UI Skills. One card, on every page.
           </p>
         </div>
-        <dl class="grid grid-cols-3 gap-6">
+        <dl class="bg-line-default ring-line-default grid grid-cols-3 gap-px overflow-hidden rounded-lg ring-1">
           {
-            audience.map((item) => (
-              <div class="min-w-0">
-                <dt class="type-body-sm text-content-secondary">{item.label}</dt>
-                <dd class="text-content-primary mt-1 text-2xl font-[450] tabular-nums">
-                  {item.value}
-                </dd>
-              </div>
-            ))
+            audience.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div class="bg-surface-default min-w-0 px-4 py-5">
+                  <Icon className="text-content-secondary size-6" aria-hidden="true" />
+                  <dt class="type-body-sm text-content-secondary mt-3">{item.label}</dt>
+                  <dd class="text-content-primary mt-2 text-2xl font-[450] tabular-nums">
+                    {item.value}
+                  </dd>
+                </div>
+              );
+            })
           }
         </dl>
       </header>
@@ -80,8 +116,8 @@ const structuredData = {
           One card, on every page
         </h2>
         <figure>
-          <div class="bg-page-default ring-line-default relative h-80 overflow-hidden rounded-lg ring-1 sm:h-96">
-            <div class="site-fade pointer-events-none absolute inset-0" aria-hidden="true">
+          <div class="ring-line-default relative h-80 overflow-hidden rounded-lg ring-1 sm:h-96">
+            <div class="pointer-events-none absolute inset-0 opacity-80" aria-hidden="true">
               <div class="flex w-full flex-col gap-6 px-5 pt-5">
                 <div class="text-content-primary flex items-center gap-2">
                   <img
@@ -141,6 +177,7 @@ const structuredData = {
                 </div>
               </div>
             </div>
+            <div class="bg-surface-default/45 pointer-events-none absolute inset-0" aria-hidden="true"></div>
             <div
               class="absolute right-3 bottom-3 w-[min(20rem,calc(100%-1.5rem))]"
               aria-hidden="true"
@@ -184,24 +221,34 @@ const structuredData = {
             </div>
           </div>
         </figure>
-        <p class="type-body-md text-content-secondary max-w-xl text-pretty">
-          Write to{" "}
-          <a
-            href={mailto}
-            class="text-content-primary focus-visible:outline-content-primary underline underline-offset-4 focus-visible:outline-1 focus-visible:outline-offset-2"
-            data-s-event="sponsor_inquiry"
-          >
-            {contactEmail}
-          </a>
-        </p>
+      </section>
+
+      <section class="flex max-w-xl flex-col gap-8">
+        {
+          questions.map((item) => (
+            <div class="flex flex-col gap-2">
+              <h2 class="type-body-md text-content-primary font-[450]">{item.question}</h2>
+              <p class="type-body-md text-content-secondary text-pretty">
+                {item.answer.includes(contactEmail) ? (
+                  <>
+                    {item.answer.split(contactEmail)[0]}
+                    <a
+                      href={mailto}
+                      class="text-content-primary focus-visible:outline-content-primary underline underline-offset-4 focus-visible:outline-1 focus-visible:outline-offset-2"
+                      data-s-event="sponsor_inquiry"
+                    >
+                      {contactEmail}
+                    </a>
+                    {item.answer.split(contactEmail)[1]}
+                  </>
+                ) : (
+                  item.answer
+                )}
+              </p>
+            </div>
+          ))
+        }
       </section>
     </article>
   </div>
 </Layout>
-
-<style>
-  .site-fade {
-    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 58%, transparent 100%);
-    mask-image: linear-gradient(to bottom, #000 0%, #000 58%, transparent 100%);
-  }
-</style>
