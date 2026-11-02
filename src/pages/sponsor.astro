@@ -1,7 +1,7 @@
 ---
 export const prerender = true;
 
-import { CursorArrowRaysIcon, EyeIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { CurrencyDollarIcon, CursorArrowRaysIcon, EyeIcon, UsersIcon } from "@heroicons/react/24/outline";
 import Layout from "../layouts/Layout.astro";
 
 const siteOrigin = Astro.site ?? new URL("https://www.ui-skills.com");
@@ -16,6 +16,7 @@ const audience = [
   { label: "Page views", value: "240k+", icon: EyeIcon },
   { label: "Visits", value: "130k+", icon: CursorArrowRaysIcon },
   { label: "Visitors", value: "88k+", icon: UsersIcon },
+  { label: "30 days", value: "$2.5k", icon: CurrencyDollarIcon },
 ];
 
 const questions = [
@@ -84,8 +85,8 @@ const structuredData = {
 >
   <div class="relative flex min-h-dvh flex-col items-center justify-start">
     <article class="container-3xl relative mt-20 flex flex-col gap-16 pb-8 sm:gap-24">
-      <header class="flex max-w-xl flex-col gap-10">
-        <div class="flex flex-col gap-3">
+      <header class="flex w-full flex-col gap-10">
+        <div class="flex max-w-xl flex-col gap-3">
           <h1 class="type-h1 text-content-primary text-balance">
             Reach design engineers while they are building
           </h1>
@@ -93,7 +94,7 @@ const structuredData = {
             Sponsor UI Skills. One card, on every page.
           </p>
         </div>
-        <dl class="bg-line-default ring-line-default grid grid-cols-3 gap-px overflow-hidden rounded-lg ring-1">
+        <dl class="bg-line-default ring-line-default grid w-full grid-cols-2 gap-px overflow-hidden rounded-lg ring-1 sm:grid-cols-4">
           {
             audience.map((item) => {
               const Icon = item.icon;
@@ -117,7 +118,7 @@ const structuredData = {
         </h2>
         <figure>
           <div class="ring-line-default relative h-80 overflow-hidden rounded-lg ring-1 sm:h-96">
-            <div class="pointer-events-none absolute inset-0 opacity-80" aria-hidden="true">
+            <div class="pointer-events-none absolute inset-0" aria-hidden="true">
               <div class="flex w-full flex-col gap-6 px-5 pt-5">
                 <div class="text-content-primary flex items-center gap-2">
                   <img
@@ -177,7 +178,7 @@ const structuredData = {
                 </div>
               </div>
             </div>
-            <div class="bg-surface-default/45 pointer-events-none absolute inset-0" aria-hidden="true"></div>
+            <div class="bg-surface-default/25 pointer-events-none absolute inset-0" aria-hidden="true"></div>
             <div
               class="absolute right-3 bottom-3 w-[min(20rem,calc(100%-1.5rem))]"
               aria-hidden="true"
