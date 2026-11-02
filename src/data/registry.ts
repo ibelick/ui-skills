@@ -1915,11 +1915,11 @@ const registrySource: RegistrySourceSkill[] = [
   {
     slug: "transitions-dev",
     user: "Jakubantalik",
-    repo: "transitions-dev",
+    repo: "transitions.dev",
     rawUrl:
-      "https://raw.githubusercontent.com/Jakubantalik/transitions-dev/main/skills/transitions-dev/SKILL.md",
+      "https://raw.githubusercontent.com/Jakubantalik/transitions.dev/main/skills/transitions-dev/SKILL.md",
     githubUrl:
-      "https://github.com/Jakubantalik/transitions-dev/blob/main/skills/transitions-dev/SKILL.md",
+      "https://github.com/Jakubantalik/transitions.dev/blob/main/skills/transitions-dev/SKILL.md",
     files: [
       "01-card-resize.md",
       "02-number-pop-in.md",
@@ -1933,11 +1933,34 @@ const registrySource: RegistrySourceSkill[] = [
       "10-success-check.md",
       "11-avatar-group-hover.md",
       "12-error-state-shake.md",
+      "13-input-clear-dissolve.md",
+      "14-skeleton-reveal.md",
+      "15-shimmer-text.md",
+      "16-tabs-sliding.md",
+      "17-tooltip.md",
+      "18-texts-reveal.md",
+      "19-card-tilt.md",
+      "20-plus-menu-morph.md",
+      "21-accordion.md",
+      "22-toast.md",
+      "23-like-button.md",
+      "24-learn-more-hover.md",
+      "25-checkbox-check.md",
+      "26-spinning-counter.md",
+      "27-toggle.md",
+      "28-thinking-states.md",
+      "29-reasoning-stream.md",
+      "30-streaming-text.md",
+      "31-matrix-loader.md",
+      "32-banner-stacking.md",
+      "33-text-morph.md",
+      "34-text-swap-soft.md",
+      "35-donut-chart.md",
     ],
     name: "transitions-dev",
     topics: ["motion", "interaction", "frontend"],
     description:
-      "Production-ready CSS transition patterns for web apps, with drop-in snippets for cards, modals, dropdowns, panels, and page transitions.",
+      'Production-ready CSS transitions for web apps. Use when implementing notification badges, dropdowns, modals, panel reveals, page transitions, card resizes, number pop-ins, text swaps, icon swaps, success checks, avatar group hovers, error state shakes, search/input clear, skeleton loaders, shimmer text, sliding tabs, tooltips, staggered text reveals, card hover tilt, plus-to-menu morph, accordions, toasts, like buttons, learn-more hovers, checkbox checks, spinning counters, toggles, AI thinking states, reasoning streams, streaming text, matrix dot loaders, or banner stacking. Triggers on "add a transition", "animate the dropdown", "make the modal open smoothly", "swap icon", "page slide", "stagger animation", "open / close transition", "make it animate", "fade between", "success animation", "form error", "shake on invalid", "hover lift", "avatar stack hover", "clear the search", "skeleton loader", "loading shimmer", "shimmer text", "sliding tabs", "segmented control", "tooltip", "reveal text", "tilt card", "3D hover tilt", "cursor glare", "plus to menu", "FAB morph", "accordion", "collapsible", "expand / collapse", "disclosure", "toast", "snackbar", "like button", "heart animation", "learn more arrow", "checkbox", "check animation", "spinning counter", "odometer", "slot machine digits", "toggle", "switch", "thinking states", "AI status line", "agent reasoning", "reasoning stream", "streaming text", "stream words in", "matrix loader", "dot loader", "banner stack", "stacked toasts". Also "motion tokens", "scan for ad-hoc transitions", "replace hardcoded durations with motion tokens", "tokenize my animations", and the commands transitions reveal, transitions review, transitions apply, transitions refine.',
   },
   {
     slug: "daisyui",
@@ -8351,6 +8374,63 @@ const registrySource: RegistrySourceSkill[] = [
     topics: ["visual", "motion", "3d", "craft"],
     description:
       'Draws fun, sharp isometric stickers (flat fill, thick black outline, extruded slab side) and animates them on a library of After Effects grade keyframe presets, replayed exactly the way lottie-web plays them, so the motion is fluid character animation and never a made up wobble. Any palette (six named sets with Riso by default, two brand colours, one colour, hue shift, custom slots) and four facing directions. Produces icon modules that play live on canvas in any web app (a React component ships with the kit) and export to looping alpha video (webm, HEVC mp4) with a poster. Use for "/fun-isometric", "animated sticker icons", "fun isometric icons", "Lottie style icons", "onboarding illustrations that move", or any request for playful animated icons, empty state art or feature stickers.',
+  },
+  {
+    slug: "reanimate",
+    user: "NiazMorshed2007",
+    repo: "reanimate",
+    rawUrl:
+      "https://raw.githubusercontent.com/NiazMorshed2007/reanimate/main/skills/reanimate/SKILL.md",
+    githubUrl:
+      "https://github.com/NiazMorshed2007/reanimate/blob/main/skills/reanimate/SKILL.md",
+    files: [
+      "references/analysis.md",
+      "references/capture.md",
+      "references/implementation.md",
+      "references/verify.md",
+      "references/webgl.md",
+    ],
+    name: "reanimate",
+    topics: ["motion", "visual", "craft", "frontend"],
+    description:
+      'Clone a section, widget, page or animation from any reference (a live website URL, a screen recording, an mp4/mov/webm, a gif, a Lottie file, a prototype export) frame by frame into the user\'s own codebase, then record the clone and verify it against the reference frame by frame, iterating until timing, easing, sequence and layout match. Use whenever the user wants to clone, copy, replicate, recreate, reverse-engineer, port or "steal" a hero, section, widget, marquee, carousel, hover effect, page transition, loader, scroll animation or interaction from a site or video, says "make it look/feel/move like this", "same animation as", "match this exactly", or hands over a gif/video and asks to build it, including when they also want to add their own content, colours or extra features on top, or only want part of the reference (one section, one widget, a few seconds). Covers canvas, WebGL, WebGPU and three.js / 3D scenes (shaders, particles, globes, glTF models) as well as CSS and JS motion. Pixel-level matching of fonts, colours and spacing is done only when they ask for it.',
+  },
+  {
+    slug: "stopmotion-video",
+    user: "kosta4a",
+    repo: "stopmotion-video",
+    rawUrl:
+      "https://raw.githubusercontent.com/kosta4a/stopmotion-video/main/skills/stopmotion-video/SKILL.md",
+    githubUrl:
+      "https://github.com/kosta4a/stopmotion-video/blob/main/skills/stopmotion-video/SKILL.md",
+    files: [
+      "references/checking.md",
+      "references/clock.md",
+      "references/hits.md",
+      "references/live.md",
+      "references/poses.md",
+      "references/skipping.md",
+      "references/song.md",
+      "references/sound.md",
+      "references/type.md",
+    ],
+    name: "stopmotion-video",
+    topics: ["video", "motion", "remotion"],
+    description:
+      "Rules, Remotion helpers and audio scripts for stop-motion style video cut to music, proposing Remotion by default to make it. A low frame rate is kept on purpose, with one pose per eighth note of the song. Pages start on bar lines, clicks land on kicks and snares, and the skill teaches when to skip a beat. Use when making or reviewing stop-motion, low frame rate, beat-synced or music-synced video. Also use for cutting a video to a song, Remotion launch films cut to a track, compositions timed to a BPM, metronome or click tracks, kinetic type timed to a beat, or scenes played live on a web page in time with a metronome. It covers measuring a song's tempo, bars and drops, and deciding where a cut, a click, a hold or a transition should land.",
+  },
+  {
+    slug: "figma-designer",
+    user: "elayadesign",
+    repo: "ai-design-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/elayadesign/ai-design-skills/main/skills/figma-designer/SKILL.md",
+    githubUrl:
+      "https://github.com/elayadesign/ai-design-skills/blob/main/skills/figma-designer/SKILL.md",
+    name: "figma-designer",
+    topics: ["visual", "systems", "tooling"],
+    description:
+      "Design inside Figma the way this designer does: real variables, text styles, auto layout and components, on a fixed visual system (Tailwind type and radius scale, spacing tokens, two-layer color tokens, button and state rules). Use this skill whenever you create, edit or review anything in a Figma file through the Figma MCP: screens, landing pages, components, mockups, design systems, tokens, or any UI. Use it even when the user doesn't name the skill and only says things like 'design a page in Figma', 'make a button component', 'mock this up' or shares a figma.com link. Load it before writing any use_figma code.",
   },
 ];
 
