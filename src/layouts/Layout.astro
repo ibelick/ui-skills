@@ -7,6 +7,7 @@ import Footer from "../ui/footer.astro";
 import { AccountMenu } from "../ui/account-menu";
 import { CommandDialog } from "../ui/command-dialog";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import PromoBanner from "../ui/promo-banner.astro";
 import { WebMcpTools } from "../ui/webmcp-tools";
 import { serializeJsonLd } from "../lib/serialize-json-ld";
 import githubMetadata from "../data/github-metadata.json";
@@ -258,6 +259,7 @@ const commandItems = [
       }
       {showFooter && !fullScreen && <Footer />}
     </div>
+    {!fullScreen && <PromoBanner />}
     <script>
       import { getCachedSession } from "../lib/session-client";
 
