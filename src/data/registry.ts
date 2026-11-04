@@ -8432,6 +8432,19 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Design inside Figma the way this designer does: real variables, text styles, auto layout and components, on a fixed visual system (Tailwind type and radius scale, spacing tokens, two-layer color tokens, button and state rules). Use this skill whenever you create, edit or review anything in a Figma file through the Figma MCP: screens, landing pages, components, mockups, design systems, tokens, or any UI. Use it even when the user doesn't name the skill and only says things like 'design a page in Figma', 'make a button component', 'mock this up' or shares a figma.com link. Load it before writing any use_figma code.",
   },
+  {
+    slug: "stfu",
+    user: "tooaverage",
+    repo: "stfu",
+    rawUrl:
+      "https://raw.githubusercontent.com/tooaverage/stfu/main/skills/stfu/SKILL.md",
+    githubUrl:
+      "https://github.com/tooaverage/stfu/blob/main/skills/stfu/SKILL.md",
+    name: "stfu",
+    topics: ["craft", "frontend"],
+    description:
+      "Makes copy that ships in a website or product short, plain and free of AI tells.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
