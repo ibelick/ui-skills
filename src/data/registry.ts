@@ -8432,6 +8432,258 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Design inside Figma the way this designer does: real variables, text styles, auto layout and components, on a fixed visual system (Tailwind type and radius scale, spacing tokens, two-layer color tokens, button and state rules). Use this skill whenever you create, edit or review anything in a Figma file through the Figma MCP: screens, landing pages, components, mockups, design systems, tokens, or any UI. Use it even when the user doesn't name the skill and only says things like 'design a page in Figma', 'make a button component', 'mock this up' or shares a figma.com link. Load it before writing any use_figma code.",
   },
+  {
+    slug: "oil-ui",
+    user: "oil-oil",
+    repo: "oil-ui",
+    rawUrl: "https://raw.githubusercontent.com/oil-oil/oil-ui/main/SKILL.md",
+    githubUrl: "https://github.com/oil-oil/oil-ui/blob/main/SKILL.md",
+    files: [
+      "references/design-direction.md",
+      "references/direction-persuasion.md",
+      "references/image-ideation.md",
+      "references/layout-and-viewport.md",
+      "references/media.md",
+      "references/motion.md",
+      "references/play.md",
+      "references/reviewer-manual.md",
+      "references/scroll-narrative.md",
+      "references/style-explorer.md",
+      "references/task-explore.md",
+      "references/task-review.md",
+      "references/tools.md",
+      "references/ux-review.md",
+      "references/ux-reviewer.md",
+      "references/visual-language.md",
+      "references/visual-review.md",
+      "references/workdir.md",
+    ],
+    name: "oil-ui",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      "Design, improve, and review interfaces for websites, apps, dashboards, and components: explore directions, generate side-by-side comparisons, and refine visual hierarchy against real screenshots. Delivers a comparison page, design notes, a comp, or a working interface when asked. Design judgment only. Hand off to oil-ui-pro when that skill is installed.",
+  },
+  {
+    slug: "brand-identity",
+    user: "fatihaydost",
+    repo: "brand-identity-skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/fatihaydost/brand-identity-skill/main/skills/brand-identity/SKILL.md",
+    githubUrl:
+      "https://github.com/fatihaydost/brand-identity-skill/blob/main/skills/brand-identity/SKILL.md",
+    files: [
+      "references/accessibility.md",
+      "references/ai-defaults.md",
+      "references/cohesion.md",
+      "references/color.md",
+      "references/critique.md",
+      "references/discovery-brief.md",
+      "references/kit.md",
+      "references/logo.md",
+      "references/reproduction.md",
+      "references/site-preview.md",
+      "references/tokens-export.md",
+      "references/type.md",
+    ],
+    name: "brand-identity",
+    topics: ["visual", "typography", "color", "systems"],
+    description:
+      "Brand identity sets from one brief - logo, typography and colour palette built together, measured (contrast, colour blindness, glyph coverage, font licences, small-size logo renders) and compared side by side as identity cards, shown on the user's own site, then a brand guidelines kit (PDF, logo files, tokens) for the chosen set. Use for a new brand or any part of one (logo, fonts, colours, or a mix), for refreshing an identity, or for critiquing one, even if the user only says \"branding\".",
+  },
+  {
+    slug: "design-playful-app-icons",
+    user: "chunkithwang",
+    repo: "design-playful-app-icons",
+    rawUrl:
+      "https://raw.githubusercontent.com/chunkithwang/design-playful-app-icons/main/skills/design-playful-app-icons/SKILL.md",
+    githubUrl:
+      "https://github.com/chunkithwang/design-playful-app-icons/blob/main/skills/design-playful-app-icons/SKILL.md",
+    files: ["references/design-recipes.md", "references/evaluation.md"],
+    name: "design-playful-app-icons",
+    topics: ["visual", "craft"],
+    description:
+      "Create, generate, refine, or critique bold playful app icons using a text-only visual system with measurable composition rules, compact palettes, mascot and dimensional style recipes, originality safeguards, and small-size quality checks. Use for app-icon concept development, production-ready image prompts, icon reviews, visual iteration, and iOS or Android handoff when no reference images should be bundled or required.",
+  },
+  {
+    slug: "blank-page",
+    user: "StewdioAI",
+    repo: "blank-page",
+    rawUrl:
+      "https://raw.githubusercontent.com/StewdioAI/blank-page/main/skills/blank-page/SKILL.md",
+    githubUrl:
+      "https://github.com/StewdioAI/blank-page/blob/main/skills/blank-page/SKILL.md",
+    files: [
+      "references/examples.md",
+      "references/finding-references.md",
+      "references/patterns.md",
+      "references/vocabulary.md",
+    ],
+    name: "blank-page",
+    topics: ["motion", "visual", "craft"],
+    description:
+      "Turn a one-line motion, animation, or design brief into the full prompt: a committed look grounded in five reference images, three motion references, numbered beats with a turn, and the refs and assets attached. Also tightens edit notes. Use for \"/blank-page\", \"expand this prompt\", \"make this prompt more specific\", \"what is missing from this prompt\", \"help me write the prompt for X\", or whenever a one-line animation, composition, or design brief is about to be handed to an agent.",
+  },
+  {
+    slug: "appllama-app-design-skill",
+    user: "Appllama",
+    repo: "appllama-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/Appllama/appllama-skills/main/skills/appllama-app-design-skill/SKILL.md",
+    githubUrl:
+      "https://github.com/Appllama/appllama-skills/blob/main/skills/appllama-app-design-skill/SKILL.md",
+    files: [
+      "references/image-assets.md",
+      "references/motion.md",
+      "references/native-controls.md",
+      "references/performance.md",
+      "references/simulator-loop.md",
+    ],
+    name: "appllama-app-design-skill",
+    topics: ["visual", "interaction", "react-native"],
+    description:
+      "Build native-feeling, benchmark-quality mobile app screens (Expo / React Native). Use when designing or implementing any mobile UI — screens, flows, onboarding, paywalls, tab bars, sheets, settings, empty states — or when polishing motion, navigation, typography, dark mode, or perceived performance. Enforces Apple HIG fidelity, semantic colors, native controls, anti-slop discipline, navigation semantics, purposeful Reanimated motion, a full-motion simulator-verified iteration loop, and a study-real-apps-first workflow.",
+  },
+  {
+    slug: "appllama-usage",
+    user: "Appllama",
+    repo: "appllama-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/Appllama/appllama-skills/main/skills/appllama-usage/SKILL.md",
+    githubUrl:
+      "https://github.com/Appllama/appllama-skills/blob/main/skills/appllama-usage/SKILL.md",
+    files: [
+      "references/build-from-scratch.md",
+      "references/improve-a-screen.md",
+      "references/research-methods.md",
+    ],
+    name: "appllama-usage",
+    topics: ["tooling", "visual", "react-native"],
+    description:
+      "Use the Appllama MCP well: research real top-grossing mobile apps, their screens, flows, and UI elements, then build from what you learn. Load when the Appllama MCP is connected and the task involves building a mobile app or screen, researching app design patterns, studying onboarding, paywall, or feature flows, or improving an existing screen.",
+  },
+  {
+    slug: "design-to-code",
+    user: "Atharvsinh-codez",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/Atharvsinh-codez/skills/main/design-to-code/SKILL.md",
+    githubUrl:
+      "https://github.com/Atharvsinh-codez/skills/blob/main/design-to-code/SKILL.md",
+    files: [
+      "references/art-direction.md",
+      "references/evaluations.md",
+      "references/interface-craft.md",
+      "references/motion.md",
+      "references/reference-forensics.md",
+      "references/typography-and-fonts.md",
+      "references/verification.md",
+    ],
+    name: "design-to-code",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      "Transforms screenshots, Figma frames, mockups, design images, and live public websites into high-fidelity, responsive, accessible, production-ready frontend code. Use when asked to recreate a website, turn an image into code, match a page, clone a design, build a Figma design, make it responsive, repair visual differences, or translate a visual reference into React, Next.js, Vue, Svelte, HTML/CSS, or an existing project's stack.",
+  },
+  {
+    slug: "ascii-diorama",
+    user: "JDhruv14",
+    repo: "ascii-diorama",
+    rawUrl: "https://raw.githubusercontent.com/JDhruv14/ascii-diorama/main/SKILL.md",
+    githubUrl: "https://github.com/JDhruv14/ascii-diorama/blob/main/SKILL.md",
+    name: "ascii-diorama",
+    topics: ["3d", "visual", "craft"],
+    description:
+      "Build tilt-shift ASCII miniatures, which are small, dense, living 3D worlds in Three.js drawn entirely as coloured monospace characters and seen from high above with the top and bottom of the view blurred like a scale model. Use when someone asks for an ASCII scene, ASCII shader or renderer, glyph-rendered or text-mode 3D, an ASCII diorama or miniature, a tilt-shift ASCII effect, or a dense little world in this style. The result is a live web page that animates and loops.",
+  },
+  {
+    slug: "awwwards-inspiration",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/awwwards-inspiration/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/awwwards-inspiration/SKILL.md",
+    name: "awwwards-inspiration",
+    topics: ["taste", "visual", "craft"],
+    description:
+      "Use when building a site that needs design references (for example \"make it feel premium\" or \"dark 3D portfolio vibes\"), when the user asks for standalone inspiration research from award-winning sites, or when setting up the awwwards-mcp local index or live-capture tooling.",
+  },
+  {
+    slug: "awwwards-design-md",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/awwwards-design-md/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/awwwards-design-md/SKILL.md",
+    name: "awwwards-design-md",
+    topics: ["systems", "visual", "frontend"],
+    description:
+      "Create an evidence-backed DESIGN.md for any public website URL. Use when asked to extract a site's design system, colors, typography, spacing, radii, shadows, components, or to generate a design.md compatible with Google's design.md format. Composes the awwwards MCP inspection and capture tools.",
+  },
+  {
+    slug: "awwwards-motion-study",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/awwwards-motion-study/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/awwwards-motion-study/SKILL.md",
+    name: "awwwards-motion-study",
+    topics: ["motion", "visual", "craft"],
+    description:
+      "Use when building a site whose reference has animation, before writing motion code and again when verifying a build. Teaches what to record from a live site, how to study the recordings frame by frame, how to turn the study into a motion inventory, and how to verify the build's motion against the reference.",
+  },
+  {
+    slug: "awwwards-section-loop",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/awwwards-section-loop/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/awwwards-section-loop/SKILL.md",
+    name: "awwwards-section-loop",
+    topics: ["frontend", "craft", "visual"],
+    description:
+      "Use when recreating or rebuilding a multi-section page from a reference site, section by section. Teaches the loop from page structure to per-section capture, build, geometry gate, and lock, including when a page must be treated as one unit because it shares a WebGL canvas.",
+  },
+  {
+    slug: "recreate",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/recreate/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/recreate/SKILL.md",
+    name: "recreate",
+    topics: ["frontend", "visual", "craft"],
+    description:
+      "Recreate a website from a link with the awwwards MCP. Use when the user says to recreate a site, clone a page, rebuild a URL, or gives a URL and asks to build it. Produces a hand-built implementation, checks it against the live site, then can convert it into a Vite, Astro, or Next project.",
+  },
+  {
+    slug: "motion-authoring",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/motion-authoring/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/motion-authoring/SKILL.md",
+    name: "motion-authoring",
+    topics: ["motion", "frontend", "craft"],
+    description:
+      "Use when a converted project needs its motion authored: turning a motion manifest and inert skeletons into real per-section motion with a parity check. Covers timeline topology, intent mapping, reduced motion, and the verification gate.",
+  },
+  {
+    slug: "shiftnudge-design-crit",
+    user: "shiftnudge",
+    repo: "skill",
+    rawUrl:
+      "https://shiftnudge.com/.well-known/agent-skills/shiftnudge-design-crit/SKILL.md",
+    githubUrl: "https://shiftnudge.com/skill",
+    name: "shiftnudge-design-crit",
+    topics: ["visual", "craft", "systems"],
+    description:
+      "Run a structured interface-design critique with the Shift Nudge method over the Shift Nudge MCP server. Use when a user asks for design feedback, a UI review, or a crit of a screen, and you have access to the Shift Nudge MCP connection.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
