@@ -8684,6 +8684,45 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Run a structured interface-design critique with the Shift Nudge method over the Shift Nudge MCP server. Use when a user asks for design feedback, a UI review, or a crit of a screen, and you have access to the Shift Nudge MCP connection.",
   },
+  {
+    slug: "unslop-audit",
+    user: "aahil62",
+    repo: "unslop",
+    rawUrl:
+      "https://raw.githubusercontent.com/aahil62/unslop/main/skills/audit/SKILL.md",
+    githubUrl:
+      "https://github.com/aahil62/unslop/blob/main/skills/audit/SKILL.md",
+    name: "unslop-audit",
+    topics: ["accessibility", "systems", "craft"],
+    description:
+      "Stage 1 of Unslop (audit → interview → retheme): scores an existing React + Tailwind site against an evidence-based anti-slop checklist — screenshots, WCAG contrast checks, and a static scan — and writes a scored DESIGN-AUDIT.md. Read-only.",
+  },
+  {
+    slug: "unslop-interview",
+    user: "aahil62",
+    repo: "unslop",
+    rawUrl:
+      "https://raw.githubusercontent.com/aahil62/unslop/main/skills/interview/SKILL.md",
+    githubUrl:
+      "https://github.com/aahil62/unslop/blob/main/skills/interview/SKILL.md",
+    name: "unslop-interview",
+    topics: ["taste", "color", "typography"],
+    description:
+      "Stage 2 of Unslop: interviews you about brand, audience, and taste, then synthesizes a one-off design lane — palette, type pairing, motion, signature moment — with no preset menu and no two lanes alike. Outputs an approved LANE.md.",
+  },
+  {
+    slug: "unslop-retheme",
+    user: "aahil62",
+    repo: "unslop",
+    rawUrl:
+      "https://raw.githubusercontent.com/aahil62/unslop/main/skills/retheme/SKILL.md",
+    githubUrl:
+      "https://github.com/aahil62/unslop/blob/main/skills/retheme/SKILL.md",
+    name: "unslop-retheme",
+    topics: ["systems", "motion", "frontend"],
+    description:
+      "Stage 3 of Unslop: applies an approved design lane to a React + Tailwind site pass by pass — tokens, typography, sections, then states and motion — with a build-and-screenshot check after every pass, ending in a client-ready before/after report.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
