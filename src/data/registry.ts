@@ -8684,7 +8684,1042 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Run a structured interface-design critique with the Shift Nudge method over the Shift Nudge MCP server. Use when a user asks for design feedback, a UI review, or a crit of a screen, and you have access to the Shift Nudge MCP connection.",
   },
-];
+  {
+    slug: "choreograph",
+    user: "emilkowalski",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/emilkowalski/skills/main/skills/choreograph/SKILL.md",
+    githubUrl:
+      "https://github.com/emilkowalski/skills/blob/main/skills/choreograph/SKILL.md",
+    files: ["RECIPES.md"],
+    name: "choreograph",
+    topics: ["motion","interaction","frontend"],
+    description:
+      "Coordinate several elements that animate together — decide what moves, in what order, how much they overlap, and what stays still — so a group reads as one intentional motion instead of a pile of separate animations. Use when building or fixing a staggered list, a hero entrance, a view swap inside a container, a multi-step flow, an element leaving while its siblings close the gap, a morph between rich states, or any interaction with several moving parts (icon + background + lines, panel + content, items flying into a target). Triggers on — stagger, staggerChildren, delayChildren, animation-delay, sequence, sequencing, orchestration, choreography, cascade, wave, timeline, \"one after another\", \"at the same time\", crossfade, popLayout, mode=\"wait\", AnimatePresence mode, hero entrance, list entrance, multi-step, step transition, morph, useAnimate, Promise.all animations, \"feels mechanical\", \"feels robotic\", \"too much going on\", \"feels slow to open\".",
+  },
+  {
+    slug: "style-sampling",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/style-sampling/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/style-sampling/SKILL.md",
+    files: ["references/remix.md"],
+    name: "style-sampling",
+    topics: ["video","remotion","motion"],
+    description:
+      "Make a new episode in a proven video style - Collage Explainer, Finance Explainer, Animated Science Explainer, 3D Brand Explainer, 3D True Crime - on the person's topic. Use for \"an episode of\", \"in the style of\", \"sample this style\", 「用这个风格做一集」. One video to copy is reverse-any-video.",
+  },
+  {
+    slug: "ai-lights",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/ai-lights/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/ai-lights/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "ai-lights",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a glowing UI component in React and CSS in which one body morphs between four agent-tool surfaces (a workflow chain, a progress row, a terminal and a prompt bar) and each change is announced by a pulse of rainbow light running round its rim, made from a conic gradient on registered custom properties seen through canvas-drawn, blurred stroke masks. Use when someone asks for an AI glow, a glowing border, an animated rim light, a thinking or working state for an agent UI, or a component that morphs between shapes.",
+  },
+  {
+    slug: "badge-trail",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/badge-trail/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/badge-trail/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "badge-trail",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a DOM pointer trail that drops tiny uppercase monospace badges of design terms behind the cursor, each on a slowly walking hue, slamming in from behind the direction of travel, holding with a faint wobble and flicking out rotated, never overlapping, with a ghost cursor that draws the trail when nobody is pointing. Use when someone asks for a cursor trail, a mouse trail of tags or labels, a playful hover effect on a hero, or stickers that follow the pointer.",
+  },
+  {
+    slug: "blur-glow",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/blur-glow/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/blur-glow/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "blur-glow",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL bloom effect in which a crisp rounded word sits inside a soft glow on light paper, the glow built from a downsampled multi-pass gaussian blur with variable focus and mapped through a five-stop colour ramp, the word tinted per palette and grained, cross-dissolving letter by letter into the next word and colour world, with the pointer warping the letters. Use when someone asks for glowing text, a bloom or halo around type, a gradient-mapped glow, neon on light, soft dreamy titles, a colour-cycling word, or a gaussian blur chain in WebGL.",
+  },
+  {
+    slug: "blur-reveal",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/blur-reveal/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/blur-reveal/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "blur-reveal",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL text reveal in which a short line of type dissolves in through a soft, cloudy noise front, sharp behind the front and blurred at it, with a faint glow riding the edge, then dissolves out as the next coloured panel takes over. Use when someone asks for a blur-in text animation, a dissolve or materialise effect on a headline, a noise mask reveal, cycling slogans on coloured cards, or a shader text transition.",
+  },
+  {
+    slug: "bond-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/bond-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/bond-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "bond-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a molecule-diagram type effect on Canvas 2D, in which two words in a bitmap pixel face unfold into a chain of nodes, stair-stepped pixel bonds on the face's own grid joining each letter to the next within its word, re-scatter through a random run of contour poses on measured ease tables, and fold back into plain typeset words. Use when someone asks for a molecule or chemistry-style logo animation, letters connected by lines, a pixel-font kinetic name, or a typographic node graph.",
+  },
+  {
+    slug: "brick-reveal",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/brick-reveal/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/brick-reveal/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "brick-reveal",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL reveal in which a square picture, restyled in turn as studded toy bricks, voxel blocks and a flat cartoon, melts back to the plain picture in rounded merging blocks along a soft, fading trail behind the pointer, with a virtual cursor that wanders when idle, a 3D tilt toward the cursor and a glow in each style's colour. Use when someone asks for a hover reveal, a before and after image wipe, a cursor trail mask, a pixel or brick reveal effect, a style-switch image card, or a ping-pong trail shader.",
+  },
+  {
+    slug: "checker-conveyor",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/checker-conveyor/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/checker-conveyor/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "checker-conveyor",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D checkerboard in which three flat scenes replace each other by conveyor, each of nine rows sliding one full screen width on a measured whip curve a beat after the row above, so the next scene rides in from the edge seam and all, with palettes that crossfade only while the board is at rest. Use when someone asks for a checkerboard animation, a tile or pixel transition, a staggered row wipe, a conveyor or flag-wave effect, or a looping geometric background.",
+  },
+  {
+    slug: "chroma-glow",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/chroma-glow/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/chroma-glow/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "chroma-glow",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL glow effect in which one bold word blooms on a coloured wall and its halo splits into a warm, a cool and a fringe copy that drift apart like light through a lens that cannot quite focus, with grain, a vignette and a pool of extra glow under the pointer. Use when someone asks for a chromatic aberration glow, an RGB split or prism fringe on text, a bloom or neon word, a glowing headline shader, or a downsample bloom in WebGL.",
+  },
+  {
+    slug: "cloud-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/cloud-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/cloud-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "cloud-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL2 kinetic-type effect in which a line of white letters on a pale sky arrives as soft puffs of cloud, lands and sharpens one letter at a time, holds with a grainy dithered edge, then lifts away and dissolves back into cloud, with the pointer acting as a light breeze. Use when someone asks for cloud text, smoke or vapour type, text that blurs into focus, a dithered threshold edge, a staggered letter entrance, or a soft dreamy title animation in WebGL.",
+  },
+  {
+    slug: "code-trail",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/code-trail/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/code-trail/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "code-trail",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a DOM cursor trail in which short code fragments on brightly coloured bars stack into a leftward staircase that chases the pointer, each row easing toward the row above it, with an autonomous steering drift when nobody is pointing. Use when someone asks for a cursor trail, a code-themed hero, a pointer-following stack, a playful developer page header, or coloured tags that follow the mouse.",
+  },
+  {
+    slug: "color-depth",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/color-depth/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/color-depth/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "color-depth",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds skeuomorphic CSS buttons whose depth comes only from stacked layers on one pill, a gradient body, inset shadows for the bevel and the inner glow, a brighter layer that fades in on hover and a soft bar of light along the top, in ten recipes from glossy and glowing to brushed metal, foil, inset, glass and satin. Use when someone asks for a glossy button, a 3D or tactile button, skeuomorphic UI, a glowing call to action, a glass or metal button, or button depth in CSS.",
+  },
+  {
+    slug: "crystal-cluster",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/crystal-cluster/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/crystal-cluster/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "crystal-cluster",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a three.js scene in which a small flat-shaded crystal cluster with a constant-width gold screen-space outline floats in a rising gold beam of light, drawn in one fragment shader as soft gaussian columns with flicker, rising bands and a glow pool, over a soft glow, bobbing and leaning toward the pointer. Use when someone asks for a loot beam, a rarity glow, a legendary item reveal, a game item showcase, an outline shader in three.js, or a glowing light pillar effect.",
+  },
+  {
+    slug: "cursors",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/cursors/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/cursors/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "cursors",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a DOM multiplayer scene in which labelled collaborator cursors, each a coloured pointer arrow with a name tag and a soft colour blush, drift around a frosted-glass word on slow ellipses and scatter away from the real pointer. Use when someone asks for multiplayer cursors, live collaboration presence, fake teammates on a hero, a shared canvas feel, or a frosted glass text effect.",
+  },
+  {
+    slug: "dash-cascade",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/dash-cascade/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/dash-cascade/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "dash-cascade",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds scanline lettering on Canvas 2D, in which three-letter words are drawn as rows of fat round-capped dashes that all scale about one vertical axis, so the resting state is a dotted line and every dash plays the same excursion waveform shifted by a per-letter delay law, the first letter wiping top-down, the last bottom-up and the middle pinched between them, stepped at ten frames a second in a slowly turning yellow hue field. Use when someone asks for scanline or striped type, letters that unfold from a line, a dashed or barcode-like logo animation, or a stepped retro type loop.",
+  },
+  {
+    slug: "datamosh",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/datamosh/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/datamosh/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "datamosh",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D datamosh loop in which fixed columns of flat saturated colour fall forever, each tile stretching open through the centre of the frame and squeezing to a sliver at the edges, staggered into a zig-zag. Use when someone asks for a glitch effect, a corrupted video look, a datamosh, a pixel-sorting style background, or a loud generative colour field.",
+  },
+  {
+    slug: "design-tiles",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/design-tiles/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/design-tiles/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "design-tiles",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds an SVG typographic bar in which each word of a lowercase sentence sits on a bold colour field made of one measured rect per letter, so the field steps to each glyph's real height, the words flying in one by one and then shuffling through a vivid palette with no two words ever sharing a colour, and hovering a word re-rolls it. Use when someone asks for highlighted words, a colour-blocked headline, a bold identity-style type bar, text on coloured tiles, or a playful word shuffle.",
+  },
+  {
+    slug: "dot-cut",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/dot-cut/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/dot-cut/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "dot-cut",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D field of touching circles, 42 across on a square lattice, in which a letter or a procedural pattern appears by removing circles so the background shows through, each scene arriving by its own wipe, ripple, scatter, collapse or column sweep, cells hollowing into rings, the whole field filled as one even-odd path. Use when someone asks for a dot grid, a halftone or circle mesh, negative-space or knockout typography, a dot matrix transition, a pattern of circles that morphs, or a grid that you can rub away with the cursor.",
+  },
+  {
+    slug: "dot-globe",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/dot-globe/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/dot-globe/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "dot-globe",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D row of three superquadric solids, each tiled with an 11 by 11 grid of rounded squares drawn as projected quads so they crowd, shrink and lean toward the edge, rocking in unison with a bitmap symbol painted onto the tiles that swaps as a wave and passes from globe to globe, with a rare full turn and a pointer that leans the row and opens the tiles. Use when someone asks for a tiled globe or sphere, a dot matrix on a 3D surface, a rotating icon grid, pixel symbols on a ball, or a row of 3D tile forms.",
+  },
+  {
+    slug: "eclipse-grid",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/eclipse-grid/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/eclipse-grid/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "eclipse-grid",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a grid of eighty eclipses on Canvas 2D, each an opaque outlined ring over a solid disc that part along the diagonal to uncover a crescent and close again on its own phase, held at 25 frames a second, with a pointer that acts as a lamp, tilting every crescent away from it and easing nearby cells open. Use when someone asks for an eclipse or crescent pattern, a grid of circles that open and close, a hover-reactive dot field, or a print-like stepped loop.",
+  },
+  {
+    slug: "emboss",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/emboss/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/emboss/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "emboss",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL bevel-and-emboss effect in which words or SVG shapes are debossed into tinted plaster panels, with a height field blurred on the CPU, normals from its slope, a highlight and a shadow from one light, a real plaster texture and a grunge overlay. Use when someone asks for an emboss or deboss effect, letterpress or pressed type, a bevel and emboss shader, text carved into a wall or concrete, or a realistic relief in WebGL.",
+  },
+  {
+    slug: "fade-motion",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/fade-motion/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/fade-motion/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "fade-motion",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect in which a word in a bitmap pixel face trails away into light like a long exposure, the fade built from about two hundred faint overlapping copies rather than a blur, with perspective taper, a wavering tail, a hue drift along the trail and a word that turns to face the pointer. Use when someone asks for a motion trail, an echo or long-exposure text effect, light streaks behind type, a smear without blur, accumulation or afterimage type, or a glowing pixel word in WebGL.",
+  },
+  {
+    slug: "flip-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/flip-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/flip-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "flip-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a kinetic word swap on Canvas 2D in which one bold word becomes the next letter by letter, each letter hanging, then snapping to another row on a cubic-bezier(1, 0, 0, 1) curve while its glyph flips through a few random letters, middle letters first, with a breath before the drop and a bounce on landing. Use when someone asks for a split-flap or departure-board word change, letters that shuffle into a new word, a rotating headline, or type that falls between rows.",
+  },
+  {
+    slug: "flood-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/flood-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/flood-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "flood-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a flooding wordmark on Canvas 2D, in which a two-line word falls in with each letter turning to face front, holds, then rushes at the camera to 2.2 times its size with every letter at its own heavy-tailed angle and depth until it overruns the frame, and tumbles out of the bottom, in two flat colours per word with a flat speed smear and a pointer lean during the hold. Use when someone asks for type that zooms into the camera, an exploding or flooding headline, a kinetic wordmark loop, or letters that scatter and fall.",
+  },
+  {
+    slug: "folder-embroidery",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/folder-embroidery/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/folder-embroidery/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "folder-embroidery",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect of overlapping embroidered word patches stitched onto fabric, each patch cut to its word's silhouette in coloured cloth with dark satin lettering and a white merrowed border, lit with a real fabric-weave bump, a puff bevel, inner and drop shadows, a hover glint across the threads and a press that pushes the patches into the cloth. Use when someone asks for embroidery, stitched or sewn text, patches or badges, a fabric or textile texture on type, a tactile craft look, or a felt or thread effect in WebGL.",
+  },
+  {
+    slug: "ghosty-reveal",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/ghosty-reveal/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/ghosty-reveal/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "ghosty-reveal",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a CSS mask reveal in which images bleed into view through a feathered, cloudy edge by sliding an oversized gradient mask across each box with mask-position, then fade back out and swap, on staggered loops over a scattered layout. Use when someone asks for a soft image reveal, a foggy or ghostly fade-in, a feathered wipe, a mask-position transition, or images that appear out of mist.",
+  },
+  {
+    slug: "glass-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/glass-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/glass-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "glass-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect in which black serif type on white is seen through a magnifying glass lens with a sine ripple on its radius and a colour fringe at its rim, in three scenes that take turns (a line rising through an invisible lens, a hand-drawn glass ball swapping two words, and words conveying through a wave). Use when someone asks for a lens or magnifier distortion on text, a pincushion or fisheye warp, a glass ball or refraction effect, chromatic aberration on type, or kinetic serif typography in WebGL.",
+  },
+  {
+    slug: "glitch-word",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/glitch-word/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/glitch-word/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "glitch-word",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a DOM glitch effect in which a word and its badge are stacked as identical copies, clipped into horizontal bands and shoved sideways in stepped Web Animations bursts, while letters flicker into lookalikes and the badge leans toward the pointer. Use when someone asks for a glitch text effect, a corrupted or broken-signal word, a tearing headline, a datamosh-style label, or a hover glitch on a button.",
+  },
+  {
+    slug: "holo",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/holo/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/holo/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "holo",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a holographic card in CSS 3D in which an identity card tilts toward the pointer, a stack of rainbow foil layers above the print slides by parallax and arrives a beat after the card, a glare and sheen follow the light, and the picture tile is a hard duotone that flips its polarity past a certain tilt, in ten foil materials. Use when someone asks for a holo or holographic card, a foil effect, a tilting 3D card, a trading-card shine, an ID or membership card, or iridescent CSS.",
+  },
+  {
+    slug: "hover-video",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/hover-video/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/hover-video/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "hover-video",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a React hover-video button, a pill that on hover hides and plays a short transparent clip of its own label turning into puffy, glossy 3D letters, rewinding a reversed clip from the same point on leave, with a springy playback rate, a slight lean toward the pointer and a press pop. Use when someone asks for a video hover effect on a button, an inflating or 3D text button, a playful microinteraction, a generated-video button, or a call to action that animates on hover.",
+  },
+  {
+    slug: "image-galaxy",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/image-galaxy/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/image-galaxy/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "image-galaxy",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a DOM and CSS 3D image field in which small square photographs drift vertically forever under one perspective, each at its own depth and parallax speed, scaling up as they descend, fading with depth and wrapping from one edge to the other, fed by page scroll and a drag. Use when someone asks for floating images, a parallax photo field, a drifting gallery background, an infinite image stream, or a depth field of thumbnails.",
+  },
+  {
+    slug: "image-sphere",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/image-sphere/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/image-sphere/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "image-sphere",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a three.js image sphere in which photos sit as camera-facing planes scattered over an invisible sphere that drifts on its own, spins with flick momentum when dragged, enlarges the photo under the pointer and glides a clicked photo to the centre as a lightbox while the rest dim. Use when someone asks for a 3D image sphere, a spinning photo globe, a draggable gallery in three.js, an orbiting image cloud, or a billboard sprite gallery with a lightbox.",
+  },
+  {
+    slug: "ink-flood",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/ink-flood/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/ink-flood/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "ink-flood",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a seamless two-colour Canvas 2D loop in which a round pen writes a thick cursive scribble whose width breathes with the stroke, the scribble floods the frame by zooming and swelling at once, and its ink becomes the background the next mirrored scribble is drawn on, all driven by swappable scene data under a fixed halftone screen. Use when someone asks for a scribble or handwriting animation, an ink or paint flood transition, a colour-swap loop, a pen drawing effect, a halftone print texture, or a looping brush stroke.",
+  },
+  {
+    slug: "kinetic-typography",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/kinetic-typography/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/kinetic-typography/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "kinetic-typography",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D kinetic type effect in which one heavy serif letter is cut into a grid of tiles that each copy from a source offset by two crossing sine waves, so the letter ripples like cloth, composited in duotone with a chromatic fringe on the warped edges, depth shading and a grain veil. Use when someone asks for a letter that ripples, a tile warp or displacement effect on type, a glitchy animated monogram, or a playful kinetic typography hero.",
+  },
+  {
+    slug: "liquid-metal",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/liquid-metal/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/liquid-metal/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "liquid-metal",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect that renders one bold word as flowing polished liquid metal on near-black, by blurring the word into a rounded height field and env-mapping its normals through a five-stop matcap-style ramp with a bright horizon band, with a pointer-driven reflection tilt, twinkling sparks on the ridges and eight colourways that crossfade on click. Use when someone asks for mirror-finish or metallic text, a liquid metal or mercury effect, a matcap or environment-mapped shader on type, a shiny 3D-looking title without 3D, or a reflective logo treatment in WebGL.",
+  },
+  {
+    slug: "liquid-ui",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/liquid-ui/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/liquid-ui/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "liquid-ui",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds fused UI cards in React and SVG, in which rounded boxes are joined by the smooth union of their signed-distance fields, traced into one path by marching squares and Chaikin smoothing and drawn behind real DOM content, so where two cards meet the corner curves inward, with one blend knob from crisp inverse-rounded joints to gooey metaballs. Use when someone asks for gooey or liquid UI, fused cards, inverse rounded corners, a metaball interface, a blob tab attached to a card, or morphing UI shapes.",
+  },
+  {
+    slug: "loud-burst",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/loud-burst/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/loud-burst/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "loud-burst",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds an exploding-word type loop on Canvas 2D, in which a short sentence types itself onto paper word by word with an oversized landing, a squash and a blurred last word, then one word heats to a scheme ink, trembles and bursts, its glyphs scanned into horizontal ink runs that each morph into a tapered dart flying along measured keyframe paths while crossfading between real print inks, with a shockwave, flecks, a camera kick and the side words thrown out, a new sentence and palette every loop. Use when someone asks for an exploding word, text that bursts into confetti or strokes, a punchy kinetic sentence, or a typographic explosion.",
+  },
+  {
+    slug: "misprint-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/misprint-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/misprint-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "misprint-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a screen-print misregistration effect on Canvas 2D, in which a white fill print, a wider black outline print and a holographic foil print of the same word never line up, float as planes that tilt with the pointer and re-print to a new offset every few seconds, with squeegee streaks, pinholes and paper grain, and a press-and-hold that pulls the prints into register. Use when someone asks for a misprint or off-register look, screen-print type, a holographic foil text effect, or a tactile hero headline.",
+  },
+  {
+    slug: "orbit",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/orbit/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/orbit/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "orbit",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D swarm of twenty-six labelled multiplayer cursors riding an invisible sphere seen face on, its depth shown only by scale, fade and focus, around a thin breathing ring, spinning on a phrased rate with inertia, leaning and parting toward the pointer, and draggable with a throw. Use when someone asks for multiplayer or collaborative cursors, a presence or live-users hero, cursors orbiting a globe, a 3D swarm of labels on canvas, or a draggable spinning sphere of names.",
+  },
+  {
+    slug: "peak-gradient",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/peak-gradient/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/peak-gradient/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "peak-gradient",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds an SVG glow made of a row of tall, heavily blurred columns that share one vertical rainbow gradient, arranged in a symmetric curve, tallest in the centre, fading to transparent at the top, and rising from the bottom edge with a scaleY transition. Use when someone asks for a rainbow glow, an aurora footer, a gradient that rises from the bottom of the screen, a soft blurred colour backdrop, or a hero glow behind a call to action.",
+  },
+  {
+    slug: "phase-table",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/phase-table/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/phase-table/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "phase-table",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D table of closed Lissajous curves, four rows by six columns, where the row sets the horizontal frequency and the column the vertical one, every curve shaded as metal wire from its exact normal and swept by one shared phase, with the pointer moving the light. Use when someone asks for a Lissajous grid, a harmonic or frequency table, a mathematical curve animation, generative line art, a metallic line effect or a looping figure-eight pattern.",
+  },
+  {
+    slug: "pixel-brushes",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pixel-brushes/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pixel-brushes/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pixel-brushes",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds pixel brushes on Canvas 2D, where a brush is a small stamp of square cells dropped along a path and five numbers (spacing, jitter, scatter, follow and speed thinning) turn the same code into a crisp line, a combed ribbon or a loose spray, every cell snapped to whole device pixels. Use when someone asks for a pixel brush, a stamp brush engine, a drawing tool with hard pixel edges, a spray or scatter brush, or brush swatches that draw themselves in.",
+  },
+  {
+    slug: "pixel-cycle",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pixel-cycle/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pixel-cycle/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pixel-cycle",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D pixelate transition that cycles through a set of images, each one resolving from big square blocks to sharp along an eased ramp of block sizes, held, dissolved back to blocks, then shrunk away leaning while the next grows in and resolves, with hover particles that lift blocks off the image. Use when someone asks for a pixelate or mosaic transition, an image that resolves from pixels, a character select screen, a pixelated slideshow, or a retro image reveal.",
+  },
+  {
+    slug: "pixel-fire",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pixel-fire/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pixel-fire/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pixel-fire",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D pixel-art fire, a 16 by 16 flipbook generated from a tiny heat simulation and drawn as crisp blocks on a stone block, with a live pixel buffer the pointer edits by pushing lit cells up and along its travel and heating them white, and a tap that blows the flame out to regrow. Use when someone asks for a pixel fire, a retro game flame, an interactive pixel-art sprite, a campfire animation, or a flame you can blow out.",
+  },
+  {
+    slug: "pixel-scan",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pixel-scan/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pixel-scan/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pixel-scan",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader text effect in which a diagonal scan band sweeps across a word and breaks it into a dense spray of tiny jittered blocks that shimmer between two accent colours, leaving the word solid behind it, with a pool of blocks under the pointer and a fading wake. Use when someone asks for a pixel scan, a scanline or glitch text reveal, text assembling from pixels, a hover trail over type, or a shader text intro.",
+  },
+  {
+    slug: "pixel-threshold",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pixel-threshold/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pixel-threshold/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pixel-threshold",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL poster effect in which a short word is printed into a flat colour ground in hard pixel blocks, with a white halo and a black block shadow that staircase in step with the letters, a printed surface of moire, grain and dust plates, and a cycle where the grid collapses to big squares, swaps word and colourway and resolves back. Use when someone asks for pixel type, a blocky or 8-bit headline, a threshold or quantised text effect, a retro game poster, a resolution-drop transition, or printed-texture type in WebGL.",
+  },
+  {
+    slug: "pop-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pop-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pop-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pop-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a squash-and-stretch type loop on Canvas 2D in which a chunky word with a hard drop shadow falls in letter by letter under gravity, squashes on a damped spring as each letter lands, swells through a doubling bulge field and pops into a ring of dashes, shown at a stepped ten frames a second with a new pair of colours every run. Use when someone asks for bouncy or cartoon type, squash and stretch on letters, a balloon or inflate-and-pop effect, a playful logo reveal, or flipbook-style animation.",
+  },
+  {
+    slug: "ransom-note",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/ransom-note/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/ransom-note/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "ransom-note",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a ransom-note text effect in DOM and CSS in which every letter is its own cut paper scrap, a different paper colour, ink, face, weight and case with an irregular clip-path outline, given a seeded tilt, bounce and size so a line reads as hand assembled, rising in letter by letter and lifting away between phrases. Use when someone asks for ransom note text, cut-out magazine letters, a collage headline, a zine or punk type treatment, or mismatched letters.",
+  },
+  {
+    slug: "reality-split",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/reality-split/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/reality-split/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "reality-split",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D design-tool animation in which a selected word splits into letter objects with their own handles, scatters across the card, dives into the first letter and steps through the rest at large scale on a spring conveyor, collapses to a dot and pops back whole, then replays as a new word, palette, box shape and handle style. Use when someone asks for a design tool or canvas editor animation, selection handles, letters splitting into objects, an exploding word, a typographic inspector effect, or a looping editor-style hero.",
+  },
+  {
+    slug: "ripple-grid",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/ripple-grid/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/ripple-grid/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "ripple-grid",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect in which a grid of soft black blobs ripples out of a flat lattice into concentric rings, shears into a spiral and settles back, with the pointer parting the field. Use when someone asks for a metaball grid, a shader background, an organic generative pattern, a ripple or bloom effect, or a thresholded field in WebGL.",
+  },
+  {
+    slug: "roll-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/roll-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/roll-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "roll-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic typography on Canvas 2D in which short phrases take turns word by word, each word rolling up off an unseen drum and folding flat while the next phrase rolls in from below, overshoots and settles, the moving words bending through a glass rod with a soft colour fringe, and the ground cutting hard to each phrase's colour. Use when someone asks for rolling text, a word-by-word headline loop, a drum or slot text transition, glass or refraction on moving type, or a hero line that cycles through phrases.",
+  },
+  {
+    slug: "rush-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/rush-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/rush-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "rush-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL kinetic-type effect in which a white word rests small and readable on black, then swings toward the viewer on a perspective orbit, stretches to about twelve times its height and tears into vertical streaks of green and violet light, swapping to the next word at the peak of the blur. Use when someone asks for speed or motion-blur type, a warp-speed or hyperspace title, chromatic smear, per-channel shutter blur, a word swap hidden in a blur, or a loud kinetic headline in WebGL.",
+  },
+  {
+    slug: "sandbox",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/sandbox/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/sandbox/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "sandbox",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a three.js halftone shader in which an image or a playing video is cut into a grid of cells, each cell's brightness is bucketed into four bands, and every band stamps its own small symbol tinted with its own colour, so the picture is rebuilt out of marks, with preset looks, a palette and glyph crossfade, PNG export and WebM recording. Use when someone asks for a halftone or symbol mosaic, a glyph or emoji dither, an ASCII-like video filter, a pattern stamp effect on video, or a live image-to-symbols shader.",
+  },
+  {
+    slug: "shutter-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/shutter-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/shutter-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "shutter-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic type on Canvas 2D seen through a rolling shutter, where the frame is cut into horizontal stripes that each show the scene a fraction of a frame late, so a jittering line and a scrolling stack tear into sliding bands while still type stays clean, with hard colour inversions on the beats. Use when someone asks for a rolling shutter or scanline glitch, torn or sliced type, a stutter or time-slice effect on text, or a glitchy kinetic headline.",
+  },
+  {
+    slug: "slide-stack",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/slide-stack/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/slide-stack/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "slide-stack",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D stack of five identical dark blocks sliding between a left and a right stop, each row a twelfth of a cycle ahead of the one below so the motion runs through the stack as a wave, with an orange accent that is the convex hull of the blocks rather than a shape of its own, plus motion blur, direction labels and a pointer magnet. Use when someone asks for a staggered slide animation, a cascading or wave stack, sliding bars, a rhythmic block loop, or an accent shape derived from moving objects.",
+  },
+  {
+    slug: "smear-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/smear-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/smear-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "smear-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic typography in WebGL in which two lines of heavy capitals are uncovered by a soft cloud in the ground's own colour whose edge glows a hotter hue, the type smearing sideways where it is half hidden and sliding the last few pixels into place, while pale liquid ribbons churn through a saturated ground and blobs of ink streak across, all played from small traced layers a frame at a time. Use when someone asks for smeared or motion-blurred type, an ink or liquid title reveal, type uncovered by a glowing cloud, a gig poster or event title animation, or a bold two-line headline with a fluid background.",
+  },
+  {
+    slug: "spike-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/spike-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/spike-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "spike-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D knockout word whose traced outline is roughened and grown into hundreds of hand-drawn spikes, each a sliver walked out along a wandering spine and back, filled with the letters and wrapped by one outline of varying weight, breathing slowly and bending, stretching and warming in colour under the pointer. Use when someone asks for spiky, hairy or thorny type, a hand-drawn or ragged lettering effect, an illustrated wordmark, generative strokes around text, or an interactive outline effect on a word.",
+  },
+  {
+    slug: "spray-burst",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/spray-burst/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/spray-burst/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "spray-burst",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect that looks like a three-ink screenprint reprinting itself, cycling through six bold geometric drawings (a touring starburst, broken rings, sliding bars, fusing discs, a pinwheel and a halftone wave) with every edge a dithered spray fringe that re-rolls at 24 fps, and the pointer laying ink on heavier. Use when someone asks for a screenprint or risograph look, a sprayed or stippled edge, a dithered signed-distance shader, a hand-printed boil, or a looping poster animation in WebGL.",
+  },
+  {
+    slug: "squircle",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/squircle/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/squircle/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "squircle",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a squircle in React and SVG, a rectangle whose corners are a superellipse instead of a circular arc, so curvature ramps in continuously and the corner flows into the edge without the kink a border-radius leaves, applied as a clip-path to a glossy, many-layered button surface. Use when someone asks for squircle corners, smooth or continuous corners, superellipse shapes, icon-style rounded rectangles, or a premium glossy button.",
+  },
+  {
+    slug: "stack-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/stack-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/stack-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "stack-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic typography on Canvas 2D in which one line of capitals is stacked nine rows deep and every letter is its own column, each column's top and foot stepping a row at a time toward the middle on its own beat until one line is left, holding, then refilling outward on the same beat run backward, the rows wrapped on a shallow drum, outlined away from the solid middle row and scrambling to other capitals toward the rim. Use when someone asks for stacked or repeated text, a collapsing or draining headline, stepped or staccato type motion, a letter-by-letter cascade, split-flap or scrambled letters, outlined echo type, or a looping title made of one line.",
+  },
+  {
+    slug: "stamp-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/stamp-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/stamp-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "stamp-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a kinetic-type poster on Canvas 2D, in which four lines of type on flat highlight bars hop in from the edges along fixed axis-aligned breakpoint tracks at a stepped 10Hz, park to be read and scatter off, every moving line stamping its silhouette where it just was as flat-colour residue that lives 0.8 seconds and vanishes at once, with overlapping passes whose trails flood the screen as the palette and words change. Use when someone asks for a kinetic poster, highlighted text that flies in, print-like motion trails, a bold typographic loop, or a quote animation.",
+  },
+  {
+    slug: "sunset-slam",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/sunset-slam/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/sunset-slam/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "sunset-slam",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D retro logo slam in which a blocky slab word breathes, squashes to a third of its width, then slams forward into an extruded logo whose fan of copies converges to a vanishing point below the baseline and is coloured by a moving window over one fixed dawn ramp, cools to a sticker, holds and unwinds into a seamless loop. Use when someone asks for a retro logo animation, an extruded or 3D text slam, a long-shadow or vanishing-point extrusion, an eighties title card, or a gradient fan behind a word.",
+  },
+  {
+    slug: "swing-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/swing-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/swing-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "swing-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a swinging word on Canvas 2D, in which a row of huge coloured letters on a fixed angular pitch swings back and forth like a pendulum, each letter turning on its own vertical axis in proportion to its distance from centre, so it squashes to a sliver at the sides, opens to full face in the middle and only two or three letters read at once, with detents that click letter to letter and letters that flip over to spell the next word. Use when someone asks for rotating 3D letters without WebGL, a carousel of letters, a pendulum or swinging type effect, or a word that reveals itself a few letters at a time.",
+  },
+  {
+    slug: "text-reveal",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/text-reveal/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/text-reveal/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "text-reveal",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL mask-reveal effect in which two small serif text blocks in opposite corners materialise through a cloudy fractal front that sweeps the card diagonally, each part un-blurring into focus as it is uncovered, then clear the other way and return with the next phrase pair, on a warm monochrome plate with a drifting white wash, paper grain and a pointer that wipes text clear under it. Use when someone asks for a text reveal, a fog or smoke dissolve on type, blur-to-focus text, a noise mask transition, an editorial or quiet typographic animation, or fbm dissolve in WebGL.",
+  },
+  {
+    slug: "tile-field",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/tile-field/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/tile-field/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "tile-field",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D wordmark sampled into a dense grid of tiny square tiles that rest small and grey, swell and turn blue where a slow interference wave passes, and light up under the pointer with a morphing brush and a fading trail. Use when someone asks for a tiled or pixel wordmark, a dot-matrix logo effect, text made of squares, a hover light over type, or a calm generative hero word.",
+  },
+  {
+    slug: "typer",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/typer/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/typer/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "typer",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a character-by-character text reveal in DOM and CSS in which a wave runs across a line and each letter flickers through randomized states, a filled pill, an inverse block, an accent, an outlined pill, before settling into plain text, with neighbouring letters in the same state merging into one rounded bar, themed by four CSS variables. Use when someone asks for a text reveal, a scramble or decode headline, typing text, a glitchy type-in, or animated pills behind letters.",
+  },
+  {
+    slug: "vector-editor",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/vector-editor/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/vector-editor/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "vector-editor",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a React and SVG selection frame and bezier path editor, a thin accent box that draws itself open around any element with corner handles that pop in and a live width by height badge, and inside it an SVG path whose anchors and bezier handles are draggable, with mirrored, angle-only or free tangents. Use when someone asks for a design tool selection box, bounding box handles, a bezier or pen tool editor, editable SVG paths, or a canvas editor look.",
+  },
+  {
+    slug: "verb-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/verb-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/verb-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "verb-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic typography on Canvas 2D in which five verbs act out their meaning, MOVE walking its letters around a grid, SKEW shearing them one at a time, ROTATE orbiting the frame's centre while two letters swap, BREAK dropping half the word onto a floor, CONDENSE squeezing to a hairline, each in its own ink and ground with print mottle, off-register ghosts on the cuts and a speed smear, plus press to hold the frame. Use when someone asks for type that does what it says, verb animations, a kinetic type reel, motion design typography, or expressive word animations.",
+  },
+  {
+    slug: "voice-wave",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/voice-wave/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/voice-wave/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "voice-wave",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL2 voice-visualiser effect in which one glowing ribbon is drawn four times in four colours, slightly out of phase, so it reads neutral where it is flat and fans into violet, magenta and coral where it bends, driven by a simulated voice or, after an explicit click, by the microphone through a WebAudio analyser. Use when someone asks for a voice or speech waveform, an assistant listening animation, an audio-reactive ribbon, a microphone visualiser, a glowing sine wave, or dispersion and chromatic splitting in WebGL.",
+  },
+  {
+    slug: "warp-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/warp-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/warp-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "warp-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic typography on Canvas 2D in which each sentence's verb deforms its own letters, with a swelling wave, a stair of echoes, lines that fall together, a turn, a fold and a letter sort, cut hard every half second. Use when someone asks for animated type, a typographic loop, a hero headline that moves, or text that acts out what it says.",
+  },
+  {
+    slug: "wild-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/wild-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/wild-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "wild-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a warped-type loop on Canvas 2D, in which a word is traced at runtime from the live font into vector contours, types itself in on measured per-letter tracks, then inflates about eight times through one global Catmull-Rom warp mesh played from a fitted table, drapes over an arch and collapses exactly home, with a coloured registration slip under the white ink, film grain, an afterimage on the fast pulses and a pointer that bends the mesh. Use when someone asks for liquid or warped type, a mesh warp on text, letters that balloon and distort, a typewriter-in typewriter-out loop, or wild kinetic lettering.",
+  },
+  {
+    slug: "word-carousel",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/word-carousel/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/word-carousel/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "word-carousel",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D word carousel in which four words cycle through a small left slot, a big centre slot, a small right slot and a tiny slot hidden behind the big word, slamming one slot left about every half second on measured fat-tailed eases, with velocity-proportional motion blur and a colour that deepens with size. Use when someone asks for a rotating word, a text carousel or ticker, a kinetic headline that cycles nouns, a word slider with motion blur, or animated typography on canvas.",
+  },
+  {
+    slug: "word-stickers",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/word-stickers/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/word-stickers/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "word-stickers",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a set of die-cut vinyl word stickers on a page, each word with a thick coloured border that hugs the letters, popping in one by one, curling up off the surface when grabbed through a WebGL peel shader, and thrown with momentum, friction and edge bounces. Use when someone asks for draggable stickers, a sticker peel effect, die-cut text, a throwable or physics word cloud, or a playful interactive hero with grabbable words.",
+  },];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
   const userSegment = entry.user.toLowerCase();
