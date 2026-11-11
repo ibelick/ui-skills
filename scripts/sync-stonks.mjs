@@ -11,8 +11,8 @@ function patchStonks(source) {
   let patched = source;
 
   patched = patched.replace(
-    "String.fromCharCode(...C)",
-    'Array.from(C,(b)=>String.fromCharCode(b)).join("")',
+    /String\.fromCharCode\(\.\.\.([A-Za-z_$][\w$]*)\)/,
+    'Array.from($1,(b)=>String.fromCharCode(b)).join("")',
   );
 
   patched = patched.replace(

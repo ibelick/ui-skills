@@ -9719,7 +9719,357 @@ const registrySource: RegistrySourceSkill[] = [
     topics: ["visual","motion","craft"],
     description:
       "Builds a set of die-cut vinyl word stickers on a page, each word with a thick coloured border that hugs the letters, popping in one by one, curling up off the surface when grabbed through a WebGL peel shader, and thrown with momentum, friction and edge bounces. Use when someone asks for draggable stickers, a sticker peel effect, die-cut text, a throwable or physics word cloud, or a playful interactive hero with grabbable words.",
-  },];
+  },  {
+    slug: "gestures",
+    user: "emilkowalski",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/emilkowalski/skills/main/skills/gestures/SKILL.md",
+    githubUrl:
+      "https://github.com/emilkowalski/skills/blob/main/skills/gestures/SKILL.md",
+    name: "gestures",
+    topics: ["motion","interaction","frontend"],
+    description:
+      "Build drag, swipe, and sheet interactions that track the finger 1:1 and stay interruptible. Use when building or fixing anything the user drags, swipes, flings, holds, or dismisses with a gesture — drawers, sheets, swipe-to-dismiss toasts and cards, drag-to-reorder, pull-to-refresh, hold-to-confirm — or when a gesture feels laggy, disconnected from the finger, jumps on release, or can't be caught mid-animation. Triggers on — gesture, drag, draggable, swipe, swipe to dismiss, fling, momentum, velocity, drawer, sheet, bottom sheet, snap points, Vaul, dragConstraints, dragElastic, dragMomentum, onDragEnd, whileDrag, useMotionValue, rubber-band, overscroll, pull to refresh, hold to delete, press and hold, touch-action, dismiss threshold, \"doesn't follow my finger\", \"jumps when I let go\", \"can't grab it mid-animation\".",
+  },
+  {
+    slug: "regards-interactions",
+    user: "filipwojda",
+    repo: "regards-skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/filipwojda/regards-skill/main/skills/regards-interactions/SKILL.md",
+    githubUrl:
+      "https://github.com/filipwojda/regards-skill/blob/main/skills/regards-interactions/SKILL.md",
+    name: "regards-interactions",
+    topics: ["interaction","motion","frontend"],
+    description:
+      "Motion from real interactions with regards.design, a library of interactions recorded on live websites (hovers, clicks, focus states, scroll reveals, scroll-linked motion, loops, menu glides), each measured in the browser for its timing, curves and moving parts. Use it whenever the work is motion on the web - a hover state, a button press, a menu or navbar, tabs, a scroll reveal, a page or panel opening - when choosing an easing curve, a duration or a stagger, when matching how a named site moves (\"make this feel like dub's navbar\"), and when motion feels off (janky, slow, floaty, cheap). Not for layout, type or colour: the regards-design skill and search_sections do those. Needs the regards.design MCP server, https://mcp.regards.design/mcp.",
+  },
+  {
+    slug: "create-ai-avatar",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/create-ai-avatar/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/create-ai-avatar/SKILL.md",
+    files: ["references/footage.md","references/heygen.md","references/judging.md"],
+    name: "create-ai-avatar",
+    topics: ["video","visual","craft"],
+    description:
+      "Make an AI avatar of yourself that looks and sounds like you. A HeyGen digital twin trained on a couple of minutes of your own footage says lines you never recorded, in your own ElevenLabs voice, lip-synced from the audio, on the engine whose mouth moves most like yours. Covers picking and joining takes, training, consent, making the voice, rendering the same line on Avatar V, IV and III, and judging them mouth to mouth against your real footage before anything else is made. Use when someone wants a digital twin, an AI avatar or talking head of themselves or a consenting person, a HeyGen avatar from their YouTube videos or recordings, their avatar to speak in their own cloned voice, a lip-synced talking video from a photo and audio, or says their avatar looks wrong, over-acts or its mouth isn't theirs.",
+  },
+  {
+    slug: "digital-twin",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/digital-twin/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/digital-twin/SKILL.md",
+    files: ["references/audit.md","references/cinematic.md","references/consent.md","references/costs.md","references/fil-workflow.md","references/identity-template.md","references/judging.md","references/references.md","references/speaking.md","references/stills.md","references/video.md","references/voice.md","references/workspace.md"],
+    name: "digital-twin",
+    topics: ["video","visual","craft"],
+    description:
+      "Build a digital twin of yourself, meaning photoreal stills of you in your own real room, talking video clips of you, and lines in your own cloned voice, that people who know you accept as you. It's a proven workflow (160+ numbered stills over two dozen rounds, 20+ talking drafts and a voice taken from 8.7 to 9.2/10 on one creator's twin, Nov 2026). It covers consent, picking references from your own recordings, writing an identity prompt, the 4-part prompt stack on Seedream 5 Pro, your-real-room-only with the camera as the only variable, 3 images at a time, cinematic looks taken from reference videos as words, measuring face proportions, the audit and paste-back fix, an instant voice clone with an audio tag, a speaker-similarity scorer, Seedance 2.5 draft talking clips, and the traps (voice verification lockouts, iMacs, grey hair, wide mouths, other people's faces bleeding in). Use it whenever someone wants AI images, video or voice of THEMSELVES, even if they only say \"my digital twin\", \"AI headshots of me\", \"a video of me talking\", \"clone my voice\", \"make me a presenter clip\", \"an AI avatar of me\", \"me at my desk\", \"a talking-head intro without filming\" or \"creator or founder content with my face\". Only for your own face and voice, or someone who gave documented consent.",
+  },
+  {
+    slug: "html-explainer-video",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/html-explainer-video/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/html-explainer-video/SKILL.md",
+    files: ["references/camera.md","references/checks.md","references/fil-editor.md","references/format.md","references/looks.md","references/sound.md"],
+    name: "html-explainer-video",
+    topics: ["video","motion","craft"],
+    description:
+      "Turn a product, a feature or an idea into a finished one-minute explainer video in any look: a script (hook, benefit, quick tutorial, try it), a voice whose words are the clock, HTML scenes drawn from that one clock and rendered frame by frame at 2×, and an edit in Fil's video editor over MCP with captions, music, sound effects and chapters. The look is an input, read from the person's site or a named style, so the same film can wear any type, colour, corners and motion. The shape is an input (4:3, 16:9, 1:1, 9:16). No camera by default: a voice-led film whose scenes fill the frame; ask for a camera and it adds record slots, layouts by keyframes and a teleprompter. Use when someone wants an explainer, a feature video, a product walkthrough, an onboarding video, a how-it-works video or a launch video, wants one in their own brand, or wants it without filming anything.",
+  },
+  {
+    slug: "url-to-motion-design",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/url-to-motion-design/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/url-to-motion-design/SKILL.md",
+    files: ["references/builder-brief.md","references/judge.md","references/lab.md","references/publish.md","references/scene-contract.md","references/seven-to-eight.md"],
+    name: "url-to-motion-design",
+    topics: ["motion","video","visual"],
+    description:
+      "Turn a launch film, product video or post at a URL (an X or Twitter post, YouTube, Vimeo, a direct video link) into Fil HTML motion scenes. Captures the film's best 5 to 10 distinct motion-graphics shots as screenshots and clips, rebuilds each as an original Fil motion scene in its look with Fil's own words, polishes them with blind judges to 8/10, puts them in a section of the HTML motion scenes canvas, and shows them as a screening page and MP4s. Use when someone shares a video or a post and asks to capture its scenes, to get screenshots of its best shots, to add its scenes or style to the motion scenes library, or to make motion scenes like it, or says url to motion design, even if they only ask for the screenshots first.",
+  },
+  {
+    slug: "dxe-ai-output-judgement",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-ai-output-judgement/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-ai-output-judgement/SKILL.md",
+    name: "dxe-ai-output-judgement",
+    topics: ["craft","tooling"],
+    description:
+      "Critique generated UI, copy, or code when the user requests a quality review of AI output.",
+  },
+  {
+    slug: "dxe-android-native-ui",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-android-native-ui/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-android-native-ui/SKILL.md",
+    files: ["references/android-verification.md"],
+    name: "dxe-android-native-ui",
+    topics: ["frontend","interaction","visual"],
+    description:
+      "Build or review Android interfaces in Compose or Views, including Material conventions, accessibility, adaptive layout, and state.",
+  },
+  {
+    slug: "dxe-apple-native-ui",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-apple-native-ui/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-apple-native-ui/SKILL.md",
+    files: ["references/apple-verification.md","references/macos-native-workflows.md"],
+    name: "dxe-apple-native-ui",
+    topics: ["frontend","interaction","visual"],
+    description:
+      "Build or review native Apple interfaces, including platform controls, accessibility, state, navigation, and macOS window behavior.",
+  },
+  {
+    slug: "dxe-design-engineering",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-design-engineering/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-design-engineering/SKILL.md",
+    name: "dxe-design-engineering",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Translate design intent into production components or improve collaboration between design and engineering.",
+  },
+  {
+    slug: "dxe-design-for-repetition",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-design-for-repetition/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-design-for-repetition/SKILL.md",
+    name: "dxe-design-for-repetition",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Improve workflows used repeatedly by examining recurring effort, waiting, setup, interruption, context retention, and expert paths. Use when an experience works once but may become tiring or inefficient in regular use.",
+  },
+  {
+    slug: "dxe-design-system-evolution",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-design-system-evolution/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-design-system-evolution/SKILL.md",
+    name: "dxe-design-system-evolution",
+    topics: ["systems","craft","frontend"],
+    description:
+      "Decide how an existing design system should evolve: reuse a component, add a variant, change its API, or introduce a new pattern. Use when real design or code consumers expose a mismatch and a bounded compatibility or migration decision is needed.",
+  },
+  {
+    slug: "dxe-fluid-design",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-fluid-design/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-fluid-design/SKILL.md",
+    files: ["references/motion-recipes.md","references/principles.md"],
+    name: "dxe-fluid-design",
+    topics: ["motion","visual","frontend"],
+    description:
+      "Design or refine springs, gestures, and interruptible motion when physical continuity or direct manipulation matters.",
+  },
+  {
+    slug: "dxe-hiring-manager-bar",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-hiring-manager-bar/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-hiring-manager-bar/SKILL.md",
+    files: ["references/browser-review.md","references/danny-martinez.md","references/design-discipline-examples.md","references/dive-club-examples.md","references/dive-club-research.md","references/hiring-humans-examples.md","references/video-portfolio-advice.md"],
+    name: "dxe-hiring-manager-bar",
+    topics: ["craft","tooling"],
+    description:
+      "Review a job-seeking portfolio against Karl Koch's hiring manager bar and recommend prioritized changes to site code and content. Use for portfolio readiness, hiring clarity, or a portfolio review with actionable implementation guidance.",
+  },
+  {
+    slug: "dxe-humane-functionalism",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-humane-functionalism/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-humane-functionalism/SKILL.md",
+    files: ["references/research.md"],
+    name: "dxe-humane-functionalism",
+    topics: ["craft","interaction","visual"],
+    description:
+      "Improve UI and UX through Danish functionalism. Use for a Danish functionalist design pass on a screen or flow, grounding hierarchy, interaction, human fit, and craft in actual use.",
+  },
+  {
+    slug: "dxe-intentional-craft",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-intentional-craft/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-intentional-craft/SKILL.md",
+    files: ["references/source-and-translation.md"],
+    name: "dxe-intentional-craft",
+    topics: ["craft","interaction","visual"],
+    description:
+      "Develop or refine design and engineering ideas through Apple's Intention film: connect a human outcome to focused scope, implementation choices, and evidence of craft. Use when this lens is requested or a substantial idea needs an experience-led direction.",
+  },
+  {
+    slug: "dxe-interaction-contracts",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-interaction-contracts/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-interaction-contracts/SKILL.md",
+    name: "dxe-interaction-contracts",
+    topics: ["interaction","craft","frontend"],
+    description:
+      "Define or review the behaviour promised by an interaction before or during implementation: triggers, state changes, persistence, interruption, recovery, and acceptance checks. Use when a mockup or component leaves consequential behaviour unresolved.",
+  },
+  {
+    slug: "dxe-interface-affordances",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-interface-affordances/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-interface-affordances/SKILL.md",
+    name: "dxe-interface-affordances",
+    topics: ["interaction","craft","frontend"],
+    description:
+      "Fix unclear interaction cues, hidden actions, weak hit targets, or mismatches between a control’s appearance and behavior.",
+  },
+  {
+    slug: "dxe-modern-css-html",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-modern-css-html/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-modern-css-html/SKILL.md",
+    files: ["references/features.md","references/recipes.md"],
+    name: "dxe-modern-css-html",
+    topics: ["frontend","accessibility","craft"],
+    description:
+      "Choose native CSS and HTML features, assess browser support, or replace legacy workarounds with progressive enhancement.",
+  },
+  {
+    slug: "dxe-product-delight",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-product-delight/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-product-delight/SKILL.md",
+    name: "dxe-product-delight",
+    topics: ["craft","interaction","visual"],
+    description:
+      "Improve product care, anticipation, and useful feedback when the user asks for delight or polish.",
+  },
+  {
+    slug: "dxe-prototype-to-production",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-prototype-to-production/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-prototype-to-production/SKILL.md",
+    name: "dxe-prototype-to-production",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Harden an existing prototype for real use, including failure states, accessibility, security boundaries, and maintainability.",
+  },
+  {
+    slug: "dxe-real-content-design",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-real-content-design/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-real-content-design/SKILL.md",
+    name: "dxe-real-content-design",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Shape interface structure using representative content before layout decisions settle. Use when placeholders, uniform examples, incomplete records, or mixed content types may hide problems in hierarchy, comparison, navigation, or component design.",
+  },
+  {
+    slug: "dxe-semantic-html-first",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-semantic-html-first/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-semantic-html-first/SKILL.md",
+    name: "dxe-semantic-html-first",
+    topics: ["frontend","accessibility","craft"],
+    description:
+      "Choose HTML semantics and accessible behavior for controls, forms, and custom interaction primitives.",
+  },
+  {
+    slug: "dxe-software-needs-hierarchy",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-software-needs-hierarchy/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-software-needs-hierarchy/SKILL.md",
+    files: ["references/source-and-translation.md"],
+    name: "dxe-software-needs-hierarchy",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Evaluate software through a Maslow-inspired hierarchy of user needs and prioritise improvements from basic function and trust through belonging, competence, and growth. Use when a product needs a needs-based quality review or competing improvements need ordering.",
+  },
+  {
+    slug: "dxe-subtractive-design",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-subtractive-design/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-subtractive-design/SKILL.md",
+    name: "dxe-subtractive-design",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Simplify noisy interfaces and evaluate whether proposed UI additions serve a concrete user need.",
+  },
+  {
+    slug: "dxe-write-first-design",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-write-first-design/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-write-first-design/SKILL.md",
+    name: "dxe-write-first-design",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Clarify uncertain product decisions in a short written brief before substantial design or implementation work.",
+  },
+];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
   const userSegment = entry.user.toLowerCase();
