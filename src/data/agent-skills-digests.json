@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-11T09:43:40.693Z",
-  "skillCount": 747,
+  "generatedAt": "2026-11-12T04:01:41.000Z",
+  "skillCount": 748,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
     "ibelick/baseline-ui": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
@@ -748,6 +748,7 @@
     "kemiljk/dxe-software-needs-hierarchy": "sha256:fb1452ccc0007ce9465daa1bbce5e3175783d7304ba8dfcd70e20fe47e7f9a0c",
     "kemiljk/dxe-semantic-html-first": "sha256:e50c0ffd4478a55600883f97367465fa4f8e3589db11298b346f5d09103f6d9d",
     "kemiljk/dxe-subtractive-design": "sha256:a1eaf2797330f62f8bc5187029ddcda2449e70c8ad8236565eb29ade207bc050",
-    "kemiljk/dxe-write-first-design": "sha256:34c8eef3dd08f86cd7cd670a86c6ace5504c05303470cdcb85e81ee55a5f0998"
+    "kemiljk/dxe-write-first-design": "sha256:34c8eef3dd08f86cd7cd670a86c6ace5504c05303470cdcb85e81ee55a5f0998",
+    "choy0x/veyui": "sha256:7543bbe79a38d62a8823178ff9d025d8876b73416b304e80c65c7b7f1886623e"
   }
 }

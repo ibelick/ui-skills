@@ -10069,6 +10069,19 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Clarify uncertain product decisions in a short written brief before substantial design or implementation work.",
   },
+  {
+    slug: "veyui",
+    user: "Choy0X",
+    repo: "VeyUI",
+    rawUrl:
+      "https://raw.githubusercontent.com/Choy0X/VeyUI/main/skills/veyui/SKILL.md",
+    githubUrl:
+      "https://github.com/Choy0X/VeyUI/blob/main/skills/veyui/SKILL.md",
+    name: "veyui",
+    topics: ["visual", "craft", "taste", "systems", "frontend"],
+    description:
+      "Design, redesign, polish or audit user interfaces for web, mobile and desktop with reference-led art direction instead of generic AI-looking output. Researches precedents from an offline library of 580+ reviewed screens, builds three distinct hosted concepts to choose from, then implements the winner and verifies it in a real renderer. Includes product-specific copywriting, independent design critique and accessibility checks.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
