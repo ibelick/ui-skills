@@ -1,5 +1,6 @@
 ---
 import { CheckIcon, DocumentDuplicateIcon } from "@heroicons/react/24/outline";
+import { highlightShellCommand } from "../lib/code-highlighter";
 
 type Props = {
   command: string;
@@ -7,6 +8,7 @@ type Props = {
 
 const { command } = Astro.props as Props;
 const isMultiline = command.includes("\n");
+const highlightedCommand = await highlightShellCommand(command);
 ---
 
 <div
@@ -18,7 +20,10 @@ const isMultiline = command.includes("\n");
       : "h-9 items-center justify-between pr-1",
   ]}
 >
-  <span class:list={["type-code min-w-0 truncate text-content-primary", isMultiline && "whitespace-pre-wrap"]}>{command}</span>
+  <span
+    class:list={["type-code min-w-0 truncate text-content-primary", isMultiline && "whitespace-pre-wrap"]}
+    set:html={highlightedCommand}
+  />
   <button
     type="button"
     aria-label="Copy command"

@@ -143,7 +143,7 @@ export default function NewsletterInput({
                   void submit();
                 }
               }}
-              className="type-body-md text-content-primary placeholder:type-body-md placeholder:text-content-muted focus:border-[#A5A5A5]/40 relative z-0 h-12 w-full rounded-full border border-line-default bg-white px-4 pr-36 transition-colors outline-none"
+              className="type-body-md text-content-primary placeholder:type-body-md placeholder:text-content-muted focus:border-[#A5A5A5]/40 relative z-0 h-12 w-full rounded-full border border-line-default bg-surface-default px-4 pr-36 transition-colors outline-none"
             />
 
             <button
@@ -197,7 +197,7 @@ export default function NewsletterInput({
           </div>
 
           {error ? (
-            <p className="mt-2 text-sm text-red-700" role="alert">
+            <p className="mt-2 text-sm text-red-700 dark:text-red-400" role="alert">
               {error}
             </p>
           ) : null}

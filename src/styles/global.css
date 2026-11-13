@@ -4,6 +4,9 @@
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
 
+/* Theme is driven by the `dark` class on <html>, set before first paint in Layout.astro. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: "Inter Variable";
   src: url("/fonts/InterVariable.woff2") format("woff2");
@@ -37,6 +40,68 @@
     0 0 0 1px color-mix(in srgb, var(--color-content-primary) 10%, transparent),
     0 4px 8px -2px rgb(0 0 0 / 0.08),
     0 2px 4px -2px rgb(0 0 0 / 0.04);
+}
+
+:root {
+  color-scheme: light;
+}
+
+/* Black dark theme: neutral blacks on the same semantic tokens as light mode. */
+:root.dark {
+  color-scheme: dark;
+
+  --color-page-default: #000000;
+  --color-surface-default: #0a0a0a;
+  --color-surface-subtle: #141414;
+  --color-fill-default: #0a0a0a;
+  --color-fill-subtle: #141414;
+  --color-fill-strong: #1f1f1f;
+  --color-fill-inverse: #ededed;
+  --color-fill-accent: #0b1a33;
+  --color-content-primary: #ededed;
+  --color-content-secondary: #a1a1a1;
+  --color-content-muted: #707070;
+  --color-content-extra-muted: #525252;
+  --color-content-inverse: #000000;
+  --color-content-accent: #4493f8;
+  --color-line-default: #262626;
+  --shadow-border:
+    0 0 0 1px color-mix(in srgb, var(--color-content-primary) 14%, transparent),
+    0 4px 8px -2px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+}
+
+/* Shiki emits the GitHub dark colors as --shiki-dark next to the light color. */
+:root.dark [style*="--shiki-dark"] {
+  color: var(--shiki-dark) !important;
+}
+
+/* The typography plugin ships fixed neutral shades; route them through the tokens. */
+:root.dark .prose {
+  --tw-prose-body: var(--color-content-primary);
+  --tw-prose-headings: var(--color-content-primary);
+  --tw-prose-lead: var(--color-content-secondary);
+  --tw-prose-links: var(--color-content-primary);
+  --tw-prose-bold: var(--color-content-primary);
+  --tw-prose-counters: var(--color-content-secondary);
+  --tw-prose-bullets: var(--color-content-muted);
+  --tw-prose-hr: var(--color-line-default);
+  --tw-prose-quotes: var(--color-content-primary);
+  --tw-prose-quote-borders: var(--color-line-default);
+  --tw-prose-captions: var(--color-content-secondary);
+  --tw-prose-kbd: var(--color-content-primary);
+  --tw-prose-code: var(--color-content-primary);
+  --tw-prose-pre-code: var(--color-content-primary);
+  --tw-prose-pre-bg: var(--color-surface-subtle);
+  --tw-prose-th-borders: var(--color-line-default);
+  --tw-prose-td-borders: var(--color-line-default);
+}
+
+/* Skip color transitions for the single frame where the theme flips. */
+:root.theme-switching,
+:root.theme-switching *,
+:root.theme-switching *::before,
+:root.theme-switching *::after {
+  transition: none !important;
 }
 
 @utility type-h1 {
@@ -108,6 +173,7 @@
 
 :where(code):not(:where(pre code)) {
   background-color: var(--color-fill-subtle);
+  color: var(--color-content-primary);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 400;
@@ -165,6 +231,7 @@ textarea:-webkit-autofill:focus {
 
 .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   background-color: var(--color-fill-subtle);
+  color: var(--color-content-primary);
   font-family: var(--font-mono);
   font-weight: 400;
   padding: 0.1em 0.35em;
