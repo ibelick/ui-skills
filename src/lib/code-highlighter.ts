@@ -6,7 +6,9 @@ import { createJavaScriptRegexEngine } from "shiki/engine/javascript";
 import type { LanguageRegistration } from "shiki";
 
 export const CODE_HIGHLIGHT_THEME = "github-light-high-contrast";
+export const CODE_HIGHLIGHT_DARK_THEME = "github-dark-default";
 export const CODE_HIGHLIGHT_FOREGROUND = "#0e1116";
+export const CODE_HIGHLIGHT_DARK_FOREGROUND = "#e6edf3";
 export const SKILL_CODE_THEME = CODE_HIGHLIGHT_THEME;
 export const SKILL_CODE_BACKGROUND = "transparent";
 export const SKILL_CODE_FOREGROUND = CODE_HIGHLIGHT_FOREGROUND;
@@ -119,7 +121,7 @@ const HIGHLIGHT_SURFACES: Record<
 function withPlaintextForeground(html: string, foreground: string): string {
   return html.replace(
     /<span>([^<]*)<\/span>/g,
-    `<span style="color:${foreground}">$1</span>`,
+    `<span style="color:${foreground};--shiki-dark:${CODE_HIGHLIGHT_DARK_FOREGROUND}">$1</span>`,
   );
 }
 
@@ -134,9 +136,15 @@ async function highlightWithLanguage(
     resolvedLanguage === "bash" ? prepareShellForHighlight(code) : code;
   const surfaceConfig = HIGHLIGHT_SURFACES[surface];
 
+  // Light colors stay inline; dark colors ride along as --shiki-dark and are
+  // applied by `:root.dark` in global.css.
   const html = highlighter.codeToHtml(source, {
     lang: resolvedLanguage,
-    theme: surfaceConfig.theme,
+    themes: {
+      light: surfaceConfig.theme,
+      dark: CODE_HIGHLIGHT_DARK_THEME,
+    },
+    defaultColor: "light",
     colorReplacements: surfaceConfig.transparentBackground
       ? {
           [surfaceConfig.theme]: {
