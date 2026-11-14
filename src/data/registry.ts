@@ -8350,6 +8350,36 @@ const registrySource: RegistrySourceSkill[] = [
       'Build faux product UI that looks like a real product, as a still illustration or an animated demo with a cursor. Browser and app windows, dashboards, phones, notifications, terminals, bento grids and cursor walkthroughs, framed, masked and cropped the way a marketing page, feature card or docs hero needs them. Use whenever someone wants a fake or mocked UI, a product demo or walkthrough animation, a hero or feature-card illustration of an app, a product shot in the style of a polished marketing site, or an animated cursor doing things in an interface, even if they never say "faux UI". React and plain CSS.',
   },
   {
+    slug: "stageshow-svelte",
+    user: "maven-ammar",
+    repo: "svelte-stageshow",
+    rawUrl:
+      "https://raw.githubusercontent.com/maven-ammar/svelte-stageshow/main/stageshow/SKILL.md",
+    githubUrl:
+      "https://github.com/maven-ammar/svelte-stageshow/blob/main/stageshow/SKILL.md",
+    files: [
+      "references/annotations.md",
+      "references/backgrounds.md",
+      "references/bento.md",
+      "references/brands.md",
+      "references/choreography.md",
+      "references/craft.md",
+      "references/framing.md",
+      "references/kit.md",
+      "references/looks.md",
+      "references/motion.md",
+      "references/products.md",
+      "references/rehearse.md",
+      "references/review.md",
+      "references/teaching.md",
+      "references/verify.md",
+    ],
+    name: "stageshow (Svelte)",
+    topics: ["visual", "motion", "craft", "frontend"],
+    description:
+      'Build faux product UI that looks like a real product, as a still illustration or an animated demo with a cursor. Browser and app windows, dashboards, phones, notifications, terminals, bento grids and cursor walkthroughs, framed, masked and cropped the way a marketing page, feature card or docs hero needs them. The Svelte 5 port of Benji Taylor\'s kit: same scenes, same stylesheets, no React at runtime. Use whenever someone is building a Svelte app and wants a fake or mocked UI, a product demo, or a hero illustration, even if they never say "faux UI". Svelte 5 and plain CSS.',
+  },
+  {
     slug: "rea-growth",
     user: "superdesigndev",
     repo: "treg",
