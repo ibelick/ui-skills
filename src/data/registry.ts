@@ -10069,6 +10069,886 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Clarify uncertain product decisions in a short written brief before substantial design or implementation work.",
   },
+  {
+    slug: "make-font",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/skills/make-font/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/skills/make-font/SKILL.md",
+    files: ["references/checks.md", "references/fitting.md", "references/font-book.md", "references/foundation.md", "references/licensing.md", "references/measuring.md", "references/spacing.md"],
+    name: "make-font",
+    topics: ["typography","craft"],
+    description:
+      "Build an open-license font from reference typefaces, with web files and a specimen, without copying outlines from the references.",
+  },
+  {
+    slug: "learn-taste",
+    user: "emilkowalski",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/emilkowalski/skills/main/skills/learn-taste/SKILL.md",
+    githubUrl:
+      "https://github.com/emilkowalski/skills/blob/main/skills/learn-taste/SKILL.md",
+    name: "learn-taste",
+    topics: ["taste","craft"],
+    description:
+      "Turn design corrections from a session into explicit rules, with the reason for each one, in DESIGN.md, a project skill, or a lint check.",
+  },
+  {
+    slug: "figma-3d-transforms",
+    user: "figma",
+    repo: "mcp-server-guide",
+    rawUrl:
+      "https://raw.githubusercontent.com/figma/mcp-server-guide/main/skills/figma-3d-transforms/SKILL.md",
+    githubUrl:
+      "https://github.com/figma/mcp-server-guide/blob/main/skills/figma-3d-transforms/SKILL.md",
+    files: ["references/carousels.md", "references/cubes.md"],
+    name: "figma-3d-transforms",
+    topics: ["3d","visual","tooling"],
+    description:
+      "Add depth, perspective, tilt, isometric, and parallax transforms in Figma when a flat 2D rotation is not enough.",
+  },
+  {
+    slug: "game-dev-character-model",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/game-dev-character-model/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/game-dev-character-model/SKILL.md",
+    name: "game-dev-character-model",
+    topics: ["3d","visual"],
+    description:
+      "Design an original game or web character and deliver it as a textured, rigged GLB in a lit three.js viewer.",
+  },
+  {
+    slug: "improve-threejs",
+    user: "millionco",
+    repo: "react-doctor",
+    rawUrl:
+      "https://raw.githubusercontent.com/millionco/react-doctor/main/skills/improve-threejs/SKILL.md",
+    githubUrl:
+      "https://github.com/millionco/react-doctor/blob/main/skills/improve-threejs/SKILL.md",
+    name: "improve-threejs",
+    topics: ["threejs","performance","3d"],
+    description:
+      "Audit Three.js and React Three Fiber scenes for frame cost, GPU leaks, scene-graph mistakes, and visual defects such as z-fighting or a wrong color space.",
+  },
+  {
+    slug: "performance",
+    user: "millionco",
+    repo: "react-doctor",
+    rawUrl:
+      "https://raw.githubusercontent.com/millionco/react-doctor/main/skills/performance/SKILL.md",
+    githubUrl:
+      "https://github.com/millionco/react-doctor/blob/main/skills/performance/SKILL.md",
+    name: "performance",
+    topics: ["performance","frontend"],
+    description:
+      "Diagnose slow React interactions with traces, render outlines, and long-animation-frame timing, then compare before and after.",
+  },
+  {
+    slug: "balise-affinity",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-affinity/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-affinity/SKILL.md",
+    files: ["references/affinity-decision-matrix.md", "references/affinity-mental-model.md"],
+    name: "balise-affinity",
+    topics: ["visual","tooling"],
+    description:
+      "Audit Affinity documents: object choices, text modes, non-destructive edits, overlays, and production setup.",
+  },
+  {
+    slug: "balise-affinity-mcp",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-affinity-mcp/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-affinity-mcp/SKILL.md",
+    files: ["references/affinity-concepts-and-nuances.md", "references/affinity-js-patterns.md"],
+    name: "balise-affinity-mcp",
+    topics: ["tooling","visual"],
+    description:
+      "Edit the open Affinity document through the Affinity MCP: layers, geometry, type, fills, exports, and a visual check.",
+  },
+  {
+    slug: "balise-brand-naming",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-brand-naming/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-brand-naming/SKILL.md",
+    files: ["references/evaluation-et-disponibilite.md", "references/fondations-de-marque.md", "references/structure-du-livrable.md", "references/territoires-de-naming.md"],
+    name: "balise-brand-naming",
+    topics: ["craft","visual"],
+    description:
+      "Turn a fuzzy brand idea into a reasoned exploration of the name and the territory around it.",
+  },
+  {
+    slug: "balise-content-test",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-content-test/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-content-test/SKILL.md",
+    name: "balise-content-test",
+    topics: ["craft","interaction"],
+    description:
+      "Stress-test Figma screens with long text, missing values, localization, RTL, large type, and awkward media.",
+  },
+  {
+    slug: "balise-design-system",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-design-system/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-design-system/SKILL.md",
+    files: ["references/audits-and-pilots.md", "references/color-and-typography.md", "references/components-and-patterns.md", "references/consumption-and-learning.md", "references/deliverable-templates.md", "references/figma-to-code.md", "references/framework-adoption.md", "references/governance-and-maturity.md", "references/implementation-pipelines.md", "references/naming-and-source-authority.md", "references/saas-structures.md", "references/strategy-and-scope.md", "references/style-dictionary.md", "references/token-architecture.md"],
+    name: "balise-design-system",
+    topics: ["systems","visual"],
+    description:
+      "Shape a design system from Figma into code: tokens, themes, type scales, color ramps, and component patterns.",
+  },
+  {
+    slug: "balise-handoff",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-handoff/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-handoff/SKILL.md",
+    name: "balise-handoff",
+    topics: ["systems","frontend"],
+    description:
+      "Prepare Figma screens and flows for implementation, with scope, source of truth, open decisions, and acceptance criteria.",
+  },
+  {
+    slug: "balise-idea",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-idea/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-idea/SKILL.md",
+    name: "balise-idea",
+    topics: ["craft","visual"],
+    description:
+      "Keep an exportable visual trace of opportunities, experiments, and decisions without treating the canvas as the source of truth.",
+  },
+  {
+    slug: "balise-motion-graphic",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-motion-graphic/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-motion-graphic/SKILL.md",
+    files: ["references/asset-acquisition.md", "references/asset-strategy.md", "references/engine-routing.md", "references/export-and-codecs.md", "references/intake-and-formats.md", "references/kinetic-typography.md", "references/motion-quality-and-lessons.md", "references/reference-research.md", "references/sound-and-delivery.md"],
+    name: "balise-motion-graphic",
+    topics: ["motion","video"],
+    description:
+      "Direct rendered motion graphics from brief to export: brand motion, titles, kinetic type, explainers, and loops.",
+  },
+  {
+    slug: "balise-trustworthy-flows",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-trustworthy-flows/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-trustworthy-flows/SKILL.md",
+    name: "balise-trustworthy-flows",
+    topics: ["interaction","craft"],
+    description:
+      "Review consequential Figma flows such as consent, pricing, cancellation, and destructive actions for uneven or unclear choices.",
+  },
+  {
+    slug: "balise-ui-states",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-ui-states/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-ui-states/SKILL.md",
+    name: "balise-ui-states",
+    topics: ["interaction","craft"],
+    description:
+      "Fill in missing UI states for Figma screens: empty, loading, success, error, offline, permission, and recovery.",
+  },
+  {
+    slug: "balise-visual-references",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-visual-references/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-visual-references/SKILL.md",
+    name: "balise-visual-references",
+    topics: ["visual","taste"],
+    description:
+      "Collect visual references and turn them into original design principles for Figma work.",
+  },
+  {
+    slug: "balise-webmotion",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-webmotion/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-webmotion/SKILL.md",
+    files: ["references/asset-acquisition.md", "references/autonomous-production.md", "references/easter-eggs.md", "references/micro-interactions.md", "references/quality-rubric.md", "references/research-method.md", "references/source-strategy.md"],
+    name: "balise-webmotion",
+    topics: ["motion","interaction"],
+    description:
+      "Research and build web motion: scroll stories, page transitions, micro-interactions, and short motion prototypes.",
+  },
+  {
+    slug: "alignment",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/alignment/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/alignment/SKILL.md",
+    name: "alignment",
+    topics: ["visual","craft"],
+    description:
+      "Measure a live page for edges, gaps, centering, and radii that miss by a pixel or two, then judge visual weight.",
+  },
+  {
+    slug: "audit",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/audit/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/audit/SKILL.md",
+    name: "audit",
+    topics: ["craft","systems"],
+    description:
+      "Review a change against this interface collection and return one ranked report.",
+  },
+  {
+    slug: "avatar",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/avatar/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/avatar/SKILL.md",
+    name: "avatar",
+    topics: ["motion","visual"],
+    description:
+      "Draw an object as a flat character with capsule eyes and animate glance, blink, breath, pointer follow, and sleep.",
+  },
+  {
+    slug: "color",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/color/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/color/SKILL.md",
+    name: "color",
+    topics: ["color","accessibility"],
+    description:
+      "Keep text and control contrast at exact ratios, route color through role tokens, and give dark mode its own palette.",
+  },
+  {
+    slug: "copy",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/copy/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/copy/SKILL.md",
+    name: "copy",
+    topics: ["craft","typography"],
+    description:
+      "Write short, plain interface labels with one-line descriptions.",
+  },
+  {
+    slug: "deconstruct",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/deconstruct/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/deconstruct/SKILL.md",
+    name: "deconstruct",
+    topics: ["motion","interaction"],
+    description:
+      "Break an animation into a state machine and a scrubbable timeline of every property.",
+  },
+  {
+    slug: "defaults",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/defaults/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/defaults/SKILL.md",
+    name: "defaults",
+    topics: ["systems","craft"],
+    description:
+      "Apply house defaults for scroll edges, surfaces, type, sound, focus, forms, loading, hotkeys, and dialogs.",
+  },
+  {
+    slug: "frames",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/frames/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/frames/SKILL.md",
+    name: "frames",
+    topics: ["performance","motion"],
+    description:
+      "Trace one interaction on a throttled CPU, name what drops frames, and prove the fix with a second trace.",
+  },
+  {
+    slug: "gather",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/gather/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/gather/SKILL.md",
+    name: "gather",
+    topics: ["visual","taste"],
+    description:
+      "Collect the user's saved references and chosen sites onto one board before a design is built.",
+  },
+  {
+    slug: "icons",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/icons/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/icons/SKILL.md",
+    name: "icons",
+    topics: ["visual","craft"],
+    description:
+      "Draw missing icons in the set's existing style, built so they can morph, and show the set on one sheet.",
+  },
+  {
+    slug: "keyboard",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/keyboard/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/keyboard/SKILL.md",
+    name: "keyboard",
+    topics: ["accessibility","interaction"],
+    description:
+      "Walk a live page with the keyboard only and report controls that cannot be reached, seen, or operated.",
+  },
+  {
+    slug: "lab",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/lab/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/lab/SKILL.md",
+    name: "lab",
+    topics: ["systems","frontend"],
+    description:
+      "Build a temporary page that shows every variant and state of real components, each linked to its source.",
+  },
+  {
+    slug: "match",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/match/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/match/SKILL.md",
+    name: "match",
+    topics: ["visual","craft"],
+    description:
+      "Rebuild a named reference from its real source and computed values, then compare the two side by side.",
+  },
+  {
+    slug: "motion",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/motion/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/motion/SKILL.md",
+    name: "motion",
+    topics: ["motion"],
+    description:
+      "Apply house motion: what animates, easing, duration, springs, gestures, exits, motion blur, and reduced motion.",
+  },
+  {
+    slug: "prototype",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/prototype/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/prototype/SKILL.md",
+    name: "prototype",
+    topics: ["interaction","craft"],
+    description:
+      "Build several labelled variants of one idea on a single page so a direction can be chosen.",
+  },
+  {
+    slug: "restraint",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/restraint/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/restraint/SKILL.md",
+    name: "restraint",
+    topics: ["craft","taste"],
+    description:
+      "Ship the smallest thing that does the job and remove what nobody asked for.",
+  },
+  {
+    slug: "sketchbook",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/sketchbook/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/sketchbook/SKILL.md",
+    name: "sketchbook",
+    topics: ["interaction","taste"],
+    description:
+      "Generate a daily batch of interaction experiments in the project's stack as live tiles to keep or discard.",
+  },
+  {
+    slug: "viewports",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/viewports/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/viewports/SKILL.md",
+    name: "viewports",
+    topics: ["visual","frontend"],
+    description:
+      "Render a page at each width, breakpoint edge, a short landscape phone, and 200% text, then report overflow and clipping.",
+  },
+  {
+    slug: "create-api",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-api/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-api/SKILL.md",
+    name: "create-api",
+    topics: ["systems","frontend"],
+    description:
+      "Write a component API spec: properties, values, defaults, and configuration examples.",
+  },
+  {
+    slug: "create-color",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-color/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-color/SKILL.md",
+    name: "create-color",
+    topics: ["color","systems"],
+    description:
+      "Map a component's UI elements to color tokens in a color annotation spec.",
+  },
+  {
+    slug: "create-component-md",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-component-md/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-component-md/SKILL.md",
+    name: "create-component-md",
+    topics: ["systems","frontend"],
+    description:
+      "Produce a component spec from a Figma extract, covering API, structure, color, and screen-reader behavior.",
+  },
+  {
+    slug: "create-motion",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-motion/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-motion/SKILL.md",
+    name: "create-motion",
+    topics: ["motion","systems"],
+    description:
+      "Write motion specs from timeline data: what animates and which properties change.",
+  },
+  {
+    slug: "create-property",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-property/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-property/SKILL.md",
+    name: "create-property",
+    topics: ["systems","visual"],
+    description:
+      "Annotate each configurable property axis in Figma with component instance previews.",
+  },
+  {
+    slug: "create-structure",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-structure/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-structure/SKILL.md",
+    name: "create-structure",
+    topics: ["systems","visual"],
+    description:
+      "Document component dimensions, spacing, and padding across density, size, and shape variants.",
+  },
+  {
+    slug: "extract-api",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/extract-api/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/extract-api/SKILL.md",
+    name: "extract-api",
+    topics: ["systems","frontend"],
+    description:
+      "Read a component's properties and sub-components from a uSpec extract and write the normalized API JSON.",
+  },
+  {
+    slug: "extract-color",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/extract-color/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/extract-color/SKILL.md",
+    name: "extract-color",
+    topics: ["color","systems"],
+    description:
+      "Read a component's color-token mapping from a uSpec extract and write the normalized color JSON.",
+  },
+  {
+    slug: "extract-structure",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/extract-structure/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/extract-structure/SKILL.md",
+    name: "extract-structure",
+    topics: ["systems","visual"],
+    description:
+      "Read variant axes, dimensions, and slots from a uSpec extract and write the normalized structure JSON.",
+  },
+  {
+    slug: "extract-voice",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/extract-voice/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/extract-voice/SKILL.md",
+    name: "extract-voice",
+    topics: ["accessibility","systems"],
+    description:
+      "Read focus order and screen-reader behavior from a uSpec extract and write the normalized accessibility JSON.",
+  },
+  {
+    slug: "write-alt-text",
+    user: "stephenturner",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/stephenturner/skills/main/write-alt-text/SKILL.md",
+    githubUrl:
+      "https://github.com/stephenturner/skills/blob/main/write-alt-text/SKILL.md",
+    name: "write-alt-text",
+    topics: ["accessibility","visual"],
+    description:
+      "Write alt text for charts and plots.",
+  },
+  {
+    slug: "svelte-core-bestpractices",
+    user: "sveltejs",
+    repo: "ai-tools",
+    rawUrl:
+      "https://raw.githubusercontent.com/sveltejs/ai-tools/main/packages/opencode/skills/svelte-core-bestpractices/SKILL.md",
+    githubUrl:
+      "https://github.com/sveltejs/ai-tools/blob/main/packages/opencode/skills/svelte-core-bestpractices/SKILL.md",
+    files: ["references/attach.md", "references/await-expressions.md", "references/bind.md", "references/each.md", "references/hydratable.md", "references/inspect.md", "references/render.md", "references/snippet.md", "references/svelte-reactivity.md"],
+    name: "svelte-core-bestpractices",
+    topics: ["frameworks","frontend"],
+    description:
+      "Write fast, modern Svelte: reactivity, events, styling, and library integration.",
+  },
+  {
+    slug: "composition-patterns",
+    user: "vercel-labs",
+    repo: "agent-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/composition-patterns/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel-labs/agent-skills/blob/main/skills/composition-patterns/SKILL.md",
+    name: "vercel-composition-patterns",
+    topics: ["frontend","architecture"],
+    description:
+      "Refactor React components with composition patterns that stay understandable as the UI grows.",
+  },
+  {
+    slug: "react-native-skills",
+    user: "vercel-labs",
+    repo: "agent-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-native-skills/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-native-skills/SKILL.md",
+    name: "vercel-react-native-skills",
+    topics: ["react-native","performance"],
+    description:
+      "Apply React Native and Expo practices for performant mobile UI.",
+  },
+  {
+    slug: "react-view-transitions",
+    user: "vercel-labs",
+    repo: "agent-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-view-transitions/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-view-transitions/SKILL.md",
+    files: ["references/css-recipes.md", "references/implementation.md", "references/nextjs.md", "references/patterns.md", "references/troubleshooting.md"],
+    name: "vercel-react-view-transitions",
+    topics: ["motion","frontend"],
+    description:
+      "Animate route changes, shared elements, and enter/exit with React's View Transition API.",
+  },
+  {
+    slug: "next-bundle-optimizer",
+    user: "vercel",
+    repo: "next.js",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel/next.js/canary/skills/next-bundle-optimizer/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel/next.js/blob/canary/skills/next-bundle-optimizer/SKILL.md",
+    files: ["references/client-dependencies.md", "references/fix-patterns.md", "references/graph-methods.md"],
+    name: "next-bundle-optimizer",
+    topics: ["nextjs","performance"],
+    description:
+      "Audit and reduce the JavaScript a Next.js route sends on first load.",
+  },
+  {
+    slug: "next-partial-prefetching-adoption",
+    user: "vercel",
+    repo: "next.js",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel/next.js/canary/skills/next-partial-prefetching-adoption/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel/next.js/blob/canary/skills/next-partial-prefetching-adoption/SKILL.md",
+    name: "next-partial-prefetching-adoption",
+    topics: ["nextjs","performance"],
+    description:
+      "Turn on Partial Prefetching in a Next.js app and work through the adoption.",
+  },
+  {
+    slug: "next-partial-prefetching-optimizer",
+    user: "vercel",
+    repo: "next.js",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel/next.js/canary/skills/next-partial-prefetching-optimizer/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel/next.js/blob/canary/skills/next-partial-prefetching-optimizer/SKILL.md",
+    name: "next-partial-prefetching-optimizer",
+    topics: ["nextjs","performance"],
+    description:
+      "Trim what a Next.js client navigation prefetches before the click.",
+  },
+  {
+    slug: "accessibility-compliance",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/accessibility-compliance/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/accessibility-compliance/SKILL.md",
+    files: ["references/aria-patterns.md", "references/details.md", "references/mobile-accessibility.md", "references/wcag-guidelines.md"],
+    name: "accessibility-compliance",
+    topics: ["accessibility"],
+    description:
+      "Build WCAG 2.2 interfaces with inclusive patterns, ARIA, and assistive-technology support.",
+  },
+  {
+    slug: "brand-landingpage",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/brand-landingpage/skills/brand-landingpage/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/brand-landingpage/skills/brand-landingpage/SKILL.md",
+    files: ["references/interview-framework.md", "references/state-and-pitfalls.md", "references/stitch-architecture.md"],
+    name: "brand-landingpage",
+    topics: ["visual","craft"],
+    description:
+      "Design a landing page from a brand-identity interview: color, type, and the page structure.",
+  },
+  {
+    slug: "design-system-patterns",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/design-system-patterns/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/design-system-patterns/SKILL.md",
+    files: ["references/component-architecture.md", "references/design-tokens.md", "references/details.md", "references/theming-architecture.md"],
+    name: "design-system-patterns",
+    topics: ["systems","visual"],
+    description:
+      "Build a design system with tokens, theming, and component architecture.",
+  },
+  {
+    slug: "mobile-android-design",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/mobile-android-design/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/mobile-android-design/SKILL.md",
+    files: ["references/android-navigation.md", "references/compose-components.md", "references/details.md", "references/material3-theming.md"],
+    name: "mobile-android-design",
+    topics: ["visual","frontend"],
+    description:
+      "Design native Android UI with Material Design 3 and Jetpack Compose patterns.",
+  },
+  {
+    slug: "mobile-ios-design",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/mobile-ios-design/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/mobile-ios-design/SKILL.md",
+    files: ["references/hig-patterns.md", "references/ios-navigation.md", "references/swiftui-components.md"],
+    name: "mobile-ios-design",
+    topics: ["swiftui","visual"],
+    description:
+      "Design native iOS UI with the Human Interface Guidelines and SwiftUI patterns.",
+  },
+  {
+    slug: "react-native-design",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/react-native-design/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/react-native-design/SKILL.md",
+    files: ["references/details.md", "references/navigation-patterns.md", "references/reanimated-patterns.md", "references/styling-patterns.md"],
+    name: "react-native-design",
+    topics: ["react-native","motion"],
+    description:
+      "Style React Native screens, navigation, and Reanimated motion.",
+  },
+  {
+    slug: "responsive-design",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/responsive-design/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/responsive-design/SKILL.md",
+    files: ["references/breakpoint-strategies.md", "references/container-queries.md", "references/details.md", "references/fluid-layouts.md"],
+    name: "responsive-design",
+    topics: ["visual","frontend"],
+    description:
+      "Build adaptive layouts with container queries, fluid type, CSS Grid, and mobile-first breakpoints.",
+  },
+  {
+    slug: "screen-reader-testing",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
+    files: ["references/jaws-talkback.md", "references/nvda.md", "references/voiceover-ios.md", "references/voiceover.md"],
+    name: "screen-reader-testing",
+    topics: ["accessibility","testing"],
+    description:
+      "Test a web UI with VoiceOver, NVDA, and JAWS.",
+  },
+  {
+    slug: "tailwind-design-system",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md",
+    files: ["references/advanced-patterns.md", "references/details.md"],
+    name: "tailwind-design-system",
+    topics: ["systems","frontend"],
+    description:
+      "Build a Tailwind CSS v4 design system with tokens, components, and responsive patterns.",
+  },
+  {
+    slug: "visual-design-foundations",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/visual-design-foundations/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/visual-design-foundations/SKILL.md",
+    files: ["references/color-systems.md", "references/spacing-iconography.md", "references/typography-systems.md"],
+    name: "visual-design-foundations",
+    topics: ["visual","typography","color"],
+    description:
+      "Apply type, color, spacing, and iconography so a visual system stays consistent.",
+  },
+  {
+    slug: "visual-edit-precision",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/skill-forge-essentials/skills/visual-edit-precision/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/skill-forge-essentials/skills/visual-edit-precision/SKILL.md",
+    name: "visual-edit-precision",
+    topics: ["craft","visual"],
+    description:
+      "Make UI edits against the visual on screen, keeping spacing, alignment, and hierarchy exact.",
+  },
+  {
+    slug: "web-component-design",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/web-component-design/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/web-component-design/SKILL.md",
+    files: ["references/accessibility-patterns.md", "references/component-patterns.md", "references/css-styling-approaches.md"],
+    name: "web-component-design",
+    topics: ["frontend","systems"],
+    description:
+      "Design reusable React, Vue, and Svelte components, including composition and component APIs.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
