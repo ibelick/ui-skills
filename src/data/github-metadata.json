@@ -121,12 +121,12 @@
       "updatedAt": "2026-11-01T12:21:04Z",
       "archived": false
     },
-    "cosscom/coss": {
-      "stars": 5,
-      "forks": 2,
-      "license": "AGPL-3.0",
-      "pushedAt": "2026-10-31T01:30:04Z",
-      "updatedAt": "2026-10-31T00:45:38Z",
+    "cosscom/ui": {
+      "stars": 10862,
+      "forks": 570,
+      "license": "MIT",
+      "pushedAt": "2026-11-14T07:44:14Z",
+      "updatedAt": "2026-11-16T05:25:29Z",
       "archived": false
     },
     "devicons/devicon": {

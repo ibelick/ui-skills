@@ -470,7 +470,7 @@ export const componentLibraries: ComponentLibrary[] = [
     description:
       "Copy-paste components built on Base UI for teams that want polished patterns with a modern primitive layer.",
     websiteUrl: "https://coss.com/ui",
-    githubRepo: "cosscom/coss",
+    githubRepo: "cosscom/ui",
     collection: "copy-paste",
     bestFor: "Base UI component composition",
     framework: "React",
