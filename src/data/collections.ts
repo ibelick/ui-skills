@@ -1126,7 +1126,7 @@ export const collections: Collection[] = [
       {
         title: "Check search visibility and verify behavior",
         description:
-          "Use fixing-metadata for titles, social previews, canonical URLs, and structured data. Use vitest for unit tests and playwright-cli for browser flows. For interactive runtime investigation, browser-testing-with-devtools requires Chrome DevTools MCP.",
+          "Use fixing-metadata for titles, social previews, canonical URLs, and structured data. Use vitest for unit tests, playwright-cli for browser flows, and e2e for end-to-end tests on web and mobile written as plain-language steps. For interactive runtime investigation, browser-testing-with-devtools requires Chrome DevTools MCP.",
       },
     ],
     playbook: [
@@ -1187,6 +1187,11 @@ export const collections: Collection[] = [
         slug: "playwright-cli",
         pathSlug: "microsoft/playwright-cli",
         role: "Use for repeatable browser flows, test generation, and traces with the Playwright CLI.",
+      },
+      {
+        slug: "e2e",
+        pathSlug: "e2e-inc/e2e",
+        role: "Use for end-to-end tests on web, iOS, and Android that mix plain-language agent steps with exact assertions.",
       },
     ],
     agentCapabilities: [
