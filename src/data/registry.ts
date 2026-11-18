@@ -10949,6 +10949,19 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Design reusable React, Vue, and Svelte components, including composition and component APIs.",
   },
+  {
+    slug: "device-frames",
+    user: "ibelick",
+    repo: "ui-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/device-frames/SKILL.md",
+    githubUrl:
+      "https://github.com/ibelick/ui-skills/blob/main/skills/device-frames/SKILL.md",
+    name: "device-frames",
+    topics: ["visual", "frontend", "video"],
+    description:
+      "Create device-framed screenshots, product images, videos, or live UI mockups for phones, tablets, watches, laptops, monitors, and browsers.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
