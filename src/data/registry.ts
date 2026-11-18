@@ -8433,6 +8433,2523 @@ const registrySource: RegistrySourceSkill[] = [
       "Design inside Figma the way this designer does: real variables, text styles, auto layout and components, on a fixed visual system (Tailwind type and radius scale, spacing tokens, two-layer color tokens, button and state rules). Use this skill whenever you create, edit or review anything in a Figma file through the Figma MCP: screens, landing pages, components, mockups, design systems, tokens, or any UI. Use it even when the user doesn't name the skill and only says things like 'design a page in Figma', 'make a button component', 'mock this up' or shares a figma.com link. Load it before writing any use_figma code.",
   },
   {
+    slug: "oil-ui",
+    user: "oil-oil",
+    repo: "oil-ui",
+    rawUrl: "https://raw.githubusercontent.com/oil-oil/oil-ui/main/SKILL.md",
+    githubUrl: "https://github.com/oil-oil/oil-ui/blob/main/SKILL.md",
+    files: [
+      "references/design-direction.md",
+      "references/direction-persuasion.md",
+      "references/image-ideation.md",
+      "references/layout-and-viewport.md",
+      "references/media.md",
+      "references/motion.md",
+      "references/play.md",
+      "references/reviewer-manual.md",
+      "references/scroll-narrative.md",
+      "references/style-explorer.md",
+      "references/task-explore.md",
+      "references/task-review.md",
+      "references/tools.md",
+      "references/ux-review.md",
+      "references/ux-reviewer.md",
+      "references/visual-language.md",
+      "references/visual-review.md",
+      "references/workdir.md",
+    ],
+    name: "oil-ui",
+    topics: ["visual", "craft", "frontend"],
+    description:
+      "Design, improve, and review interfaces for websites, apps, dashboards, and components: explore directions, generate side-by-side comparisons, and refine visual hierarchy against real screenshots. Delivers a comparison page, design notes, a comp, or a working interface when asked. Design judgment only. Hand off to oil-ui-pro when that skill is installed.",
+  },
+  {
+    slug: "brand-identity",
+    user: "fatihaydost",
+    repo: "brand-identity-skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/fatihaydost/brand-identity-skill/main/skills/brand-identity/SKILL.md",
+    githubUrl:
+      "https://github.com/fatihaydost/brand-identity-skill/blob/main/skills/brand-identity/SKILL.md",
+    files: [
+      "references/accessibility.md",
+      "references/ai-defaults.md",
+      "references/cohesion.md",
+      "references/color.md",
+      "references/critique.md",
+      "references/discovery-brief.md",
+      "references/kit.md",
+      "references/logo.md",
+      "references/reproduction.md",
+      "references/site-preview.md",
+      "references/tokens-export.md",
+      "references/type.md",
+    ],
+    name: "brand-identity",
+    topics: ["visual", "typography", "color", "systems"],
+    description:
+      "Brand identity sets from one brief - logo, typography and colour palette built together, measured (contrast, colour blindness, glyph coverage, font licences, small-size logo renders) and compared side by side as identity cards, shown on the user's own site, then a brand guidelines kit (PDF, logo files, tokens) for the chosen set. Use for a new brand or any part of one (logo, fonts, colours, or a mix), for refreshing an identity, or for critiquing one, even if the user only says \"branding\".",
+  },
+  {
+    slug: "design-playful-app-icons",
+    user: "chunkithwang",
+    repo: "design-playful-app-icons",
+    rawUrl:
+      "https://raw.githubusercontent.com/chunkithwang/design-playful-app-icons/main/skills/design-playful-app-icons/SKILL.md",
+    githubUrl:
+      "https://github.com/chunkithwang/design-playful-app-icons/blob/main/skills/design-playful-app-icons/SKILL.md",
+    files: ["references/design-recipes.md", "references/evaluation.md"],
+    name: "design-playful-app-icons",
+    topics: ["visual", "craft"],
+    description:
+      "Create, generate, refine, or critique bold playful app icons using a text-only visual system with measurable composition rules, compact palettes, mascot and dimensional style recipes, originality safeguards, and small-size quality checks. Use for app-icon concept development, production-ready image prompts, icon reviews, visual iteration, and iOS or Android handoff when no reference images should be bundled or required.",
+  },
+  {
+    slug: "blank-page",
+    user: "StewdioAI",
+    repo: "blank-page",
+    rawUrl:
+      "https://raw.githubusercontent.com/StewdioAI/blank-page/main/skills/blank-page/SKILL.md",
+    githubUrl:
+      "https://github.com/StewdioAI/blank-page/blob/main/skills/blank-page/SKILL.md",
+    files: [
+      "references/examples.md",
+      "references/finding-references.md",
+      "references/patterns.md",
+      "references/vocabulary.md",
+    ],
+    name: "blank-page",
+    topics: ["motion", "visual", "craft"],
+    description:
+      "Turn a one-line motion, animation, or design brief into the full prompt: a committed look grounded in five reference images, three motion references, numbered beats with a turn, and the refs and assets attached. Also tightens edit notes. Use for \"/blank-page\", \"expand this prompt\", \"make this prompt more specific\", \"what is missing from this prompt\", \"help me write the prompt for X\", or whenever a one-line animation, composition, or design brief is about to be handed to an agent.",
+  },
+  {
+    slug: "appllama-app-design-skill",
+    user: "Appllama",
+    repo: "appllama-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/Appllama/appllama-skills/main/skills/appllama-app-design-skill/SKILL.md",
+    githubUrl:
+      "https://github.com/Appllama/appllama-skills/blob/main/skills/appllama-app-design-skill/SKILL.md",
+    files: [
+      "references/image-assets.md",
+      "references/motion.md",
+      "references/native-controls.md",
+      "references/performance.md",
+      "references/simulator-loop.md",
+    ],
+    name: "appllama-app-design-skill",
+    topics: ["visual", "interaction", "react-native"],
+    description:
+      "Build native-feeling, benchmark-quality mobile app screens (Expo / React Native). Use when designing or implementing any mobile UI — screens, flows, onboarding, paywalls, tab bars, sheets, settings, empty states — or when polishing motion, navigation, typography, dark mode, or perceived performance. Enforces Apple HIG fidelity, semantic colors, native controls, anti-slop discipline, navigation semantics, purposeful Reanimated motion, a full-motion simulator-verified iteration loop, and a study-real-apps-first workflow.",
+  },
+  {
+    slug: "appllama-usage",
+    user: "Appllama",
+    repo: "appllama-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/Appllama/appllama-skills/main/skills/appllama-usage/SKILL.md",
+    githubUrl:
+      "https://github.com/Appllama/appllama-skills/blob/main/skills/appllama-usage/SKILL.md",
+    files: [
+      "references/build-from-scratch.md",
+      "references/improve-a-screen.md",
+      "references/research-methods.md",
+    ],
+    name: "appllama-usage",
+    topics: ["tooling", "visual", "react-native"],
+    description:
+      "Use the Appllama MCP well: research real top-grossing mobile apps, their screens, flows, and UI elements, then build from what you learn. Load when the Appllama MCP is connected and the task involves building a mobile app or screen, researching app design patterns, studying onboarding, paywall, or feature flows, or improving an existing screen.",
+  },
+  {
+    slug: "design-to-code",
+    user: "Atharvsinh-codez",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/Atharvsinh-codez/skills/main/design-to-code/SKILL.md",
+    githubUrl:
+      "https://github.com/Atharvsinh-codez/skills/blob/main/design-to-code/SKILL.md",
+    files: [
+      "references/art-direction.md",
+      "references/evaluations.md",
+      "references/interface-craft.md",
+      "references/motion.md",
+      "references/reference-forensics.md",
+      "references/typography-and-fonts.md",
+      "references/verification.md",
+    ],
+    name: "design-to-code",
+    topics: ["visual", "frontend", "craft"],
+    description:
+      "Transforms screenshots, Figma frames, mockups, design images, and live public websites into high-fidelity, responsive, accessible, production-ready frontend code. Use when asked to recreate a website, turn an image into code, match a page, clone a design, build a Figma design, make it responsive, repair visual differences, or translate a visual reference into React, Next.js, Vue, Svelte, HTML/CSS, or an existing project's stack.",
+  },
+  {
+    slug: "ascii-diorama",
+    user: "JDhruv14",
+    repo: "ascii-diorama",
+    rawUrl: "https://raw.githubusercontent.com/JDhruv14/ascii-diorama/main/SKILL.md",
+    githubUrl: "https://github.com/JDhruv14/ascii-diorama/blob/main/SKILL.md",
+    name: "ascii-diorama",
+    topics: ["3d", "visual", "craft"],
+    description:
+      "Build tilt-shift ASCII miniatures, which are small, dense, living 3D worlds in Three.js drawn entirely as coloured monospace characters and seen from high above with the top and bottom of the view blurred like a scale model. Use when someone asks for an ASCII scene, ASCII shader or renderer, glyph-rendered or text-mode 3D, an ASCII diorama or miniature, a tilt-shift ASCII effect, or a dense little world in this style. The result is a live web page that animates and loops.",
+  },
+  {
+    slug: "awwwards-inspiration",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/awwwards-inspiration/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/awwwards-inspiration/SKILL.md",
+    name: "awwwards-inspiration",
+    topics: ["taste", "visual", "craft"],
+    description:
+      "Use when building a site that needs design references (for example \"make it feel premium\" or \"dark 3D portfolio vibes\"), when the user asks for standalone inspiration research from award-winning sites, or when setting up the awwwards-mcp local index or live-capture tooling.",
+  },
+  {
+    slug: "awwwards-design-md",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/awwwards-design-md/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/awwwards-design-md/SKILL.md",
+    name: "awwwards-design-md",
+    topics: ["systems", "visual", "frontend"],
+    description:
+      "Create an evidence-backed DESIGN.md for any public website URL. Use when asked to extract a site's design system, colors, typography, spacing, radii, shadows, components, or to generate a design.md compatible with Google's design.md format. Composes the awwwards MCP inspection and capture tools.",
+  },
+  {
+    slug: "awwwards-motion-study",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/awwwards-motion-study/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/awwwards-motion-study/SKILL.md",
+    name: "awwwards-motion-study",
+    topics: ["motion", "visual", "craft"],
+    description:
+      "Use when building a site whose reference has animation, before writing motion code and again when verifying a build. Teaches what to record from a live site, how to study the recordings frame by frame, how to turn the study into a motion inventory, and how to verify the build's motion against the reference.",
+  },
+  {
+    slug: "awwwards-section-loop",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/awwwards-section-loop/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/awwwards-section-loop/SKILL.md",
+    name: "awwwards-section-loop",
+    topics: ["frontend", "craft", "visual"],
+    description:
+      "Use when recreating or rebuilding a multi-section page from a reference site, section by section. Teaches the loop from page structure to per-section capture, build, geometry gate, and lock, including when a page must be treated as one unit because it shares a WebGL canvas.",
+  },
+  {
+    slug: "recreate",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/recreate/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/recreate/SKILL.md",
+    name: "recreate",
+    topics: ["frontend", "visual", "craft"],
+    description:
+      "Recreate a website from a link with the awwwards MCP. Use when the user says to recreate a site, clone a page, rebuild a URL, or gives a URL and asks to build it. Produces a hand-built implementation, checks it against the live site, then can convert it into a Vite, Astro, or Next project.",
+  },
+  {
+    slug: "motion-authoring",
+    user: "INSANE0777",
+    repo: "awwwards-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/INSANE0777/awwwards-skills/main/skills/motion-authoring/SKILL.md",
+    githubUrl:
+      "https://github.com/INSANE0777/awwwards-skills/blob/main/skills/motion-authoring/SKILL.md",
+    name: "motion-authoring",
+    topics: ["motion", "frontend", "craft"],
+    description:
+      "Use when a converted project needs its motion authored: turning a motion manifest and inert skeletons into real per-section motion with a parity check. Covers timeline topology, intent mapping, reduced motion, and the verification gate.",
+  },
+  {
+    slug: "shiftnudge-design-crit",
+    user: "shiftnudge",
+    repo: "skill",
+    rawUrl:
+      "https://shiftnudge.com/.well-known/agent-skills/shiftnudge-design-crit/SKILL.md",
+    githubUrl: "https://shiftnudge.com/skill",
+    name: "shiftnudge-design-crit",
+    topics: ["visual", "craft", "systems"],
+    description:
+      "Run a structured interface-design critique with the Shift Nudge method over the Shift Nudge MCP server. Use when a user asks for design feedback, a UI review, or a crit of a screen, and you have access to the Shift Nudge MCP connection.",
+  },
+  {
+    slug: "choreograph",
+    user: "emilkowalski",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/emilkowalski/skills/main/skills/choreograph/SKILL.md",
+    githubUrl:
+      "https://github.com/emilkowalski/skills/blob/main/skills/choreograph/SKILL.md",
+    files: ["RECIPES.md"],
+    name: "choreograph",
+    topics: ["motion","interaction","frontend"],
+    description:
+      "Coordinate several elements that animate together — decide what moves, in what order, how much they overlap, and what stays still — so a group reads as one intentional motion instead of a pile of separate animations. Use when building or fixing a staggered list, a hero entrance, a view swap inside a container, a multi-step flow, an element leaving while its siblings close the gap, a morph between rich states, or any interaction with several moving parts (icon + background + lines, panel + content, items flying into a target). Triggers on — stagger, staggerChildren, delayChildren, animation-delay, sequence, sequencing, orchestration, choreography, cascade, wave, timeline, \"one after another\", \"at the same time\", crossfade, popLayout, mode=\"wait\", AnimatePresence mode, hero entrance, list entrance, multi-step, step transition, morph, useAnimate, Promise.all animations, \"feels mechanical\", \"feels robotic\", \"too much going on\", \"feels slow to open\".",
+  },
+  {
+    slug: "style-sampling",
+    user: "heygen-com",
+    repo: "hyperframes",
+    rawUrl:
+      "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/style-sampling/SKILL.md",
+    githubUrl:
+      "https://github.com/heygen-com/hyperframes/blob/main/skills/style-sampling/SKILL.md",
+    files: ["references/remix.md"],
+    name: "style-sampling",
+    topics: ["video","remotion","motion"],
+    description:
+      "Make a new episode in a proven video style - Collage Explainer, Finance Explainer, Animated Science Explainer, 3D Brand Explainer, 3D True Crime - on the person's topic. Use for \"an episode of\", \"in the style of\", \"sample this style\", 「用这个风格做一集」. One video to copy is reverse-any-video.",
+  },
+  {
+    slug: "ai-lights",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/ai-lights/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/ai-lights/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "ai-lights",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a glowing UI component in React and CSS in which one body morphs between four agent-tool surfaces (a workflow chain, a progress row, a terminal and a prompt bar) and each change is announced by a pulse of rainbow light running round its rim, made from a conic gradient on registered custom properties seen through canvas-drawn, blurred stroke masks. Use when someone asks for an AI glow, a glowing border, an animated rim light, a thinking or working state for an agent UI, or a component that morphs between shapes.",
+  },
+  {
+    slug: "badge-trail",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/badge-trail/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/badge-trail/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "badge-trail",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a DOM pointer trail that drops tiny uppercase monospace badges of design terms behind the cursor, each on a slowly walking hue, slamming in from behind the direction of travel, holding with a faint wobble and flicking out rotated, never overlapping, with a ghost cursor that draws the trail when nobody is pointing. Use when someone asks for a cursor trail, a mouse trail of tags or labels, a playful hover effect on a hero, or stickers that follow the pointer.",
+  },
+  {
+    slug: "blur-glow",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/blur-glow/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/blur-glow/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "blur-glow",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL bloom effect in which a crisp rounded word sits inside a soft glow on light paper, the glow built from a downsampled multi-pass gaussian blur with variable focus and mapped through a five-stop colour ramp, the word tinted per palette and grained, cross-dissolving letter by letter into the next word and colour world, with the pointer warping the letters. Use when someone asks for glowing text, a bloom or halo around type, a gradient-mapped glow, neon on light, soft dreamy titles, a colour-cycling word, or a gaussian blur chain in WebGL.",
+  },
+  {
+    slug: "blur-reveal",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/blur-reveal/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/blur-reveal/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "blur-reveal",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL text reveal in which a short line of type dissolves in through a soft, cloudy noise front, sharp behind the front and blurred at it, with a faint glow riding the edge, then dissolves out as the next coloured panel takes over. Use when someone asks for a blur-in text animation, a dissolve or materialise effect on a headline, a noise mask reveal, cycling slogans on coloured cards, or a shader text transition.",
+  },
+  {
+    slug: "bond-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/bond-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/bond-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "bond-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a molecule-diagram type effect on Canvas 2D, in which two words in a bitmap pixel face unfold into a chain of nodes, stair-stepped pixel bonds on the face's own grid joining each letter to the next within its word, re-scatter through a random run of contour poses on measured ease tables, and fold back into plain typeset words. Use when someone asks for a molecule or chemistry-style logo animation, letters connected by lines, a pixel-font kinetic name, or a typographic node graph.",
+  },
+  {
+    slug: "brick-reveal",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/brick-reveal/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/brick-reveal/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "brick-reveal",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL reveal in which a square picture, restyled in turn as studded toy bricks, voxel blocks and a flat cartoon, melts back to the plain picture in rounded merging blocks along a soft, fading trail behind the pointer, with a virtual cursor that wanders when idle, a 3D tilt toward the cursor and a glow in each style's colour. Use when someone asks for a hover reveal, a before and after image wipe, a cursor trail mask, a pixel or brick reveal effect, a style-switch image card, or a ping-pong trail shader.",
+  },
+  {
+    slug: "checker-conveyor",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/checker-conveyor/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/checker-conveyor/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "checker-conveyor",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D checkerboard in which three flat scenes replace each other by conveyor, each of nine rows sliding one full screen width on a measured whip curve a beat after the row above, so the next scene rides in from the edge seam and all, with palettes that crossfade only while the board is at rest. Use when someone asks for a checkerboard animation, a tile or pixel transition, a staggered row wipe, a conveyor or flag-wave effect, or a looping geometric background.",
+  },
+  {
+    slug: "chroma-glow",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/chroma-glow/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/chroma-glow/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "chroma-glow",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL glow effect in which one bold word blooms on a coloured wall and its halo splits into a warm, a cool and a fringe copy that drift apart like light through a lens that cannot quite focus, with grain, a vignette and a pool of extra glow under the pointer. Use when someone asks for a chromatic aberration glow, an RGB split or prism fringe on text, a bloom or neon word, a glowing headline shader, or a downsample bloom in WebGL.",
+  },
+  {
+    slug: "cloud-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/cloud-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/cloud-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "cloud-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL2 kinetic-type effect in which a line of white letters on a pale sky arrives as soft puffs of cloud, lands and sharpens one letter at a time, holds with a grainy dithered edge, then lifts away and dissolves back into cloud, with the pointer acting as a light breeze. Use when someone asks for cloud text, smoke or vapour type, text that blurs into focus, a dithered threshold edge, a staggered letter entrance, or a soft dreamy title animation in WebGL.",
+  },
+  {
+    slug: "code-trail",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/code-trail/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/code-trail/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "code-trail",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a DOM cursor trail in which short code fragments on brightly coloured bars stack into a leftward staircase that chases the pointer, each row easing toward the row above it, with an autonomous steering drift when nobody is pointing. Use when someone asks for a cursor trail, a code-themed hero, a pointer-following stack, a playful developer page header, or coloured tags that follow the mouse.",
+  },
+  {
+    slug: "color-depth",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/color-depth/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/color-depth/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "color-depth",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds skeuomorphic CSS buttons whose depth comes only from stacked layers on one pill, a gradient body, inset shadows for the bevel and the inner glow, a brighter layer that fades in on hover and a soft bar of light along the top, in ten recipes from glossy and glowing to brushed metal, foil, inset, glass and satin. Use when someone asks for a glossy button, a 3D or tactile button, skeuomorphic UI, a glowing call to action, a glass or metal button, or button depth in CSS.",
+  },
+  {
+    slug: "crystal-cluster",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/crystal-cluster/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/crystal-cluster/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "crystal-cluster",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a three.js scene in which a small flat-shaded crystal cluster with a constant-width gold screen-space outline floats in a rising gold beam of light, drawn in one fragment shader as soft gaussian columns with flicker, rising bands and a glow pool, over a soft glow, bobbing and leaning toward the pointer. Use when someone asks for a loot beam, a rarity glow, a legendary item reveal, a game item showcase, an outline shader in three.js, or a glowing light pillar effect.",
+  },
+  {
+    slug: "cursors",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/cursors/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/cursors/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "cursors",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a DOM multiplayer scene in which labelled collaborator cursors, each a coloured pointer arrow with a name tag and a soft colour blush, drift around a frosted-glass word on slow ellipses and scatter away from the real pointer. Use when someone asks for multiplayer cursors, live collaboration presence, fake teammates on a hero, a shared canvas feel, or a frosted glass text effect.",
+  },
+  {
+    slug: "dash-cascade",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/dash-cascade/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/dash-cascade/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "dash-cascade",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds scanline lettering on Canvas 2D, in which three-letter words are drawn as rows of fat round-capped dashes that all scale about one vertical axis, so the resting state is a dotted line and every dash plays the same excursion waveform shifted by a per-letter delay law, the first letter wiping top-down, the last bottom-up and the middle pinched between them, stepped at ten frames a second in a slowly turning yellow hue field. Use when someone asks for scanline or striped type, letters that unfold from a line, a dashed or barcode-like logo animation, or a stepped retro type loop.",
+  },
+  {
+    slug: "datamosh",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/datamosh/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/datamosh/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "datamosh",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D datamosh loop in which fixed columns of flat saturated colour fall forever, each tile stretching open through the centre of the frame and squeezing to a sliver at the edges, staggered into a zig-zag. Use when someone asks for a glitch effect, a corrupted video look, a datamosh, a pixel-sorting style background, or a loud generative colour field.",
+  },
+  {
+    slug: "design-tiles",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/design-tiles/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/design-tiles/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "design-tiles",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds an SVG typographic bar in which each word of a lowercase sentence sits on a bold colour field made of one measured rect per letter, so the field steps to each glyph's real height, the words flying in one by one and then shuffling through a vivid palette with no two words ever sharing a colour, and hovering a word re-rolls it. Use when someone asks for highlighted words, a colour-blocked headline, a bold identity-style type bar, text on coloured tiles, or a playful word shuffle.",
+  },
+  {
+    slug: "dot-cut",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/dot-cut/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/dot-cut/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "dot-cut",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D field of touching circles, 42 across on a square lattice, in which a letter or a procedural pattern appears by removing circles so the background shows through, each scene arriving by its own wipe, ripple, scatter, collapse or column sweep, cells hollowing into rings, the whole field filled as one even-odd path. Use when someone asks for a dot grid, a halftone or circle mesh, negative-space or knockout typography, a dot matrix transition, a pattern of circles that morphs, or a grid that you can rub away with the cursor.",
+  },
+  {
+    slug: "dot-globe",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/dot-globe/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/dot-globe/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "dot-globe",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D row of three superquadric solids, each tiled with an 11 by 11 grid of rounded squares drawn as projected quads so they crowd, shrink and lean toward the edge, rocking in unison with a bitmap symbol painted onto the tiles that swaps as a wave and passes from globe to globe, with a rare full turn and a pointer that leans the row and opens the tiles. Use when someone asks for a tiled globe or sphere, a dot matrix on a 3D surface, a rotating icon grid, pixel symbols on a ball, or a row of 3D tile forms.",
+  },
+  {
+    slug: "eclipse-grid",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/eclipse-grid/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/eclipse-grid/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "eclipse-grid",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a grid of eighty eclipses on Canvas 2D, each an opaque outlined ring over a solid disc that part along the diagonal to uncover a crescent and close again on its own phase, held at 25 frames a second, with a pointer that acts as a lamp, tilting every crescent away from it and easing nearby cells open. Use when someone asks for an eclipse or crescent pattern, a grid of circles that open and close, a hover-reactive dot field, or a print-like stepped loop.",
+  },
+  {
+    slug: "emboss",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/emboss/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/emboss/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "emboss",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL bevel-and-emboss effect in which words or SVG shapes are debossed into tinted plaster panels, with a height field blurred on the CPU, normals from its slope, a highlight and a shadow from one light, a real plaster texture and a grunge overlay. Use when someone asks for an emboss or deboss effect, letterpress or pressed type, a bevel and emboss shader, text carved into a wall or concrete, or a realistic relief in WebGL.",
+  },
+  {
+    slug: "fade-motion",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/fade-motion/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/fade-motion/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "fade-motion",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect in which a word in a bitmap pixel face trails away into light like a long exposure, the fade built from about two hundred faint overlapping copies rather than a blur, with perspective taper, a wavering tail, a hue drift along the trail and a word that turns to face the pointer. Use when someone asks for a motion trail, an echo or long-exposure text effect, light streaks behind type, a smear without blur, accumulation or afterimage type, or a glowing pixel word in WebGL.",
+  },
+  {
+    slug: "flip-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/flip-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/flip-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "flip-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a kinetic word swap on Canvas 2D in which one bold word becomes the next letter by letter, each letter hanging, then snapping to another row on a cubic-bezier(1, 0, 0, 1) curve while its glyph flips through a few random letters, middle letters first, with a breath before the drop and a bounce on landing. Use when someone asks for a split-flap or departure-board word change, letters that shuffle into a new word, a rotating headline, or type that falls between rows.",
+  },
+  {
+    slug: "flood-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/flood-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/flood-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "flood-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a flooding wordmark on Canvas 2D, in which a two-line word falls in with each letter turning to face front, holds, then rushes at the camera to 2.2 times its size with every letter at its own heavy-tailed angle and depth until it overruns the frame, and tumbles out of the bottom, in two flat colours per word with a flat speed smear and a pointer lean during the hold. Use when someone asks for type that zooms into the camera, an exploding or flooding headline, a kinetic wordmark loop, or letters that scatter and fall.",
+  },
+  {
+    slug: "folder-embroidery",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/folder-embroidery/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/folder-embroidery/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "folder-embroidery",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect of overlapping embroidered word patches stitched onto fabric, each patch cut to its word's silhouette in coloured cloth with dark satin lettering and a white merrowed border, lit with a real fabric-weave bump, a puff bevel, inner and drop shadows, a hover glint across the threads and a press that pushes the patches into the cloth. Use when someone asks for embroidery, stitched or sewn text, patches or badges, a fabric or textile texture on type, a tactile craft look, or a felt or thread effect in WebGL.",
+  },
+  {
+    slug: "ghosty-reveal",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/ghosty-reveal/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/ghosty-reveal/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "ghosty-reveal",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a CSS mask reveal in which images bleed into view through a feathered, cloudy edge by sliding an oversized gradient mask across each box with mask-position, then fade back out and swap, on staggered loops over a scattered layout. Use when someone asks for a soft image reveal, a foggy or ghostly fade-in, a feathered wipe, a mask-position transition, or images that appear out of mist.",
+  },
+  {
+    slug: "glass-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/glass-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/glass-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "glass-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect in which black serif type on white is seen through a magnifying glass lens with a sine ripple on its radius and a colour fringe at its rim, in three scenes that take turns (a line rising through an invisible lens, a hand-drawn glass ball swapping two words, and words conveying through a wave). Use when someone asks for a lens or magnifier distortion on text, a pincushion or fisheye warp, a glass ball or refraction effect, chromatic aberration on type, or kinetic serif typography in WebGL.",
+  },
+  {
+    slug: "glitch-word",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/glitch-word/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/glitch-word/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "glitch-word",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a DOM glitch effect in which a word and its badge are stacked as identical copies, clipped into horizontal bands and shoved sideways in stepped Web Animations bursts, while letters flicker into lookalikes and the badge leans toward the pointer. Use when someone asks for a glitch text effect, a corrupted or broken-signal word, a tearing headline, a datamosh-style label, or a hover glitch on a button.",
+  },
+  {
+    slug: "holo",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/holo/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/holo/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "holo",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a holographic card in CSS 3D in which an identity card tilts toward the pointer, a stack of rainbow foil layers above the print slides by parallax and arrives a beat after the card, a glare and sheen follow the light, and the picture tile is a hard duotone that flips its polarity past a certain tilt, in ten foil materials. Use when someone asks for a holo or holographic card, a foil effect, a tilting 3D card, a trading-card shine, an ID or membership card, or iridescent CSS.",
+  },
+  {
+    slug: "hover-video",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/hover-video/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/hover-video/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "hover-video",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a React hover-video button, a pill that on hover hides and plays a short transparent clip of its own label turning into puffy, glossy 3D letters, rewinding a reversed clip from the same point on leave, with a springy playback rate, a slight lean toward the pointer and a press pop. Use when someone asks for a video hover effect on a button, an inflating or 3D text button, a playful microinteraction, a generated-video button, or a call to action that animates on hover.",
+  },
+  {
+    slug: "image-galaxy",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/image-galaxy/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/image-galaxy/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "image-galaxy",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a DOM and CSS 3D image field in which small square photographs drift vertically forever under one perspective, each at its own depth and parallax speed, scaling up as they descend, fading with depth and wrapping from one edge to the other, fed by page scroll and a drag. Use when someone asks for floating images, a parallax photo field, a drifting gallery background, an infinite image stream, or a depth field of thumbnails.",
+  },
+  {
+    slug: "image-sphere",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/image-sphere/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/image-sphere/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "image-sphere",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a three.js image sphere in which photos sit as camera-facing planes scattered over an invisible sphere that drifts on its own, spins with flick momentum when dragged, enlarges the photo under the pointer and glides a clicked photo to the centre as a lightbox while the rest dim. Use when someone asks for a 3D image sphere, a spinning photo globe, a draggable gallery in three.js, an orbiting image cloud, or a billboard sprite gallery with a lightbox.",
+  },
+  {
+    slug: "ink-flood",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/ink-flood/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/ink-flood/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "ink-flood",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a seamless two-colour Canvas 2D loop in which a round pen writes a thick cursive scribble whose width breathes with the stroke, the scribble floods the frame by zooming and swelling at once, and its ink becomes the background the next mirrored scribble is drawn on, all driven by swappable scene data under a fixed halftone screen. Use when someone asks for a scribble or handwriting animation, an ink or paint flood transition, a colour-swap loop, a pen drawing effect, a halftone print texture, or a looping brush stroke.",
+  },
+  {
+    slug: "kinetic-typography",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/kinetic-typography/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/kinetic-typography/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "kinetic-typography",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D kinetic type effect in which one heavy serif letter is cut into a grid of tiles that each copy from a source offset by two crossing sine waves, so the letter ripples like cloth, composited in duotone with a chromatic fringe on the warped edges, depth shading and a grain veil. Use when someone asks for a letter that ripples, a tile warp or displacement effect on type, a glitchy animated monogram, or a playful kinetic typography hero.",
+  },
+  {
+    slug: "liquid-metal",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/liquid-metal/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/liquid-metal/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "liquid-metal",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect that renders one bold word as flowing polished liquid metal on near-black, by blurring the word into a rounded height field and env-mapping its normals through a five-stop matcap-style ramp with a bright horizon band, with a pointer-driven reflection tilt, twinkling sparks on the ridges and eight colourways that crossfade on click. Use when someone asks for mirror-finish or metallic text, a liquid metal or mercury effect, a matcap or environment-mapped shader on type, a shiny 3D-looking title without 3D, or a reflective logo treatment in WebGL.",
+  },
+  {
+    slug: "liquid-ui",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/liquid-ui/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/liquid-ui/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "liquid-ui",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds fused UI cards in React and SVG, in which rounded boxes are joined by the smooth union of their signed-distance fields, traced into one path by marching squares and Chaikin smoothing and drawn behind real DOM content, so where two cards meet the corner curves inward, with one blend knob from crisp inverse-rounded joints to gooey metaballs. Use when someone asks for gooey or liquid UI, fused cards, inverse rounded corners, a metaball interface, a blob tab attached to a card, or morphing UI shapes.",
+  },
+  {
+    slug: "loud-burst",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/loud-burst/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/loud-burst/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "loud-burst",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds an exploding-word type loop on Canvas 2D, in which a short sentence types itself onto paper word by word with an oversized landing, a squash and a blurred last word, then one word heats to a scheme ink, trembles and bursts, its glyphs scanned into horizontal ink runs that each morph into a tapered dart flying along measured keyframe paths while crossfading between real print inks, with a shockwave, flecks, a camera kick and the side words thrown out, a new sentence and palette every loop. Use when someone asks for an exploding word, text that bursts into confetti or strokes, a punchy kinetic sentence, or a typographic explosion.",
+  },
+  {
+    slug: "misprint-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/misprint-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/misprint-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "misprint-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a screen-print misregistration effect on Canvas 2D, in which a white fill print, a wider black outline print and a holographic foil print of the same word never line up, float as planes that tilt with the pointer and re-print to a new offset every few seconds, with squeegee streaks, pinholes and paper grain, and a press-and-hold that pulls the prints into register. Use when someone asks for a misprint or off-register look, screen-print type, a holographic foil text effect, or a tactile hero headline.",
+  },
+  {
+    slug: "orbit",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/orbit/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/orbit/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "orbit",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D swarm of twenty-six labelled multiplayer cursors riding an invisible sphere seen face on, its depth shown only by scale, fade and focus, around a thin breathing ring, spinning on a phrased rate with inertia, leaning and parting toward the pointer, and draggable with a throw. Use when someone asks for multiplayer or collaborative cursors, a presence or live-users hero, cursors orbiting a globe, a 3D swarm of labels on canvas, or a draggable spinning sphere of names.",
+  },
+  {
+    slug: "peak-gradient",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/peak-gradient/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/peak-gradient/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "peak-gradient",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds an SVG glow made of a row of tall, heavily blurred columns that share one vertical rainbow gradient, arranged in a symmetric curve, tallest in the centre, fading to transparent at the top, and rising from the bottom edge with a scaleY transition. Use when someone asks for a rainbow glow, an aurora footer, a gradient that rises from the bottom of the screen, a soft blurred colour backdrop, or a hero glow behind a call to action.",
+  },
+  {
+    slug: "phase-table",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/phase-table/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/phase-table/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "phase-table",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D table of closed Lissajous curves, four rows by six columns, where the row sets the horizontal frequency and the column the vertical one, every curve shaded as metal wire from its exact normal and swept by one shared phase, with the pointer moving the light. Use when someone asks for a Lissajous grid, a harmonic or frequency table, a mathematical curve animation, generative line art, a metallic line effect or a looping figure-eight pattern.",
+  },
+  {
+    slug: "pixel-brushes",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pixel-brushes/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pixel-brushes/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pixel-brushes",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds pixel brushes on Canvas 2D, where a brush is a small stamp of square cells dropped along a path and five numbers (spacing, jitter, scatter, follow and speed thinning) turn the same code into a crisp line, a combed ribbon or a loose spray, every cell snapped to whole device pixels. Use when someone asks for a pixel brush, a stamp brush engine, a drawing tool with hard pixel edges, a spray or scatter brush, or brush swatches that draw themselves in.",
+  },
+  {
+    slug: "pixel-cycle",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pixel-cycle/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pixel-cycle/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pixel-cycle",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D pixelate transition that cycles through a set of images, each one resolving from big square blocks to sharp along an eased ramp of block sizes, held, dissolved back to blocks, then shrunk away leaning while the next grows in and resolves, with hover particles that lift blocks off the image. Use when someone asks for a pixelate or mosaic transition, an image that resolves from pixels, a character select screen, a pixelated slideshow, or a retro image reveal.",
+  },
+  {
+    slug: "pixel-fire",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pixel-fire/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pixel-fire/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pixel-fire",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D pixel-art fire, a 16 by 16 flipbook generated from a tiny heat simulation and drawn as crisp blocks on a stone block, with a live pixel buffer the pointer edits by pushing lit cells up and along its travel and heating them white, and a tap that blows the flame out to regrow. Use when someone asks for a pixel fire, a retro game flame, an interactive pixel-art sprite, a campfire animation, or a flame you can blow out.",
+  },
+  {
+    slug: "pixel-scan",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pixel-scan/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pixel-scan/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pixel-scan",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader text effect in which a diagonal scan band sweeps across a word and breaks it into a dense spray of tiny jittered blocks that shimmer between two accent colours, leaving the word solid behind it, with a pool of blocks under the pointer and a fading wake. Use when someone asks for a pixel scan, a scanline or glitch text reveal, text assembling from pixels, a hover trail over type, or a shader text intro.",
+  },
+  {
+    slug: "pixel-threshold",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pixel-threshold/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pixel-threshold/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pixel-threshold",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL poster effect in which a short word is printed into a flat colour ground in hard pixel blocks, with a white halo and a black block shadow that staircase in step with the letters, a printed surface of moire, grain and dust plates, and a cycle where the grid collapses to big squares, swaps word and colourway and resolves back. Use when someone asks for pixel type, a blocky or 8-bit headline, a threshold or quantised text effect, a retro game poster, a resolution-drop transition, or printed-texture type in WebGL.",
+  },
+  {
+    slug: "pop-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/pop-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/pop-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "pop-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a squash-and-stretch type loop on Canvas 2D in which a chunky word with a hard drop shadow falls in letter by letter under gravity, squashes on a damped spring as each letter lands, swells through a doubling bulge field and pops into a ring of dashes, shown at a stepped ten frames a second with a new pair of colours every run. Use when someone asks for bouncy or cartoon type, squash and stretch on letters, a balloon or inflate-and-pop effect, a playful logo reveal, or flipbook-style animation.",
+  },
+  {
+    slug: "ransom-note",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/ransom-note/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/ransom-note/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "ransom-note",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a ransom-note text effect in DOM and CSS in which every letter is its own cut paper scrap, a different paper colour, ink, face, weight and case with an irregular clip-path outline, given a seeded tilt, bounce and size so a line reads as hand assembled, rising in letter by letter and lifting away between phrases. Use when someone asks for ransom note text, cut-out magazine letters, a collage headline, a zine or punk type treatment, or mismatched letters.",
+  },
+  {
+    slug: "reality-split",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/reality-split/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/reality-split/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "reality-split",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D design-tool animation in which a selected word splits into letter objects with their own handles, scatters across the card, dives into the first letter and steps through the rest at large scale on a spring conveyor, collapses to a dot and pops back whole, then replays as a new word, palette, box shape and handle style. Use when someone asks for a design tool or canvas editor animation, selection handles, letters splitting into objects, an exploding word, a typographic inspector effect, or a looping editor-style hero.",
+  },
+  {
+    slug: "ripple-grid",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/ripple-grid/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/ripple-grid/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "ripple-grid",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect in which a grid of soft black blobs ripples out of a flat lattice into concentric rings, shears into a spiral and settles back, with the pointer parting the field. Use when someone asks for a metaball grid, a shader background, an organic generative pattern, a ripple or bloom effect, or a thresholded field in WebGL.",
+  },
+  {
+    slug: "roll-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/roll-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/roll-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "roll-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic typography on Canvas 2D in which short phrases take turns word by word, each word rolling up off an unseen drum and folding flat while the next phrase rolls in from below, overshoots and settles, the moving words bending through a glass rod with a soft colour fringe, and the ground cutting hard to each phrase's colour. Use when someone asks for rolling text, a word-by-word headline loop, a drum or slot text transition, glass or refraction on moving type, or a hero line that cycles through phrases.",
+  },
+  {
+    slug: "rush-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/rush-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/rush-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "rush-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL kinetic-type effect in which a white word rests small and readable on black, then swings toward the viewer on a perspective orbit, stretches to about twelve times its height and tears into vertical streaks of green and violet light, swapping to the next word at the peak of the blur. Use when someone asks for speed or motion-blur type, a warp-speed or hyperspace title, chromatic smear, per-channel shutter blur, a word swap hidden in a blur, or a loud kinetic headline in WebGL.",
+  },
+  {
+    slug: "sandbox",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/sandbox/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/sandbox/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "sandbox",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a three.js halftone shader in which an image or a playing video is cut into a grid of cells, each cell's brightness is bucketed into four bands, and every band stamps its own small symbol tinted with its own colour, so the picture is rebuilt out of marks, with preset looks, a palette and glyph crossfade, PNG export and WebM recording. Use when someone asks for a halftone or symbol mosaic, a glyph or emoji dither, an ASCII-like video filter, a pattern stamp effect on video, or a live image-to-symbols shader.",
+  },
+  {
+    slug: "shutter-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/shutter-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/shutter-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "shutter-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic type on Canvas 2D seen through a rolling shutter, where the frame is cut into horizontal stripes that each show the scene a fraction of a frame late, so a jittering line and a scrolling stack tear into sliding bands while still type stays clean, with hard colour inversions on the beats. Use when someone asks for a rolling shutter or scanline glitch, torn or sliced type, a stutter or time-slice effect on text, or a glitchy kinetic headline.",
+  },
+  {
+    slug: "slide-stack",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/slide-stack/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/slide-stack/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "slide-stack",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D stack of five identical dark blocks sliding between a left and a right stop, each row a twelfth of a cycle ahead of the one below so the motion runs through the stack as a wave, with an orange accent that is the convex hull of the blocks rather than a shape of its own, plus motion blur, direction labels and a pointer magnet. Use when someone asks for a staggered slide animation, a cascading or wave stack, sliding bars, a rhythmic block loop, or an accent shape derived from moving objects.",
+  },
+  {
+    slug: "smear-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/smear-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/smear-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "smear-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic typography in WebGL in which two lines of heavy capitals are uncovered by a soft cloud in the ground's own colour whose edge glows a hotter hue, the type smearing sideways where it is half hidden and sliding the last few pixels into place, while pale liquid ribbons churn through a saturated ground and blobs of ink streak across, all played from small traced layers a frame at a time. Use when someone asks for smeared or motion-blurred type, an ink or liquid title reveal, type uncovered by a glowing cloud, a gig poster or event title animation, or a bold two-line headline with a fluid background.",
+  },
+  {
+    slug: "spike-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/spike-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/spike-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "spike-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D knockout word whose traced outline is roughened and grown into hundreds of hand-drawn spikes, each a sliver walked out along a wandering spine and back, filled with the letters and wrapped by one outline of varying weight, breathing slowly and bending, stretching and warming in colour under the pointer. Use when someone asks for spiky, hairy or thorny type, a hand-drawn or ragged lettering effect, an illustrated wordmark, generative strokes around text, or an interactive outline effect on a word.",
+  },
+  {
+    slug: "spray-burst",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/spray-burst/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/spray-burst/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "spray-burst",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL fragment-shader effect that looks like a three-ink screenprint reprinting itself, cycling through six bold geometric drawings (a touring starburst, broken rings, sliding bars, fusing discs, a pinwheel and a halftone wave) with every edge a dithered spray fringe that re-rolls at 24 fps, and the pointer laying ink on heavier. Use when someone asks for a screenprint or risograph look, a sprayed or stippled edge, a dithered signed-distance shader, a hand-printed boil, or a looping poster animation in WebGL.",
+  },
+  {
+    slug: "squircle",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/squircle/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/squircle/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "squircle",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a squircle in React and SVG, a rectangle whose corners are a superellipse instead of a circular arc, so curvature ramps in continuously and the corner flows into the edge without the kink a border-radius leaves, applied as a clip-path to a glossy, many-layered button surface. Use when someone asks for squircle corners, smooth or continuous corners, superellipse shapes, icon-style rounded rectangles, or a premium glossy button.",
+  },
+  {
+    slug: "stack-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/stack-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/stack-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "stack-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic typography on Canvas 2D in which one line of capitals is stacked nine rows deep and every letter is its own column, each column's top and foot stepping a row at a time toward the middle on its own beat until one line is left, holding, then refilling outward on the same beat run backward, the rows wrapped on a shallow drum, outlined away from the solid middle row and scrambling to other capitals toward the rim. Use when someone asks for stacked or repeated text, a collapsing or draining headline, stepped or staccato type motion, a letter-by-letter cascade, split-flap or scrambled letters, outlined echo type, or a looping title made of one line.",
+  },
+  {
+    slug: "stamp-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/stamp-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/stamp-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "stamp-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a kinetic-type poster on Canvas 2D, in which four lines of type on flat highlight bars hop in from the edges along fixed axis-aligned breakpoint tracks at a stepped 10Hz, park to be read and scatter off, every moving line stamping its silhouette where it just was as flat-colour residue that lives 0.8 seconds and vanishes at once, with overlapping passes whose trails flood the screen as the palette and words change. Use when someone asks for a kinetic poster, highlighted text that flies in, print-like motion trails, a bold typographic loop, or a quote animation.",
+  },
+  {
+    slug: "sunset-slam",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/sunset-slam/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/sunset-slam/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "sunset-slam",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D retro logo slam in which a blocky slab word breathes, squashes to a third of its width, then slams forward into an extruded logo whose fan of copies converges to a vanishing point below the baseline and is coloured by a moving window over one fixed dawn ramp, cools to a sticker, holds and unwinds into a seamless loop. Use when someone asks for a retro logo animation, an extruded or 3D text slam, a long-shadow or vanishing-point extrusion, an eighties title card, or a gradient fan behind a word.",
+  },
+  {
+    slug: "swing-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/swing-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/swing-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "swing-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a swinging word on Canvas 2D, in which a row of huge coloured letters on a fixed angular pitch swings back and forth like a pendulum, each letter turning on its own vertical axis in proportion to its distance from centre, so it squashes to a sliver at the sides, opens to full face in the middle and only two or three letters read at once, with detents that click letter to letter and letters that flip over to spell the next word. Use when someone asks for rotating 3D letters without WebGL, a carousel of letters, a pendulum or swinging type effect, or a word that reveals itself a few letters at a time.",
+  },
+  {
+    slug: "text-reveal",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/text-reveal/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/text-reveal/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "text-reveal",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL mask-reveal effect in which two small serif text blocks in opposite corners materialise through a cloudy fractal front that sweeps the card diagonally, each part un-blurring into focus as it is uncovered, then clear the other way and return with the next phrase pair, on a warm monochrome plate with a drifting white wash, paper grain and a pointer that wipes text clear under it. Use when someone asks for a text reveal, a fog or smoke dissolve on type, blur-to-focus text, a noise mask transition, an editorial or quiet typographic animation, or fbm dissolve in WebGL.",
+  },
+  {
+    slug: "tile-field",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/tile-field/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/tile-field/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "tile-field",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D wordmark sampled into a dense grid of tiny square tiles that rest small and grey, swell and turn blue where a slow interference wave passes, and light up under the pointer with a morphing brush and a fading trail. Use when someone asks for a tiled or pixel wordmark, a dot-matrix logo effect, text made of squares, a hover light over type, or a calm generative hero word.",
+  },
+  {
+    slug: "typer",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/typer/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/typer/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "typer",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a character-by-character text reveal in DOM and CSS in which a wave runs across a line and each letter flickers through randomized states, a filled pill, an inverse block, an accent, an outlined pill, before settling into plain text, with neighbouring letters in the same state merging into one rounded bar, themed by four CSS variables. Use when someone asks for a text reveal, a scramble or decode headline, typing text, a glitchy type-in, or animated pills behind letters.",
+  },
+  {
+    slug: "vector-editor",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/vector-editor/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/vector-editor/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "vector-editor",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a React and SVG selection frame and bezier path editor, a thin accent box that draws itself open around any element with corner handles that pop in and a live width by height badge, and inside it an SVG path whose anchors and bezier handles are draggable, with mirrored, angle-only or free tangents. Use when someone asks for a design tool selection box, bounding box handles, a bezier or pen tool editor, editable SVG paths, or a canvas editor look.",
+  },
+  {
+    slug: "verb-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/verb-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/verb-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "verb-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic typography on Canvas 2D in which five verbs act out their meaning, MOVE walking its letters around a grid, SKEW shearing them one at a time, ROTATE orbiting the frame's centre while two letters swap, BREAK dropping half the word onto a floor, CONDENSE squeezing to a hairline, each in its own ink and ground with print mottle, off-register ghosts on the cuts and a speed smear, plus press to hold the frame. Use when someone asks for type that does what it says, verb animations, a kinetic type reel, motion design typography, or expressive word animations.",
+  },
+  {
+    slug: "voice-wave",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/voice-wave/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/voice-wave/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "voice-wave",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a WebGL2 voice-visualiser effect in which one glowing ribbon is drawn four times in four colours, slightly out of phase, so it reads neutral where it is flat and fans into violet, magenta and coral where it bends, driven by a simulated voice or, after an explicit click, by the microphone through a WebAudio analyser. Use when someone asks for a voice or speech waveform, an assistant listening animation, an audio-reactive ribbon, a microphone visualiser, a glowing sine wave, or dispersion and chromatic splitting in WebGL.",
+  },
+  {
+    slug: "warp-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/warp-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/warp-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "warp-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds kinetic typography on Canvas 2D in which each sentence's verb deforms its own letters, with a swelling wave, a stair of echoes, lines that fall together, a turn, a fold and a letter sort, cut hard every half second. Use when someone asks for animated type, a typographic loop, a hero headline that moves, or text that acts out what it says.",
+  },
+  {
+    slug: "wild-type",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/wild-type/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/wild-type/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "wild-type",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a warped-type loop on Canvas 2D, in which a word is traced at runtime from the live font into vector contours, types itself in on measured per-letter tracks, then inflates about eight times through one global Catmull-Rom warp mesh played from a fitted table, drapes over an arch and collapses exactly home, with a coloured registration slip under the white ink, film grain, an afterimage on the fast pulses and a pointer that bends the mesh. Use when someone asks for liquid or warped type, a mesh warp on text, letters that balloon and distort, a typewriter-in typewriter-out loop, or wild kinetic lettering.",
+  },
+  {
+    slug: "word-carousel",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/word-carousel/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/word-carousel/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "word-carousel",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a Canvas 2D word carousel in which four words cycle through a small left slot, a big centre slot, a small right slot and a tiny slot hidden behind the big word, slamming one slot left about every half second on measured fat-tailed eases, with velocity-proportional motion blur and a colour that deepens with size. Use when someone asks for a rotating word, a text carousel or ticker, a kinetic headline that cycles nouns, a word slider with motion blur, or animated typography on canvas.",
+  },
+  {
+    slug: "word-stickers",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/vault/word-stickers/skill/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/vault/word-stickers/skill/SKILL.md",
+    files: ["references/perf.md"],
+    name: "word-stickers",
+    topics: ["visual","motion","craft"],
+    description:
+      "Builds a set of die-cut vinyl word stickers on a page, each word with a thick coloured border that hugs the letters, popping in one by one, curling up off the surface when grabbed through a WebGL peel shader, and thrown with momentum, friction and edge bounces. Use when someone asks for draggable stickers, a sticker peel effect, die-cut text, a throwable or physics word cloud, or a playful interactive hero with grabbable words.",
+  },  {
+    slug: "gestures",
+    user: "emilkowalski",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/emilkowalski/skills/main/skills/gestures/SKILL.md",
+    githubUrl:
+      "https://github.com/emilkowalski/skills/blob/main/skills/gestures/SKILL.md",
+    name: "gestures",
+    topics: ["motion","interaction","frontend"],
+    description:
+      "Build drag, swipe, and sheet interactions that track the finger 1:1 and stay interruptible. Use when building or fixing anything the user drags, swipes, flings, holds, or dismisses with a gesture — drawers, sheets, swipe-to-dismiss toasts and cards, drag-to-reorder, pull-to-refresh, hold-to-confirm — or when a gesture feels laggy, disconnected from the finger, jumps on release, or can't be caught mid-animation. Triggers on — gesture, drag, draggable, swipe, swipe to dismiss, fling, momentum, velocity, drawer, sheet, bottom sheet, snap points, Vaul, dragConstraints, dragElastic, dragMomentum, onDragEnd, whileDrag, useMotionValue, rubber-band, overscroll, pull to refresh, hold to delete, press and hold, touch-action, dismiss threshold, \"doesn't follow my finger\", \"jumps when I let go\", \"can't grab it mid-animation\".",
+  },
+  {
+    slug: "regards-interactions",
+    user: "filipwojda",
+    repo: "regards-skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/filipwojda/regards-skill/main/skills/regards-interactions/SKILL.md",
+    githubUrl:
+      "https://github.com/filipwojda/regards-skill/blob/main/skills/regards-interactions/SKILL.md",
+    name: "regards-interactions",
+    topics: ["interaction","motion","frontend"],
+    description:
+      "Motion from real interactions with regards.design, a library of interactions recorded on live websites (hovers, clicks, focus states, scroll reveals, scroll-linked motion, loops, menu glides), each measured in the browser for its timing, curves and moving parts. Use it whenever the work is motion on the web - a hover state, a button press, a menu or navbar, tabs, a scroll reveal, a page or panel opening - when choosing an easing curve, a duration or a stagger, when matching how a named site moves (\"make this feel like dub's navbar\"), and when motion feels off (janky, slow, floaty, cheap). Not for layout, type or colour: the regards-design skill and search_sections do those. Needs the regards.design MCP server, https://mcp.regards.design/mcp.",
+  },
+  {
+    slug: "create-ai-avatar",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/create-ai-avatar/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/create-ai-avatar/SKILL.md",
+    files: ["references/footage.md","references/heygen.md","references/judging.md"],
+    name: "create-ai-avatar",
+    topics: ["video","visual","craft"],
+    description:
+      "Make an AI avatar of yourself that looks and sounds like you. A HeyGen digital twin trained on a couple of minutes of your own footage says lines you never recorded, in your own ElevenLabs voice, lip-synced from the audio, on the engine whose mouth moves most like yours. Covers picking and joining takes, training, consent, making the voice, rendering the same line on Avatar V, IV and III, and judging them mouth to mouth against your real footage before anything else is made. Use when someone wants a digital twin, an AI avatar or talking head of themselves or a consenting person, a HeyGen avatar from their YouTube videos or recordings, their avatar to speak in their own cloned voice, a lip-synced talking video from a photo and audio, or says their avatar looks wrong, over-acts or its mouth isn't theirs.",
+  },
+  {
+    slug: "digital-twin",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/digital-twin/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/digital-twin/SKILL.md",
+    files: ["references/audit.md","references/cinematic.md","references/consent.md","references/costs.md","references/fil-workflow.md","references/identity-template.md","references/judging.md","references/references.md","references/speaking.md","references/stills.md","references/video.md","references/voice.md","references/workspace.md"],
+    name: "digital-twin",
+    topics: ["video","visual","craft"],
+    description:
+      "Build a digital twin of yourself, meaning photoreal stills of you in your own real room, talking video clips of you, and lines in your own cloned voice, that people who know you accept as you. It's a proven workflow (160+ numbered stills over two dozen rounds, 20+ talking drafts and a voice taken from 8.7 to 9.2/10 on one creator's twin, Nov 2026). It covers consent, picking references from your own recordings, writing an identity prompt, the 4-part prompt stack on Seedream 5 Pro, your-real-room-only with the camera as the only variable, 3 images at a time, cinematic looks taken from reference videos as words, measuring face proportions, the audit and paste-back fix, an instant voice clone with an audio tag, a speaker-similarity scorer, Seedance 2.5 draft talking clips, and the traps (voice verification lockouts, iMacs, grey hair, wide mouths, other people's faces bleeding in). Use it whenever someone wants AI images, video or voice of THEMSELVES, even if they only say \"my digital twin\", \"AI headshots of me\", \"a video of me talking\", \"clone my voice\", \"make me a presenter clip\", \"an AI avatar of me\", \"me at my desk\", \"a talking-head intro without filming\" or \"creator or founder content with my face\". Only for your own face and voice, or someone who gave documented consent.",
+  },
+  {
+    slug: "html-explainer-video",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/html-explainer-video/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/html-explainer-video/SKILL.md",
+    files: ["references/camera.md","references/checks.md","references/fil-editor.md","references/format.md","references/looks.md","references/sound.md"],
+    name: "html-explainer-video",
+    topics: ["video","motion","craft"],
+    description:
+      "Turn a product, a feature or an idea into a finished one-minute explainer video in any look: a script (hook, benefit, quick tutorial, try it), a voice whose words are the clock, HTML scenes drawn from that one clock and rendered frame by frame at 2×, and an edit in Fil's video editor over MCP with captions, music, sound effects and chapters. The look is an input, read from the person's site or a named style, so the same film can wear any type, colour, corners and motion. The shape is an input (4:3, 16:9, 1:1, 9:16). No camera by default: a voice-led film whose scenes fill the frame; ask for a camera and it adds record slots, layouts by keyframes and a teleprompter. Use when someone wants an explainer, a feature video, a product walkthrough, an onboarding video, a how-it-works video or a launch video, wants one in their own brand, or wants it without filming anything.",
+  },
+  {
+    slug: "url-to-motion-design",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/media/url-to-motion-design/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/media/url-to-motion-design/SKILL.md",
+    files: ["references/builder-brief.md","references/judge.md","references/lab.md","references/publish.md","references/scene-contract.md","references/seven-to-eight.md"],
+    name: "url-to-motion-design",
+    topics: ["motion","video","visual"],
+    description:
+      "Turn a launch film, product video or post at a URL (an X or Twitter post, YouTube, Vimeo, a direct video link) into Fil HTML motion scenes. Captures the film's best 5 to 10 distinct motion-graphics shots as screenshots and clips, rebuilds each as an original Fil motion scene in its look with Fil's own words, polishes them with blind judges to 8/10, puts them in a section of the HTML motion scenes canvas, and shows them as a screening page and MP4s. Use when someone shares a video or a post and asks to capture its scenes, to get screenshots of its best shots, to add its scenes or style to the motion scenes library, or to make motion scenes like it, or says url to motion design, even if they only ask for the screenshots first.",
+  },
+  {
+    slug: "dxe-ai-output-judgement",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-ai-output-judgement/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-ai-output-judgement/SKILL.md",
+    name: "dxe-ai-output-judgement",
+    topics: ["craft","tooling"],
+    description:
+      "Critique generated UI, copy, or code when the user requests a quality review of AI output.",
+  },
+  {
+    slug: "dxe-android-native-ui",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-android-native-ui/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-android-native-ui/SKILL.md",
+    files: ["references/android-verification.md"],
+    name: "dxe-android-native-ui",
+    topics: ["frontend","interaction","visual"],
+    description:
+      "Build or review Android interfaces in Compose or Views, including Material conventions, accessibility, adaptive layout, and state.",
+  },
+  {
+    slug: "dxe-apple-native-ui",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-apple-native-ui/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-apple-native-ui/SKILL.md",
+    files: ["references/apple-verification.md","references/macos-native-workflows.md"],
+    name: "dxe-apple-native-ui",
+    topics: ["frontend","interaction","visual"],
+    description:
+      "Build or review native Apple interfaces, including platform controls, accessibility, state, navigation, and macOS window behavior.",
+  },
+  {
+    slug: "dxe-design-engineering",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-design-engineering/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-design-engineering/SKILL.md",
+    name: "dxe-design-engineering",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Translate design intent into production components or improve collaboration between design and engineering.",
+  },
+  {
+    slug: "dxe-design-for-repetition",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-design-for-repetition/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-design-for-repetition/SKILL.md",
+    name: "dxe-design-for-repetition",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Improve workflows used repeatedly by examining recurring effort, waiting, setup, interruption, context retention, and expert paths. Use when an experience works once but may become tiring or inefficient in regular use.",
+  },
+  {
+    slug: "dxe-design-system-evolution",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-design-system-evolution/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-design-system-evolution/SKILL.md",
+    name: "dxe-design-system-evolution",
+    topics: ["systems","craft","frontend"],
+    description:
+      "Decide how an existing design system should evolve: reuse a component, add a variant, change its API, or introduce a new pattern. Use when real design or code consumers expose a mismatch and a bounded compatibility or migration decision is needed.",
+  },
+  {
+    slug: "dxe-fluid-design",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-fluid-design/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-fluid-design/SKILL.md",
+    files: ["references/motion-recipes.md","references/principles.md"],
+    name: "dxe-fluid-design",
+    topics: ["motion","visual","frontend"],
+    description:
+      "Design or refine springs, gestures, and interruptible motion when physical continuity or direct manipulation matters.",
+  },
+  {
+    slug: "dxe-hiring-manager-bar",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-hiring-manager-bar/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-hiring-manager-bar/SKILL.md",
+    files: ["references/browser-review.md","references/danny-martinez.md","references/design-discipline-examples.md","references/dive-club-examples.md","references/dive-club-research.md","references/hiring-humans-examples.md","references/video-portfolio-advice.md"],
+    name: "dxe-hiring-manager-bar",
+    topics: ["craft","tooling"],
+    description:
+      "Review a job-seeking portfolio against Karl Koch's hiring manager bar and recommend prioritized changes to site code and content. Use for portfolio readiness, hiring clarity, or a portfolio review with actionable implementation guidance.",
+  },
+  {
+    slug: "dxe-humane-functionalism",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-humane-functionalism/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-humane-functionalism/SKILL.md",
+    files: ["references/research.md"],
+    name: "dxe-humane-functionalism",
+    topics: ["craft","interaction","visual"],
+    description:
+      "Improve UI and UX through Danish functionalism. Use for a Danish functionalist design pass on a screen or flow, grounding hierarchy, interaction, human fit, and craft in actual use.",
+  },
+  {
+    slug: "dxe-intentional-craft",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-intentional-craft/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-intentional-craft/SKILL.md",
+    files: ["references/source-and-translation.md"],
+    name: "dxe-intentional-craft",
+    topics: ["craft","interaction","visual"],
+    description:
+      "Develop or refine design and engineering ideas through Apple's Intention film: connect a human outcome to focused scope, implementation choices, and evidence of craft. Use when this lens is requested or a substantial idea needs an experience-led direction.",
+  },
+  {
+    slug: "dxe-interaction-contracts",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-interaction-contracts/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-interaction-contracts/SKILL.md",
+    name: "dxe-interaction-contracts",
+    topics: ["interaction","craft","frontend"],
+    description:
+      "Define or review the behaviour promised by an interaction before or during implementation: triggers, state changes, persistence, interruption, recovery, and acceptance checks. Use when a mockup or component leaves consequential behaviour unresolved.",
+  },
+  {
+    slug: "dxe-interface-affordances",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-interface-affordances/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-interface-affordances/SKILL.md",
+    name: "dxe-interface-affordances",
+    topics: ["interaction","craft","frontend"],
+    description:
+      "Fix unclear interaction cues, hidden actions, weak hit targets, or mismatches between a control’s appearance and behavior.",
+  },
+  {
+    slug: "dxe-modern-css-html",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-modern-css-html/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-modern-css-html/SKILL.md",
+    files: ["references/features.md","references/recipes.md"],
+    name: "dxe-modern-css-html",
+    topics: ["frontend","accessibility","craft"],
+    description:
+      "Choose native CSS and HTML features, assess browser support, or replace legacy workarounds with progressive enhancement.",
+  },
+  {
+    slug: "dxe-product-delight",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-product-delight/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-product-delight/SKILL.md",
+    name: "dxe-product-delight",
+    topics: ["craft","interaction","visual"],
+    description:
+      "Improve product care, anticipation, and useful feedback when the user asks for delight or polish.",
+  },
+  {
+    slug: "dxe-prototype-to-production",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-prototype-to-production/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-prototype-to-production/SKILL.md",
+    name: "dxe-prototype-to-production",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Harden an existing prototype for real use, including failure states, accessibility, security boundaries, and maintainability.",
+  },
+  {
+    slug: "dxe-real-content-design",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-real-content-design/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-real-content-design/SKILL.md",
+    name: "dxe-real-content-design",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Shape interface structure using representative content before layout decisions settle. Use when placeholders, uniform examples, incomplete records, or mixed content types may hide problems in hierarchy, comparison, navigation, or component design.",
+  },
+  {
+    slug: "dxe-semantic-html-first",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-semantic-html-first/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-semantic-html-first/SKILL.md",
+    name: "dxe-semantic-html-first",
+    topics: ["frontend","accessibility","craft"],
+    description:
+      "Choose HTML semantics and accessible behavior for controls, forms, and custom interaction primitives.",
+  },
+  {
+    slug: "dxe-software-needs-hierarchy",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-software-needs-hierarchy/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-software-needs-hierarchy/SKILL.md",
+    files: ["references/source-and-translation.md"],
+    name: "dxe-software-needs-hierarchy",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Evaluate software through a Maslow-inspired hierarchy of user needs and prioritise improvements from basic function and trust through belonging, competence, and growth. Use when a product needs a needs-based quality review or competing improvements need ordering.",
+  },
+  {
+    slug: "dxe-subtractive-design",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-subtractive-design/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-subtractive-design/SKILL.md",
+    name: "dxe-subtractive-design",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Simplify noisy interfaces and evaluate whether proposed UI additions serve a concrete user need.",
+  },
+  {
+    slug: "dxe-write-first-design",
+    user: "kemiljk",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/kemiljk/skills/main/skills/dxe-write-first-design/SKILL.md",
+    githubUrl:
+      "https://github.com/kemiljk/skills/blob/main/skills/dxe-write-first-design/SKILL.md",
+    name: "dxe-write-first-design",
+    topics: ["craft","frontend","visual"],
+    description:
+      "Clarify uncertain product decisions in a short written brief before substantial design or implementation work.",
+  },
+  {
+    slug: "make-font",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/skills/make-font/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/skills/make-font/SKILL.md",
+    files: ["references/checks.md", "references/fitting.md", "references/font-book.md", "references/foundation.md", "references/licensing.md", "references/measuring.md", "references/spacing.md"],
+    name: "make-font",
+    topics: ["typography","craft"],
+    description:
+      "Build an open-license font from reference typefaces, with web files and a specimen, without copying outlines from the references.",
+  },
+  {
+    slug: "learn-taste",
+    user: "emilkowalski",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/emilkowalski/skills/main/skills/learn-taste/SKILL.md",
+    githubUrl:
+      "https://github.com/emilkowalski/skills/blob/main/skills/learn-taste/SKILL.md",
+    name: "learn-taste",
+    topics: ["taste","craft"],
+    description:
+      "Turn design corrections from a session into explicit rules, with the reason for each one, in DESIGN.md, a project skill, or a lint check.",
+  },
+  {
+    slug: "figma-3d-transforms",
+    user: "figma",
+    repo: "mcp-server-guide",
+    rawUrl:
+      "https://raw.githubusercontent.com/figma/mcp-server-guide/main/skills/figma-3d-transforms/SKILL.md",
+    githubUrl:
+      "https://github.com/figma/mcp-server-guide/blob/main/skills/figma-3d-transforms/SKILL.md",
+    files: ["references/carousels.md", "references/cubes.md"],
+    name: "figma-3d-transforms",
+    topics: ["3d","visual","tooling"],
+    description:
+      "Add depth, perspective, tilt, isometric, and parallax transforms in Figma when a flat 2D rotation is not enough.",
+  },
+  {
+    slug: "game-dev-character-model",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/game-dev-character-model/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/game-dev-character-model/SKILL.md",
+    name: "game-dev-character-model",
+    topics: ["3d","visual"],
+    description:
+      "Design an original game or web character and deliver it as a textured, rigged GLB in a lit three.js viewer.",
+  },
+  {
+    slug: "improve-threejs",
+    user: "millionco",
+    repo: "react-doctor",
+    rawUrl:
+      "https://raw.githubusercontent.com/millionco/react-doctor/main/skills/improve-threejs/SKILL.md",
+    githubUrl:
+      "https://github.com/millionco/react-doctor/blob/main/skills/improve-threejs/SKILL.md",
+    name: "improve-threejs",
+    topics: ["threejs","performance","3d"],
+    description:
+      "Audit Three.js and React Three Fiber scenes for frame cost, GPU leaks, scene-graph mistakes, and visual defects such as z-fighting or a wrong color space.",
+  },
+  {
+    slug: "performance",
+    user: "millionco",
+    repo: "react-doctor",
+    rawUrl:
+      "https://raw.githubusercontent.com/millionco/react-doctor/main/skills/performance/SKILL.md",
+    githubUrl:
+      "https://github.com/millionco/react-doctor/blob/main/skills/performance/SKILL.md",
+    name: "performance",
+    topics: ["performance","frontend"],
+    description:
+      "Diagnose slow React interactions with traces, render outlines, and long-animation-frame timing, then compare before and after.",
+  },
+  {
+    slug: "balise-affinity",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-affinity/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-affinity/SKILL.md",
+    files: ["references/affinity-decision-matrix.md", "references/affinity-mental-model.md"],
+    name: "balise-affinity",
+    topics: ["visual","tooling"],
+    description:
+      "Audit Affinity documents: object choices, text modes, non-destructive edits, overlays, and production setup.",
+  },
+  {
+    slug: "balise-affinity-mcp",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-affinity-mcp/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-affinity-mcp/SKILL.md",
+    files: ["references/affinity-concepts-and-nuances.md", "references/affinity-js-patterns.md"],
+    name: "balise-affinity-mcp",
+    topics: ["tooling","visual"],
+    description:
+      "Edit the open Affinity document through the Affinity MCP: layers, geometry, type, fills, exports, and a visual check.",
+  },
+  {
+    slug: "balise-brand-naming",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-brand-naming/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-brand-naming/SKILL.md",
+    files: ["references/evaluation-et-disponibilite.md", "references/fondations-de-marque.md", "references/structure-du-livrable.md", "references/territoires-de-naming.md"],
+    name: "balise-brand-naming",
+    topics: ["craft","visual"],
+    description:
+      "Turn a fuzzy brand idea into a reasoned exploration of the name and the territory around it.",
+  },
+  {
+    slug: "balise-content-test",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-content-test/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-content-test/SKILL.md",
+    name: "balise-content-test",
+    topics: ["craft","interaction"],
+    description:
+      "Stress-test Figma screens with long text, missing values, localization, RTL, large type, and awkward media.",
+  },
+  {
+    slug: "balise-design-system",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-design-system/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-design-system/SKILL.md",
+    files: ["references/audits-and-pilots.md", "references/color-and-typography.md", "references/components-and-patterns.md", "references/consumption-and-learning.md", "references/deliverable-templates.md", "references/figma-to-code.md", "references/framework-adoption.md", "references/governance-and-maturity.md", "references/implementation-pipelines.md", "references/naming-and-source-authority.md", "references/saas-structures.md", "references/strategy-and-scope.md", "references/style-dictionary.md", "references/token-architecture.md"],
+    name: "balise-design-system",
+    topics: ["systems","visual"],
+    description:
+      "Shape a design system from Figma into code: tokens, themes, type scales, color ramps, and component patterns.",
+  },
+  {
+    slug: "balise-handoff",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-handoff/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-handoff/SKILL.md",
+    name: "balise-handoff",
+    topics: ["systems","frontend"],
+    description:
+      "Prepare Figma screens and flows for implementation, with scope, source of truth, open decisions, and acceptance criteria.",
+  },
+  {
+    slug: "balise-idea",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-idea/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-idea/SKILL.md",
+    name: "balise-idea",
+    topics: ["craft","visual"],
+    description:
+      "Keep an exportable visual trace of opportunities, experiments, and decisions without treating the canvas as the source of truth.",
+  },
+  {
+    slug: "balise-motion-graphic",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-motion-graphic/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-motion-graphic/SKILL.md",
+    files: ["references/asset-acquisition.md", "references/asset-strategy.md", "references/engine-routing.md", "references/export-and-codecs.md", "references/intake-and-formats.md", "references/kinetic-typography.md", "references/motion-quality-and-lessons.md", "references/reference-research.md", "references/sound-and-delivery.md"],
+    name: "balise-motion-graphic",
+    topics: ["motion","video"],
+    description:
+      "Direct rendered motion graphics from brief to export: brand motion, titles, kinetic type, explainers, and loops.",
+  },
+  {
+    slug: "balise-trustworthy-flows",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-trustworthy-flows/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-trustworthy-flows/SKILL.md",
+    name: "balise-trustworthy-flows",
+    topics: ["interaction","craft"],
+    description:
+      "Review consequential Figma flows such as consent, pricing, cancellation, and destructive actions for uneven or unclear choices.",
+  },
+  {
+    slug: "balise-ui-states",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-ui-states/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-ui-states/SKILL.md",
+    name: "balise-ui-states",
+    topics: ["interaction","craft"],
+    description:
+      "Fill in missing UI states for Figma screens: empty, loading, success, error, offline, permission, and recovery.",
+  },
+  {
+    slug: "balise-visual-references",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/figma-skills/balise-visual-references/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/figma-skills/balise-visual-references/SKILL.md",
+    name: "balise-visual-references",
+    topics: ["visual","taste"],
+    description:
+      "Collect visual references and turn them into original design principles for Figma work.",
+  },
+  {
+    slug: "balise-webmotion",
+    user: "mrstev3n",
+    repo: "balise-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/mrstev3n/balise-skills/main/skills/balise-webmotion/SKILL.md",
+    githubUrl:
+      "https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-webmotion/SKILL.md",
+    files: ["references/asset-acquisition.md", "references/autonomous-production.md", "references/easter-eggs.md", "references/micro-interactions.md", "references/quality-rubric.md", "references/research-method.md", "references/source-strategy.md"],
+    name: "balise-webmotion",
+    topics: ["motion","interaction"],
+    description:
+      "Research and build web motion: scroll stories, page transitions, micro-interactions, and short motion prototypes.",
+  },
+  {
+    slug: "alignment",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/alignment/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/alignment/SKILL.md",
+    name: "alignment",
+    topics: ["visual","craft"],
+    description:
+      "Measure a live page for edges, gaps, centering, and radii that miss by a pixel or two, then judge visual weight.",
+  },
+  {
+    slug: "audit",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/audit/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/audit/SKILL.md",
+    name: "audit",
+    topics: ["craft","systems"],
+    description:
+      "Review a change against this interface collection and return one ranked report.",
+  },
+  {
+    slug: "avatar",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/avatar/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/avatar/SKILL.md",
+    name: "avatar",
+    topics: ["motion","visual"],
+    description:
+      "Draw an object as a flat character with capsule eyes and animate glance, blink, breath, pointer follow, and sleep.",
+  },
+  {
+    slug: "color",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/color/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/color/SKILL.md",
+    name: "color",
+    topics: ["color","accessibility"],
+    description:
+      "Keep text and control contrast at exact ratios, route color through role tokens, and give dark mode its own palette.",
+  },
+  {
+    slug: "copy",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/copy/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/copy/SKILL.md",
+    name: "copy",
+    topics: ["craft","typography"],
+    description:
+      "Write short, plain interface labels with one-line descriptions.",
+  },
+  {
+    slug: "deconstruct",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/deconstruct/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/deconstruct/SKILL.md",
+    name: "deconstruct",
+    topics: ["motion","interaction"],
+    description:
+      "Break an animation into a state machine and a scrubbable timeline of every property.",
+  },
+  {
+    slug: "defaults",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/defaults/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/defaults/SKILL.md",
+    name: "defaults",
+    topics: ["systems","craft"],
+    description:
+      "Apply house defaults for scroll edges, surfaces, type, sound, focus, forms, loading, hotkeys, and dialogs.",
+  },
+  {
+    slug: "frames",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/frames/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/frames/SKILL.md",
+    name: "frames",
+    topics: ["performance","motion"],
+    description:
+      "Trace one interaction on a throttled CPU, name what drops frames, and prove the fix with a second trace.",
+  },
+  {
+    slug: "gather",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/gather/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/gather/SKILL.md",
+    name: "gather",
+    topics: ["visual","taste"],
+    description:
+      "Collect the user's saved references and chosen sites onto one board before a design is built.",
+  },
+  {
+    slug: "icons",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/icons/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/icons/SKILL.md",
+    name: "icons",
+    topics: ["visual","craft"],
+    description:
+      "Draw missing icons in the set's existing style, built so they can morph, and show the set on one sheet.",
+  },
+  {
+    slug: "keyboard",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/keyboard/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/keyboard/SKILL.md",
+    name: "keyboard",
+    topics: ["accessibility","interaction"],
+    description:
+      "Walk a live page with the keyboard only and report controls that cannot be reached, seen, or operated.",
+  },
+  {
+    slug: "lab",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/lab/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/lab/SKILL.md",
+    name: "lab",
+    topics: ["systems","frontend"],
+    description:
+      "Build a temporary page that shows every variant and state of real components, each linked to its source.",
+  },
+  {
+    slug: "match",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/match/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/match/SKILL.md",
+    name: "match",
+    topics: ["visual","craft"],
+    description:
+      "Rebuild a named reference from its real source and computed values, then compare the two side by side.",
+  },
+  {
+    slug: "motion",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/motion/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/motion/SKILL.md",
+    name: "motion",
+    topics: ["motion"],
+    description:
+      "Apply house motion: what animates, easing, duration, springs, gestures, exits, motion blur, and reduced motion.",
+  },
+  {
+    slug: "prototype",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/prototype/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/prototype/SKILL.md",
+    name: "prototype",
+    topics: ["interaction","craft"],
+    description:
+      "Build several labelled variants of one idea on a single page so a direction can be chosen.",
+  },
+  {
+    slug: "restraint",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/restraint/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/restraint/SKILL.md",
+    name: "restraint",
+    topics: ["craft","taste"],
+    description:
+      "Ship the smallest thing that does the job and remove what nobody asked for.",
+  },
+  {
+    slug: "sketchbook",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/sketchbook/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/sketchbook/SKILL.md",
+    name: "sketchbook",
+    topics: ["interaction","taste"],
+    description:
+      "Generate a daily batch of interaction experiments in the project's stack as live tiles to keep or discard.",
+  },
+  {
+    slug: "viewports",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/viewports/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/viewports/SKILL.md",
+    name: "viewports",
+    topics: ["visual","frontend"],
+    description:
+      "Render a page at each width, breakpoint edge, a short landscape phone, and 200% text, then report overflow and clipping.",
+  },
+  {
+    slug: "create-api",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-api/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-api/SKILL.md",
+    name: "create-api",
+    topics: ["systems","frontend"],
+    description:
+      "Write a component API spec: properties, values, defaults, and configuration examples.",
+  },
+  {
+    slug: "create-color",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-color/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-color/SKILL.md",
+    name: "create-color",
+    topics: ["color","systems"],
+    description:
+      "Map a component's UI elements to color tokens in a color annotation spec.",
+  },
+  {
+    slug: "create-component-md",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-component-md/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-component-md/SKILL.md",
+    name: "create-component-md",
+    topics: ["systems","frontend"],
+    description:
+      "Produce a component spec from a Figma extract, covering API, structure, color, and screen-reader behavior.",
+  },
+  {
+    slug: "create-motion",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-motion/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-motion/SKILL.md",
+    name: "create-motion",
+    topics: ["motion","systems"],
+    description:
+      "Write motion specs from timeline data: what animates and which properties change.",
+  },
+  {
+    slug: "create-property",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-property/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-property/SKILL.md",
+    name: "create-property",
+    topics: ["systems","visual"],
+    description:
+      "Annotate each configurable property axis in Figma with component instance previews.",
+  },
+  {
+    slug: "create-structure",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/create-structure/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/create-structure/SKILL.md",
+    name: "create-structure",
+    topics: ["systems","visual"],
+    description:
+      "Document component dimensions, spacing, and padding across density, size, and shape variants.",
+  },
+  {
+    slug: "extract-api",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/extract-api/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/extract-api/SKILL.md",
+    name: "extract-api",
+    topics: ["systems","frontend"],
+    description:
+      "Read a component's properties and sub-components from a uSpec extract and write the normalized API JSON.",
+  },
+  {
+    slug: "extract-color",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/extract-color/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/extract-color/SKILL.md",
+    name: "extract-color",
+    topics: ["color","systems"],
+    description:
+      "Read a component's color-token mapping from a uSpec extract and write the normalized color JSON.",
+  },
+  {
+    slug: "extract-structure",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/extract-structure/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/extract-structure/SKILL.md",
+    name: "extract-structure",
+    topics: ["systems","visual"],
+    description:
+      "Read variant axes, dimensions, and slots from a uSpec extract and write the normalized structure JSON.",
+  },
+  {
+    slug: "extract-voice",
+    user: "redongreen",
+    repo: "uSpec",
+    rawUrl:
+      "https://raw.githubusercontent.com/redongreen/uSpec/main/skills/extract-voice/SKILL.md",
+    githubUrl:
+      "https://github.com/redongreen/uSpec/blob/main/skills/extract-voice/SKILL.md",
+    name: "extract-voice",
+    topics: ["accessibility","systems"],
+    description:
+      "Read focus order and screen-reader behavior from a uSpec extract and write the normalized accessibility JSON.",
+  },
+  {
+    slug: "write-alt-text",
+    user: "stephenturner",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/stephenturner/skills/main/write-alt-text/SKILL.md",
+    githubUrl:
+      "https://github.com/stephenturner/skills/blob/main/write-alt-text/SKILL.md",
+    name: "write-alt-text",
+    topics: ["accessibility","visual"],
+    description:
+      "Write alt text for charts and plots.",
+  },
+  {
+    slug: "svelte-core-bestpractices",
+    user: "sveltejs",
+    repo: "ai-tools",
+    rawUrl:
+      "https://raw.githubusercontent.com/sveltejs/ai-tools/main/packages/opencode/skills/svelte-core-bestpractices/SKILL.md",
+    githubUrl:
+      "https://github.com/sveltejs/ai-tools/blob/main/packages/opencode/skills/svelte-core-bestpractices/SKILL.md",
+    files: ["references/attach.md", "references/await-expressions.md", "references/bind.md", "references/each.md", "references/hydratable.md", "references/inspect.md", "references/render.md", "references/snippet.md", "references/svelte-reactivity.md"],
+    name: "svelte-core-bestpractices",
+    topics: ["frameworks","frontend"],
+    description:
+      "Write fast, modern Svelte: reactivity, events, styling, and library integration.",
+  },
+  {
+    slug: "composition-patterns",
+    user: "vercel-labs",
+    repo: "agent-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/composition-patterns/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel-labs/agent-skills/blob/main/skills/composition-patterns/SKILL.md",
+    name: "vercel-composition-patterns",
+    topics: ["frontend","architecture"],
+    description:
+      "Refactor React components with composition patterns that stay understandable as the UI grows.",
+  },
+  {
+    slug: "react-native-skills",
+    user: "vercel-labs",
+    repo: "agent-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-native-skills/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-native-skills/SKILL.md",
+    name: "vercel-react-native-skills",
+    topics: ["react-native","performance"],
+    description:
+      "Apply React Native and Expo practices for performant mobile UI.",
+  },
+  {
+    slug: "react-view-transitions",
+    user: "vercel-labs",
+    repo: "agent-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-view-transitions/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel-labs/agent-skills/blob/main/skills/react-view-transitions/SKILL.md",
+    files: ["references/css-recipes.md", "references/implementation.md", "references/nextjs.md", "references/patterns.md", "references/troubleshooting.md"],
+    name: "vercel-react-view-transitions",
+    topics: ["motion","frontend"],
+    description:
+      "Animate route changes, shared elements, and enter/exit with React's View Transition API.",
+  },
+  {
+    slug: "next-bundle-optimizer",
+    user: "vercel",
+    repo: "next.js",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel/next.js/canary/skills/next-bundle-optimizer/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel/next.js/blob/canary/skills/next-bundle-optimizer/SKILL.md",
+    files: ["references/client-dependencies.md", "references/fix-patterns.md", "references/graph-methods.md"],
+    name: "next-bundle-optimizer",
+    topics: ["nextjs","performance"],
+    description:
+      "Audit and reduce the JavaScript a Next.js route sends on first load.",
+  },
+  {
+    slug: "next-partial-prefetching-adoption",
+    user: "vercel",
+    repo: "next.js",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel/next.js/canary/skills/next-partial-prefetching-adoption/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel/next.js/blob/canary/skills/next-partial-prefetching-adoption/SKILL.md",
+    name: "next-partial-prefetching-adoption",
+    topics: ["nextjs","performance"],
+    description:
+      "Turn on Partial Prefetching in a Next.js app and work through the adoption.",
+  },
+  {
+    slug: "next-partial-prefetching-optimizer",
+    user: "vercel",
+    repo: "next.js",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel/next.js/canary/skills/next-partial-prefetching-optimizer/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel/next.js/blob/canary/skills/next-partial-prefetching-optimizer/SKILL.md",
+    name: "next-partial-prefetching-optimizer",
+    topics: ["nextjs","performance"],
+    description:
+      "Trim what a Next.js client navigation prefetches before the click.",
+  },
+  {
+    slug: "accessibility-compliance",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/accessibility-compliance/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/accessibility-compliance/SKILL.md",
+    files: ["references/aria-patterns.md", "references/details.md", "references/mobile-accessibility.md", "references/wcag-guidelines.md"],
+    name: "accessibility-compliance",
+    topics: ["accessibility"],
+    description:
+      "Build WCAG 2.2 interfaces with inclusive patterns, ARIA, and assistive-technology support.",
+  },
+  {
+    slug: "brand-landingpage",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/brand-landingpage/skills/brand-landingpage/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/brand-landingpage/skills/brand-landingpage/SKILL.md",
+    files: ["references/interview-framework.md", "references/state-and-pitfalls.md", "references/stitch-architecture.md"],
+    name: "brand-landingpage",
+    topics: ["visual","craft"],
+    description:
+      "Design a landing page from a brand-identity interview: color, type, and the page structure.",
+  },
+  {
+    slug: "design-system-patterns",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/design-system-patterns/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/design-system-patterns/SKILL.md",
+    files: ["references/component-architecture.md", "references/design-tokens.md", "references/details.md", "references/theming-architecture.md"],
+    name: "design-system-patterns",
+    topics: ["systems","visual"],
+    description:
+      "Build a design system with tokens, theming, and component architecture.",
+  },
+  {
+    slug: "mobile-android-design",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/mobile-android-design/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/mobile-android-design/SKILL.md",
+    files: ["references/android-navigation.md", "references/compose-components.md", "references/details.md", "references/material3-theming.md"],
+    name: "mobile-android-design",
+    topics: ["visual","frontend"],
+    description:
+      "Design native Android UI with Material Design 3 and Jetpack Compose patterns.",
+  },
+  {
+    slug: "mobile-ios-design",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/mobile-ios-design/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/mobile-ios-design/SKILL.md",
+    files: ["references/hig-patterns.md", "references/ios-navigation.md", "references/swiftui-components.md"],
+    name: "mobile-ios-design",
+    topics: ["swiftui","visual"],
+    description:
+      "Design native iOS UI with the Human Interface Guidelines and SwiftUI patterns.",
+  },
+  {
+    slug: "react-native-design",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/react-native-design/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/react-native-design/SKILL.md",
+    files: ["references/details.md", "references/navigation-patterns.md", "references/reanimated-patterns.md", "references/styling-patterns.md"],
+    name: "react-native-design",
+    topics: ["react-native","motion"],
+    description:
+      "Style React Native screens, navigation, and Reanimated motion.",
+  },
+  {
+    slug: "responsive-design",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/responsive-design/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/responsive-design/SKILL.md",
+    files: ["references/breakpoint-strategies.md", "references/container-queries.md", "references/details.md", "references/fluid-layouts.md"],
+    name: "responsive-design",
+    topics: ["visual","frontend"],
+    description:
+      "Build adaptive layouts with container queries, fluid type, CSS Grid, and mobile-first breakpoints.",
+  },
+  {
+    slug: "screen-reader-testing",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
+    files: ["references/jaws-talkback.md", "references/nvda.md", "references/voiceover-ios.md", "references/voiceover.md"],
+    name: "screen-reader-testing",
+    topics: ["accessibility","testing"],
+    description:
+      "Test a web UI with VoiceOver, NVDA, and JAWS.",
+  },
+  {
+    slug: "tailwind-design-system",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md",
+    files: ["references/advanced-patterns.md", "references/details.md"],
+    name: "tailwind-design-system",
+    topics: ["systems","frontend"],
+    description:
+      "Build a Tailwind CSS v4 design system with tokens, components, and responsive patterns.",
+  },
+  {
+    slug: "visual-design-foundations",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/visual-design-foundations/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/visual-design-foundations/SKILL.md",
+    files: ["references/color-systems.md", "references/spacing-iconography.md", "references/typography-systems.md"],
+    name: "visual-design-foundations",
+    topics: ["visual","typography","color"],
+    description:
+      "Apply type, color, spacing, and iconography so a visual system stays consistent.",
+  },
+  {
+    slug: "visual-edit-precision",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/skill-forge-essentials/skills/visual-edit-precision/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/skill-forge-essentials/skills/visual-edit-precision/SKILL.md",
+    name: "visual-edit-precision",
+    topics: ["craft","visual"],
+    description:
+      "Make UI edits against the visual on screen, keeping spacing, alignment, and hierarchy exact.",
+  },
+  {
+    slug: "web-component-design",
+    user: "wshobson",
+    repo: "agents",
+    rawUrl:
+      "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/web-component-design/SKILL.md",
+    githubUrl:
+      "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/web-component-design/SKILL.md",
+    files: ["references/accessibility-patterns.md", "references/component-patterns.md", "references/css-styling-approaches.md"],
+    name: "web-component-design",
+    topics: ["frontend","systems"],
+    description:
+      "Design reusable React, Vue, and Svelte components, including composition and component APIs.",
+  },
+  {
     slug: "device-frames",
     user: "ibelick",
     repo: "ui-skills",
