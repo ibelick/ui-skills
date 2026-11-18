@@ -10962,6 +10962,45 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Create device-framed screenshots, product images, videos, or live UI mockups for phones, tablets, watches, laptops, monitors, and browsers.",
   },
+  {
+    slug: "figma-ui-audit",
+    user: "mykhailo-pashynskyi",
+    repo: "figma-ui-audit",
+    rawUrl:
+      "https://raw.githubusercontent.com/mykhailo-pashynskyi/figma-ui-audit/main/SKILL.md",
+    githubUrl:
+      "https://github.com/mykhailo-pashynskyi/figma-ui-audit/blob/main/SKILL.md",
+    name: "figma-ui-audit",
+    topics: ["accessibility", "systems", "craft"],
+    description:
+      "Read-only Figma audit for code-handoff readiness: Variables, Text Styles, Auto Layout, naming, screen states, accessibility with contrast per color mode, design-system token bindings, and iOS, Android and web fit. Optionally renames default layers.",
+    files: [
+      "references/accessibility.md",
+      "references/audit-checklist.md",
+      "references/component-states.md",
+      "references/core-rules.md",
+      "references/design-system-audit.md",
+      "references/devices/android.md",
+      "references/devices/iphone-duo.md",
+      "references/devices/iphone.md",
+      "references/devices/web.md",
+      "references/platforms/android.md",
+      "references/platforms/cross.md",
+      "references/platforms/ios.md",
+      "references/platforms/web.md",
+      "references/rename-playbook.md",
+      "references/report-format.md",
+      "references/stacks/README.md",
+      "references/stacks/android-views.md",
+      "references/stacks/compose.md",
+      "references/stacks/flutter.md",
+      "references/stacks/react-native.md",
+      "references/stacks/react.md",
+      "references/stacks/swiftui.md",
+      "references/stacks/tailwind.md",
+      "references/stacks/uikit.md",
+    ],
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
