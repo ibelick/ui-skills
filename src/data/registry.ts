@@ -5356,6 +5356,19 @@ const registrySource: RegistrySourceSkill[] = [
       "Review Archify issues, PRs, or code through value, cost, and impact to support evidence-based maintenance decisions. Use for issue triage, change reviews, and code quality assessments.",
   },
   {
+    slug: "device-frames",
+    user: "ibelick",
+    repo: "ui-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/device-frames/SKILL.md",
+    githubUrl:
+      "https://github.com/ibelick/ui-skills/blob/main/skills/device-frames/SKILL.md",
+    name: "device-frames",
+    topics: ["visual", "frontend", "video"],
+    description:
+      "Create device-framed screenshots, product images, videos, or live UI mockups for phones, tablets, watches, laptops, monitors, and browsers.",
+  },
+  {
     slug: "component-canvas",
     user: "ibelick",
     repo: "ui-skills",
