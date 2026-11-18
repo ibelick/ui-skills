@@ -124,9 +124,32 @@ export const defaultSkillContentLoader: SkillContentLoader = async (entry) => {
     const local = readLocalSkillMarkdown(entry.slug);
     if (local) return local;
   }
+  const prefetched = prerenderSkillContent.get(entry.rawUrl);
+  if (prefetched !== undefined) return prefetched;
   const { content } = await getRemoteSkill(entry.rawUrl);
   return content;
 };
+
+// Populated only by the prerender route during a build. Runtime requests keep
+// using the existing edge-cache and stale-content behavior.
+const prerenderSkillContent = new Map<string, string>();
+
+export async function prefetchPrerenderSkills(
+  entries: readonly RegistrySkill[],
+  loadContent: SkillContentLoader = defaultSkillContentLoader,
+  concurrency = 16,
+): Promise<void> {
+  const uniqueEntries = [...new Map(entries.map((entry) => [entry.rawUrl, entry])).values()];
+  await mapPool(uniqueEntries, concurrency, async (entry) => {
+    try {
+      const content = await loadContent(entry);
+      prerenderSkillContent.set(entry.rawUrl, content);
+    } catch {
+      // Leave failures uncached so individual routes can retry and retain
+      // their existing error/fallback behavior.
+    }
+  });
+}
 
 async function mapPool<T, R>(
   items: readonly T[],
