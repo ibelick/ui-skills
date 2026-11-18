@@ -5356,19 +5356,6 @@ const registrySource: RegistrySourceSkill[] = [
       "Review Archify issues, PRs, or code through value, cost, and impact to support evidence-based maintenance decisions. Use for issue triage, change reviews, and code quality assessments.",
   },
   {
-    slug: "device-frames",
-    user: "ibelick",
-    repo: "ui-skills",
-    rawUrl:
-      "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/device-frames/SKILL.md",
-    githubUrl:
-      "https://github.com/ibelick/ui-skills/blob/main/skills/device-frames/SKILL.md",
-    name: "device-frames",
-    topics: ["visual", "frontend", "video"],
-    description:
-      "Create device-framed screenshots, product images, videos, or live UI mockups for phones, tablets, watches, laptops, monitors, and browsers.",
-  },
-  {
     slug: "component-canvas",
     user: "ibelick",
     repo: "ui-skills",
@@ -8444,6 +8431,19 @@ const registrySource: RegistrySourceSkill[] = [
     topics: ["visual", "systems", "tooling"],
     description:
       "Design inside Figma the way this designer does: real variables, text styles, auto layout and components, on a fixed visual system (Tailwind type and radius scale, spacing tokens, two-layer color tokens, button and state rules). Use this skill whenever you create, edit or review anything in a Figma file through the Figma MCP: screens, landing pages, components, mockups, design systems, tokens, or any UI. Use it even when the user doesn't name the skill and only says things like 'design a page in Figma', 'make a button component', 'mock this up' or shares a figma.com link. Load it before writing any use_figma code.",
+  },
+  {
+    slug: "device-frames",
+    user: "ibelick",
+    repo: "ui-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/device-frames/SKILL.md",
+    githubUrl:
+      "https://github.com/ibelick/ui-skills/blob/main/skills/device-frames/SKILL.md",
+    name: "device-frames",
+    topics: ["visual", "frontend", "video"],
+    description:
+      "Create device-framed screenshots, product images, videos, or live UI mockups for phones, tablets, watches, laptops, monitors, and browsers.",
   },
 ];
 
