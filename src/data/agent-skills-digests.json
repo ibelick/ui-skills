@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-14T08:32:36.798Z",
-  "skillCount": 813,
+  "skillCount": 814,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
     "ibelick/baseline-ui": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
@@ -814,6 +814,7 @@
     "wshobson/visual-design-foundations": "sha256:0c6970d14f5d5df55c63d1be995205d140489e2d0c39896657fabee6f6a5df84",
     "wshobson/tailwind-design-system": "sha256:b6577edb7b7f71a6954f68b80c7eea1748ccdf31862759f864bce558fb2bcf83",
     "wshobson/web-component-design": "sha256:a7978f5e9e3fa7129cf3eb8d607cedece4e207011321893d9a3c5dd92cf32603",
-    "wshobson/visual-edit-precision": "sha256:3abb25ad646cbc8d67cbd07baa06db8331cc0f384be513db8f31dd7ab08e4b74"
+    "wshobson/visual-edit-precision": "sha256:3abb25ad646cbc8d67cbd07baa06db8331cc0f384be513db8f31dd7ab08e4b74",
+    "struqapp/struq": "sha256:9a01430d38be64a53401e40fe43e9558e7e10897718f91dd2557857d3d9357a5"
   }
 }
