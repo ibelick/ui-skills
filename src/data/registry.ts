@@ -10962,6 +10962,28 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Create device-framed screenshots, product images, videos, or live UI mockups for phones, tablets, watches, laptops, monitors, and browsers.",
   },
+  {
+    slug: "struq",
+    user: "struqapp",
+    repo: "struq-design",
+    rawUrl:
+      "https://raw.githubusercontent.com/struqapp/struq-design/main/skills/struq/SKILL.md",
+    githubUrl:
+      "https://github.com/struqapp/struq-design/blob/main/skills/struq/SKILL.md",
+    name: "struq",
+    topics: ["visual", "motion", "craft"],
+    description:
+      "Direct a marketing or portfolio site as one film before any markup: one idea, a type pairing, a palette, one motion language and a storyboard. Then build it from GSAP and Lenis blocks shipped as files (preloaders, page transitions, pinned showpieces, WebGL backgrounds) and run a local check.",
+    files: [
+      "references/art-direction.md",
+      "references/craft.md",
+      "references/film.md",
+      "references/iconography.md",
+      "references/stack-targets.md",
+      "references/tells.md",
+      "references/triage.md",
+    ],
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
