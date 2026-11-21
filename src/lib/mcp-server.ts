@@ -133,6 +133,8 @@ export const mcpPost: APIRoute = async ({ request, site }) => {
         capabilities: { tools: {} },
         serverInfo: { name: "UI Skills", version: "0.2.4" },
       });
+    case "ping":
+      return jsonRpcResult(body.id, {});
     case "notifications/initialized":
       return new Response(null, { status: 202, headers: corsHeaders });
     case "tools/list":
