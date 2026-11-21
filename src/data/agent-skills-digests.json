@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-21T14:04:09.583Z",
-  "skillCount": 852,
+  "skillCount": 853,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
     "ibelick/baseline-ui": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
@@ -853,6 +853,7 @@
     "raphaelsalaja/vitals": "sha256:572d389d3d39bcb1a598eb277ee6e9cb5ce120db6da706ca2cd6f5655ba2eb66",
     "raphaelsalaja/stress": "sha256:e9ac14682e3985608ab9fa3b7c83857d05b2928e676a45c6683612b73191807b",
     "vercel-labs/modern-web-guidance": "sha256:93234d8103db74fa91c7a532eb1f0f6b2b7fdb5b6b3c45f5cfe99b12a5ec7cb2",
-    "pasqualevitiello/plotter": "sha256:4a9dd8c155d3797fc524da0d01c1daa27acdd673e200083b9924ad7aa80197ab"
+    "pasqualevitiello/plotter": "sha256:4a9dd8c155d3797fc524da0d01c1daa27acdd673e200083b9924ad7aa80197ab",
+    "e2e-inc/e2e": "sha256:32a02b5e8a989be2ef385079b899de49fbe0fbcf31d1bd215c5edfe3e18cb31d"
   }
 }
