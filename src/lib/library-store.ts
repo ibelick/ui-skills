@@ -2,7 +2,7 @@ import type { D1Database } from "@cloudflare/workers-types";
 import { and, asc, count, desc, eq, inArray, max } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/d1";
 import * as schema from "../db/schema";
-import { parseSkillPath } from "./library-skill";
+import { parseSkillPath, parseStoredSkillPath } from "./library-skill";
 import {
   LIBRARY_LIMITS,
   LibraryError,
@@ -193,7 +193,7 @@ export function createLibraryStore(database: D1Database): LibraryStore {
     },
 
     async unsaveSkill(userId, skillPath) {
-      const path = parseSkillPath(skillPath);
+      const path = parseStoredSkillPath(skillPath);
       await db
         .delete(savedSkill)
         .where(
@@ -316,7 +316,7 @@ export function createLibraryStore(database: D1Database): LibraryStore {
     },
 
     async removeSkill(userId, id, skillPath) {
-      const path = parseSkillPath(skillPath);
+      const path = parseStoredSkillPath(skillPath);
       await ownedCollection(db, userId, id);
       await db
         .delete(userCollectionSkill)

@@ -8,3 +8,14 @@ export function parseSkillPath(value: unknown) {
   }
   return value;
 }
+
+/**
+ * Removals accept any stored path: a skill can leave the directory after it
+ * was saved, and the user must still be able to remove it from their library.
+ */
+export function parseStoredSkillPath(value: unknown) {
+  if (typeof value !== "string" || !value || value.length > 200) {
+    throw new LibraryError("Choose a skill from the directory.");
+  }
+  return value;
+}
