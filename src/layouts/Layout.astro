@@ -6,6 +6,7 @@ import { playbook } from "../data/playbook";
 import Footer from "../ui/footer.astro";
 import { AccountMenu } from "../ui/account-menu";
 import { CommandDialog } from "../ui/command-dialog";
+import { ThemeToggle } from "../ui/theme-toggle";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import PromoBanner from "../ui/promo-banner.astro";
 import { WebMcpTools } from "../ui/webmcp-tools";
@@ -125,6 +126,39 @@ const commandItems = [
     <meta name="twitter:image:alt" content={twitterImageAltText} />
     <meta name="twitter:site" content={twitterSiteHandle} />
     <script is:inline>
+      // Apply the saved theme before first paint so there is no flash. With no
+      // saved choice, follow the system setting. Re-applied on pageshow so
+      // back/forward (bfcache) and other tabs never show a stale theme.
+      (function () {
+        var KEY = "ui-skills-theme";
+        function stored() {
+          try {
+            return localStorage.getItem(KEY);
+          } catch (e) {
+            return null;
+          }
+        }
+        function apply() {
+          var saved = stored();
+          var dark =
+            saved === "dark" ||
+            (saved !== "light" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.classList.toggle("dark", dark);
+        }
+        apply();
+        window.addEventListener("pageshow", apply);
+        window.addEventListener("storage", function (event) {
+          if (event.key === KEY) apply();
+        });
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", function () {
+            if (!stored()) apply();
+          });
+      })();
+    </script>
+    <script is:inline>
       (function () {
         function shouldSkipAnalytics() {
           if (navigator.webdriver) return true;
@@ -185,7 +219,7 @@ const commandItems = [
                   src="/uiskills-logo-light.webp"
                   alt=""
                   aria-hidden="true"
-                  class="h-4 w-4"
+                  class="h-4 w-4 dark:invert"
                   width="16"
                   height="16"
                 />
@@ -201,6 +235,7 @@ const commandItems = [
                     Sign in
                   </a>
                   <AccountMenu client:idle />
+                  <ThemeToggle client:load />
                   <button
                     type="button"
                     aria-label="Search skills and playbook"
