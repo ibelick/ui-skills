@@ -30,6 +30,8 @@ Use when the user provides a public URL without its source repository. Create a 
 
 URL mode requires rendered browser access. Inspect the DOM, computed styles, and publicly loaded stylesheets at desktop and mobile widths. Screenshots may support interpretation but cannot establish exact values by themselves.
 
+If no local browser tool is available, Firecrawl can provide the rendered evidence. Scrape each sampled page twice, at desktop width and with `mobile: true`, requesting the `rawHtml`, `branding`, and full-page `screenshot` formats ([scrape formats](https://docs.firecrawl.dev/features/scrape?utm_source=ui-skills&utm_medium=integration)). `rawHtml` is a rendered HTML snapshot without computed styles, so fetch the stylesheets it links and promote a `branding` value only when a loaded declaration with that value applies to an element in the snapshot, or when it recurs for the same role across samples. Never reuse `branding` role names such as `primary` or `accent` as token names.
+
 Inspect the supplied page and shared chrome. For a site-wide request, sample up to three same-origin pages that represent distinct templates.
 
 URL evidence may establish only observable visual patterns and computed values. It cannot establish internal token names, component ownership, undocumented rationale, or whether a pattern is intentionally canonical.
