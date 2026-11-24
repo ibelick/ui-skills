@@ -61,6 +61,10 @@ would render on that device, at 2× density.
   then the app's name in bold and its menus; on the right, only system items (Control
   Centre, search, battery, Wi-Fi) and the current date and time. Never invent third-party
   app icons.
+- **Match the current OS.** On current macOS the menu bar has no background: the desktop
+  shows through and the text flips dark or light with it. Current Safari draws the address
+  field without a background, led by the privacy-report shield, then the page menu, lock
+  and domain, translate and reload. Follow the user's reference when they give one.
 - **Desktop chrome is optional and synthetic.** A menu bar plus browser toolbar reads as "a
   real Mac", and a floating window with a shadow over a plain desktop colour gives the page
   breathing room. Both are approximations; never present them as a native screenshot.
@@ -98,7 +102,13 @@ reflections all follow from it.
   light. It is what makes metal and glass read as real.
 - **The screen must be the brightest thing that matters.** Keep the room around 0.7–1.0 of
   its natural intensity; a bright window behind a white page flattens everything.
-- Without an HDRI, a plain wall with soft low-frequency shading is a fine fallback.
+- **Blur the room as much as the optics say.** A wall 3 m behind a laptop focused at 0.4 m,
+  at f/2.8 and 36° FOV, blurs to about 5% of the frame height. A room sharper than that
+  reads as a printed backdrop, the most common reason these photos look fake. Never cap the
+  background blur below what the lens produces.
+- **Show less room.** Prefer framings where the screen fills most of the frame and the room
+  is only colour and light at the edges. When no convincing room is available, use a studio
+  sweep (a plain backdrop with soft falloff) rather than a room that looks pasted in.
 
 ## 5. Shoot with a physical camera
 
@@ -170,6 +180,8 @@ Inspect the rendered image itself, not the scene settings. Check, and fix before
 - **Exposed:** no clipped white slab on the screen; the room is darker than the page.
 - **Grounded:** the device sits on the desk with a contact shadow; stands and props do not
   intersect the hardware.
+- **Believable background:** the room is blurred as the lens would blur it, with no
+  recognisable sharp detail behind a shallow-focus shot.
 - Render at the final size (e.g. 3000 × 2000), not the preview size, before judging focus
   and grain.
 
