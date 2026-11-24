@@ -10963,14 +10963,14 @@ const registrySource: RegistrySourceSkill[] = [
       "Create device-framed screenshots, product images, videos, or live UI mockups for phones, tablets, watches, laptops, monitors, and browsers.",
   },
   {
-    slug: "software-photos",
+    slug: "photographing-software",
     user: "ibelick",
     repo: "ui-skills",
     rawUrl:
-      "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/software-photos/SKILL.md",
+      "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/photographing-software/SKILL.md",
     githubUrl:
-      "https://github.com/ibelick/ui-skills/blob/main/skills/software-photos/SKILL.md",
-    name: "software-photos",
+      "https://github.com/ibelick/ui-skills/blob/main/skills/photographing-software/SKILL.md",
+    name: "photographing-software",
     topics: ["visual", "frontend"],
     description:
       "Create photographic images of software: a website or app on a real-looking laptop, display, tablet, or phone, shot with depth of field, room light, and a legible finish.",

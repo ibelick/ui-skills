@@ -1,9 +1,9 @@
 ---
-name: software-photos
+name: photographing-software
 description: Create photographic images of software — a website or app shown on a real-looking laptop, display, tablet or phone, shot through a camera with depth of field, room light and film finish. Use for product photos, launch visuals, hero images and social posts that should look photographed rather than mocked up, including close-ups of UI text, three-quarter desk shots and full-device shots.
 ---
 
-# Software photos
+# Photographing software
 
 Make the software look photographed: a real screen, in a real room, through a real lens.
 Use the project's tools and conventions. Do not assume a 3D library, browser, capture
