@@ -84,7 +84,22 @@ reflections all follow from it.
   mm (0.2 mm per point) and the body is 312.6 mm wide. Phones and tablets: millimetres from
   the manufacturer's dimensional drawings (see
   [device-frames](https://www.ui-skills.com/skills/ibelick/device-frames)).
-- **Laptops in 3D.** `device-frames` gives the front view only; build the rest from
+- **The lid's front face comes from `device-frames`, exactly.** Take the device's row of its
+  laptop table (screen size, bezel side / top / bottom, edge, lid corner, screen corner,
+  notch or camera) and the corner rules under it, and convert points to millimetres with
+  `k = published body width / lid width in points`, where the lid is the screen plus two
+  bezels and two edges. Do not adjust any of it by eye: no thicker bezels, rounder corners,
+  bigger notch or extra bands. Example, 14-inch MacBook Pro (lid 1552 × 1028 points,
+  k = 312.6 / 1552 ≈ 0.2014 mm per point):
+  - Lid 312.6 × 207.1 mm; corners 4.83 mm at the top, 1.21 mm at the hinge.
+  - Metal edge 0.81 mm; black glass inside it to the screen.
+  - Bezel 3.22 mm at the sides and top, 4.43 mm at the bottom.
+  - Screen 304.5 × 197.8 mm, top corners 2.42 mm, square bottom corners.
+  - Notch 39.5 × 6.45 mm hanging from the screen's top edge, bottom corners 2.01 mm, with a
+    0.7 mm camera dot.
+  The page fills the screen right up to its top edge; the notch covers it there. Leave no
+  empty band between the bezel and the content.
+- **Laptops in 3D.** Beyond the front face, build the rest from
   published sizes, not by eye. A 14-inch MacBook Pro is 312.6 × 221.2 mm and 15.5 mm thick
   closed: about 11 mm of base and 4.5 mm of lid. Approximations that render convincingly:
   - **Base:** the lid's footprint, with about 12 mm corner radius and softly rounded edges
@@ -96,8 +111,8 @@ reflections all follow from it.
     models sit the keys in a dark well; silver ones do not.
   - **Trackpad:** about 135 × 82 mm, centred, about 10 mm from the front edge: the same
     aluminium as the base, separated only by a hairline.
-  - **Lid:** 4.5 mm of aluminium with a slightly rounded edge, so a thin highlight runs
-    round it; the hinge sits at the back edge of the base.
+  - **Lid depth:** 4.5 mm of aluminium with a slightly rounded edge, so a thin highlight
+    runs round it; the hinge sits at the back edge of the base.
   - Scale other laptops from their own published width, depth and thickness.
 - **Layers, front to back:** screen (unlit/emissive, with its own rounded corners), black
   glass bezel (glossy), notch or camera, metal shell (metallic, slightly rough, with a thin
@@ -148,14 +163,14 @@ are what make it look rendered.
 
 - **The screen is the subject, so frame the screen, not the computer.** Aim at the centre of
   the screen's active area (or the element in focus), never the device's centre or its
-  hinge. In every shot except "Full device", the screen fills at least 70% of the frame
-  width; the keyboard shows as a sliver at most, and the top of the screen stays in frame
-  unless the crop is intentional. Show the whole device only when the user asks for it.
+  hinge. By default the screen fills about 90% of the frame width or more, and **no
+  keyboard is visible**: the bottom of the frame sits at or above the lid's bottom bezel.
+  Show the keyboard, desk or whole device only when the user asks for it.
 - **H is the screen's active height, and distance is camera to aim point.** For a 14-inch
-  laptop H is about 0.196 m, so "2.0 H" is about 0.39 m from the middle of the screen.
+  laptop H is about 0.196 m, so "1.6 H" is about 0.31 m from the middle of the screen.
 - **Distance and field of view:** describe the shot in screen heights (H). Close-ups 0.6–1.3 H
-  at 38–42° vertical FOV; a readable straight-on shot about 2 H at 36°; a full device about
-  3 H at 42°. Scale distances with the device so a phone frames like a laptop.
+  at 38–42° vertical FOV; the default straight-on shot about 1.6 H at 36°; a full device
+  about 3 H at 42°. Scale distances with the device so a phone frames like a laptop.
 - **Keep it level.** Roll 0 unless the shot is deliberately dynamic. To keep a tilted lid's
   vertical edges parallel (no keystone), pitch the camera to
   `pitch = atan(tan(tilt) · cos(yaw))`, i.e. look perpendicular to the lid's vertical axis.
@@ -198,12 +213,12 @@ on the named element. "Screen fill" is the screen's share of the frame width.
 
 | Shot | Yaw | Pitch | Distance | FOV | Lid tilt | Aperture | Focus | Screen fill |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Straight on (default) | −16° | level (≈ 6°) | 2.0 H | 36° | 6° | f/2.8 | headline | 80–90% |
+| Straight on (default) | −16° | level (≈ 6°) | 1.6 H | 36° | 6° | f/2.8 | headline | ≥ 90%, no keyboard |
 | Low close-up | −34° | −17° | 1.3 H | 40° | 14° | f/1.8 | upper third | crop |
 | Text macro | −30° | −5° | 0.6 H | 38° | 12° | f/1.4 | one line of text | crop |
 | Edge macro | 40° | −8° | 0.8 H | 42° | 14° | f/1.8 | near screen edge | crop |
 | Square, shallow | 0° | −6° | 1.5 H | 34° | 0° | f/1.2 | one corner | crop |
-| Desk three-quarter | 40° | 22° | 2.2 H | 34° | 20° | f/2.8 | keyboard-side corner | ≥ 70% |
+| Desk three-quarter (on request) | 40° | 22° | 2.2 H | 34° | 20° | f/2.8 | keyboard-side corner | about 70% |
 | Full device (only on request) | −12° | 8° | 3.0 H | 42° | 6° | f/8 | screen centre | about 55% |
 
 Start from "Straight on" unless the user asks for drama: it is the shot where the software
@@ -215,9 +230,12 @@ Inspect the rendered image itself, not the scene settings. Check, and fix before
 
 - **Readable:** the headline is in the sharp band and its contrast against the page is
   clearly visible; measure luminance at the text and around it if unsure.
-- **Framed on the screen:** measure the screen's bounds in the final image. Outside "Full
-  device", the screen spans at least 70% of the frame width and the keyboard is a sliver at
-  most; if not, move closer or re-aim at the screen and render again.
+- **Framed on the screen:** measure the screen's bounds in the final image. By default the
+  screen spans about 90% of the frame width or more and no keyboard shows; if not, move
+  closer or re-aim at the screen and render again.
+- **Frame matches device-frames:** compare the rendered lid against the device-frames
+  geometry (bezel widths, corner radii, notch size and position). Any visible difference
+  is a bug, not a style choice.
 - **Complete:** the hero is fully on screen at the right width, with no cut-off text, empty
   band or missing sections. Compare against the raw capture.
 - **Level and true:** vertical edges are parallel unless the shot is meant to be dynamic;

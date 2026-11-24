@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T17:22:01.388Z",
+  "generatedAt": "2026-11-24T17:35:58.024Z",
   "skillCount": 815,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
@@ -815,7 +815,7 @@
     "wshobson/tailwind-design-system": "sha256:b6577edb7b7f71a6954f68b80c7eea1748ccdf31862759f864bce558fb2bcf83",
     "wshobson/web-component-design": "sha256:a7978f5e9e3fa7129cf3eb8d607cedece4e207011321893d9a3c5dd92cf32603",
     "wshobson/visual-edit-precision": "sha256:3abb25ad646cbc8d67cbd07baa06db8331cc0f384be513db8f31dd7ab08e4b74",
-    "ibelick/device-frames": "sha256:a8abdeee6b8e47ca0dcb7190b9166f0b59d25b686199bb9e603dbe059dcacebf",
-    "ibelick/photographing-software": "sha256:7139a33e5dda890fa73095bf62968803e5f9874728ef3474f884e8e332831b68"
+    "ibelick/device-frames": "sha256:fb743a64a514880d28a2c36433e14bab5564d92cd658b9e949c52ea32b8edb3d",
+    "ibelick/photographing-software": "sha256:b7a75af756dcbf21ba02abef87b9c1729eb7195c4425968cde17de3b3c8ee765"
   }
 }
