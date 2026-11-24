@@ -93,22 +93,41 @@ reflections all follow from it.
 - **Pivot laptops on the hinge.** Lid tilt leans the top back around the bottom edge; the base
   and desk never move. Displays tilt on their own stand; re-pose the stand with the tilt so
   it never passes through the panel.
-- Ground the device: a desk surface, a soft contact shadow under it, and optional props
-  (mug, notebook) placed to be blurred at the frame edges, never in front of the text.
+- **Ground the device on a real-looking desk.** Use a scanned wood or stone texture with
+  roughness (Poly Haven's textures are CC0), not procedural noise, and extend the desk past
+  every frame edge: a visible desk edge against the backdrop gives the scene away. Add a
+  soft contact shadow under the device.
+- Props (a mug, a notebook) are optional; place them to blur at the frame edges, never in
+  front of the text, and give them real materials or leave them out.
 
 ## 4. Light it with a real room
 
-- Use a real 360° environment (an HDRI; Poly Haven's are CC0) as backdrop, reflection and
-  light. It is what makes metal and glass read as real.
+The room is what makes the image a photo. Invented walls, studio sweeps and extra lights
+are what make it look rendered.
+
+- **Download a real 360° room photo (an HDRI) and use it for everything:** the backdrop seen
+  through the lens, the light on the device, and the reflections in metal and glass. Poly
+  Haven's HDRIs are CC0. Fetch `https://api.polyhaven.com/files/<id>` and download
+  `hdri["4k"].hdr.url` (4k, so the blurred backdrop has real detail). Good interiors for a
+  desk: `photo_studio_loft_hall` (bright loft, large windows), `comfy_cafe` (warm café),
+  `poly_haven_studio` (calm studio room).
+- **Pick the side of the room behind the device.** Rotate the HDRI so something calm and
+  real sits behind it: a wall with shelves, a window bay, a plant. Never a bare light
+  source straight behind the screen.
+- **Light only from the HDRI.** Do not add a key light from an arbitrary direction. If the
+  device needs more shape, add one soft light placed exactly at the HDRI's brightest
+  region (its window or sun), so the shadows and highlights agree with what is in the
+  background.
+- **No invented backdrops.** Do not replace the room with a flat wall, a gradient or a
+  studio sweep unless the user asks for a studio look. If no HDRI can be downloaded, say
+  so and ask, rather than faking one.
 - **The screen must be the brightest thing that matters.** Keep the room around 0.7–1.0 of
   its natural intensity; a bright window behind a white page flattens everything.
 - **Blur the room as much as the optics say.** A wall 3 m behind a laptop focused at 0.4 m,
   at f/2.8 and 36° FOV, blurs to about 5% of the frame height. A room sharper than that
-  reads as a printed backdrop, the most common reason these photos look fake. Never cap the
-  background blur below what the lens produces.
-- **Show less room.** Prefer framings where the screen fills most of the frame and the room
-  is only colour and light at the edges. When no convincing room is available, use a studio
-  sweep (a plain backdrop with soft falloff) rather than a room that looks pasted in.
+  reads as a printed backdrop. Never cap the background blur below what the lens produces.
+- **Prefer framings where the screen fills most of the frame**, so the room is mostly
+  colour, light and soft shapes at the edges.
 
 ## 5. Shoot with a physical camera
 
@@ -180,8 +199,12 @@ Inspect the rendered image itself, not the scene settings. Check, and fix before
 - **Exposed:** no clipped white slab on the screen; the room is darker than the page.
 - **Grounded:** the device sits on the desk with a contact shadow; stands and props do not
   intersect the hardware.
-- **Believable background:** the room is blurred as the lens would blur it, with no
-  recognisable sharp detail behind a shallow-focus shot.
+- **Believable background:** the backdrop is the downloaded room, blurred as the lens would
+  blur it; no flat wall, sweep or desk edge; highlights and shadows on the device come from
+  the same side as the room's windows.
+- **Would it pass as a photo?** Look at the final image as a stranger would. If anything reads
+  as rendered (flat lighting, uniform surfaces, a pasted-in room), find the cause and fix it
+  before delivering.
 - Render at the final size (e.g. 3000 × 2000), not the preview size, before judging focus
   and grain.
 
