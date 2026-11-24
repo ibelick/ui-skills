@@ -131,6 +131,13 @@ are what make it look rendered.
 
 ## 5. Shoot with a physical camera
 
+- **The screen is the subject, so frame the screen, not the computer.** Aim at the centre of
+  the screen's active area (or the element in focus), never the device's centre or its
+  hinge. In every shot except "Full device", the screen fills at least 70% of the frame
+  width; the keyboard shows as a sliver at most, and the top of the screen stays in frame
+  unless the crop is intentional. Show the whole device only when the user asks for it.
+- **H is the screen's active height, and distance is camera to aim point.** For a 14-inch
+  laptop H is about 0.196 m, so "2.0 H" is about 0.39 m from the middle of the screen.
 - **Distance and field of view:** describe the shot in screen heights (H). Close-ups 0.6–1.3 H
   at 38–42° vertical FOV; a readable straight-on shot about 2 H at 36°; a full device about
   3 H at 42°. Scale distances with the device so a phone frames like a laptop.
@@ -171,17 +178,18 @@ are what make it look rendered.
 ## Shot recipes
 
 Yaw is left/right of the screen normal (negative = camera on the left); pitch is above/below;
-distance in screen heights (H); focus on the named element.
+distance in screen heights (H), from the camera to the aim point on the screen; aim and focus
+on the named element. "Screen fill" is the screen's share of the frame width.
 
-| Shot | Yaw | Pitch | Distance | FOV | Lid tilt | Aperture | Focus |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Straight on (default) | −16° | level (≈ 6°) | 2.0 H | 36° | 6° | f/2.8 | headline |
-| Full device | −12° | 8° | 3.0 H | 42° | 6° | f/8 | screen centre |
-| Low close-up | −34° | −17° | 1.3 H | 40° | 14° | f/1.8 | upper third |
-| Text macro | −30° | −5° | 0.6 H | 38° | 12° | f/1.4 | one line of text |
-| Edge macro | 40° | −8° | 0.8 H | 42° | 14° | f/1.8 | near screen edge |
-| Desk three-quarter | 40° | 22° | 2.2 H | 34° | 20° | f/2.8 | keyboard-side corner |
-| Square, shallow | 0° | −6° | 1.5 H | 34° | 0° | f/1.2 | one corner |
+| Shot | Yaw | Pitch | Distance | FOV | Lid tilt | Aperture | Focus | Screen fill |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Straight on (default) | −16° | level (≈ 6°) | 2.0 H | 36° | 6° | f/2.8 | headline | 80–90% |
+| Low close-up | −34° | −17° | 1.3 H | 40° | 14° | f/1.8 | upper third | crop |
+| Text macro | −30° | −5° | 0.6 H | 38° | 12° | f/1.4 | one line of text | crop |
+| Edge macro | 40° | −8° | 0.8 H | 42° | 14° | f/1.8 | near screen edge | crop |
+| Square, shallow | 0° | −6° | 1.5 H | 34° | 0° | f/1.2 | one corner | crop |
+| Desk three-quarter | 40° | 22° | 2.2 H | 34° | 20° | f/2.8 | keyboard-side corner | ≥ 70% |
+| Full device (only on request) | −12° | 8° | 3.0 H | 42° | 6° | f/8 | screen centre | about 55% |
 
 Start from "Straight on" unless the user asks for drama: it is the shot where the software
 is most readable.
@@ -192,6 +200,9 @@ Inspect the rendered image itself, not the scene settings. Check, and fix before
 
 - **Readable:** the headline is in the sharp band and its contrast against the page is
   clearly visible; measure luminance at the text and around it if unsure.
+- **Framed on the screen:** measure the screen's bounds in the final image. Outside "Full
+  device", the screen spans at least 70% of the frame width and the keyboard is a sliver at
+  most; if not, move closer or re-aim at the screen and render again.
 - **Complete:** the hero is fully on screen at the right width, with no cut-off text, empty
   band or missing sections. Compare against the raw capture.
 - **Level and true:** vertical edges are parallel unless the shot is meant to be dynamic;
