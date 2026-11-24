@@ -84,6 +84,21 @@ reflections all follow from it.
   mm (0.2 mm per point) and the body is 312.6 mm wide. Phones and tablets: millimetres from
   the manufacturer's dimensional drawings (see
   [device-frames](https://www.ui-skills.com/skills/ibelick/device-frames)).
+- **Laptops in 3D.** `device-frames` gives the front view only; build the rest from
+  published sizes, not by eye. A 14-inch MacBook Pro is 312.6 × 221.2 mm and 15.5 mm thick
+  closed: about 11 mm of base and 4.5 mm of lid. Approximations that render convincingly:
+  - **Base:** the lid's footprint, with about 12 mm corner radius and softly rounded edges
+    (no sharp box edges), and a small finger scoop centred on the front edge. No black
+    blocks, slots or vents on the front face; the feet are underneath and out of sight.
+  - **Keyboard:** six rows (a half-height function row, then five full rows) about 264 mm
+    wide, centred, starting about 9 mm from the hinge. Keys are about 16.5 mm with 1.8 mm
+    gaps, black, and slightly recessed; the aluminium shows between them. Space Black
+    models sit the keys in a dark well; silver ones do not.
+  - **Trackpad:** about 135 × 82 mm, centred, about 10 mm from the front edge: the same
+    aluminium as the base, separated only by a hairline.
+  - **Lid:** 4.5 mm of aluminium with a slightly rounded edge, so a thin highlight runs
+    round it; the hinge sits at the back edge of the base.
+  - Scale other laptops from their own published width, depth and thickness.
 - **Layers, front to back:** screen (unlit/emissive, with its own rounded corners), black
   glass bezel (glossy), notch or camera, metal shell (metallic, slightly rough, with a thin
   bevel that catches a line of light), and for laptops a base with keyboard and trackpad.
