@@ -1,5 +1,6 @@
 import { writeFile } from "node:fs/promises";
 import { githubResources } from "../src/data/github-resources.ts";
+import { registry } from "../src/data/registry.ts";
 
 const metadataFile = new URL(
   "../src/data/github-metadata.json",
@@ -12,20 +13,37 @@ const headers = {
   ...(token ? { Authorization: `Bearer ${token}` } : {}),
 };
 
-const repositories = new Map();
+const requiredRepositories = new Map();
 for (const resource of githubResources) {
+  if (!resource.githubRepo) continue;
   const normalizedRepo = resource.githubRepo.toLowerCase();
-  if (!repositories.has(normalizedRepo)) {
-    repositories.set(normalizedRepo, resource.githubRepo);
+  if (!requiredRepositories.has(normalizedRepo)) {
+    requiredRepositories.set(normalizedRepo, resource.githubRepo);
   }
 }
 
-const metadata = {};
-for (const githubRepo of repositories.values()) {
+const skillRepositories = new Map();
+for (const skill of registry) {
+  const githubRepo = `${skill.user}/${skill.repo}`;
+  const normalizedRepo = githubRepo.toLowerCase();
+  if (
+    requiredRepositories.has(normalizedRepo) ||
+    skillRepositories.has(normalizedRepo)
+  ) {
+    continue;
+  }
+  skillRepositories.set(normalizedRepo, githubRepo);
+}
+
+const readRepository = async (githubRepo) => {
   const response = await fetch(`https://api.github.com/repos/${githubRepo}`, {
     headers,
     signal: AbortSignal.timeout(10000),
   });
+
+  if (response.status === 404) {
+    return null;
+  }
 
   if (!response.ok) {
     throw new Error(`GitHub returned ${response.status} for ${githubRepo}`);
@@ -40,7 +58,7 @@ for (const githubRepo of repositories.values()) {
   }
 
   const license = repository.license?.spdx_id;
-  metadata[githubRepo.toLowerCase()] = {
+  return {
     stars: repository.stargazers_count,
     forks: repository.forks_count,
     license: license && license !== "NOASSERTION" ? license : null,
@@ -48,6 +66,24 @@ for (const githubRepo of repositories.values()) {
     updatedAt: repository.updated_at,
     archived: Boolean(repository.archived),
   };
+};
+
+const metadata = {};
+for (const githubRepo of requiredRepositories.values()) {
+  const repository = await readRepository(githubRepo);
+  if (!repository) {
+    throw new Error(`GitHub returned 404 for ${githubRepo}`);
+  }
+  metadata[githubRepo.toLowerCase()] = repository;
+}
+
+for (const githubRepo of skillRepositories.values()) {
+  const repository = await readRepository(githubRepo);
+  if (!repository) {
+    console.warn(`Skipping ${githubRepo}; GitHub returned 404.`);
+    continue;
+  }
+  metadata[githubRepo.toLowerCase()] = repository;
 }
 
 const sortedRepositories = Object.fromEntries(

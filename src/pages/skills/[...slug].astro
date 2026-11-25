@@ -25,6 +25,8 @@ import {
   getSkillRoutePaths,
 } from "../../lib/skill-catalog";
 import { defaultSkillContentLoader } from "../../lib/agent-skills-discovery";
+import { starsForRepository } from "../../lib/skill-repository";
+import SkillStars from "../../ui/skill-stars.astro";
 import { playbookBySkillSlug } from "../../data/playbook.ts";
 
 export const prerender = true;
@@ -204,6 +206,10 @@ const relatedTopicsForTopicPage =
 const skillRegistryEntry = skill
   ? getRegistryByPath(skill.pathSlug)
   : undefined;
+const skillRepository = skillRegistryEntry
+  ? `${skillRegistryEntry.user}/${skillRegistryEntry.repo}`
+  : undefined;
+const skillStars = starsForRepository(skillRepository);
 const skillFileLinks = (skillRegistryEntry?.files ?? []).map((file) => ({
   path: file,
   href: new URL(file, skillRegistryEntry?.githubUrl ?? "").toString(),
@@ -461,8 +467,14 @@ const installCommand = (() => {
               </div>
 
               {supportingSkills.length > 0 ? (
-                <section class="flex flex-col gap-2" aria-labelledby="supporting-skills-title">
-                  <h2 id="supporting-skills-title" class="type-body-md text-content-secondary font-[450]">
+                <section
+                  class="flex flex-col gap-2"
+                  aria-labelledby="supporting-skills-title"
+                >
+                  <h2
+                    id="supporting-skills-title"
+                    class="type-body-md text-content-secondary font-[450]"
+                  >
                     Supporting skills
                   </h2>
                   <div class="flex flex-col">
@@ -557,23 +569,34 @@ const installCommand = (() => {
                         {skill.name}
                       </h2>
                       {skillOwnerKey ? (
-                        <a
-                          href={`https://github.com/${skillOwnerKey}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="type-body-md text-content-muted flex items-center gap-1 truncate"
-                          aria-label={`View ${skillOwnerLabel} on GitHub`}
-                        >
-                          <svg
-                            aria-hidden="true"
-                            class="text-content-extra-muted size-3.5 shrink-0"
-                            viewBox="0 0 98 96"
-                            fill="currentColor"
+                        <div class="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-0.5">
+                          <a
+                            href={`https://github.com/${skillOwnerKey}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="type-body-md text-content-muted flex min-w-0 items-center gap-1 truncate font-[450]"
+                            aria-label={`View ${skillOwnerLabel} on GitHub`}
                           >
-                            <path d="M48.9 0C21.8 0 0 22.1 0 49.2c0 21.7 14 40.1 33.4 46.6 2.4.4 3.3-1 3.3-2.3v-8.2c-13.6 3-16.5-5.8-16.5-5.8-2.2-5.7-5.4-7.2-5.4-7.2-4.4-3 .3-3 .3-3 4.8.3 7.3 5 7.3 5 4.3 7.4 11.2 5.3 13.9 4 .4-3.1 1.7-5.3 3-6.5-10.9-1.2-22.4-5.5-22.4-24.3 0-5.4 1.9-9.8 5-13.3-.5-1.2-2.2-6.3.5-13.1 0 0 4.1-1.3 13.5 5.1 3.9-1.1 8.1-1.7 12.3-1.7 4.2 0 8.4.6 12.3 1.7 9.4-6.4 13.5-5.1 13.5-5.1 2.7 6.8 1 11.9.5 13.1 3.1 3.5 5 7.9 5 13.3 0 18.9-11.5 23.1-22.5 24.3 1.8 1.6 3.3 4.7 3.3 9.5v14.1c0 1.4.9 2.7 3.4 2.3C84 89.3 98 70.9 98 49.2 98 22.1 76 0 48.9 0Z" />
-                          </svg>
-                          {skillOwnerLabel}
-                        </a>
+                            <svg
+                              aria-hidden="true"
+                              class="text-content-extra-muted size-3.5 shrink-0"
+                              viewBox="0 0 98 96"
+                              fill="currentColor"
+                            >
+                              <path d="M48.9 0C21.8 0 0 22.1 0 49.2c0 21.7 14 40.1 33.4 46.6 2.4.4 3.3-1 3.3-2.3v-8.2c-13.6 3-16.5-5.8-16.5-5.8-2.2-5.7-5.4-7.2-5.4-7.2-4.4-3 .3-3 .3-3 4.8.3 7.3 5 7.3 5 4.3 7.4 11.2 5.3 13.9 4 .4-3.1 1.7-5.3 3-6.5-10.9-1.2-22.4-5.5-22.4-24.3 0-5.4 1.9-9.8 5-13.3-.5-1.2-2.2-6.3.5-13.1 0 0 4.1-1.3 13.5 5.1 3.9-1.1 8.1-1.7 12.3-1.7 4.2 0 8.4.6 12.3 1.7 9.4-6.4 13.5-5.1 13.5-5.1 2.7 6.8 1 11.9.5 13.1 3.1 3.5 5 7.9 5 13.3 0 18.9-11.5 23.1-22.5 24.3 1.8 1.6 3.3 4.7 3.3 9.5v14.1c0 1.4.9 2.7 3.4 2.3C84 89.3 98 70.9 98 49.2 98 22.1 76 0 48.9 0Z" />
+                            </svg>
+                            {skillOwnerLabel}
+                          </a>
+                          {skillStars != null &&
+                          skillRepository &&
+                          skillRegistryEntry ? (
+                            <SkillStars
+                              stars={skillStars}
+                              repository={skillRepository}
+                              href={`https://github.com/${skillRegistryEntry.user}/${skillRegistryEntry.repo}`}
+                            />
+                          ) : null}
+                        </div>
                       ) : null}
                     </div>
                   </div>
