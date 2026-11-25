@@ -60,7 +60,7 @@ const stars = starsForRepository(repository);
             </div>
           ) : null}
           {(ownerLabel && avatarUrl) || (stars != null && repository) ? (
-            <div class="mt-1 flex items-center gap-2">
+            <div class="mt-1 flex min-w-0 items-center gap-x-3">
               {ownerLabel && avatarUrl ? (
                 <>
                   <img
@@ -77,9 +77,7 @@ const stars = starsForRepository(repository);
                 </>
               ) : null}
               {stars != null && repository ? (
-                <span class="ml-auto">
-                  <SkillStars stars={stars} repository={repository} />
-                </span>
+                <SkillStars stars={stars} repository={repository} />
               ) : null}
             </div>
           ) : null}
