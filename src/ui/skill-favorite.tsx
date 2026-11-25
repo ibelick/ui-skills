@@ -1,6 +1,10 @@
 import { Menu } from "./menu";
-import { CheckIcon, PlusIcon, StarIcon } from "@heroicons/react/24/outline";
-import { StarIcon as StarIconSolid } from "@heroicons/react/24/solid";
+import {
+  CheckIcon,
+  PlusCircleIcon,
+  PlusIcon,
+} from "@heroicons/react/24/outline";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { useEffect, useId, useRef, useState } from "react";
 import {
   addSkillToCollection,
@@ -13,10 +17,7 @@ import {
   writeLibraryCache,
 } from "../lib/library-client";
 import { getCachedSession } from "../lib/session-client";
-import {
-  LIBRARY_LIMITS,
-  type LibrarySnapshot,
-} from "../lib/library-types";
+import { LIBRARY_LIMITS, type LibrarySnapshot } from "../lib/library-types";
 
 function keepCollectionOrder(
   previous: LibrarySnapshot | null,
@@ -99,7 +100,9 @@ export function SkillFavorite({ skillPath }: SkillFavoriteProps) {
       const snapshot = await action();
       if (id !== requestId.current) return;
       setLibrary((current) => {
-        const next = keepOrder ? keepCollectionOrder(current, snapshot) : snapshot;
+        const next = keepOrder
+          ? keepCollectionOrder(current, snapshot)
+          : snapshot;
         writeLibraryCache(next);
         return next;
       });
@@ -200,7 +203,8 @@ export function SkillFavorite({ skillPath }: SkillFavoriteProps) {
             return;
           }
           setOpen(true);
-          if (!saved) void run(async () => (await saveSkill(skillPath)).library);
+          if (!saved)
+            void run(async () => (await saveSkill(skillPath)).library);
         });
       }}
     >
@@ -210,85 +214,90 @@ export function SkillFavorite({ skillPath }: SkillFavoriteProps) {
         disabled={pending}
       >
         {saved ? (
-          <StarIconSolid className="size-4 text-yellow-500" aria-hidden="true" />
+          <CheckCircleIcon
+            className="size-4 text-[#34c759]"
+            aria-hidden="true"
+          />
         ) : (
-          <StarIcon className="size-4" aria-hidden="true" />
+          <PlusCircleIcon className="size-4" aria-hidden="true" />
         )}
       </Menu.Trigger>
       <Menu.Popup className="w-60 rounded-lg p-1">
-            <div className="max-h-56 overflow-y-auto">
-              {rows.map((row) => (
-                <Menu.CheckboxItem
-                  key={row.id}
-                  className={itemClass}
-                  checked={row.checked}
-                  closeOnClick={false}
-                  label={row.label}
-                  onCheckedChange={(checked) => {
-                    toggleRow(row.id, checked, async () =>
-                      (await row.toggle(checked)).library,
-                    );
-                  }}
-                >
-                  <Menu.CheckboxItemIndicator className="absolute left-2 inline-flex items-center">
-                    <CheckIcon className="size-3.5" aria-hidden="true" />
-                  </Menu.CheckboxItemIndicator>
-                  <span className="truncate">{row.label}</span>
-                </Menu.CheckboxItem>
-              ))}
-            </div>
-            <form
-              className="px-1 py-1"
-              onSubmit={(event) => {
-                event.preventDefault();
-                const nextTitle = title.trim();
-                if (!nextTitle) return;
-                void run(async () => {
-                  const result = await createCollection({
-                    title: nextTitle,
-                    skillPath,
-                  });
-                  setTitle("");
-                  return result.library;
-                });
+        <div className="max-h-56 overflow-y-auto">
+          {rows.map((row) => (
+            <Menu.CheckboxItem
+              key={row.id}
+              className={itemClass}
+              checked={row.checked}
+              closeOnClick={false}
+              label={row.label}
+              onCheckedChange={(checked) => {
+                toggleRow(
+                  row.id,
+                  checked,
+                  async () => (await row.toggle(checked)).library,
+                );
               }}
             >
-              <label htmlFor={titleId} className="sr-only">
-                New collection
-              </label>
-              <div className="relative">
-                <input
-                  id={titleId}
-                  value={title}
-                  maxLength={LIBRARY_LIMITS.title}
-                  required
-                  autoComplete="off"
-                  placeholder="New collection"
-                  aria-invalid={Boolean(error)}
-                  aria-describedby={error ? errorId : undefined}
-                  className={fieldClass}
-                  onChange={(event) => setTitle(event.target.value)}
-                  onKeyDown={(event) => event.stopPropagation()}
-                />
-                <button
-                  type="submit"
-                  aria-label="Create collection"
-                  disabled={pending}
-                  className="text-content-secondary hover:text-content-primary focus-visible:outline-content-primary absolute top-1/2 right-1 inline-flex size-6 -translate-y-1/2 cursor-pointer items-center justify-center rounded-md focus-visible:outline-1 disabled:opacity-60"
-                >
-                  <PlusIcon className="size-3.5" aria-hidden="true" />
-                </button>
-              </div>
-              {error ? (
-                <p
-                  id={errorId}
-                  role="alert"
-                  className="type-body-sm text-content-secondary mt-1 px-1 text-pretty"
-                >
-                  {error}
-                </p>
-              ) : null}
-            </form>
+              <Menu.CheckboxItemIndicator className="absolute left-2 inline-flex items-center">
+                <CheckIcon className="size-3.5" aria-hidden="true" />
+              </Menu.CheckboxItemIndicator>
+              <span className="truncate">{row.label}</span>
+            </Menu.CheckboxItem>
+          ))}
+        </div>
+        <form
+          className="px-1 py-1"
+          onSubmit={(event) => {
+            event.preventDefault();
+            const nextTitle = title.trim();
+            if (!nextTitle) return;
+            void run(async () => {
+              const result = await createCollection({
+                title: nextTitle,
+                skillPath,
+              });
+              setTitle("");
+              return result.library;
+            });
+          }}
+        >
+          <label htmlFor={titleId} className="sr-only">
+            New collection
+          </label>
+          <div className="relative">
+            <input
+              id={titleId}
+              value={title}
+              maxLength={LIBRARY_LIMITS.title}
+              required
+              autoComplete="off"
+              placeholder="New collection"
+              aria-invalid={Boolean(error)}
+              aria-describedby={error ? errorId : undefined}
+              className={fieldClass}
+              onChange={(event) => setTitle(event.target.value)}
+              onKeyDown={(event) => event.stopPropagation()}
+            />
+            <button
+              type="submit"
+              aria-label="Create collection"
+              disabled={pending}
+              className="text-content-secondary hover:text-content-primary focus-visible:outline-content-primary absolute top-1/2 right-1 inline-flex size-6 -translate-y-1/2 cursor-pointer items-center justify-center rounded-md focus-visible:outline-1 disabled:opacity-60"
+            >
+              <PlusIcon className="size-3.5" aria-hidden="true" />
+            </button>
+          </div>
+          {error ? (
+            <p
+              id={errorId}
+              role="alert"
+              className="type-body-sm text-content-secondary mt-1 px-1 text-pretty"
+            >
+              {error}
+            </p>
+          ) : null}
+        </form>
       </Menu.Popup>
     </Menu.Root>
   );

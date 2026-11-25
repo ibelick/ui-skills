@@ -1,16 +1,15 @@
 ---
+import { StarIcon } from "@heroicons/react/24/outline";
 import { formatStarCount } from "../lib/format-stars";
 
 type Props = {
   stars: number;
   repository: string;
   href?: string;
-  /** Align counts so a list can be scanned as a column. */
-  column?: boolean;
 };
 
-const { stars, repository, href, column = false } = Astro.props as Props;
-const formatted = formatStarCount(stars);
+const { stars, repository, href } = Astro.props as Props;
+const formatted = formatStarCount(stars).replace(/\+$/, "");
 const label = `${formatted} GitHub stars on ${repository}`;
 const Tag = href ? "a" : "span";
 ---
@@ -20,14 +19,12 @@ const Tag = href ? "a" : "span";
   target={href ? "_blank" : undefined}
   rel={href ? "noopener noreferrer" : undefined}
   class:list={[
-    "skill-stars type-body-sm text-content-secondary relative inline-flex shrink-0 items-center gap-1 tabular-nums",
+    "type-body-md text-content-secondary inline-flex shrink-0 items-center gap-1 tabular-nums",
     href ? "hover:text-content-primary" : "",
   ]}
   aria-label={label}
   title={label}
 >
-  <span aria-hidden="true" class="text-[13px] leading-none">★</span>
-  <span aria-hidden="true" class:list={[column ? "w-16 text-right" : ""]}>
-    {formatted}
-  </span>
+  <StarIcon className="size-4 shrink-0" aria-hidden="true" />
+  <span aria-hidden="true">{formatted}</span>
 </Tag>
