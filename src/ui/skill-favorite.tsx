@@ -215,7 +215,7 @@ export function SkillFavorite({ skillPath }: SkillFavoriteProps) {
       >
         {saved ? (
           <CheckCircleIcon
-            className="size-4 text-[#34c759]"
+            className="size-4 text-[#4a7c59]"
             aria-hidden="true"
           />
         ) : (
