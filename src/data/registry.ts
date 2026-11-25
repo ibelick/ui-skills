@@ -10975,6 +10975,509 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Create photographic images of software: a website or app on a real-looking laptop, display, tablet, or phone, shot with depth of field, room light, and a legible finish.",
   },
+  {
+    slug: "3d-construction-sequence",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-construction-sequence/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-construction-sequence/SKILL.md",
+    name: "3d-construction-sequence",
+    topics: ["3d","motion","threejs"],
+    description:
+      "Animate a Three.js building or machine assembling from a structural wireframe into finished solids.",
+  },
+  {
+    slug: "3d-harbour-water",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-harbour-water/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-harbour-water/SKILL.md",
+    name: "3d-harbour-water",
+    topics: ["3d","visual","threejs"],
+    description:
+      "Build sheltered waterfronts in Three.js with depth-aware reflections, rain rings, and boats that ride the swell.",
+  },
+  {
+    slug: "3d-kasumidera-ultra-realism",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-kasumidera-ultra-realism/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-kasumidera-ultra-realism/SKILL.md",
+    files: ["references/creator-steering.md", "references/director-prompts.md", "references/frame-credits.md", "references/generation-prompts.md", "references/play-and-deliver.md", "references/scene-recipes.md"],
+    name: "3d-kasumidera-ultra-realism",
+    topics: ["3d","visual","threejs"],
+    description:
+      "Art-direct walkable Three.js environments in a painterly ultra-real style, with weathered architecture and volumetric light.",
+  },
+  {
+    slug: "3d-modular-buildings",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-modular-buildings/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-modular-buildings/SKILL.md",
+    name: "3d-modular-buildings",
+    topics: ["3d","visual","threejs"],
+    description:
+      "Model human-scale buildings for a real-time street or waterfront, readable from a distant approach and a walk-up camera.",
+  },
+  {
+    slug: "3d-survey-scan",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/3d-survey-scan/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/3d-survey-scan/SKILL.md",
+    name: "3d-survey-scan",
+    topics: ["3d","motion","threejs"],
+    description:
+      "Add a replayable survey pulse that traces mesh edges across architecture, terrain, or water while the scene stays live.",
+  },
+  {
+    slug: "build-3d-character-selector",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-3d-character-selector/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-3d-character-selector/SKILL.md",
+    files: ["references/character-production.md"],
+    name: "build-3d-character-selector",
+    topics: ["3d","interaction"],
+    description:
+      "Prepare textured character GLBs and build a full-body selection screen with rotation, lighting, and animated swaps.",
+  },
+  {
+    slug: "build-lens-raindrops",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-lens-raindrops/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-lens-raindrops/SKILL.md",
+    name: "build-lens-raindrops",
+    topics: ["3d","visual"],
+    description:
+      "Add camera-space raindrops and windshield beads that bend the live scene.",
+  },
+  {
+    slug: "build-point-cloud-scan",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-point-cloud-scan/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-point-cloud-scan/SKILL.md",
+    name: "build-point-cloud-scan",
+    topics: ["3d","motion","threejs"],
+    description:
+      "Animate a 3D scan from real mesh topology, with dots and wireframe traveling across the surface before it resolves.",
+  },
+  {
+    slug: "build-ultra-realistic-game-interiors",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/game-development/build-ultra-realistic-game-interiors/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/game-development/build-ultra-realistic-game-interiors/SKILL.md",
+    files: ["references/gameplay.md", "references/prompts-and-review.md", "references/rendering.md"],
+    name: "build-ultra-realistic-game-interiors",
+    topics: ["3d","visual","threejs"],
+    description:
+      "Build walkable photoreal interiors in Three.js that hold up when the camera moves.",
+  },
+  {
+    slug: "compose-a-woodland-landing-page",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/compose-a-woodland-landing-page/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/compose-a-woodland-landing-page/SKILL.md",
+    name: "compose-a-woodland-landing-page",
+    topics: ["visual","craft"],
+    description:
+      "Compose a botanical landing page as a field guide, alternating editorial spreads, participation cards, and live woodland views.",
+  },
+  {
+    slug: "dither-ascii-ink-hover",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/dither-ascii-ink-hover/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/dither-ascii-ink-hover/SKILL.md",
+    name: "dither-ascii-ink-hover",
+    topics: ["motion","visual"],
+    description:
+      "Reveal dither dots and ASCII marks under the pointer on an illustration, using intersecting CSS masks.",
+  },
+  {
+    slug: "forest-floor-specimen",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/forest-floor-specimen/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/forest-floor-specimen/SKILL.md",
+    name: "forest-floor-specimen",
+    topics: ["3d","visual"],
+    description:
+      "Model an animated botanical study with fern fronds, a moss cushion, and grounded stones.",
+  },
+  {
+    slug: "generate-ledger-logo-register",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/generate-ledger-logo-register/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/generate-ledger-logo-register/SKILL.md",
+    files: ["references/generation-prompt.md"],
+    name: "generate-ledger-logo-register",
+    topics: ["visual","typography"],
+    description:
+      "Generate a family of original wordmarks and present them as a printed logo register.",
+  },
+  {
+    slug: "moss-glass-controls",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/ui/moss-glass-controls/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/ui/moss-glass-controls/SKILL.md",
+    name: "moss-glass-controls",
+    topics: ["visual","interaction"],
+    description:
+      "Build dark glass action pills and cards with an inset rim and a highlight that travels the edge on hover.",
+  },
+  {
+    slug: "neoclassical-ledger-ui",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/neoclassical-ledger-ui/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/neoclassical-ledger-ui/SKILL.md",
+    name: "neoclassical-ledger-ui",
+    topics: ["visual","typography"],
+    description:
+      "Design parchment editorial interfaces with neoclassical paintings, ledger type, and printed rules.",
+  },
+  {
+    slug: "painted-product-showcase",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/painted-product-showcase/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/painted-product-showcase/SKILL.md",
+    name: "painted-product-showcase",
+    topics: ["visual","interaction"],
+    description:
+      "Build product demos over painted landscapes, with translucent panels and stateful charts, invoices, or budgets.",
+  },
+  {
+    slug: "perching-butterfly",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/perching-butterfly/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/perching-butterfly/SKILL.md",
+    name: "perching-butterfly",
+    topics: ["3d","motion"],
+    description:
+      "Animate a small butterfly that banks in flight, settles on a plant, and takes off when disturbed.",
+  },
+  {
+    slug: "pollen-pointer-trail",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/pollen-pointer-trail/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/pollen-pointer-trail/SKILL.md",
+    name: "pollen-pointer-trail",
+    topics: ["motion","interaction"],
+    description:
+      "Emit a sparse trail of airborne pollen from the pointer, with depth drift and short lives.",
+  },
+  {
+    slug: "relight-painted-surfaces",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/relight-painted-surfaces/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/relight-painted-surfaces/SKILL.md",
+    name: "relight-painted-surfaces",
+    topics: ["visual","interaction"],
+    description:
+      "Add pointer-driven lighting to a painting or card using depth, normal, and roughness maps.",
+  },
+  {
+    slug: "scroll-mesh-survey",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/scroll-mesh-survey/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/scroll-mesh-survey/SKILL.md",
+    name: "scroll-mesh-survey",
+    topics: ["motion","3d"],
+    description:
+      "Scrub a topology scan across a 3D object and its companion editorial figures as the page scrolls.",
+  },
+  {
+    slug: "scroll-scrubbed-object-handoff",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/scroll-scrubbed-object-handoff/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/scroll-scrubbed-object-handoff/SKILL.md",
+    name: "scroll-scrubbed-object-handoff",
+    topics: ["motion","interaction"],
+    description:
+      "Choreograph a reversible scroll handoff that splits a held object into pieces and lands them in a second scene.",
+  },
+  {
+    slug: "segmented-field-menu",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/ui/segmented-field-menu/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/ui/segmented-field-menu/SKILL.md",
+    name: "segmented-field-menu",
+    topics: ["interaction","visual"],
+    description:
+      "Create a compact icon-and-label navigation dock with a pale selected segment for an editorial page.",
+  },
+  {
+    slug: "sylva-field-guide-layout",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/web-design/sylva-field-guide-layout/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/sylva-field-guide-layout/SKILL.md",
+    name: "sylva-field-guide-layout",
+    topics: ["visual","typography"],
+    description:
+      "Lay out a botanical editorial UI with vertical rules, diagonal guides, and aligned specimen captions.",
+  },
+  {
+    slug: "woodland-chapter-cameras",
+    user: "MengTo",
+    repo: "Skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/MengTo/Skills/main/agent-skills/3d/woodland-chapter-cameras/SKILL.md",
+    githubUrl:
+      "https://github.com/MengTo/Skills/blob/main/agent-skills/3d/woodland-chapter-cameras/SKILL.md",
+    name: "woodland-chapter-cameras",
+    topics: ["3d","motion"],
+    description:
+      "Stage a live valley scene whose camera pose changes across the hero, a story chapter, and the footer.",
+  },
+  {
+    slug: "screens-to-video",
+    user: "StewdioAI",
+    repo: "blank-page",
+    rawUrl:
+      "https://raw.githubusercontent.com/StewdioAI/blank-page/main/skills/screens-to-video/SKILL.md",
+    githubUrl:
+      "https://github.com/StewdioAI/blank-page/blob/main/skills/screens-to-video/SKILL.md",
+    files: ["references/channel-notes.md"],
+    name: "screens-to-video",
+    topics: ["video","motion"],
+    description:
+      "Make a short launch film for one mobile feature from its screens and a beat-by-beat motion brief.",
+  },
+  {
+    slug: "make-logo",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/skills/make-logo/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/skills/make-logo/SKILL.md",
+    files: ["references/building.md", "references/distance.md", "references/logo-book.md", "references/measuring.md", "references/sources.md"],
+    name: "make-logo",
+    topics: ["visual","craft"],
+    description:
+      "Design original logo marks and wordmarks from reference proportions, and deliver a book of directions.",
+  },
+  {
+    slug: "make-motion",
+    user: "arla6ka",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/arla6ka/skills/main/skills/make-motion/SKILL.md",
+    githubUrl:
+      "https://github.com/arla6ka/skills/blob/main/skills/make-motion/SKILL.md",
+    files: ["references/motion.md", "references/pipeline.md", "references/review.md", "references/sound.md", "references/story.md", "references/theme.md"],
+    name: "make-motion",
+    topics: ["motion","video","remotion"],
+    description:
+      "Script and build a product motion film in Remotion, with music made in code, and deliver an MP4.",
+  },
+  {
+    slug: "charts",
+    user: "flornkm",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/flornkm/skills/main/skills/charts/SKILL.md",
+    githubUrl:
+      "https://github.com/flornkm/skills/blob/main/skills/charts/SKILL.md",
+    files: ["references/accessibility.md", "references/architecture.md", "references/chart-types.md", "references/interaction.md", "references/palette.md", "references/responsive-labels.md"],
+    name: "charts",
+    topics: ["visual","frontend"],
+    description:
+      "Build custom accessible SVG charts and dashboards in React that stay legible at every width.",
+  },
+  {
+    slug: "better-motion",
+    user: "jakubkrehel",
+    repo: "skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/jakubkrehel/skills/main/skills/better-motion/SKILL.md",
+    githubUrl:
+      "https://github.com/jakubkrehel/skills/blob/main/skills/better-motion/SKILL.md",
+    name: "better-motion",
+    topics: ["motion","interaction"],
+    description:
+      "Decide what should animate and build it with exact duration, easing, scale, and distance.",
+  },
+  {
+    slug: "animate",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/animate/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/animate/SKILL.md",
+    name: "animate",
+    topics: ["motion","interaction"],
+    description:
+      "Find where content teleports between states and add the smallest motion that explains each change.",
+  },
+  {
+    slug: "forms",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/forms/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/forms/SKILL.md",
+    name: "forms",
+    topics: ["interaction","accessibility"],
+    description:
+      "Build forms that label every field, request the right keyboard, validate on submit, and never ask twice.",
+  },
+  {
+    slug: "iconset",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/iconset/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/iconset/SKILL.md",
+    name: "iconset",
+    topics: ["visual","craft"],
+    description:
+      "Redraw an icon library from references, a chosen style, and shared parts.",
+  },
+  {
+    slug: "overlays",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/overlays/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/overlays/SKILL.md",
+    name: "overlays",
+    topics: ["interaction","frontend"],
+    description:
+      "Build dialogs, menus, popovers, tooltips, sheets, and toasts on the browser top layer without moving the page.",
+  },
+  {
+    slug: "states",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/states/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/states/SKILL.md",
+    name: "states",
+    topics: ["interaction","craft"],
+    description:
+      "Design every state a screen can enter, from first run and empty filters through failures, rollbacks, and stale data.",
+  },
+  {
+    slug: "stress",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/stress/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/stress/SKILL.md",
+    name: "stress",
+    topics: ["craft","frontend"],
+    description:
+      "Swap the worst real data into a screen and report every value that breaks the layout.",
+  },
+  {
+    slug: "vitals",
+    user: "raphaelsalaja",
+    repo: "skill",
+    rawUrl:
+      "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/vitals/SKILL.md",
+    githubUrl:
+      "https://github.com/raphaelsalaja/skill/blob/main/skills/vitals/SKILL.md",
+    name: "vitals",
+    topics: ["performance","frontend"],
+    description:
+      "Record a cold page load on a throttled network and CPU, name what delays paint or shifts layout, and prove the fix.",
+  },
+  {
+    slug: "modern-web-guidance",
+    user: "vercel-labs",
+    repo: "agent-browser",
+    rawUrl:
+      "https://raw.githubusercontent.com/vercel-labs/agent-browser/main/skill-data/modern-web-guidance/SKILL.md",
+    githubUrl:
+      "https://github.com/vercel-labs/agent-browser/blob/main/skill-data/modern-web-guidance/SKILL.md",
+    name: "modern-web-guidance",
+    topics: ["frontend","accessibility"],
+    description:
+      "Apply modern web platform guidance, then check the built page for layout shift, reduced motion, color scheme, and dialog focus.",
+  },
+  {
+    slug: "plotter",
+    user: "pasqualevitiello",
+    repo: "plotter",
+    rawUrl:
+      "https://raw.githubusercontent.com/pasqualevitiello/plotter/main/skills/plotter/SKILL.md",
+    githubUrl:
+      "https://github.com/pasqualevitiello/plotter/blob/main/skills/plotter/SKILL.md",
+    files: ["references/approved-references.md", "references/catalogue/index.md", "references/direction.md", "references/drafting-standard.md", "references/drawing.md", "references/foundation.md", "references/motion-examples.md", "references/motion.md", "references/standards-background.md", "references/verification-prompt.md", "references/visual-grammar.md"],
+    name: "plotter",
+    topics: ["visual","craft","motion"],
+    description:
+      "Draw flat monochrome blueprint illustrations as editable SVG, and animate them with the same construction grammar.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
