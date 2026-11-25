@@ -1,6 +1,62 @@
 {
   "generatedAt": "2026-11-01T13:29:03.296Z",
   "repositories": {
+    "0xdesign/design-plugin": {
+      "stars": 787,
+      "forks": 42,
+      "license": null,
+      "pushedAt": "2026-09-17T16:08:26Z",
+      "updatedAt": "2026-11-21T18:19:10Z",
+      "archived": false
+    },
+    "1weiho/cinematic-shot": {
+      "stars": 242,
+      "forks": 8,
+      "license": "MIT",
+      "pushedAt": "2026-10-29T09:19:06Z",
+      "updatedAt": "2026-11-16T19:30:40Z",
+      "archived": false
+    },
+    "aashaexo/soundshuman": {
+      "stars": 307,
+      "forks": 19,
+      "license": null,
+      "pushedAt": "2026-08-07T19:35:27Z",
+      "updatedAt": "2026-11-16T07:29:11Z",
+      "archived": false
+    },
+    "aboudjem/humanizer-skill": {
+      "stars": 328,
+      "forks": 45,
+      "license": "MIT",
+      "pushedAt": "2026-11-17T22:19:25Z",
+      "updatedAt": "2026-11-24T08:38:31Z",
+      "archived": false
+    },
+    "accesslint/claude-marketplace": {
+      "stars": 125,
+      "forks": 15,
+      "license": null,
+      "pushedAt": "2026-08-25T00:01:59Z",
+      "updatedAt": "2026-11-23T23:55:59Z",
+      "archived": false
+    },
+    "addyosmani/agent-skills": {
+      "stars": 120321,
+      "forks": 12512,
+      "license": "MIT",
+      "pushedAt": "2026-11-24T07:11:17Z",
+      "updatedAt": "2026-11-25T10:54:09Z",
+      "archived": false
+    },
+    "addyosmani/web-quality-skills": {
+      "stars": 3131,
+      "forks": 271,
+      "license": "MIT",
+      "pushedAt": "2026-08-24T21:07:36Z",
+      "updatedAt": "2026-11-25T07:56:12Z",
+      "archived": false
+    },
     "adobe/react-spectrum": {
       "stars": 16004,
       "forks": 1625,
@@ -25,12 +81,52 @@
       "updatedAt": "2026-10-30T16:18:12Z",
       "archived": false
     },
+    "aminblg/simpleenglish": {
+      "stars": 4664,
+      "forks": 210,
+      "license": "MIT",
+      "pushedAt": "2026-11-10T17:19:28Z",
+      "updatedAt": "2026-11-25T00:22:52Z",
+      "archived": false
+    },
     "ant-design/ant-design": {
       "stars": 100031,
       "forks": 54643,
       "license": "MIT",
       "pushedAt": "2026-11-01T13:10:30Z",
       "updatedAt": "2026-11-01T12:16:58Z",
+      "archived": false
+    },
+    "antfu/design": {
+      "stars": 89,
+      "forks": 6,
+      "license": "MIT",
+      "pushedAt": "2026-11-18T02:08:21Z",
+      "updatedAt": "2026-11-16T07:25:45Z",
+      "archived": false
+    },
+    "antfu/skills": {
+      "stars": 6099,
+      "forks": 344,
+      "license": "MIT",
+      "pushedAt": "2026-11-16T07:12:50Z",
+      "updatedAt": "2026-11-24T19:12:31Z",
+      "archived": false
+    },
+    "anthropics/skills": {
+      "stars": 200223,
+      "forks": 23415,
+      "license": null,
+      "pushedAt": "2026-11-16T14:22:50Z",
+      "updatedAt": "2026-11-25T10:54:45Z",
+      "archived": false
+    },
+    "appllama/appllama-skills": {
+      "stars": 5662,
+      "forks": 284,
+      "license": "MIT",
+      "pushedAt": "2026-11-21T04:50:38Z",
+      "updatedAt": "2026-11-25T06:00:26Z",
       "archived": false
     },
     "ariakit/ariakit": {
@@ -41,12 +137,36 @@
       "updatedAt": "2026-11-01T10:23:52Z",
       "archived": false
     },
+    "arifszn/slide-wright": {
+      "stars": 74,
+      "forks": 5,
+      "license": "MIT",
+      "pushedAt": "2026-11-21T19:16:46Z",
+      "updatedAt": "2026-11-23T15:58:53Z",
+      "archived": false
+    },
+    "arla6ka/skills": {
+      "stars": 634,
+      "forks": 45,
+      "license": "MIT",
+      "pushedAt": "2026-11-18T05:56:27Z",
+      "updatedAt": "2026-11-25T09:54:35Z",
+      "archived": false
+    },
     "assistant-ui/assistant-ui": {
       "stars": 12885,
       "forks": 1292,
       "license": "MIT",
       "pushedAt": "2026-11-01T04:28:01Z",
       "updatedAt": "2026-11-01T13:21:07Z",
+      "archived": false
+    },
+    "atharvsinh-codez/skills": {
+      "stars": 153,
+      "forks": 8,
+      "license": "MIT",
+      "pushedAt": "2026-11-03T12:17:05Z",
+      "updatedAt": "2026-11-24T16:28:07Z",
       "archived": false
     },
     "atisawd/boxicons": {
@@ -57,12 +177,60 @@
       "updatedAt": "2026-10-31T11:38:08Z",
       "archived": false
     },
+    "ayghri/i-have-adhd": {
+      "stars": 62241,
+      "forks": 3653,
+      "license": "MIT",
+      "pushedAt": "2026-10-19T19:46:23Z",
+      "updatedAt": "2026-11-25T10:58:33Z",
+      "archived": false
+    },
     "barvian/number-flow": {
       "stars": 7768,
       "forks": 161,
       "license": "MIT",
       "pushedAt": "2026-09-20T13:51:56Z",
       "updatedAt": "2026-11-01T09:31:32Z",
+      "archived": false
+    },
+    "bencium/bencium-marketplace": {
+      "stars": 505,
+      "forks": 64,
+      "license": "MIT",
+      "pushedAt": "2026-10-04T09:16:46Z",
+      "updatedAt": "2026-11-24T19:03:34Z",
+      "archived": false
+    },
+    "benjitaylor/skills": {
+      "stars": 4158,
+      "forks": 261,
+      "license": null,
+      "pushedAt": "2026-11-05T03:34:26Z",
+      "updatedAt": "2026-11-25T11:02:27Z",
+      "archived": false
+    },
+    "blader/humanizer": {
+      "stars": 73398,
+      "forks": 5754,
+      "license": "MIT",
+      "pushedAt": "2026-11-19T18:53:14Z",
+      "updatedAt": "2026-11-25T11:06:57Z",
+      "archived": false
+    },
+    "calicastle/skills": {
+      "stars": 98,
+      "forks": 2,
+      "license": "MIT",
+      "pushedAt": "2026-07-24T09:22:05Z",
+      "updatedAt": "2026-11-11T02:24:49Z",
+      "archived": false
+    },
+    "callstackincubator/agent-skills": {
+      "stars": 1722,
+      "forks": 120,
+      "license": "MIT",
+      "pushedAt": "2026-10-08T19:06:40Z",
+      "updatedAt": "2026-11-25T02:11:48Z",
       "archived": false
     },
     "carbon-design-system/carbon": {
@@ -97,6 +265,22 @@
       "updatedAt": "2026-10-29T13:11:28Z",
       "archived": false
     },
+    "chunkithwang/design-playful-app-icons": {
+      "stars": 647,
+      "forks": 23,
+      "license": null,
+      "pushedAt": "2026-08-06T07:45:36Z",
+      "updatedAt": "2026-11-25T06:27:25Z",
+      "archived": false
+    },
+    "cloudai-x/threejs-skills": {
+      "stars": 4398,
+      "forks": 503,
+      "license": "MIT",
+      "pushedAt": "2026-10-19T05:17:24Z",
+      "updatedAt": "2026-11-25T10:26:28Z",
+      "archived": false
+    },
     "cocopon/tweakpane": {
       "stars": 4632,
       "forks": 131,
@@ -111,6 +295,14 @@
       "license": "Apache-2.0",
       "pushedAt": "2025-04-24T13:17:28Z",
       "updatedAt": "2026-11-01T05:56:01Z",
+      "archived": false
+    },
+    "coldteadotai/pr-lens": {
+      "stars": 2443,
+      "forks": 102,
+      "license": "MIT",
+      "pushedAt": "2026-11-24T08:39:42Z",
+      "updatedAt": "2026-11-25T10:30:37Z",
       "archived": false
     },
     "copilotkit/copilotkit": {
@@ -129,12 +321,156 @@
       "updatedAt": "2026-10-31T00:45:38Z",
       "archived": false
     },
+    "cursor/plugins": {
+      "stars": 19394,
+      "forks": 2093,
+      "license": null,
+      "pushedAt": "2026-11-24T23:17:05Z",
+      "updatedAt": "2026-11-25T11:06:02Z",
+      "archived": false
+    },
+    "dammyjay93/interface-design": {
+      "stars": 6033,
+      "forks": 393,
+      "license": "MIT",
+      "pushedAt": "2026-06-20T11:32:45Z",
+      "updatedAt": "2026-11-25T10:30:01Z",
+      "archived": false
+    },
+    "danilaa1/compact-landing-skill": {
+      "stars": 39,
+      "forks": 1,
+      "license": "MIT",
+      "pushedAt": "2026-07-11T15:11:14Z",
+      "updatedAt": "2026-11-19T10:34:42Z",
+      "archived": false
+    },
     "devicons/devicon": {
       "stars": 11867,
       "forks": 2443,
       "license": "MIT",
       "pushedAt": "2026-10-31T15:39:00Z",
       "updatedAt": "2026-10-31T15:48:31Z",
+      "archived": false
+    },
+    "dickwu/apple-design-skill": {
+      "stars": 3828,
+      "forks": 310,
+      "license": null,
+      "pushedAt": "2026-11-13T14:23:41Z",
+      "updatedAt": "2026-11-25T10:36:57Z",
+      "archived": false
+    },
+    "dietrichgebert/ponytail": {
+      "stars": 198406,
+      "forks": 11240,
+      "license": "MIT",
+      "pushedAt": "2026-11-22T02:31:58Z",
+      "updatedAt": "2026-11-25T11:06:55Z",
+      "archived": false
+    },
+    "diffusionstudio/lottie": {
+      "stars": 5824,
+      "forks": 305,
+      "license": "MIT",
+      "pushedAt": "2026-07-25T07:22:58Z",
+      "updatedAt": "2026-11-25T10:30:53Z",
+      "archived": false
+    },
+    "diip3sh/feel": {
+      "stars": 68,
+      "forks": 2,
+      "license": "MIT",
+      "pushedAt": "2026-10-13T21:00:21Z",
+      "updatedAt": "2026-11-12T09:14:52Z",
+      "archived": false
+    },
+    "diip3sh/playthrou": {
+      "stars": 8,
+      "forks": 0,
+      "license": "MIT",
+      "pushedAt": "2026-10-16T20:21:47Z",
+      "updatedAt": "2026-11-10T16:49:24Z",
+      "archived": false
+    },
+    "dimillian/skills": {
+      "stars": 4037,
+      "forks": 208,
+      "license": "MIT",
+      "pushedAt": "2026-03-29T15:28:02Z",
+      "updatedAt": "2026-11-25T07:45:10Z",
+      "archived": false
+    },
+    "edenspiekermann/skills": {
+      "stars": 68,
+      "forks": 8,
+      "license": null,
+      "pushedAt": "2026-03-24T01:54:45Z",
+      "updatedAt": "2026-11-07T18:44:12Z",
+      "archived": false
+    },
+    "egonex-ai/understand-anything": {
+      "stars": 94269,
+      "forks": 8014,
+      "license": "MIT",
+      "pushedAt": "2026-11-25T06:30:57Z",
+      "updatedAt": "2026-11-25T11:03:57Z",
+      "archived": false
+    },
+    "ehmo/slopkit": {
+      "stars": 115,
+      "forks": 9,
+      "license": "MIT",
+      "pushedAt": "2026-07-22T16:08:11Z",
+      "updatedAt": "2026-11-18T22:32:38Z",
+      "archived": false
+    },
+    "elayadesign/ai-design-skills": {
+      "stars": 16643,
+      "forks": 1302,
+      "license": "MIT",
+      "pushedAt": "2026-11-01T23:24:10Z",
+      "updatedAt": "2026-11-25T10:30:45Z",
+      "archived": false
+    },
+    "elithrar/dotfiles": {
+      "stars": 226,
+      "forks": 16,
+      "license": "MIT",
+      "pushedAt": "2026-11-24T11:48:15Z",
+      "updatedAt": "2026-11-14T13:53:57Z",
+      "archived": false
+    },
+    "emilkowalski/skills": {
+      "stars": 59400,
+      "forks": 3503,
+      "license": "MIT",
+      "pushedAt": "2026-11-15T12:42:50Z",
+      "updatedAt": "2026-11-25T10:46:24Z",
+      "archived": false
+    },
+    "enesozturk/dimensional-drawing": {
+      "stars": 2248,
+      "forks": 167,
+      "license": "MIT",
+      "pushedAt": "2026-10-24T09:41:54Z",
+      "updatedAt": "2026-11-25T08:57:38Z",
+      "archived": false
+    },
+    "ericzakariasson/scandinavian-design": {
+      "stars": 442,
+      "forks": 22,
+      "license": null,
+      "pushedAt": "2026-08-22T17:02:55Z",
+      "updatedAt": "2026-11-25T09:04:54Z",
+      "archived": false
+    },
+    "fatihaydost/brand-identity-skill": {
+      "stars": 478,
+      "forks": 41,
+      "license": "MIT",
+      "pushedAt": "2026-11-15T19:22:33Z",
+      "updatedAt": "2026-11-25T07:11:03Z",
       "archived": false
     },
     "feathericons/feather": {
@@ -145,6 +481,30 @@
       "updatedAt": "2026-11-01T02:50:44Z",
       "archived": false
     },
+    "figma/mcp-server-guide": {
+      "stars": 2233,
+      "forks": 224,
+      "license": null,
+      "pushedAt": "2026-11-24T18:08:31Z",
+      "updatedAt": "2026-11-25T10:19:38Z",
+      "archived": false
+    },
+    "filipwojda/regards-skill": {
+      "stars": 1,
+      "forks": 0,
+      "license": "MIT",
+      "pushedAt": "2026-11-09T21:48:15Z",
+      "updatedAt": "2026-11-09T21:48:22Z",
+      "archived": false
+    },
+    "firebenders/sync-figma-token-skill": {
+      "stars": 27,
+      "forks": 2,
+      "license": null,
+      "pushedAt": "2026-03-24T01:32:18Z",
+      "updatedAt": "2026-11-06T18:43:53Z",
+      "archived": false
+    },
     "floating-ui/floating-ui": {
       "stars": 32789,
       "forks": 1727,
@@ -153,12 +513,44 @@
       "updatedAt": "2026-11-01T07:45:31Z",
       "archived": false
     },
+    "flornkm/shadow-plugin": {
+      "stars": 148,
+      "forks": 2,
+      "license": "MIT",
+      "pushedAt": "2026-09-18T08:10:14Z",
+      "updatedAt": "2026-11-11T18:52:02Z",
+      "archived": false
+    },
+    "flornkm/skills": {
+      "stars": 116,
+      "forks": 7,
+      "license": "MIT",
+      "pushedAt": "2026-11-17T08:11:28Z",
+      "updatedAt": "2026-11-25T05:09:15Z",
+      "archived": false
+    },
     "fortawesome/font-awesome": {
       "stars": 77014,
       "forks": 12163,
       "license": null,
       "pushedAt": "2026-07-15T18:15:53Z",
       "updatedAt": "2026-11-01T13:23:49Z",
+      "archived": false
+    },
+    "github/gh-stack": {
+      "stars": 1793,
+      "forks": 99,
+      "license": "MIT",
+      "pushedAt": "2026-11-16T16:16:37Z",
+      "updatedAt": "2026-11-24T12:47:54Z",
+      "archived": false
+    },
+    "google-gemini/gemini-skills": {
+      "stars": 4733,
+      "forks": 518,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-19T17:07:10Z",
+      "updatedAt": "2026-11-25T10:52:35Z",
       "archived": false
     },
     "google/material-design-icons": {
@@ -177,12 +569,28 @@
       "updatedAt": "2026-11-01T10:28:36Z",
       "archived": false
     },
+    "graphify-labs/graphify": {
+      "stars": 153155,
+      "forks": 14728,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-24T21:58:21Z",
+      "updatedAt": "2026-11-25T11:06:18Z",
+      "archived": false
+    },
     "greensock/gsap": {
       "stars": 30009,
       "forks": 2321,
       "license": null,
       "pushedAt": "2026-04-13T13:08:58Z",
       "updatedAt": "2026-11-01T13:11:32Z",
+      "archived": false
+    },
+    "greensock/gsap-skills": {
+      "stars": 19048,
+      "forks": 1222,
+      "license": "MIT",
+      "pushedAt": "2026-07-29T17:36:08Z",
+      "updatedAt": "2026-11-25T10:41:33Z",
       "archived": false
     },
     "grommet/grommet-icons": {
@@ -193,6 +601,14 @@
       "updatedAt": "2026-10-23T17:22:04Z",
       "archived": false
     },
+    "hardikpandya/stop-slop": {
+      "stars": 19198,
+      "forks": 1416,
+      "license": "MIT",
+      "pushedAt": "2026-03-17T18:50:39Z",
+      "updatedAt": "2026-11-25T10:10:44Z",
+      "archived": false
+    },
     "heroui-inc/heroui": {
       "stars": 31082,
       "forks": 2242,
@@ -201,12 +617,44 @@
       "updatedAt": "2026-11-01T12:17:00Z",
       "archived": false
     },
+    "heygen-com/hyperframes": {
+      "stars": 89850,
+      "forks": 8373,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-25T10:53:44Z",
+      "updatedAt": "2026-11-25T11:07:26Z",
+      "archived": false
+    },
     "htmlstreamofficial/preline": {
       "stars": 6516,
       "forks": 417,
       "license": null,
       "pushedAt": "2026-08-31T01:53:38Z",
       "updatedAt": "2026-11-01T03:27:02Z",
+      "archived": false
+    },
+    "humanlayer/skills": {
+      "stars": 5928,
+      "forks": 215,
+      "license": "MIT",
+      "pushedAt": "2026-11-01T21:13:11Z",
+      "updatedAt": "2026-11-25T10:08:13Z",
+      "archived": false
+    },
+    "iannuttall/seo": {
+      "stars": 644,
+      "forks": 52,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-24T09:18:07Z",
+      "updatedAt": "2026-11-25T10:55:26Z",
+      "archived": false
+    },
+    "iart-ai/web-animation-skills": {
+      "stars": 115,
+      "forks": 16,
+      "license": "MIT",
+      "pushedAt": "2026-11-11T16:14:57Z",
+      "updatedAt": "2026-11-25T07:42:17Z",
       "archived": false
     },
     "ibelick/motion-primitives": {
@@ -226,11 +674,11 @@
       "archived": false
     },
     "ibelick/ui-skills": {
-      "stars": 10434,
-      "forks": 492,
+      "stars": 11400,
+      "forks": 556,
       "license": "MIT",
-      "pushedAt": "2026-11-01T10:13:19Z",
-      "updatedAt": "2026-11-01T13:06:41Z",
+      "pushedAt": "2026-11-25T07:52:00Z",
+      "updatedAt": "2026-11-25T10:50:01Z",
       "archived": false
     },
     "iconoir-icons/iconoir": {
@@ -239,6 +687,14 @@
       "license": "MIT",
       "pushedAt": "2026-10-25T22:13:49Z",
       "updatedAt": "2026-11-01T06:58:26Z",
+      "archived": false
+    },
+    "insane0777/awwwards-skills": {
+      "stars": 8,
+      "forks": 0,
+      "license": "MIT",
+      "pushedAt": "2026-11-23T11:13:06Z",
+      "updatedAt": "2026-11-23T21:46:38Z",
       "archived": false
     },
     "ionic-team/ionicons": {
@@ -258,11 +714,11 @@
       "archived": false
     },
     "jakubantalik/transitions.dev": {
-      "stars": 6003,
-      "forks": 283,
+      "stars": 6508,
+      "forks": 318,
       "license": null,
-      "pushedAt": "2026-10-29T10:48:34Z",
-      "updatedAt": "2026-11-01T12:36:43Z",
+      "pushedAt": "2026-11-24T19:14:19Z",
+      "updatedAt": "2026-11-25T10:41:29Z",
       "archived": false
     },
     "jakubkrehel/loading": {
@@ -273,12 +729,76 @@
       "updatedAt": "2026-11-01T05:24:53Z",
       "archived": false
     },
+    "jakubkrehel/make-interfaces-feel-better": {
+      "stars": 4269,
+      "forks": 185,
+      "license": "MIT",
+      "pushedAt": "2026-11-18T01:42:39Z",
+      "updatedAt": "2026-11-25T10:41:38Z",
+      "archived": false
+    },
+    "jakubkrehel/oklch-skill": {
+      "stars": 290,
+      "forks": 15,
+      "license": "MIT",
+      "pushedAt": "2026-10-07T03:47:03Z",
+      "updatedAt": "2026-11-24T05:33:00Z",
+      "archived": false
+    },
+    "jakubkrehel/skills": {
+      "stars": 12675,
+      "forks": 495,
+      "license": "MIT",
+      "pushedAt": "2026-11-19T04:11:32Z",
+      "updatedAt": "2026-11-25T10:52:54Z",
+      "archived": false
+    },
+    "jalaalrd/anti-ai-slop-writing": {
+      "stars": 628,
+      "forks": 68,
+      "license": null,
+      "pushedAt": "2026-04-18T23:37:12Z",
+      "updatedAt": "2026-11-25T10:05:03Z",
+      "archived": false
+    },
+    "jane-xiaoer/claude-skill-web-clone": {
+      "stars": 1130,
+      "forks": 132,
+      "license": "MIT",
+      "pushedAt": "2026-06-30T10:47:19Z",
+      "updatedAt": "2026-11-25T10:42:34Z",
+      "archived": false
+    },
+    "jdhruv14/ascii-diorama": {
+      "stars": 113,
+      "forks": 5,
+      "license": "MIT",
+      "pushedAt": "2026-11-02T15:22:37Z",
+      "updatedAt": "2026-11-24T21:59:15Z",
+      "archived": false
+    },
+    "joe-bell/skills": {
+      "stars": 217,
+      "forks": 2,
+      "license": "MIT",
+      "pushedAt": "2026-11-23T07:29:57Z",
+      "updatedAt": "2026-11-19T23:36:59Z",
+      "archived": false
+    },
     "juliangarnier/anime": {
       "stars": 74154,
       "forks": 5033,
       "license": "MIT",
       "pushedAt": "2026-08-21T21:29:50Z",
       "updatedAt": "2026-11-01T12:52:50Z",
+      "archived": false
+    },
+    "justinwetch/higagentskills": {
+      "stars": 845,
+      "forks": 30,
+      "license": "MIT",
+      "pushedAt": "2026-10-17T22:01:22Z",
+      "updatedAt": "2026-11-25T08:41:54Z",
       "archived": false
     },
     "keenthemes/reui": {
@@ -289,12 +809,44 @@
       "updatedAt": "2026-11-01T11:47:50Z",
       "archived": false
     },
+    "kelvinkn17/skills": {
+      "stars": 125,
+      "forks": 5,
+      "license": "MIT",
+      "pushedAt": "2026-10-26T18:55:34Z",
+      "updatedAt": "2026-11-25T08:10:33Z",
+      "archived": false
+    },
+    "kemiljk/skills": {
+      "stars": 74,
+      "forks": 3,
+      "license": "MIT",
+      "pushedAt": "2026-11-18T11:38:34Z",
+      "updatedAt": "2026-11-20T17:49:31Z",
+      "archived": false
+    },
+    "kitlangton/skills": {
+      "stars": 358,
+      "forks": 7,
+      "license": "MIT",
+      "pushedAt": "2026-10-02T17:31:03Z",
+      "updatedAt": "2026-11-15T15:39:55Z",
+      "archived": false
+    },
     "klarr-agency/circum-icons": {
       "stars": 181,
       "forks": 16,
       "license": "MPL-2.0",
       "pushedAt": "2024-04-20T18:44:19Z",
       "updatedAt": "2026-08-11T12:26:40Z",
+      "archived": false
+    },
+    "kosta4a/stopmotion-video": {
+      "stars": 8,
+      "forks": 0,
+      "license": "MIT",
+      "pushedAt": "2026-11-02T12:27:27Z",
+      "updatedAt": "2026-11-09T04:16:51Z",
       "archived": false
     },
     "kvnkld/aicss": {
@@ -305,12 +857,68 @@
       "updatedAt": "2026-10-31T05:51:18Z",
       "archived": false
     },
+    "larashero3-dotcom/lieflat-charts": {
+      "stars": 6988,
+      "forks": 420,
+      "license": null,
+      "pushedAt": "2026-11-12T08:29:24Z",
+      "updatedAt": "2026-11-25T06:11:06Z",
+      "archived": false
+    },
+    "latent-spaces/brag": {
+      "stars": 22528,
+      "forks": 1749,
+      "license": "MIT",
+      "pushedAt": "2026-11-15T17:07:46Z",
+      "updatedAt": "2026-11-25T11:06:18Z",
+      "archived": false
+    },
+    "leonxlnx/taste-skill": {
+      "stars": 121337,
+      "forks": 8146,
+      "license": "MIT",
+      "pushedAt": "2026-11-25T09:10:22Z",
+      "updatedAt": "2026-11-25T11:07:09Z",
+      "archived": false
+    },
+    "leonxlnx/unlazy": {
+      "stars": 4483,
+      "forks": 361,
+      "license": "MIT",
+      "pushedAt": "2026-09-03T09:31:17Z",
+      "updatedAt": "2026-11-25T09:13:27Z",
+      "archived": false
+    },
+    "liamgvchi/gc-minimal-zine-poster": {
+      "stars": 7555,
+      "forks": 336,
+      "license": "MIT",
+      "pushedAt": "2026-08-13T15:12:25Z",
+      "updatedAt": "2026-11-25T08:52:34Z",
+      "archived": false
+    },
     "lochie/torph": {
       "stars": 1504,
       "forks": 31,
       "license": "MIT",
       "pushedAt": "2026-09-07T13:18:33Z",
       "updatedAt": "2026-11-01T10:02:43Z",
+      "archived": false
+    },
+    "lucasmarkes/hairline": {
+      "stars": 4091,
+      "forks": 250,
+      "license": "MIT",
+      "pushedAt": "2026-11-13T20:50:40Z",
+      "updatedAt": "2026-11-25T07:51:12Z",
+      "archived": false
+    },
+    "luchasarie/bro-skill": {
+      "stars": 469,
+      "forks": 16,
+      "license": "MIT",
+      "pushedAt": "2026-10-21T09:19:46Z",
+      "updatedAt": "2026-11-24T22:45:01Z",
       "archived": false
     },
     "lucide-icons/lucide": {
@@ -345,6 +953,38 @@
       "updatedAt": "2026-11-01T12:16:36Z",
       "archived": false
     },
+    "mattpocock/skills": {
+      "stars": 332550,
+      "forks": 27959,
+      "license": "MIT",
+      "pushedAt": "2026-11-25T09:25:41Z",
+      "updatedAt": "2026-11-25T11:06:37Z",
+      "archived": false
+    },
+    "memex-lab/product-launch-video-skill": {
+      "stars": 28,
+      "forks": 1,
+      "license": "MIT",
+      "pushedAt": "2026-06-01T09:25:16Z",
+      "updatedAt": "2026-11-22T07:39:52Z",
+      "archived": false
+    },
+    "mengto/skills": {
+      "stars": 8295,
+      "forks": 947,
+      "license": "MIT",
+      "pushedAt": "2026-11-25T08:19:17Z",
+      "updatedAt": "2026-11-25T10:17:22Z",
+      "archived": false
+    },
+    "mickadesign/fluid-functionalism": {
+      "stars": 1169,
+      "forks": 59,
+      "license": "MIT",
+      "pushedAt": "2026-11-23T17:56:44Z",
+      "updatedAt": "2026-11-25T11:00:59Z",
+      "archived": false
+    },
     "microsoft/fluentui": {
       "stars": 20376,
       "forks": 2954,
@@ -353,12 +993,52 @@
       "updatedAt": "2026-11-01T11:05:34Z",
       "archived": false
     },
+    "microsoft/playwright-cli": {
+      "stars": 15440,
+      "forks": 959,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-24T20:31:25Z",
+      "updatedAt": "2026-11-25T10:46:25Z",
+      "archived": false
+    },
+    "millionco/react-doctor": {
+      "stars": 15185,
+      "forks": 503,
+      "license": null,
+      "pushedAt": "2026-11-25T10:54:25Z",
+      "updatedAt": "2026-11-25T10:58:43Z",
+      "archived": false
+    },
+    "millionco/skills": {
+      "stars": 35,
+      "forks": 2,
+      "license": "MIT",
+      "pushedAt": "2026-06-30T05:16:08Z",
+      "updatedAt": "2026-11-15T07:48:48Z",
+      "archived": false
+    },
+    "moguzbulbul/blueprint-animation": {
+      "stars": 445,
+      "forks": 23,
+      "license": null,
+      "pushedAt": "2026-09-27T23:59:16Z",
+      "updatedAt": "2026-11-24T03:49:20Z",
+      "archived": false
+    },
     "motiondivision/motion": {
       "stars": 34759,
       "forks": 1490,
       "license": "MIT",
       "pushedAt": "2026-11-01T09:52:03Z",
       "updatedAt": "2026-11-01T13:28:08Z",
+      "archived": false
+    },
+    "mrstev3n/balise-skills": {
+      "stars": 12,
+      "forks": 1,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-08-19T22:51:53Z",
+      "updatedAt": "2026-11-20T21:35:36Z",
       "archived": false
     },
     "mui/base-ui": {
@@ -375,6 +1055,102 @@
       "license": "MIT",
       "pushedAt": "2026-11-01T12:19:18Z",
       "updatedAt": "2026-11-01T13:18:11Z",
+      "archived": false
+    },
+    "nextlevelbuilder/ui-ux-pro-max-skill": {
+      "stars": 153967,
+      "forks": 16218,
+      "license": "MIT",
+      "pushedAt": "2026-11-24T19:05:41Z",
+      "updatedAt": "2026-11-25T11:05:06Z",
+      "archived": false
+    },
+    "niazmorshed2007/reanimate": {
+      "stars": 2518,
+      "forks": 221,
+      "license": "MIT",
+      "pushedAt": "2026-10-31T12:49:35Z",
+      "updatedAt": "2026-11-25T10:54:06Z",
+      "archived": false
+    },
+    "nolanperk/rad-spacing": {
+      "stars": 17,
+      "forks": 1,
+      "license": null,
+      "pushedAt": "2026-03-23T21:12:45Z",
+      "updatedAt": "2026-11-07T18:43:23Z",
+      "archived": false
+    },
+    "nutlope/hallmark": {
+      "stars": 60827,
+      "forks": 3326,
+      "license": "MIT",
+      "pushedAt": "2026-11-11T11:56:16Z",
+      "updatedAt": "2026-11-25T11:06:54Z",
+      "archived": false
+    },
+    "nvillapiano/component-contracts-figma": {
+      "stars": 34,
+      "forks": 6,
+      "license": null,
+      "pushedAt": "2026-03-22T21:37:18Z",
+      "updatedAt": "2026-11-07T18:42:42Z",
+      "archived": false
+    },
+    "oil-oil/oil-ui": {
+      "stars": 3979,
+      "forks": 235,
+      "license": "MIT",
+      "pushedAt": "2026-11-25T00:36:01Z",
+      "updatedAt": "2026-11-25T09:40:26Z",
+      "archived": false
+    },
+    "openai/skills": {
+      "stars": 29121,
+      "forks": 2062,
+      "license": null,
+      "pushedAt": "2026-10-28T17:31:41Z",
+      "updatedAt": "2026-11-25T10:56:32Z",
+      "archived": false
+    },
+    "oso95/scroll-world": {
+      "stars": 11134,
+      "forks": 1208,
+      "license": "MIT",
+      "pushedAt": "2026-07-29T04:44:56Z",
+      "updatedAt": "2026-11-25T09:22:48Z",
+      "archived": false
+    },
+    "pasqualevitiello/plotter": {
+      "stars": 252,
+      "forks": 13,
+      "license": "MIT",
+      "pushedAt": "2026-11-20T12:38:18Z",
+      "updatedAt": "2026-11-24T19:18:27Z",
+      "archived": false
+    },
+    "pbakaus/impeccable": {
+      "stars": 116566,
+      "forks": 6966,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-25T07:50:46Z",
+      "updatedAt": "2026-11-25T11:07:21Z",
+      "archived": false
+    },
+    "petergyang/human-review": {
+      "stars": 1466,
+      "forks": 126,
+      "license": "MIT",
+      "pushedAt": "2026-09-17T20:57:23Z",
+      "updatedAt": "2026-11-24T19:05:47Z",
+      "archived": false
+    },
+    "petergyang/no-ai-slop": {
+      "stars": 13788,
+      "forks": 966,
+      "license": "MIT",
+      "pushedAt": "2026-09-02T04:19:00Z",
+      "updatedAt": "2026-11-25T10:07:22Z",
       "archived": false
     },
     "phosphor-icons/core": {
@@ -409,6 +1185,14 @@
       "updatedAt": "2026-10-31T13:37:53Z",
       "archived": false
     },
+    "prototyperai/prototyper-ui": {
+      "stars": 7,
+      "forks": 2,
+      "license": "MIT",
+      "pushedAt": "2026-05-21T08:46:01Z",
+      "updatedAt": "2026-09-22T08:24:17Z",
+      "archived": false
+    },
     "radix-ui/icons": {
       "stars": 2709,
       "forks": 137,
@@ -425,12 +1209,36 @@
       "updatedAt": "2026-11-01T09:49:57Z",
       "archived": false
     },
+    "rams-design/rams-plugin": {
+      "stars": 2,
+      "forks": 0,
+      "license": "MIT",
+      "pushedAt": "2026-11-04T00:05:48Z",
+      "updatedAt": "2026-11-04T00:05:52Z",
+      "archived": false
+    },
+    "raphaelsalaja/skill": {
+      "stars": 69,
+      "forks": 5,
+      "license": "MIT",
+      "pushedAt": "2026-11-22T20:25:18Z",
+      "updatedAt": "2026-11-19T08:04:10Z",
+      "archived": false
+    },
     "recharts/recharts": {
       "stars": 27680,
       "forks": 2026,
       "license": "MIT",
       "pushedAt": "2026-11-01T12:17:09Z",
       "updatedAt": "2026-11-01T12:48:38Z",
+      "archived": false
+    },
+    "redongreen/uspec": {
+      "stars": 252,
+      "forks": 29,
+      "license": "MIT",
+      "pushedAt": "2026-09-04T06:36:27Z",
+      "updatedAt": "2026-11-21T19:14:53Z",
       "archived": false
     },
     "remix-design/remixicon": {
@@ -441,20 +1249,84 @@
       "updatedAt": "2026-11-01T12:19:44Z",
       "archived": false
     },
-    "saadeghi/daisyui": {
-      "stars": 42719,
-      "forks": 1712,
+    "remix-run/agent-skills": {
+      "stars": 134,
+      "forks": 4,
       "license": "MIT",
-      "pushedAt": "2026-10-31T12:32:39Z",
-      "updatedAt": "2026-11-01T12:56:04Z",
+      "pushedAt": "2026-06-18T13:30:14Z",
+      "updatedAt": "2026-10-10T18:23:28Z",
+      "archived": true
+    },
+    "remotion-dev/skills": {
+      "stars": 7981,
+      "forks": 881,
+      "license": null,
+      "pushedAt": "2026-11-24T17:19:19Z",
+      "updatedAt": "2026-11-25T11:06:59Z",
+      "archived": false
+    },
+    "rieranthony/product-film-skill": {
+      "stars": 428,
+      "forks": 31,
+      "license": "MIT",
+      "pushedAt": "2026-09-26T10:58:50Z",
+      "updatedAt": "2026-11-24T15:53:26Z",
+      "archived": false
+    },
+    "rolldown/tsdown": {
+      "stars": 4349,
+      "forks": 212,
+      "license": "MIT",
+      "pushedAt": "2026-11-19T06:11:06Z",
+      "updatedAt": "2026-11-21T14:02:41Z",
+      "archived": false
+    },
+    "rossark0/rossark-motion-skill": {
+      "stars": 931,
+      "forks": 73,
+      "license": "MIT",
+      "pushedAt": "2026-10-22T06:38:46Z",
+      "updatedAt": "2026-11-25T06:48:14Z",
+      "archived": false
+    },
+    "s0xdk/refactoring-ui-skill": {
+      "stars": 706,
+      "forks": 66,
+      "license": null,
+      "pushedAt": "2026-08-26T22:47:17Z",
+      "updatedAt": "2026-11-23T18:33:38Z",
+      "archived": false
+    },
+    "saadeghi/daisyui": {
+      "stars": 42993,
+      "forks": 1727,
+      "license": "MIT",
+      "pushedAt": "2026-11-20T22:07:35Z",
+      "updatedAt": "2026-11-25T10:00:17Z",
+      "archived": false
+    },
+    "samyost1/3dicon": {
+      "stars": 685,
+      "forks": 53,
+      "license": "MIT",
+      "pushedAt": "2026-11-07T12:39:46Z",
+      "updatedAt": "2026-11-24T11:32:23Z",
       "archived": false
     },
     "shadcn-ui/ui": {
-      "stars": 127105,
-      "forks": 11990,
+      "stars": 129045,
+      "forks": 11436,
       "license": "MIT",
-      "pushedAt": "2026-10-31T20:46:47Z",
-      "updatedAt": "2026-11-01T13:24:30Z",
+      "pushedAt": "2026-11-23T06:28:25Z",
+      "updatedAt": "2026-11-25T11:04:46Z",
+      "archived": false
+    },
+    "shadcn/improve": {
+      "stars": 12183,
+      "forks": 492,
+      "license": "MIT",
+      "pushedAt": "2026-09-12T11:29:28Z",
+      "updatedAt": "2026-11-25T10:29:37Z",
       "archived": false
     },
     "shadcnblocks/shadcn-ui-blocks": {
@@ -472,6 +1344,62 @@
       "pushedAt": "2026-09-11T19:54:08Z",
       "updatedAt": "2026-10-31T10:47:29Z",
       "archived": true
+    },
+    "sidkh/term-radar": {
+      "stars": 102,
+      "forks": 2,
+      "license": null,
+      "pushedAt": "2026-08-25T16:42:51Z",
+      "updatedAt": "2026-11-10T23:37:16Z",
+      "archived": false
+    },
+    "slidevjs/slidev": {
+      "stars": 49630,
+      "forks": 2285,
+      "license": "MIT",
+      "pushedAt": "2026-11-05T06:29:21Z",
+      "updatedAt": "2026-11-25T08:40:33Z",
+      "archived": false
+    },
+    "stephenturner/skills": {
+      "stars": 19,
+      "forks": 2,
+      "license": "MIT",
+      "pushedAt": "2026-03-26T09:40:22Z",
+      "updatedAt": "2026-11-06T14:10:37Z",
+      "archived": false
+    },
+    "stewdioai/blank-page": {
+      "stars": 401,
+      "forks": 12,
+      "license": "MIT",
+      "pushedAt": "2026-11-23T19:56:12Z",
+      "updatedAt": "2026-11-24T13:16:28Z",
+      "archived": false
+    },
+    "superdesigndev/treg": {
+      "stars": 8879,
+      "forks": 885,
+      "license": null,
+      "pushedAt": "2026-11-25T11:07:05Z",
+      "updatedAt": "2026-11-25T11:01:49Z",
+      "archived": false
+    },
+    "superfuture/design-review": {
+      "stars": 42,
+      "forks": 4,
+      "license": null,
+      "pushedAt": "2026-08-20T02:53:54Z",
+      "updatedAt": "2026-11-25T00:41:26Z",
+      "archived": false
+    },
+    "sveltejs/ai-tools": {
+      "stars": 344,
+      "forks": 51,
+      "license": "MIT",
+      "pushedAt": "2026-11-23T19:50:57Z",
+      "updatedAt": "2026-11-24T21:46:06Z",
+      "archived": false
     },
     "tabler/tabler-icons": {
       "stars": 22518,
@@ -513,6 +1441,14 @@
       "updatedAt": "2026-11-01T10:10:02Z",
       "archived": false
     },
+    "teddarific/skills": {
+      "stars": 26,
+      "forks": 1,
+      "license": null,
+      "pushedAt": "2026-11-23T03:27:40Z",
+      "updatedAt": "2026-11-24T09:11:34Z",
+      "archived": false
+    },
     "themesberg/flowbite": {
       "stars": 9381,
       "forks": 867,
@@ -521,12 +1457,28 @@
       "updatedAt": "2026-10-31T03:09:53Z",
       "archived": false
     },
+    "tjcages/linear": {
+      "stars": 9,
+      "forks": 0,
+      "license": "MIT",
+      "pushedAt": "2026-07-29T22:07:18Z",
+      "updatedAt": "2026-10-29T13:32:14Z",
+      "archived": false
+    },
     "tremorlabs/tremor": {
       "stars": 3684,
       "forks": 200,
       "license": "Apache-2.0",
       "pushedAt": "2025-10-10T13:08:24Z",
       "updatedAt": "2026-10-31T15:52:17Z",
+      "archived": false
+    },
+    "tt-a1i/archify": {
+      "stars": 99737,
+      "forks": 6826,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-25T08:52:37Z",
+      "updatedAt": "2026-11-25T11:00:03Z",
       "archived": false
     },
     "turbokach/ai-native-react-components": {
@@ -577,12 +1529,100 @@
       "updatedAt": "2026-10-30T13:18:26Z",
       "archived": false
     },
+    "vercel-labs/agent-browser": {
+      "stars": 53892,
+      "forks": 3770,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-25T09:53:00Z",
+      "updatedAt": "2026-11-25T11:02:18Z",
+      "archived": false
+    },
+    "vercel-labs/agent-skills": {
+      "stars": 34894,
+      "forks": 3044,
+      "license": null,
+      "pushedAt": "2026-11-20T19:20:13Z",
+      "updatedAt": "2026-11-25T10:53:47Z",
+      "archived": false
+    },
+    "vercel/next.js": {
+      "stars": 143707,
+      "forks": 32698,
+      "license": "MIT",
+      "pushedAt": "2026-11-25T11:06:20Z",
+      "updatedAt": "2026-11-25T11:01:26Z",
+      "archived": false
+    },
+    "vercel/turborepo": {
+      "stars": 31383,
+      "forks": 2504,
+      "license": "MIT",
+      "pushedAt": "2026-11-25T00:46:18Z",
+      "updatedAt": "2026-11-25T09:19:36Z",
+      "archived": false
+    },
+    "vincentwei1021/video-shotcraft": {
+      "stars": 22517,
+      "forks": 2075,
+      "license": "Apache-2.0",
+      "pushedAt": "2026-11-25T10:01:07Z",
+      "updatedAt": "2026-11-25T10:58:49Z",
+      "archived": false
+    },
+    "vuejs-ai/skills": {
+      "stars": 3375,
+      "forks": 200,
+      "license": "MIT",
+      "pushedAt": "2026-10-23T14:53:15Z",
+      "updatedAt": "2026-11-25T08:07:06Z",
+      "archived": false
+    },
+    "vueuse/vueuse": {
+      "stars": 22406,
+      "forks": 2957,
+      "license": "MIT",
+      "pushedAt": "2026-11-23T12:49:14Z",
+      "updatedAt": "2026-11-25T07:25:34Z",
+      "archived": false
+    },
+    "wheresryan22/anatomy": {
+      "stars": 29128,
+      "forks": 2471,
+      "license": "MIT",
+      "pushedAt": "2026-10-18T20:20:24Z",
+      "updatedAt": "2026-11-25T11:07:33Z",
+      "archived": false
+    },
+    "wshobson/agents": {
+      "stars": 42875,
+      "forks": 4542,
+      "license": "MIT",
+      "pushedAt": "2026-11-24T14:32:25Z",
+      "updatedAt": "2026-11-25T10:45:10Z",
+      "archived": false
+    },
     "xyflow/xyflow": {
       "stars": 38859,
       "forks": 2559,
       "license": "MIT",
       "pushedAt": "2026-10-29T15:03:26Z",
       "updatedAt": "2026-11-01T10:10:35Z",
+      "archived": false
+    },
+    "zarazhangrui/frontend-slides": {
+      "stars": 32896,
+      "forks": 2509,
+      "license": "MIT",
+      "pushedAt": "2026-06-23T20:08:19Z",
+      "updatedAt": "2026-11-25T10:26:02Z",
+      "archived": false
+    },
+    "zeke/swiss-design-skill": {
+      "stars": 164,
+      "forks": 17,
+      "license": "MIT",
+      "pushedAt": "2026-09-24T01:37:15Z",
+      "updatedAt": "2026-11-16T03:50:30Z",
       "archived": false
     }
   }

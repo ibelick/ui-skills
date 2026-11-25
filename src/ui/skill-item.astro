@@ -1,4 +1,6 @@
 ---
+import SkillStars from "./skill-stars.astro";
+
 type Props = {
   href: string;
   slug: string;
@@ -7,6 +9,8 @@ type Props = {
   avatarUrl?: string;
   hideTitle?: boolean;
   wrapDescription?: boolean;
+  stars?: number;
+  repository?: string;
 };
 
 const {
@@ -17,12 +21,14 @@ const {
   avatarUrl,
   hideTitle,
   wrapDescription = false,
+  stars,
+  repository,
 } = Astro.props as Props;
 ---
 
 <a
   href={href}
-  class="skills-item group border-line-default flex items-center gap-3 border-b pt-3 pb-4"
+  class="skills-item group border-line-default relative flex items-center gap-3 border-b pt-3 pb-4 hover:z-20"
 >
   {
     avatarUrl ? (
@@ -75,4 +81,9 @@ const {
       ) : null
     }
   </div>
+  {
+    stars != null && repository ? (
+      <SkillStars stars={stars} repository={repository} column />
+    ) : null
+  }
 </a>
