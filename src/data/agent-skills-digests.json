@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-21T14:04:09.583Z",
-  "skillCount": 853,
+  "skillCount": 854,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
     "ibelick/baseline-ui": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
@@ -815,7 +815,7 @@
     "wshobson/tailwind-design-system": "sha256:b6577edb7b7f71a6954f68b80c7eea1748ccdf31862759f864bce558fb2bcf83",
     "wshobson/web-component-design": "sha256:a7978f5e9e3fa7129cf3eb8d607cedece4e207011321893d9a3c5dd92cf32603",
     "wshobson/visual-edit-precision": "sha256:3abb25ad646cbc8d67cbd07baa06db8331cc0f384be513db8f31dd7ab08e4b74",
-    "ibelick/device-frames": "sha256:a8abdeee6b8e47ca0dcb7190b9166f0b59d25b686199bb9e603dbe059dcacebf",
+    "ibelick/device-frames": "sha256:fb743a64a514880d28a2c36433e14bab5564d92cd658b9e949c52ea32b8edb3d",
     "mengto/3d-construction-sequence": "sha256:93127eeb59116e8eaa029c6885c1a3e0234151a4daa7ac731a7836cd58d107c4",
     "mengto/3d-harbour-water": "sha256:f3d2083cc7877d660e0e572dc680e26e176d7d1ab9354ebd0ba3d664ab127ebd",
     "mengto/3d-kasumidera-ultra-realism": "sha256:8dfdb88cb3d1579be7d9f033fd1addecdeec28a1a2c493e19555502637ab3d31",
@@ -854,6 +854,7 @@
     "raphaelsalaja/stress": "sha256:e9ac14682e3985608ab9fa3b7c83857d05b2928e676a45c6683612b73191807b",
     "vercel-labs/modern-web-guidance": "sha256:93234d8103db74fa91c7a532eb1f0f6b2b7fdb5b6b3c45f5cfe99b12a5ec7cb2",
     "pasqualevitiello/plotter": "sha256:4a9dd8c155d3797fc524da0d01c1daa27acdd673e200083b9924ad7aa80197ab",
+    "ibelick/photographing-software": "sha256:b7a75af756dcbf21ba02abef87b9c1729eb7195c4425968cde17de3b3c8ee765",
     "e2e-inc/e2e": "sha256:32a02b5e8a989be2ef385079b899de49fbe0fbcf31d1bd215c5edfe3e18cb31d"
   }
 }
