@@ -170,11 +170,16 @@ These front-view values are **visual approximations in screen points**, not meas
 For laptops, `side / top / bottom` are black bezel widths; `edge` is the metal rim; base
 overhang is per side. The screen is inside the bezel, not the entire lid.
 
-| Frame | Bezel side / top / bottom | Edge | Lid corner | Camera or notch | Base overhang / height |
-| --- | --- | --- | --- | --- | --- |
-| MacBook Pro 14-inch | 16 / 16 / 22 | 4 | 24 | centred top notch 196 × 32 | 50 / 38 |
-| MacBook Pro 16-inch PROLED | 14 / 14 / 18 | 4 | 30 | centred 56 × 27 capsule, 14 below screen top | 55 / 38 |
-| MacBook Neo 13-inch | 30 / 30 / 60 | 5 | 42 | small camera in top bezel; no notch | 105 / 42 |
+| Frame | Bezel side / top / bottom | Edge | Lid corner | Screen corner | Camera or notch | Base overhang / height |
+| --- | --- | --- | --- | --- | --- | --- |
+| MacBook Pro 14-inch | 16 / 16 / 22 | 4 | 24 | 12, top only | centred top notch 196 × 32 | 50 / 38 |
+| MacBook Pro 16-inch PROLED | 14 / 14 / 18 | 4 | 30 | 24, all four | centred 56 × 27 capsule, 14 below screen top | 55 / 38 |
+| MacBook Neo 13-inch | 30 / 30 / 60 | 5 | 42 | 20, top only | small camera in top bezel; no notch | 105 / 42 |
+
+The lid's two hinge-side corners are tighter than the top ones: 6 points. The black glass is
+the lid inset by `edge`, with corners `lid corner − edge` on top and 3 points at the hinge.
+A notch hangs from the screen's top edge with 10-point bottom corners and a 3.5-point camera
+dot; a bezel camera is a 3-point dot centred in the top bezel.
 
 For Studio Display and Studio Display XDR, start with a 2560 × 1440 screen, a 57-point black
 bezel and 3-point metal edge on each side, 18-point outer corner radius, and a centred stand

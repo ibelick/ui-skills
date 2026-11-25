@@ -11465,6 +11465,19 @@ const registrySource: RegistrySourceSkill[] = [
     description:
       "Draw flat monochrome blueprint illustrations as editable SVG, and animate them with the same construction grammar.",
   },
+  {
+    slug: "photographing-software",
+    user: "ibelick",
+    repo: "ui-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/photographing-software/SKILL.md",
+    githubUrl:
+      "https://github.com/ibelick/ui-skills/blob/main/skills/photographing-software/SKILL.md",
+    name: "photographing-software",
+    topics: ["visual", "frontend"],
+    description:
+      "Create photographic images of software: a website or app on a real-looking laptop, display, tablet, or phone, shot with depth of field, room light, and a legible finish.",
+  },
 ];
 
 const buildInitialPathSlug = (entry: RegistrySourceSkill) => {
