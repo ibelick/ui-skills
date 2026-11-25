@@ -1,5 +1,4 @@
 ---
-import { StarIcon } from "@heroicons/react/24/outline";
 import { formatStarCount } from "../lib/format-stars";
 
 type Props = {
@@ -19,12 +18,21 @@ const Tag = href ? "a" : "span";
   target={href ? "_blank" : undefined}
   rel={href ? "noopener noreferrer" : undefined}
   class:list={[
-    "type-body-md text-content-secondary inline-flex shrink-0 items-center gap-1 tabular-nums",
+    "type-body-md text-content-muted inline-flex shrink-0 items-center gap-1 font-[450] tabular-nums",
     href ? "hover:text-content-primary" : "",
   ]}
   aria-label={label}
   title={label}
 >
-  <StarIcon className="size-4 shrink-0" aria-hidden="true" />
+  <svg
+    aria-hidden="true"
+    class="text-content-extra-muted size-3.5 shrink-0"
+    viewBox="0 0 16 16"
+    fill="currentColor"
+  >
+    <path
+      d="M8 .7 9.9 5.2l4.9.4-3.8 3.2 1.2 4.8L8 11.2 3.8 13.6l1.2-4.8L1.2 5.6l4.9-.4L8 .7Z"
+    ></path>
+  </svg>
   <span aria-hidden="true">{formatted}</span>
 </Tag>
