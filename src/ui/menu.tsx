@@ -5,7 +5,17 @@ import { cn } from "../lib/cn";
 const popupClass = "bg-surface-default shadow-border";
 
 const itemClass =
-  "type-body-md text-content-primary data-highlighted:bg-fill-strong flex h-9 w-full cursor-pointer items-center gap-2.5 rounded-lg px-2 text-left outline-none data-disabled:opacity-60";
+  "type-body-md text-content-primary data-highlighted:bg-fill-strong flex h-9 w-full cursor-pointer items-center gap-2.5 rounded-lg px-2 text-start outline-none data-disabled:opacity-60";
+
+function mergeMenuClass<State>(
+  baseClass: string,
+  className: string | ((state: State) => string | undefined) | undefined,
+): string | ((state: State) => string) {
+  if (typeof className === "function") {
+    return (state: State) => cn(baseClass, className(state));
+  }
+  return cn(baseClass, className);
+}
 
 function Root({
   modal = false,
@@ -47,14 +57,24 @@ function Item({
   className,
   ...props
 }: ComponentProps<typeof BaseMenu.Item>) {
-  return <BaseMenu.Item className={cn(itemClass, className)} {...props} />;
+  return (
+    <BaseMenu.Item
+      className={mergeMenuClass(itemClass, className)}
+      {...props}
+    />
+  );
 }
 
 function LinkItem({
   className,
   ...props
 }: ComponentProps<typeof BaseMenu.LinkItem>) {
-  return <BaseMenu.LinkItem className={cn(itemClass, className)} {...props} />;
+  return (
+    <BaseMenu.LinkItem
+      className={mergeMenuClass(itemClass, className)}
+      {...props}
+    />
+  );
 }
 
 function CheckboxItem({
@@ -62,7 +82,10 @@ function CheckboxItem({
   ...props
 }: ComponentProps<typeof BaseMenu.CheckboxItem>) {
   return (
-    <BaseMenu.CheckboxItem className={cn(itemClass, className)} {...props} />
+    <BaseMenu.CheckboxItem
+      className={mergeMenuClass(itemClass, className)}
+      {...props}
+    />
   );
 }
 
@@ -72,7 +95,10 @@ function Separator({
 }: ComponentProps<typeof BaseMenu.Separator>) {
   return (
     <BaseMenu.Separator
-      className={cn("border-line-default mx-2 my-1 border-t", className)}
+      className={mergeMenuClass(
+        "border-line-default mx-2 my-1 border-t",
+        className,
+      )}
       {...props}
     />
   );

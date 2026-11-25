@@ -89,26 +89,26 @@ export function parseDesignMdFoundations(markdown: string) {
       colors.push({ name: clean(objectMatch[1]), value: clean(objectMatch[2]) });
       continue;
     }
-    const match = line.match(/^\s{2,}["']?([^"':]+)["']?\s*:\s*["']?((?:#[\da-f]{3,8}|rgba?\([^)]*\)|hsla?\([^)]*))['"]?/i);
+    const match = line.match(/^\s{2,}["']?([^"':]+)["']?\s*:\s*["']?((?:#[\da-f]{3,8}|rgba?\([^)]*\)|hsla?\([^)]*\)|oklch\([^)]*\)|oklab\([^)]*\)|lch\([^)]*\)|lab\([^)]*\)|color\([^)]*\)))['"]?/i);
     if (match) colors.push({ name: clean(match[1]), value: clean(match[2]) });
   }
   if (colors.length === 0) {
-    for (const rows of tableBlocks(markdownSection(markdown, /colou?rs?|palette/i)).map(tableRows)) {
+    for (const rows of tableBlocks(markdownSection(markdown, /colou?rs?|palette|الألوان|لوحة الألوان/i)).map(tableRows)) {
       for (const cells of rows.slice(1)) {
-        const value = cells.find((cell) => /^(?:#|rgba?\(|hsla?\()/i.test(cell));
+        const value = cells.find((cell) => /^(?:#|rgba?\(|hsla?\(|oklch\(|oklab\(|lch\(|lab\(|color\()/i.test(cell));
         if (value) colors.push({ name: cells[0], value });
       }
     }
   }
   for (const line of section(markdown, "theme")) {
-    const match = line.match(/^\s{2,}["']?([^"':]+)["']?\s*:\s*["']?((?:#[\da-f]{3,8}|rgba?\([^)]*\)|hsla?\([^)]*\)))['"]?/i);
+    const match = line.match(/^\s{2,}["']?([^"':]+)["']?\s*:\s*["']?((?:#[\da-f]{3,8}|rgba?\([^)]*\)|hsla?\([^)]*\)|oklch\([^)]*\)|oklab\([^)]*\)|lch\([^)]*\)|lab\([^)]*\)|color\([^)]*\)))['"]?/i);
     if (match && /color|brand|background|foreground|border/i.test(match[1])) {
       const color = { name: clean(match[1]), value: clean(match[2]) };
       if (!colors.some((item) => item.name === color.name && item.value === color.value)) colors.push(color);
     }
   }
   if (colors.length === 0) {
-    for (const match of markdown.matchAll(/^\s*-\s+\*\*([^*]+)\*\*\s*\(\s*`((?:#[\da-f]{3,8}|rgba?\([^)]*\)|hsla?\([^)]*))`\s*\)/gim)) {
+    for (const match of markdown.matchAll(/^\s*-\s+\*\*([^*]+)\*\*\s*\(\s*`((?:#[\da-f]{3,8}|rgba?\([^)]*\)|hsla?\([^)]*\)|oklch\([^)]*\)|oklab\([^)]*\)|lch\([^)]*\)|lab\([^)]*\)|color\([^)]*\)))`\s*\)/gim)) {
       colors.push({ name: clean(match[1]), value: clean(match[2]) });
     }
   }
@@ -121,7 +121,7 @@ export function parseDesignMdFoundations(markdown: string) {
   const typography: FoundationTypography[] = [];
   const typographyLines = section(markdown, "typography");
   const aliases = new Map<string, string>();
-  const typographyDocs = markdownSection(markdown, /typograph|type scale/i);
+  const typographyDocs = markdownSection(markdown, /typograph|type scale|الخطوط|التايبوغرافي/i);
   let documentedFamily: string | undefined;
   const typographyBlock = markdown.match(/(?:^|\n)typography:\s*\n([\s\S]*?)(?=\n\S|$)/i)?.[1] ?? "";
   const yamlFamily = typographyBlock.match(/^\s+(?:sans|font_family|font-family):\s*["']?(.+?)["']?\s*(?:#.*)?$/im)?.[1];
@@ -144,7 +144,7 @@ export function parseDesignMdFoundations(markdown: string) {
   // family and weight values with incomplete prose tables.
   const hasNestedTypography = typographyLines.some((line) => /^\s{2}["']?[\w-]+["']?\s*:\s*$/.test(line));
   if (typographyLines.length === 0 || !hasNestedTypography) {
-    const lines = markdownSection(markdown, /typograph|type scale/i);
+    const lines = markdownSection(markdown, /typograph|type scale|الخطوط|التايبوغرافي/i);
     const typographyTables = tableBlocks(lines);
     if (typographyTables.length === 0) {
       typographyTables.push(...tableBlocks(markdown.split(/\r?\n/)));
@@ -254,7 +254,7 @@ export function parseDesignMdFoundations(markdown: string) {
   return {
     colors,
     typography,
-    spacing: spacingScale.length > 0 ? spacingScale : parseValues("spacing", /spacing system|layout & spacing|sizing scale/i),
-    shapes: flowShapes.length > 0 ? flowShapes : parseValues("rounded", /radius|rounded|shape/i),
+    spacing: spacingScale.length > 0 ? spacingScale : parseValues("spacing", /spacing system|layout & spacing|sizing scale|المسافات|التباعد/i),
+    shapes: flowShapes.length > 0 ? flowShapes : parseValues("rounded", /radius|rounded|shape|الحواف|الزوايا/i),
   };
 }
