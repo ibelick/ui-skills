@@ -14,6 +14,11 @@ type Props = {
 
 import Card from "./card.astro";
 import SkillItem from "./skill-item.astro";
+import SkillStars from "./skill-stars.astro";
+import {
+  repositoryForSkillHref,
+  starsForRepository,
+} from "../lib/skill-repository";
 
 const {
   href,
@@ -25,6 +30,8 @@ const {
   variant = "card",
   wrapDescription = false,
 } = Astro.props as Props;
+const repository = repositoryForSkillHref(href);
+const stars = starsForRepository(repository);
 ---
 
 {
@@ -37,9 +44,11 @@ const {
       avatarUrl={avatarUrl}
       hideTitle={hideTitle}
       wrapDescription={wrapDescription}
+      stars={stars}
+      repository={repository}
     />
   ) : (
-    <a href={href} class="group block">
+    <a href={href} class="group relative block hover:z-20">
       <Card className="transition-colors group-hover:border-content-extra-muted">
         <div class="flex flex-col gap-3">
           {hideTitle ? null : (
@@ -50,19 +59,26 @@ const {
               {description}
             </div>
           ) : null}
-          {ownerLabel && avatarUrl ? (
-            <div class="mt-1 flex items-center gap-2">
-              <img
-                src={avatarUrl}
-                alt={`${ownerLabel} avatar`}
-                width="20"
-                height="20"
-                loading="lazy"
-                class="border-line-default size-5 rounded-full border"
-              />
-              <span class="text-content-secondary text-[12px]">
-                {ownerLabel}
-              </span>
+          {(ownerLabel && avatarUrl) || (stars != null && repository) ? (
+            <div class="mt-1 flex min-w-0 items-center gap-x-3">
+              {ownerLabel && avatarUrl ? (
+                <>
+                  <img
+                    src={avatarUrl}
+                    alt={`${ownerLabel} avatar`}
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    class="border-line-default size-5 rounded-full border"
+                  />
+                  <span class="text-content-secondary text-[12px]">
+                    {ownerLabel}
+                  </span>
+                </>
+              ) : null}
+              {stars != null && repository ? (
+                <SkillStars stars={stars} repository={repository} />
+              ) : null}
             </div>
           ) : null}
         </div>

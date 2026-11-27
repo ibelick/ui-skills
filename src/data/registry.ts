@@ -11499,6 +11499,18 @@ const registrySource: RegistrySourceSkill[] = [
     topics: ["visual", "frontend"],
     description:
       "Create photographic images of software: a website or app on a real-looking laptop, display, tablet, or phone, shot with depth of field, room light, and a legible finish.",
+  },  {
+    slug: "filming-software",
+    user: "ibelick",
+    repo: "ui-skills",
+    rawUrl:
+      "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/filming-software/SKILL.md",
+    githubUrl:
+      "https://github.com/ibelick/ui-skills/blob/main/skills/filming-software/SKILL.md",
+    name: "filming-software",
+    topics: ["video", "visual", "frontend"],
+    description:
+      "Make a product film of software: a website or app filmed on a real screen through a real lens, as moving shots joined by hard cuts, rendered frame by frame to MP4.",
   },
 ];
 
