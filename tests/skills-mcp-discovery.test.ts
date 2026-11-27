@@ -14,6 +14,7 @@ import {
 } from "../src/lib/agent-skills-discovery.ts";
 import { GET as getSkillsIndex } from "../src/pages/.well-known/agent-skills/index.json.ts";
 import { GET as getServerCard } from "../src/pages/.well-known/mcp/server-card.json.ts";
+import { mcpPost } from "../src/lib/mcp-server.ts";
 
 const origin = "https://www.ui-skills.com";
 
@@ -121,6 +122,24 @@ describe("skills and MCP discovery", () => {
     assert.equal(card.serverInfo.name, "UI Skills");
     assert.equal(card.transport.endpoint, `${origin}/mcp`);
     assert.equal(card.capabilities.tools, true);
+  });
+
+  test("MCP server answers ping with an empty result", async () => {
+    const response = await mcpPost({
+      request: new Request(`${origin}/mcp`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ jsonrpc: "2.0", id: 7, method: "ping" }),
+      }),
+      site: new URL(origin),
+    } as never);
+
+    assert.equal(response.status, 200);
+    assert.deepEqual(await response.json(), {
+      jsonrpc: "2.0",
+      id: 7,
+      result: {},
+    });
   });
 
   test("well-known routes return discovery documents", async () => {
