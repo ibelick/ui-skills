@@ -181,6 +181,43 @@ describe("personal library", () => {
     assert.equal(rejected.status, 400);
   });
 
+  test("removes a saved skill that is no longer in the directory", async () => {
+    const removed: string[] = [];
+    const unsaved = await handleLibraryRequest(
+      request("/api/library/saved", "DELETE", {
+        skillPath: "someone/retired-skill",
+      }),
+      "user-1",
+      store({
+        async unsaveSkill(_userId, skillPath) {
+          removed.push(skillPath);
+          return emptyLibrary;
+        },
+      }),
+    );
+    assert.equal(unsaved.status, 200);
+
+    const fromCollection = await handleLibraryRequest(
+      request(
+        "/api/library/collections/11111111-1111-4111-8111-111111111111/skills",
+        "DELETE",
+        { skillPath: "someone/retired-skill" },
+      ),
+      "user-1",
+      store({
+        async removeSkill(_userId, _id, skillPath) {
+          removed.push(skillPath);
+          return emptyLibrary;
+        },
+      }),
+    );
+    assert.equal(fromCollection.status, 200);
+    assert.deepEqual(removed, [
+      "someone/retired-skill",
+      "someone/retired-skill",
+    ]);
+  });
+
   test("creates a collection for the signed-in user", async () => {
     const response = await handleLibraryRequest(
       request("/api/library/collections", "POST", {

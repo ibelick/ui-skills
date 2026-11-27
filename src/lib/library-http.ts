@@ -1,4 +1,4 @@
-import { parseSkillPath } from "./library-skill";
+import { parseSkillPath, parseStoredSkillPath } from "./library-skill";
 import type { LibraryStore } from "./library-store";
 import {
   LibraryError,
@@ -94,7 +94,7 @@ export async function handleLibraryRequest(
     ) {
       const body = await readBody(request);
       return libraryResponse(
-        await store.unsaveSkill(userId, parseSkillPath(body.skillPath)),
+        await store.unsaveSkill(userId, parseStoredSkillPath(body.skillPath)),
       );
     }
 
@@ -162,7 +162,7 @@ export async function handleLibraryRequest(
         await store.removeSkill(
           userId,
           collectionId(segments[1]),
-          parseSkillPath(body.skillPath),
+          parseStoredSkillPath(body.skillPath),
         ),
       );
     }
