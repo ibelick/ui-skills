@@ -38,13 +38,18 @@ describe("code highlighter", () => {
   test("renders plain URLs with readable default foreground", async () => {
     const html = await highlightPlainCode("https://www.ui-skills.com/mcp");
     assert.match(html, /https:\/\/www\.ui-skills\.com\/mcp/);
-    assert.match(html, /style="color:#0E1116"/i);
+    assert.match(html, /style="color:#0E1116;--shiki-dark:#e6edf3"/i);
   });
 
   test("highlights MCP endpoint URLs with the active theme", async () => {
     const html = await highlightShellCommand("https://www.ui-skills.com/mcp");
     assert.match(html, /https:\/\/www\.ui-skills\.com\/mcp/);
     assert.match(html, /style="color:#/i);
+  });
+
+  test("emits GitHub dark token colors alongside the light ones", async () => {
+    const html = await highlightShellCommand("npx ui-skills start");
+    assert.match(html, /style="color:#[0-9a-f]+;--shiki-dark:#[0-9a-f]+"/i);
   });
 
   test("highlights multi-line ui-skills CLI copy", async () => {

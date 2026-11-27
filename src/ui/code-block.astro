@@ -1,7 +1,6 @@
 ---
 import { CopyButton } from "./copy-button";
 import {
-  CODE_HIGHLIGHT_FOREGROUND,
   highlightCode,
   type CodeHighlightLanguage,
 } from "../lib/code-highlighter";
@@ -49,12 +48,11 @@ const content =
   code ??
   lines.map((line) => line.map((segment) => segment.text).join("")).join("\n");
 const alignClass = align === "center" ? "items-center" : "items-start";
-const preStyle = `color: ${CODE_HIGHLIGHT_FOREGROUND}`;
 const preClass = truncate
-  ? "m-0 min-w-0 flex-1 overflow-hidden pr-3 type-code text-ellipsis whitespace-nowrap"
+  ? "m-0 min-w-0 flex-1 overflow-hidden pr-3 type-code text-content-primary text-ellipsis whitespace-nowrap"
   : wrapOnMobile
-    ? "m-0 min-w-0 flex-1 whitespace-pre-wrap break-words pr-3 type-code sm:whitespace-nowrap"
-    : "m-0 min-w-0 flex-1 pr-3 type-code";
+    ? "m-0 min-w-0 flex-1 whitespace-pre-wrap break-words pr-3 type-code text-content-primary sm:whitespace-nowrap"
+    : "m-0 min-w-0 flex-1 pr-3 type-code text-content-primary";
 const shellClass = mobileSurface
   ? "relative flex justify-between rounded-[8px] border-none bg-surface-default py-3.5 pr-4 pl-6 shadow-2xs ring-1 ring-line-default"
   : "relative flex justify-between rounded-none border-t border-b border-line-default bg-surface-default py-3.5 pr-4 pl-6 shadow-2xs sm:rounded-[8px] sm:border-none sm:ring-1 sm:ring-line-default";
@@ -68,12 +66,11 @@ const shellClass = mobileSurface
     >
       {highlightedHtml ? (
         <code
-          class="type-code leading-none [&_.line]:inline [&_.line]:before:content-none [&_.line]:after:content-none"
-          style={preStyle}
+          class="type-code text-content-primary leading-none [&_.line]:inline [&_.line]:before:content-none [&_.line]:after:content-none"
           set:html={highlightedHtml}
         />
       ) : (
-        <code class="type-code leading-none" style={preStyle}>
+        <code class="type-code text-content-primary leading-none">
           {lines.map((line, lineIndex) => (
             <>
               {line.map((segment) => (
@@ -93,7 +90,7 @@ const shellClass = mobileSurface
     </div>
   ) : (
     <div id={id} class={`${shellClass} ${alignClass} ${className}`}>
-      <pre class={preClass} style={preStyle}>
+      <pre class={preClass}>
         {highlightedHtml ? (
           <code class="[&_.line]:block" set:html={highlightedHtml} />
         ) : (
