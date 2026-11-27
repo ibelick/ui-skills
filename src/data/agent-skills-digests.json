@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T07:21:06.188Z",
+  "generatedAt": "2026-11-27T07:29:11.728Z",
   "skillCount": 854,
   "digests": {
     "ibelick/ui-skills-root": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c",
@@ -855,6 +855,6 @@
     "vercel-labs/modern-web-guidance": "sha256:93234d8103db74fa91c7a532eb1f0f6b2b7fdb5b6b3c45f5cfe99b12a5ec7cb2",
     "pasqualevitiello/plotter": "sha256:4a9dd8c155d3797fc524da0d01c1daa27acdd673e200083b9924ad7aa80197ab",
     "ibelick/photographing-software": "sha256:b7a75af756dcbf21ba02abef87b9c1729eb7195c4425968cde17de3b3c8ee765",
-    "ibelick/filming-software": "sha256:4982f18162d4f65755caf3bfa174e1dc5d0176b961e67ea3d18c7e8f31f07e65"
+    "ibelick/filming-software": "sha256:8dfe14861f02fb05902dce8cefdc17694bca5d882e2e0171016bfb90134360b8"
   }
 }

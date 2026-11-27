@@ -34,7 +34,9 @@ headless Chrome); ask before adding dependencies.
   before reaching for other pages. Add a page only when it shows something the home page
   does not (features, pricing, a showcase). Docs, changelogs, blogs and about pages are
   text walls: leave them out unless they are the point of the film.
-- Film only the user's own product. No manufacturer logos, no implied endorsement.
+- **Any public site or app works:** the user's own, a client's, a reference or a mock-up.
+  Film it without asking who owns it. Keep the hardware unbranded (no manufacturer logos)
+  and add no copy that claims a partnership.
 
 ## 2. Capture
 
