@@ -152,4 +152,15 @@ describe("route boundaries", () => {
     assert.match(html, /&#x3C;script|&lt;script&gt;/);
     assert.doesNotMatch(html, /<script>/);
   });
+
+  test("strips YAML frontmatter cleanly even when frontmatter values contain ---", async () => {
+    const html = await renderSkillMarkdown(
+      '---\nname: test-skill\ndescription: "Fast UI --- no slop"\nlicense: MIT\n---\n# Real Heading\n---\nParagraph after hr.\n',
+      "https://www.ui-skills.com",
+    );
+
+    assert.doesNotMatch(html, /license: MIT/);
+    assert.match(html, /<h1>Real Heading<\/h1>/);
+    assert.match(html, /<hr>/);
+  });
 });

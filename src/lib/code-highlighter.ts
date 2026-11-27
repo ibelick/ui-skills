@@ -45,6 +45,9 @@ const LANG_LOADERS: Record<BundledLang, () => Promise<LanguageLoaderResult>> = {
 };
 
 let highlighterPromise: Promise<HighlighterCore> | null = null;
+const loadedLangPromises = new Map<string, Promise<void>>([
+  ["bash", Promise.resolve()],
+]);
 
 function getHighlighter(): Promise<HighlighterCore> {
   highlighterPromise ??= createHighlighterCore({
@@ -67,8 +70,17 @@ async function ensureLanguage(lang: string): Promise<string> {
     return "plaintext";
   }
 
-  const highlighter = await getHighlighter();
-  await highlighter.loadLanguage(await loader());
+  let loadPromise = loadedLangPromises.get(normalized);
+  if (!loadPromise) {
+    loadPromise = (async () => {
+      const highlighter = await getHighlighter();
+      if (!highlighter.getLoadedLanguages().includes(normalized)) {
+        await highlighter.loadLanguage(await loader());
+      }
+    })();
+    loadedLangPromises.set(normalized, loadPromise);
+  }
+  await loadPromise;
   return normalized;
 }
 
@@ -137,6 +149,7 @@ async function highlightWithLanguage(
   const html = highlighter.codeToHtml(source, {
     lang: resolvedLanguage,
     theme: surfaceConfig.theme,
+    tokenizeTimeLimit: 0,
     colorReplacements: surfaceConfig.transparentBackground
       ? {
           [surfaceConfig.theme]: {

@@ -4,6 +4,7 @@ import {
   designSystemCollections,
   designSystems,
 } from "../src/data/design-systems.ts";
+import { parseDesignMdFoundations } from "../src/lib/design-md-foundations.ts";
 
 describe("design system directory data", () => {
   test("has entries for every published collection", () => {
@@ -44,6 +45,24 @@ describe("design system directory data", () => {
       "Radix UI",
       "shadcn/ui",
       "GOV.UK Design System",
+    ]);
+  });
+
+  test("parses Tailwind v4 oklch tokens and Arabic RTL DESIGN.md foundation sections", () => {
+    const parsed = parseDesignMdFoundations(`---
+name: Modern Arabic RTL System
+colors:
+  primary: oklch(0.62 0.19 260)
+  surface: "#0f172a"
+---
+## الألوان
+| الاسم | القيمة |
+| --- | --- |
+| ثانوي | oklch(0.75 0.15 190) |
+`);
+    assert.deepEqual(parsed.colors, [
+      { name: "primary", value: "oklch(0.62 0.19 260)" },
+      { name: "surface", value: "#0f172a" },
     ]);
   });
 });

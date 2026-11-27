@@ -32,13 +32,14 @@ const getSafeUrl = (value: string, baseUrl: string) => {
   return undefined;
 };
 
+export const stripSkillFrontmatter = (markdown: string) =>
+  markdown.replace(/^---\s*\r?\n[\s\S]*?\r?\n---(?:\s*\r?\n|$)/, "").trim();
+
 export const renderSkillMarkdown = async (
   markdown: string,
   baseUrl: string,
 ) => {
-  const content = markdown.startsWith("---")
-    ? markdown.split("---").slice(2).join("---").trim()
-    : markdown;
+  const content = stripSkillFrontmatter(markdown);
   const tokens = marked.lexer(content);
   const highlightedCode = new Map<string, string>();
 
