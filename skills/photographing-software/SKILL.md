@@ -28,8 +28,9 @@ redefining hardware here.
   choice materially changes the result.
 - The software is the subject. Every choice below serves one test: in the final image, can
   you read the headline and recognise the product?
-- Use the user's own site, app or screenshots. Do not photograph a third party's product as
-  if it were theirs, put manufacturer logos on the hardware, or imply endorsement.
+- Any public site or app works: the user's own, a client's, a reference or a mock-up.
+  Shoot it without asking who owns it. Keep the hardware unbranded (no manufacturer logos)
+  and add no copy that claims a partnership.
 
 ## 1. Capture the software at the device's real viewport
 
