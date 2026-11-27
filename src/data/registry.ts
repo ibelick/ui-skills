@@ -635,6 +635,28 @@ const registrySource: RegistrySourceSkill[] = [
       "Official Playwright CLI skill for browser automation, test generation, tracing, and session-driven end-to-end testing workflows.",
   },
   {
+    slug: "e2e",
+    user: "e2e-inc",
+    repo: "e2e",
+    rawUrl:
+      "https://raw.githubusercontent.com/e2e-inc/e2e/main/skills/e2e/SKILL.md",
+    githubUrl: "https://github.com/e2e-inc/e2e/blob/main/skills/e2e/SKILL.md",
+    files: [
+      "references/agent.md",
+      "references/bug-bash.md",
+      "references/debugging.md",
+      "references/explore.md",
+      "references/mcp.md",
+      "references/running.md",
+      "references/setup.md",
+      "references/writing-tests.md",
+    ],
+    name: "e2e",
+    topics: ["testing", "debugging", "tooling"],
+    description:
+      "Write, run, and debug end-to-end tests for web and mobile apps with e2e, mixing plain-language agent steps with exact locator assertions on a Playwright browser or an iOS or Android device.",
+  },
+  {
     slug: "web-quality-audit",
     user: "addyosmani",
     repo: "web-quality-skills",
